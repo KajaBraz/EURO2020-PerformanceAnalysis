@@ -1,9 +1,7 @@
+import json
 import re
-from pprint import pprint
-
-from bs4 import BeautifulSoup
-import urllib3
 import requests
+from bs4 import BeautifulSoup
 
 p_url = re.compile(r'href=\S+')
 p_wiki = re.compile(r'/wiki/\S+')
@@ -17,16 +15,14 @@ def get_lists(url: str) -> ([], []):
     r = requests.get(url)
     soup = BeautifulSoup(r.content, 'html5lib')
     names = soup.findAll('div', attrs={'class': 'div-col'})
-    # pprint(len(names))
     paragraphs = soup.findAll('p')
-    # pprint(headlines)
     headlines = [paragraph.find('b') for paragraph in paragraphs]
-    # pprint(headlines)
     return names, headlines
 
 
 def get_name(soup: BeautifulSoup) -> str:
-    name = soup.find('td', attrs={'class': 'nickname'}).text
+    # name = soup.find('td', attrs={'class': 'nickname'}).text.strip()
+    name = soup.find('h1', attrs={'id': 'firstHeading'}).text
     return p_word_chars.sub('', name)
 
 
@@ -36,16 +32,23 @@ def get_age(soup: BeautifulSoup) -> int:
 
 
 def get_team_league(soup: BeautifulSoup) -> (str, str):
-    team_element = soup.find('td', attrs={'class': 'org'}).find('a')
-    team = team_element.text
-    league_url = p_wiki.search(str(team_element))
-    league_url = 'https://en.wikipedia.org' + league_url.group()[:-1]
-    r = requests.get(league_url)
-    soup = BeautifulSoup(r.content, 'html5lib')
-    league = soup.findAll('td', attrs={'class': 'infobox-data'})
-    league = league[8].text
-    print(league)
-    return team, league
+    try:
+        team_element = soup.find('td', attrs={'class': 'org'}).find('a')
+        team = team_element.text
+        league_url = p_wiki.search(str(team_element))
+        league_url = 'https://en.wikipedia.org' + league_url.group()[:-1]
+        r = requests.get(league_url)
+        soup = BeautifulSoup(r.content, 'html5lib')
+        table = soup.find('table', attrs={'class': 'infobox vcard'}).findAll('tr')
+        league = 'Unknown'
+        for row in table:
+            row_content = row.find('th')
+            if row_content:
+                if row_content.text == 'League':
+                    league = row.find('td').text
+        return team, league
+    except:
+        return 'Unknown', 'Unknown'
 
 
 def get_nation(soup: BeautifulSoup) -> str:
@@ -63,7 +66,7 @@ def get_player_data(url_nation: str, url_player: str) -> {}:
     age = get_age(soup_player)
     team, league = get_team_league(soup_player)
     nation = get_nation(soup_nation)
-    player_data = {'name': name, 'age': age, 'club': team, 'country': nation}
+    player_data = {'name': name, 'age': age, 'club': team, 'league': league, 'country': nation}
     return player_data
 
 
@@ -75,8 +78,6 @@ def get_pure_url(url: str) -> str:
 
 def get_goal_scorers(names: [], scored_goals_headlines: []) -> {str: {str}}:
     players_urls = [p_url.findall(str(names[i])) for i in range(len(scored_goals_headlines))]
-    print(players_urls)
-    print(scored_goals_headlines)
 
     players_data = []
     goals_num_ind = 0
@@ -88,26 +89,30 @@ def get_goal_scorers(names: [], scored_goals_headlines: []) -> {str: {str}}:
             nation_url = get_pure_url(players[i])
             player_url = get_pure_url(players[i + 1])
             i += 2
-            print('url', nation_url, player_url)
             player_dict = get_player_data(nation_url, player_url)
             player_dict['goals'] = goals
             players_data.append(player_dict)
-            print(player_dict)
-            # print(players_data)
+            # print(player_dict)
         goals_num_ind += 1
+    return players_data
 
 
 def get_scored_goals_headlines(headlines: []) -> [str]:
     sorted_headlines = [p_goals.search(str(headline)) for headline in headlines]
     sorted_headlines = [headline.group() for headline in sorted_headlines if headline]
-    # pprint(sorted_headlines)
     return [int(re.search(r'\d', goals).group()) for goals in sorted_headlines]
+
+
+def save_json(filename: str, players_dictionary: {}):
+    with open(filename, 'w') as players_file:
+        data = json.dumps(players_dictionary)
+        players_file.write('playerData = ')
+        players_file.write(data)
 
 
 if __name__ == '__main__':
     url = 'https://en.wikipedia.org/wiki/UEFA_Euro_2020_statistics'
     names, headlines = get_lists(url)
-    # pprint(headlines)
     gols_scored_headlined = get_scored_goals_headlines(headlines)
-    get_goal_scorers(names, gols_scored_headlined)
-    # get_player_data('https://en.wikipedia.org/wiki/Italy_national_football_team','https://en.wikipedia.org/wiki/Lorenzo_Insigne')
+    players_dict = get_goal_scorers(names, gols_scored_headlined)
+    save_json('js/data.js', players_dict)
