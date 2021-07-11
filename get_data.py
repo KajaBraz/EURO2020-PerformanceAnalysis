@@ -6,7 +6,6 @@ from bs4 import BeautifulSoup
 p_url = re.compile(r'href=\S+')
 p_wiki = re.compile(r'/wiki/\S+')
 p_national = re.compile(r' national')
-p_word_chars = re.compile(r'[^a-zA-Z\s]')
 p_digit = re.compile(r'\d+')
 p_goals = re.compile(r'\d+\sgoals?')
 
@@ -21,9 +20,8 @@ def get_lists(url: str) -> ([], []):
 
 
 def get_name(soup: BeautifulSoup) -> str:
-    # name = soup.find('td', attrs={'class': 'nickname'}).text.strip()
     name = soup.find('h1', attrs={'id': 'firstHeading'}).text
-    return p_word_chars.sub('', name)
+    return ''.join([ch for ch in name if ch.isalpha() or ch == ' '])
 
 
 def get_age(soup: BeautifulSoup) -> int:
@@ -38,17 +36,29 @@ def get_team_league(soup: BeautifulSoup) -> (str, str):
         league_url = p_wiki.search(str(team_element))
         league_url = 'https://en.wikipedia.org' + league_url.group()[:-1]
         r = requests.get(league_url)
-        soup = BeautifulSoup(r.content, 'html5lib')
-        table = soup.find('table', attrs={'class': 'infobox vcard'}).findAll('tr')
-        league = 'Unknown'
-        for row in table:
-            row_content = row.find('th')
-            if row_content:
-                if row_content.text == 'League':
-                    league = row.find('td').text
+        soup_league = BeautifulSoup(r.content, 'html5lib')
+        # table = soup_league.find('table', attrs={'class': 'infobox vcard'}).findAll('tr')
+        # league = 'Unknown'
+        # for row in table:
+        #     row_content = row.find('th')
+        #     if row_content:
+        #         if row_content.text == 'League':
+        #             league = row.find('td').text
+        league = get_league(soup_league)
         return team, league
     except:
         return 'Unknown', 'Unknown'
+
+
+def get_league(soup: BeautifulSoup) -> str:
+    table = soup.find('table', attrs={'class': 'infobox vcard'}).findAll('tr')
+    league = 'Unknown'
+    for row in table:
+        row_content = row.find('th')
+        if row_content:
+            if row_content.text == 'League':
+                league = row.find('td').text
+    return league
 
 
 def get_nation(soup: BeautifulSoup) -> str:
@@ -111,8 +121,26 @@ def save_json(filename: str, players_dictionary: {}):
 
 
 if __name__ == '__main__':
-    url = 'https://en.wikipedia.org/wiki/UEFA_Euro_2020_statistics'
-    names, headlines = get_lists(url)
-    gols_scored_headlined = get_scored_goals_headlines(headlines)
-    players_dict = get_goal_scorers(names, gols_scored_headlined)
-    save_json('js/data.js', players_dict)
+    # url = 'https://en.wikipedia.org/wiki/UEFA_Euro_2020_statistics'
+    # names, headlines = get_lists(url)
+    # gols_scored_headlined = get_scored_goals_headlines(headlines)
+    # players_dict = get_goal_scorers(names, gols_scored_headlined)
+    # save_json('js/data.js', players_dict)
+    print('d'.isalpha())
+    print(' '.isalpha())
+    name = 'Nikola Vlašić'
+    print(''.join([ch for ch in name if ch.isalpha() or ch == ' ']))
+# TODO
+# - doddac hithub pages
+# - litery scipy
+# - klub Pandeva
+# - posortowac dane w kolkach
+# - wybor czy usunac jedynki (gole w kolkach)
+# - dodac panstwa do lig
+# - wybor wykresu kolowy/slupkowy
+# - naprawic legende undefined w slupkowym
+# - dopasowac do copa america, serie a i innych lig
+# - asysyty i samoboje
+# - dodac pozycje
+# - dodac wysokosc i grubosc
+# - dadac klub z czasu turnieju (z czerwca)
