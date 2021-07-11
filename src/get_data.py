@@ -19,9 +19,13 @@ def get_lists(url: str) -> ([], []):
     return names, headlines
 
 
-def get_name(soup: BeautifulSoup) -> str:
-    name = soup.find('h1', attrs={'id': 'firstHeading'}).text
-    return ''.join([ch for ch in name if ch.isalpha() or ch == ' '])
+def get_name(soup_table: BeautifulSoup) -> str:
+    name = soup_table.find('caption', attrs={'class': 'fn'})
+    for s in name.find_all('style'):
+        s.decompose()
+    for s in name.find_all('span'):
+        s.decompose()
+    return ''.join([ch for ch in name.text if ch.isalpha() or ch == ' '])
 
 
 def get_age(soup: BeautifulSoup) -> int:
@@ -84,9 +88,10 @@ def get_player_data(url_nation: str, url_player: str) -> {}:
     soup_nation = BeautifulSoup(r_nation.content, 'html5lib')
     r_player = requests.get(url_player)
     soup_player = BeautifulSoup(r_player.content, 'html5lib')
-    name = get_name(soup_player)
-    age = get_age(soup_player)
-    team, league = get_team_league(soup_player)
+    soup_player_table = soup_player.find('table', attrs={'class': 'infobox vcard'})
+    name = get_name(soup_player_table)
+    age = get_age(soup_player_table)
+    team, league = get_team_league(soup_player_table)
     nation = get_nation(soup_nation)
     player_data = {'name': name, 'age': age, 'club': team, 'league': league, 'country': nation}
     return player_data
@@ -114,7 +119,7 @@ def get_goal_scorers(names: [], scored_goals_headlines: []) -> {str: {str}}:
             player_dict = get_player_data(nation_url, player_url)
             player_dict['goals'] = goals
             players_data.append(player_dict)
-            # print(player_dict)
+            print(player_dict)
         goals_num_ind += 1
     return players_data
 
@@ -137,7 +142,13 @@ if __name__ == '__main__':
     # names, headlines = get_lists(url)
     # gols_scored_headlined = get_scored_goals_headlines(headlines)
     # players_dict = get_goal_scorers(names, gols_scored_headlined)
-    # save_json('js/data.js', players_dict)
+    # save_json('../js/data.js', players_dict)
+
+    # p = get_player_data("https://en.wikipedia.org/wiki/England_national_football_team", "https://en.wikipedia.org/wiki/Harry_Kane")
+    # print(p)
+    # p = get_player_data("https://en.wikipedia.org/wiki/Ukraine_national_football_team", "https://en.wikipedia.org/wiki/Oleksandr_Zinchenko_(footballer)")
+    # print(p)
+
     print('d'.isalpha())
     print(' '.isalpha())
     name = 'Nikola Vlašić'
@@ -161,3 +172,4 @@ if __name__ == '__main__':
 # - dodac pozycje
 # - dodac wysokosc i grubosc
 # - dadac klub z czasu turnieju (z czerwca)
+# - make 'Euro 2020 statistics' page header looking nicer
