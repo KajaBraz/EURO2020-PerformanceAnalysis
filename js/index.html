@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <style>
+        canvas {
+            margin: 20px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Euro 2020 statistics</h1>
+    <script src="node_modules/chart.js/dist/chart.min.js"></script>
+    <script src="data.js"></script>
+    <script>
+        function createChart(title, labels, datas) {
+            let canvas = document.createElement('canvas');
+            canvas.width = "500";
+            canvas.height = "500";
+
+            let step = 360 / datas.length;
+            let colorsHue = datas.map((elem, index) => `hsla(${index * step}, 100%, 50%, 0.2`);
+
+            var ctx = canvas.getContext('2d');
+            new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: datas,
+                        backgroundColor: colorsHue
+                    }]
+                },
+                options: {
+                    responsive: false,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: title
+                        }
+                    }
+                }
+            });
+            return canvas;
+        }
+
+        function appendCanvas(title, labels, datas) {
+            let chart = createChart(title, labels, datas);
+            document.body.appendChild(chart);
+        }
+
+        appendCanvas(
+            "Scorers",
+            playerData.map(({ name }) => name),
+            playerData.map(({ goals }) => goals)
+        );
+
+        let countries = Array.from(new Set(playerData.map(({ country }) => country)));
+        appendCanvas(
+            "Goals by country",
+            countries,
+            countries.map(c => playerData.reduce((acc, { country, goals }) => country == c ? goals + acc : acc, 0))
+        );
+
+        let clubs = Array.from(new Set(playerData.map(({ club }) => club)));
+        appendCanvas(
+            "Goals by club",
+            clubs,
+            clubs.map(cl => playerData.reduce((acc, { club, goals }) => cl == club ? goals + acc : acc, 0))
+        );
+
+        let leagues = Array.from(new Set(playerData.map(({ league }) => league)));
+        appendCanvas(
+            "Goals by league",
+            leagues,
+            leagues.map(l => playerData.reduce((acc, { league, goals }) => league == l ? goals + acc : acc, 0))
+        );
+
+        let ages = [[16, 20], [21, 25], [26, 30], [31, 35], [36, 40], [41, 45]];
+        appendCanvas(
+            "Goals by scorer's age",
+            ages.map(([min, max]) => `${min} - ${max}`),
+            ages.map(([min, max]) => playerData.reduce((acc, { age, goals }) => min <= age && age <= max ? goals + acc : acc, 0))
+        );
+    </script>
+</body>
+
+</html>
