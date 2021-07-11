@@ -50,6 +50,18 @@ def get_team_league(soup: BeautifulSoup) -> (str, str):
         return 'Unknown', 'Unknown'
 
 
+def get_league_country(soup: BeautifulSoup):
+    table = soup.find('table', attrs={'class': 'infobox'}).findAll('tr')
+    country = 'Unknown'
+    for row in table:
+        row_content = row.find('th')
+        if row_content:
+            if row_content.text == 'Country':
+                country = row.find('td').text
+    country = re.sub(r'\(.+\)', '', country)
+    return country.strip()
+
+
 def get_league(soup: BeautifulSoup) -> str:
     table = soup.find('table', attrs={'class': 'infobox vcard'}).findAll('tr')
     league = 'Unknown'
@@ -130,6 +142,11 @@ if __name__ == '__main__':
     print(' '.isalpha())
     name = 'Nikola Vlašić'
     print(''.join([ch for ch in name if ch.isalpha() or ch == ' ']))
+
+    r = requests.get('https://en.wikipedia.org/wiki/Ligue_1')
+    s = BeautifulSoup(r.content, 'html5lib')
+    print(get_league_country(s))
+
 # TODO
 # - doddac hithub pages
 # - litery scipy
