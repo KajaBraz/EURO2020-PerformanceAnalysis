@@ -56,33 +56,48 @@
             playerData.map(({ goals }) => goals)
         );
 
-        let countries = Array.from(new Set(playerData.map(({ country }) => country)));
-        appendCanvas(
-            "Goals by country",
-            countries,
-            countries.map(c => playerData.reduce((acc, { country, goals }) => country == c ? goals + acc : acc, 0))
-        );
+        // let countries = Array.from(new Set(playerData.map(({ country }) => country)));
+        // appendCanvas(
+        //     "Goals by country",
+        //     countries,
+        //     countries.map(c => playerData.reduce((acc, { country, goals }) => country == c ? goals + acc : acc, 0))
+        // );
 
-        let clubs = Array.from(new Set(playerData.map(({ club }) => club)));
-        appendCanvas(
-            "Goals by club",
-            clubs,
-            clubs.map(cl => playerData.reduce((acc, { club, goals }) => cl == club ? goals + acc : acc, 0))
-        );
+        let countries = playerData.reduce(
+            (acc, { country, goals }) => {
+                acc[country] = (acc[country] || 0) + goals;
+                return acc;
+            }, {});
+        appendCanvas("Goals by country", Object.keys(countries), Object.values(countries));
 
-        let leagues = Array.from(new Set(playerData.map(({ league }) => league)));
-        appendCanvas(
-            "Goals by league",
-            leagues,
-            leagues.map(l => playerData.reduce((acc, { league, goals }) => league == l ? goals + acc : acc, 0))
+        let clubs = playerData.reduce(
+            (acc, { club, goals }) => {
+                acc[club] = (acc[club] || 0) + goals;
+                return acc;
+            }, {}
         );
+        appendCanvas("Goals by club", Object.keys(clubs), Object.values(clubs));
 
-        let ages = [[16, 20], [21, 25], [26, 30], [31, 35], [36, 40], [41, 45]];
-        appendCanvas(
-            "Goals by scorer's age",
-            ages.map(([min, max]) => `${min} - ${max}`),
-            ages.map(([min, max]) => playerData.reduce((acc, { age, goals }) => min <= age && age <= max ? goals + acc : acc, 0))
+        let leagues = playerData.reduce(
+            (acc, { league, goals }) => {
+                acc[league] = (acc[league] || 0) + goals;
+                return acc;
+            }, {}
         );
+        appendCanvas("Goals by league", Object.keys(leagues), Object.values(leagues));
+
+        let ages = playerData.reduce(
+            (acc, { age, goals }) => {
+                let step = Math.floor(age / 5);
+                let min = step * 5 + 1;
+                let max = (step + 1) * 5;
+                let key = `${min} - ${max}`;
+                acc[key] = (acc[key] || 0) + goals;
+                return acc;
+            }, {}
+        );
+        ages = Object.entries(ages).sort();
+        appendCanvas("Goals by age", ages.map(([k, v]) => k), ages.map(([k, v]) => v));
     </script>
 </body>
 
