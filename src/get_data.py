@@ -37,26 +37,22 @@ def get_team_league(soup: BeautifulSoup) -> (str, str):
     try:
         team_element = soup.find('td', attrs={'class': 'org'}).find('a')
         team = team_element.text
-        league_url = p_wiki.search(str(team_element))
-        league_url = 'https://en.wikipedia.org' + league_url.group()[:-1]
-        r = requests.get(league_url)
+        team_url = p_wiki.search(str(team_element))
+        team_url = get_pure_url(team_url.group())
+        r = requests.get(team_url)
         soup_league = BeautifulSoup(r.content, 'html5lib')
-        # table = soup_league.find('table', attrs={'class': 'infobox vcard'}).findAll('tr')
-        # league = 'Unknown'
-        # for row in table:
-        #     row_content = row.find('th')
-        #     if row_content:
-        #         if row_content.text == 'League':
-        #             league = row.find('td').text
-        league = get_league(soup_league)
-        return team, league
+        league, league_url = get_league(soup_league)
+        country = get_league_country(league_url)
+        return team, f'{league} ({country})'
     except:
-        return 'Unknown', 'Unknown'
+        return 'No club', 'No league'
 
 
-def get_league_country(soup: BeautifulSoup):
+def get_league_country(league_url: str):
+    r = requests.get(league_url)
+    soup = BeautifulSoup(r.content, 'html5lib')
     table = soup.find('table', attrs={'class': 'infobox'}).findAll('tr')
-    country = 'Unknown'
+    country = '-'
     for row in table:
         row_content = row.find('th')
         if row_content:
@@ -66,15 +62,17 @@ def get_league_country(soup: BeautifulSoup):
     return country.strip()
 
 
-def get_league(soup: BeautifulSoup) -> str:
+def get_league(soup: BeautifulSoup) -> (str, str):
     table = soup.find('table', attrs={'class': 'infobox vcard'}).findAll('tr')
-    league = 'Unknown'
+    league, league_url = 'No club', '-'
     for row in table:
         row_content = row.find('th')
         if row_content:
             if row_content.text == 'League':
                 league = row.find('td').text
-    return league
+                url_league_element = row.find('td').find('a')
+                league_url = get_pure_url(p_wiki.search(str(url_league_element)).group())
+    return league, league_url
 
 
 def get_nation(soup: BeautifulSoup) -> str:
@@ -138,38 +136,21 @@ def save_json(filename: str, players_dictionary: {}):
 
 
 if __name__ == '__main__':
-    # url = 'https://en.wikipedia.org/wiki/UEFA_Euro_2020_statistics'
-    # names, headlines = get_lists(url)
-    # gols_scored_headlined = get_scored_goals_headlines(headlines)
-    # players_dict = get_goal_scorers(names, gols_scored_headlined)
-    # save_json('../js/data.js', players_dict)
-
-    # p = get_player_data("https://en.wikipedia.org/wiki/England_national_football_team", "https://en.wikipedia.org/wiki/Harry_Kane")
-    # print(p)
-    # p = get_player_data("https://en.wikipedia.org/wiki/Ukraine_national_football_team", "https://en.wikipedia.org/wiki/Oleksandr_Zinchenko_(footballer)")
-    # print(p)
-
-    print('d'.isalpha())
-    print(' '.isalpha())
-    name = 'Nikola Vlašić'
-    print(''.join([ch for ch in name if ch.isalpha() or ch == ' ']))
-
-    r = requests.get('https://en.wikipedia.org/wiki/Ligue_1')
-    s = BeautifulSoup(r.content, 'html5lib')
-    print(get_league_country(s))
+    stats_url = 'https://en.wikipedia.org/wiki/UEFA_Euro_2020_statistics'
+    players_names, goals_headlines = get_lists(stats_url)
+    gols_scored_headlined = get_scored_goals_headlines(goals_headlines)
+    players_dict = get_goal_scorers(players_names, gols_scored_headlined)
+    save_json('../js/data.js', players_dict)
 
 # TODO
-# - doddac hithub pages
-# - litery scipy
 # - klub Pandeva
 # - posortowac dane w kolkach
 # - wybor czy usunac jedynki (gole w kolkach)
-# - dodac panstwa do lig
 # - wybor wykresu kolowy/slupkowy
-# - naprawic legende undefined w slupkowym
 # - dopasowac do copa america, serie a i innych lig
 # - asysyty i samoboje
 # - dodac pozycje
 # - dodac wysokosc i grubosc
 # - dadac klub z czasu turnieju (z czerwca)
 # - make 'Euro 2020 statistics' page header looking nicer
+# - add unicode flag
