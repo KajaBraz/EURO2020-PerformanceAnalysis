@@ -12,6 +12,10 @@
             text-align: center;
         }
 
+        h3 {
+            text-align: center;
+        }
+
         footer {
             text-align: right;
         }
@@ -32,143 +36,146 @@
 
 <body>
     <h1>UEFA Euro 2020 players statistics</h1>
-    <div class="select_chart">
-        <input type="radio" id="bar_radio" name="chart_type" value="bar" onchange="redraw()" checked>
-        <label for="bar_radio">Bar chart</label>
-        <input type="radio" id="pie_radio" name="chart_type" value="pie" onchange="redraw()">
-        <label for="pie_radio">Pie chart</label>
-        <p>
-            <input type="checkbox" id="one_goal" onchange="redraw()">
-            <label for="one_goal">Include one-goal-scorers</label>
-        </p>
-    </div>
-    <div id='container'></div>
-    <footer>
-        <p>Data source: <a href="https://en.wikipedia.org/wiki/UEFA_Euro_2020">Wikipedia</a></p>
-        <p>Source code and contact: <a href="https://github.com/KajaBraz/FootballScorersAnalysis">Github</a></p>
-    </footer>
-    <script src="js/node_modules/chart.js/dist/chart.min.js"></script>
-    <script src="js/data.js"></script>
-    <script>
+    <h3 id="all_goals">All goals scored (excluded own goals): </h2>
+        <div class="select_chart">
+            <input type="radio" id="bar_radio" name="chart_type" value="bar" onchange="redraw()" checked>
+            <label for="bar_radio">Bar chart</label>
+            <input type="radio" id="pie_radio" name="chart_type" value="pie" onchange="redraw()">
+            <label for="pie_radio">Pie chart</label>
+            <p>
+                <input type="checkbox" id="one_goal" onchange="redraw()">
+                <label for="one_goal">Include one-goal-scorers</label>
+            </p>
+        </div>
+        <div id='container'></div>
+        <footer>
+            <p>Data source: <a href="https://en.wikipedia.org/wiki/UEFA_Euro_2020">Wikipedia</a></p>
+            <p>Source code and contact: <a href="https://github.com/KajaBraz/FootballScorersAnalysis">Github</a></p>
+        </footer>
+        <script src="js/node_modules/chart.js/dist/chart.min.js"></script>
+        <script src="js/data.js"></script>
+        <script>
 
-        let all_goals = playerData.reduce((acc, {goals}) => acc + goals, 0);
-        // console.log(all_goals);
+            let all_goals = playerData.reduce((acc, { goals }) => acc + goals, 0);
+            // console.log(all_goals);
 
-        function createChart(title, labels, datas, type) {
-            let canvas = document.createElement('canvas');
-            canvas.width = type == "bar" ? "1500" : "1500";
-            canvas.height = type == "bar" ? "600" : "800";
-            canvas.className = type == "bar" ? "" : "pie_chart_class";
+            function createChart(title, labels, datas, type) {
+                let canvas = document.createElement('canvas');
+                canvas.width = type == "bar" ? "1500" : "1500";
+                canvas.height = type == "bar" ? "600" : "800";
+                canvas.className = type == "bar" ? "" : "pie_chart_class";
 
 
-            let step = 360 / datas.length;
-            let colorsHue = datas.map((elem, index) => `hsla(${index * step}, 100%, 50%, 0.25`);
+                let step = 360 / datas.length;
+                let colorsHue = datas.map((elem, index) => `hsla(${index * step}, 100%, 50%, 0.25`);
 
-            var ctx = canvas.getContext('2d');
-            new Chart(ctx, {
-                type: type,
-                data: {
-                    labels: labels,
-                    datasets: [{
-                        data: datas,
-                        backgroundColor: colorsHue
-                    }]
-                },
-                options: {
-                    scaleShowValues: true,
-                    responsive: type == "bar" ? true : false,
-                    plugins: {
-                        legend: {
-                            display: type == "bar" ? false : true,
-                            position: "left"
-                        },
-                        title: {
-                            display: true,
-                            text: title,
-                            font: {
-                                size: 20
+                var ctx = canvas.getContext('2d');
+                new Chart(ctx, {
+                    type: type,
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            data: datas,
+                            backgroundColor: colorsHue
+                        }]
+                    },
+                    options: {
+                        scaleShowValues: true,
+                        responsive: type == "bar" ? true : false,
+                        plugins: {
+                            legend: {
+                                display: type == "bar" ? false : true,
+                                position: "left"
+                            },
+                            title: {
+                                display: true,
+                                text: title,
+                                font: {
+                                    size: 20
+                                }
                             }
                         }
                     }
-                }
-            });
-            return canvas;
-        }
+                });
+                return canvas;
+            }
 
-        function appendCanvas(title, labels, datas, type) {
-            let chart = createChart(title, labels, datas, type);
-            document.getElementById('container').appendChild(chart);
-        }
+            function appendCanvas(title, labels, datas, type) {
+                let chart = createChart(title, labels, datas, type);
+                document.getElementById('container').appendChild(chart);
+            }
 
-        function redraw() {
-            let radio = Array.from(document.getElementsByName("chart_type"))
-                .filter(({ checked }) => checked)[0];
-            document.getElementById("container").innerHTML = "";
+            function redraw() {
+                let radio = Array.from(document.getElementsByName("chart_type"))
+                    .filter(({ checked }) => checked)[0];
+                document.getElementById("container").innerHTML = "";
 
-            let include_one_goal = document.getElementById("one_goal").checked;
-            let scorer_data = include_one_goal ? playerData : playerData.filter(({ goals }) => goals > 1);
+                let include_one_goal = document.getElementById("one_goal").checked;
+                let scorer_data = include_one_goal ? playerData : playerData.filter(({ goals }) => goals > 1);
 
-            appendCanvas(
-                "Scorers",
-                scorer_data.map(({ name }) => name),
-                scorer_data.map(({ goals }) => goals),
-                radio.value
-            );
+                appendCanvas(
+                    "Scorers",
+                    scorer_data.map(({ name }) => name),
+                    scorer_data.map(({ goals }) => goals),
+                    radio.value
+                );
 
-            // let countries = Array.from(new Set(playerData.map(({ country }) => country)));
-            // appendCanvas(
-            //     "Goals by country",
-            //     countries,
-            //     countries.map(c => playerData.reduce((acc, { country, goals }) => country == c ? goals + acc : acc, 0))
-            // );
+                // let countries = Array.from(new Set(playerData.map(({ country }) => country)));
+                // appendCanvas(
+                //     "Goals by country",
+                //     countries,
+                //     countries.map(c => playerData.reduce((acc, { country, goals }) => country == c ? goals + acc : acc, 0))
+                // );
 
-            let countries = playerData.reduce(
-                (acc, { country, goals }) => {
-                    acc[country] = (acc[country] || 0) + goals;
-                    return acc;
-                }, {});
-            appendCanvas("Goals by country (own goals excluded)", Object.keys(countries), Object.values(countries), radio.value);
+                let countries = playerData.reduce(
+                    (acc, { country, goals }) => {
+                        acc[country] = (acc[country] || 0) + goals;
+                        return acc;
+                    }, {});
+                appendCanvas("Goals by country (own goals excluded)", Object.keys(countries), Object.values(countries), radio.value);
 
-            let clubs = playerData.reduce(
-                (acc, { club, goals }) => {
-                    acc[club] = (acc[club] || 0) + goals;
-                    return acc;
-                }, {}
-            );
-            appendCanvas("Goals by club", Object.keys(clubs), Object.values(clubs), radio.value);
+                let clubs = playerData.reduce(
+                    (acc, { club, goals }) => {
+                        acc[club] = (acc[club] || 0) + goals;
+                        return acc;
+                    }, {}
+                );
+                appendCanvas("Goals by club", Object.keys(clubs), Object.values(clubs), radio.value);
 
-            let leagues = playerData.reduce(
-                (acc, { league, goals }) => {
-                    acc[league] = (acc[league] || 0) + goals;
-                    return acc;
-                }, {}
-            );
-            appendCanvas("Goals by league", Object.keys(leagues), Object.values(leagues), radio.value);
+                let leagues = playerData.reduce(
+                    (acc, { league, goals }) => {
+                        acc[league] = (acc[league] || 0) + goals;
+                        return acc;
+                    }, {}
+                );
+                appendCanvas("Goals by league", Object.keys(leagues), Object.values(leagues), radio.value);
 
-            let ages = playerData.reduce(
-                (acc, { age, goals }) => {
-                    let step = Math.floor(age / 5);
-                    let min = step * 5 + 1;
-                    let max = (step + 1) * 5;
-                    let key = `${min} - ${max}`;
-                    acc[key] = (acc[key] || 0) + goals;
-                    return acc;
-                }, {}
-            );
-            ages = Object.entries(ages).sort();
-            appendCanvas("Goals by age", ages.map(([k, v]) => k), ages.map(([k, v]) => v), radio.value);
-        }
+                let ages = playerData.reduce(
+                    (acc, { age, goals }) => {
+                        let step = Math.floor(age / 5);
+                        let min = step * 5 + 1;
+                        let max = (step + 1) * 5;
+                        let key = `${min} - ${max}`;
+                        acc[key] = (acc[key] || 0) + goals;
+                        return acc;
+                    }, {}
+                );
+                ages = Object.entries(ages).sort();
+                appendCanvas("Goals by age", ages.map(([k, v]) => k), ages.map(([k, v]) => v), radio.value);
+            }
 
-        window.onload = function () {
-            let b = document.getElementById("bar_radio");
-            let p = document.getElementById("pie_radio");
-            b.checked = true;
-            p.checked = false;
-            document.getElementById("one_goal").checked = false;
-            redraw();
-        }
+            window.onload = function () {
+                let b = document.getElementById("bar_radio");
+                let p = document.getElementById("pie_radio");
+                b.checked = true;
+                p.checked = false;
+                document.getElementById("one_goal").checked = false;
+                redraw();
 
-    </script>
+                document.getElementById("all_goals").innerHTML += all_goals;
+            }
+
+        </script>
 </body>
 
 </html>
