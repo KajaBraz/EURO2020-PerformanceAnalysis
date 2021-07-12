@@ -112,7 +112,7 @@
                     acc[country] = (acc[country] || 0) + goals;
                     return acc;
                 }, {});
-            appendCanvas("Goals by country", Object.keys(countries), Object.values(countries), radio.value);
+            appendCanvas("Goals by country (own goals excluded)", Object.keys(countries), Object.values(countries), radio.value);
 
             let clubs = playerData.reduce(
                 (acc, { club, goals }) => {
