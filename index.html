@@ -50,6 +50,10 @@
     <script src="js/node_modules/chart.js/dist/chart.min.js"></script>
     <script src="js/data.js"></script>
     <script>
+
+        let all_goals = playerData.reduce((acc, {goals}) => acc + goals, 0);
+        // console.log(all_goals);
+
         function createChart(title, labels, datas, type) {
             let canvas = document.createElement('canvas');
             canvas.width = type == "bar" ? "1500" : "1500";
