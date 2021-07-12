@@ -36,7 +36,7 @@
 
 <body>
     <h1>UEFA Euro 2020 players statistics</h1>
-    <h3 id="all_goals">All goals scored (excluded own goals): </h2>
+    <h3 id="all_goals">All goals scored (excluded own goals): </h3>
         <div class="select_chart">
             <input type="radio" id="bar_radio" name="chart_type" value="bar" onchange="redraw()" checked>
             <label for="bar_radio">Bar chart</label>
@@ -57,7 +57,6 @@
         <script>
 
             let all_goals = playerData.reduce((acc, { goals }) => acc + goals, 0);
-            // console.log(all_goals);
 
             function createChart(title, labels, datas, type) {
                 let canvas = document.createElement('canvas');
