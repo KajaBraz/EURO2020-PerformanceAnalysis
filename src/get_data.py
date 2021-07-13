@@ -35,15 +35,12 @@ def get_age(soup: BeautifulSoup) -> int:
 
 
 def get_team_league(soup: BeautifulSoup, year: int) -> (str, str):
-    try:
-        team, team_url = get_team(soup, year)
-        r = requests.get(team_url)
-        soup_league = BeautifulSoup(r.content, 'html5lib')
-        league, league_url = get_league(soup_league)
-        country = get_league_country(league_url)
-        return team, f'{league} ({country})'
-    except:
-        return 'No club', 'No league'
+    team, team_url = get_team(soup, year)
+    r = requests.get(team_url)
+    soup_league = BeautifulSoup(r.content, 'html5lib')
+    league, league_url = get_league(soup_league)
+    country = get_league_country(league_url)
+    return team, f'{league} ({country})'
 
 
 def get_league_country(league_url: str):
@@ -80,23 +77,22 @@ def get_team(soup: BeautifulSoup, tournament_year: int):
     team, team_url = '', ''
     while not teams_found and i < len(table_components):
         row = table_components[i].find('th')
-        if row:
-            if 'National team' in row.text:
-                teams_found = True
-                while not correct_team:
-                    most_recent_team = table_components[i + 1]
-                    most_recent_team_dates = most_recent_team.find('span').text
-                    if check_dates(most_recent_team_dates, tournament_year):
-                        team_elem = most_recent_team.find('td')
-                        team = team_elem.text
-                        if '→' in team:
-                            team = team.replace('→', '')
-                            team = p_parenthesis.sub('', team)
-                        team_url = p_wiki.search(str(team_elem))
-                        team_url = get_pure_url(team_url.group())
-                        correct_team = True
-                    else:
-                        i += 1
+        if row and 'National team' in row.text:
+            teams_found = True
+            while not correct_team:
+                most_recent_team = table_components[i + 1]
+                most_recent_team_dates = most_recent_team.find('span').text
+                if check_dates(most_recent_team_dates, tournament_year):
+                    team_elem = most_recent_team.find('td')
+                    team = team_elem.text
+                    if '→' in team:
+                        team = team.replace('→', '')
+                        team = p_parenthesis.sub('', team)
+                    team_url = p_wiki.search(str(team_elem))
+                    team_url = get_pure_url(team_url.group())
+                    correct_team = True
+                else:
+                    i += 1
         i += 1
     return team.strip(), team_url
 
