@@ -8,6 +8,7 @@ p_wiki = re.compile(r'/wiki/\S+')
 p_national = re.compile(r' national')
 p_digit = re.compile(r'\d+')
 p_goals = re.compile(r'\d+\sgoals?')
+p_parenthesis = re.compile(r'\(.+\)')
 
 
 def get_lists(url: str) -> ([], []):
@@ -33,12 +34,9 @@ def get_age(soup: BeautifulSoup) -> int:
     return int(p_digit.search(age).group())
 
 
-def get_team_league(soup: BeautifulSoup) -> (str, str):
+def get_team_league(soup: BeautifulSoup, year: int) -> (str, str):
     try:
-        team_element = soup.find('td', attrs={'class': 'org'}).find('a')
-        team = team_element.text
-        team_url = p_wiki.search(str(team_element))
-        team_url = get_pure_url(team_url.group())
+        team, team_url = get_team(soup, year)
         r = requests.get(team_url)
         soup_league = BeautifulSoup(r.content, 'html5lib')
         league, league_url = get_league(soup_league)
@@ -58,8 +56,49 @@ def get_league_country(league_url: str):
         if row_content:
             if row_content.text == 'Country':
                 country = row.find('td').text
-    country = re.sub(r'\(.+\)', '', country)
+    country = p_parenthesis.sub('', country)
     return country.strip()
+
+
+def check_dates(dates_range_str: str, year: int):
+    if not dates_range_str.strip()[-1].isdigit():
+        return True
+    dates = [int(date) for date in re.findall(r'\d+', dates_range_str)]
+    if len(dates) == 1:
+        if dates[0] == year:
+            return True
+        return False
+    if dates[0] < year <= dates[1]:
+        return True
+    return False
+
+
+def get_team(soup: BeautifulSoup, tournament_year: int):
+    table_components = soup.findAll('tr')[::-1]
+    teams_found, correct_team = False, False
+    i = 0
+    team, team_url = '', ''
+    while not teams_found and i < len(table_components):
+        row = table_components[i].find('th')
+        if row:
+            if 'National team' in row.text:
+                teams_found = True
+                while not correct_team:
+                    most_recent_team = table_components[i + 1]
+                    most_recent_team_dates = most_recent_team.find('span').text
+                    if check_dates(most_recent_team_dates, tournament_year):
+                        team_elem = most_recent_team.find('td')
+                        team = team_elem.text
+                        if '→' in team:
+                            team = team.replace('→', '')
+                            team = p_parenthesis.sub('', team)
+                        team_url = p_wiki.search(str(team_elem))
+                        team_url = get_pure_url(team_url.group())
+                        correct_team = True
+                    else:
+                        i += 1
+        i += 1
+    return team.strip(), team_url
 
 
 def get_league(soup: BeautifulSoup) -> (str, str):
@@ -87,9 +126,10 @@ def get_player_data(url_nation: str, url_player: str) -> {}:
     r_player = requests.get(url_player)
     soup_player = BeautifulSoup(r_player.content, 'html5lib')
     soup_player_table = soup_player.find('table', attrs={'class': 'infobox vcard'})
+
     name = get_name(soup_player_table)
     age = get_age(soup_player_table)
-    team, league = get_team_league(soup_player_table)
+    team, league = get_team_league(soup_player_table, 2021)
     nation = get_nation(soup_nation)
     player_data = {'name': name, 'age': age, 'club': team, 'league': league, 'country': nation}
     return player_data
@@ -143,10 +183,7 @@ if __name__ == '__main__':
     save_json('../js/data.js', players_dict)
 
 # TODO
-# - klub Pandeva
 # - posortowac dane w kolkach
-# - wybor czy usunac jedynki (gole w kolkach)
-# - wybor wykresu kolowy/slupkowy
 # - dopasowac do copa america, serie a i innych lig
 # - asysyty i samoboje
 # - dodac pozycje
