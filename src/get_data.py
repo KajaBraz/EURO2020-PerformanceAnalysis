@@ -201,3 +201,4 @@ if __name__ == '__main__':
 # - dadac klub z czasu turnieju (z czerwca)
 # - make 'Euro 2020 statistics' page header looking nicer
 # - add unicode flag
+# - fix colors in 'on-goal-scorers'
