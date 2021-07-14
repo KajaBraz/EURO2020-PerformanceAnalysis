@@ -180,6 +180,19 @@
         );
         current_data = Object.entries(current_data).sort();
         fill_init("Goals by age", current_data.map(([k, v]) => k), current_data.map(([k, v]) => v));
+
+        current_data = playerData.reduce(
+            (acc, { height, goals }) => {
+                let step = Math.floor(height * 100 / 5);
+                let min = step * 5 + 1;
+                let max = (step + 1) * 5;
+                let key = `${min} - ${max}`;
+                acc[key] = (acc[key] || 0) + goals;
+                return acc;
+            }, {}
+        );
+        current_data = Object.entries(current_data).sort();
+        fill_init("Goals by height (in cm)", current_data.map(([k, v]) => k), current_data.map(([k, v]) => v));
     </script>
 </body>
 
