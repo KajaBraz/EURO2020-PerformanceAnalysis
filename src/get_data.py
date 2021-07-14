@@ -9,6 +9,8 @@ p_national = re.compile(r' national')
 p_digit = re.compile(r'\d+')
 p_goals = re.compile(r'\d+\sgoals?')
 p_parenthesis = re.compile(r'\(.+\)')
+p_height_m = re.compile(r'\d\.\d*.*m')
+p_height = re.compile(r'\d\.\d*')
 
 
 def get_lists(url: str) -> ([], []):
@@ -32,6 +34,18 @@ def get_name(soup_table: BeautifulSoup) -> str:
 def get_age(soup: BeautifulSoup) -> int:
     age = soup.find('span', attrs={'class': 'noprint ForceAgeToShow'}).text
     return int(p_digit.search(age).group())
+
+
+def get_height(soup: BeautifulSoup):
+    rows = soup.findAll('tr')
+    for row in rows:
+        th = row.find('th')
+        if th and th.text == 'Height':
+            height = row.find('td').text
+            height_str = p_height_m.search(height).group()
+            height_meters = p_height.search(height_str).group()
+            return float(height_meters)
+    return None
 
 
 def get_team_league(soup: BeautifulSoup, year: int) -> (str, str):
@@ -122,12 +136,12 @@ def get_player_data(url_nation: str, url_player: str) -> {}:
     r_player = requests.get(url_player)
     soup_player = BeautifulSoup(r_player.content, 'html5lib')
     soup_player_table = soup_player.find('table', attrs={'class': 'infobox vcard'})
-
     name = get_name(soup_player_table)
     age = get_age(soup_player_table)
+    height = get_height(soup_player_table)
     team, league = get_team_league(soup_player_table, 2021)
     nation = get_nation(soup_nation)
-    player_data = {'name': name, 'age': age, 'club': team, 'league': league, 'country': nation}
+    player_data = {'name': name, 'age': age, 'height': height, 'club': team, 'league': league, 'country': nation}
     return player_data
 
 
