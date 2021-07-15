@@ -8,6 +8,7 @@ p_wiki = re.compile(r'/wiki/\S+')
 p_national = re.compile(r' national')
 p_digit = re.compile(r'\d+')
 p_goals = re.compile(r'\d+\sgoals?')
+p_assist = re.compile(r'\d+\sassists?')
 p_parenthesis = re.compile(r'\(.+\)')
 p_height_m = re.compile(r'\d\.\d*.*m')
 p_height = re.compile(r'\d\.\d*')
@@ -114,13 +115,18 @@ def get_team(soup: BeautifulSoup, tournament_year: int):
 def get_league(soup: BeautifulSoup) -> (str, str):
     table = soup.find('table', attrs={'class': 'infobox vcard'}).findAll('tr')
     league, league_url = 'No club', '-'
+    x = ''
     for row in table:
         row_content = row.find('th')
         if row_content:
-            if row_content.text == 'League':
-                league = row.find('td').text
-                url_league_element = row.find('td').find('a')
-                league_url = get_pure_url(p_wiki.search(str(url_league_element)).group())
+            if row_content.text == 'League' or x == 'next':
+                x = ''
+                try:
+                    league = row.find('td').text
+                    url_league_element = row.find('td').find('a')
+                    league_url = get_pure_url(p_wiki.search(str(url_league_element)).group())
+                except:
+                    x = 'next'
     return league, league_url
 
 
@@ -151,9 +157,8 @@ def get_pure_url(url: str) -> str:
     return html_base + main[:-1]
 
 
-def get_goal_scorers(names: [], scored_goals_headlines: []) -> {str: {str}}:
+def get_goal_scorers(names: [], scored_goals_headlines: []) -> ({str: {str}}):
     players_urls = [p_url.findall(str(names[i])) for i in range(len(scored_goals_headlines))]
-
     players_data = []
     goals_num_ind = 0
     for players in players_urls:
@@ -172,10 +177,37 @@ def get_goal_scorers(names: [], scored_goals_headlines: []) -> {str: {str}}:
     return players_data
 
 
-def get_scored_goals_headlines(headlines: []) -> [str]:
-    sorted_headlines = [p_goals.search(str(headline)) for headline in headlines]
+def get_assistants(names: [], assists_num_headlines: [], start_ind: int):
+    assistant_names = names[start_ind:]
+    assistants_urls = [p_url.findall(str(assistant_names[i])) for i in range(len(assists_num_headlines))]
+    assistants_data = []
+    assists_num_ind = 0
+    for assistants in assistants_urls:
+        assists_num = assists_num_headlines[assists_num_ind]
+        assistants_num = len(assistants) // 2
+        i = 0
+        for assistant_ind in range(assistants_num):
+            nation_url = get_pure_url(assistants[i])
+            assistant_url = get_pure_url(assistants[i + 1])
+            i += 2
+            assistant_dict = get_player_data(nation_url, assistant_url)
+            assistant_dict['assists'] = assists_num
+            assistants_data.append(assistant_dict)
+            print(assistant_dict)
+        assists_num_ind += 1
+    return assistants_data
+
+
+def get_scored_goals_headlines(headlines: []) -> [int]:
+    sorted_headlines = [p_goals.search(headline.text) for headline in headlines if headline]
     sorted_headlines = [headline.group() for headline in sorted_headlines if headline]
-    return [int(re.search(r'\d', goals).group()) for goals in sorted_headlines]
+    return [int(p_digit.search(goals).group()) for goals in sorted_headlines]
+
+
+def get_assist_headlines(headlines: []) -> [int]:
+    assists_list = [p_assist.search(headline.text) for headline in headlines if headline]
+    assists_list = [headline.group() for headline in assists_list if headline]
+    return [int(p_digit.search(assists).group()) for assists in assists_list]
 
 
 def save_json(filename: str, players_dictionary: {}):
@@ -188,9 +220,14 @@ def save_json(filename: str, players_dictionary: {}):
 if __name__ == '__main__':
     stats_url = 'https://en.wikipedia.org/wiki/UEFA_Euro_2020_statistics'
     players_names, goals_headlines = get_lists(stats_url)
-    gols_scored_headlined = get_scored_goals_headlines(goals_headlines)
-    players_dict = get_goal_scorers(players_names, gols_scored_headlined)
-    save_json('../js/data.js', players_dict)
+    goals_scored_headlined = get_scored_goals_headlines(goals_headlines)
+    scorers_dict = get_goal_scorers(players_names, goals_scored_headlined)
+    save_json('../js/data.js', scorers_dict)
+
+    goals_headlines_num = len(goals_scored_headlined) + 1
+    assists_headlines = get_assist_headlines(goals_headlines)
+    assistants_dict = get_assistants(players_names, assists_headlines, goals_headlines_num)
+    save_json('../js/assists_data.js', assistants_dict)
 
 # TODO
 # - posortowac dane w kolkach
@@ -198,7 +235,7 @@ if __name__ == '__main__':
 # - asysyty i samoboje
 # - dodac pozycje
 # - dodac wysokosc i grubosc
-# - dadac klub z czasu turnieju (z czerwca)
 # - make 'Euro 2020 statistics' page header looking nicer
 # - add unicode flag
 # - fix colors in 'on-goal-scorers'
+# - add menu at the top of the page
