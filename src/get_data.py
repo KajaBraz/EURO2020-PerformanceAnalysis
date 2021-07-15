@@ -85,6 +85,15 @@ def check_dates(dates_range_str: str, year: int):
     return False
 
 
+def cut_initial_chars(name: str) -> str:
+    i = -1
+    valid_start = False
+    while not valid_start:
+        i += 1
+        valid_start = name[i].isalnum()
+    return name[i:]
+
+
 def get_team(soup: BeautifulSoup, tournament_year: int):
     table_components = soup.findAll('tr')[::-1]
     teams_found, correct_team = False, False
@@ -100,9 +109,7 @@ def get_team(soup: BeautifulSoup, tournament_year: int):
                 if check_dates(most_recent_team_dates, tournament_year):
                     team_elem = most_recent_team.find('td')
                     team = team_elem.text
-                    if '→' in team:
-                        team = team.replace('→', '')
-                        team = p_parenthesis.sub('', team)
+                    team = cut_initial_chars(team)
                     team_url = p_wiki.search(str(team_elem))
                     team_url = get_pure_url(team_url.group())
                     correct_team = True
@@ -118,15 +125,14 @@ def get_league(soup: BeautifulSoup) -> (str, str):
     x = ''
     for row in table:
         row_content = row.find('th')
-        if row_content:
-            if row_content.text == 'League' or x == 'next':
-                x = ''
-                try:
-                    league = row.find('td').text
-                    url_league_element = row.find('td').find('a')
-                    league_url = get_pure_url(p_wiki.search(str(url_league_element)).group())
-                except:
-                    x = 'next'
+        if row_content and (row_content.text == 'League' or x == 'next'):
+            x = ''
+            try:
+                league = row.find('td').text
+                url_league_element = row.find('td').find('a')
+                league_url = get_pure_url(p_wiki.search(str(url_league_element)).group())
+            except:
+                x = 'next'
     return league, league_url
 
 
