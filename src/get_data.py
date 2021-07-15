@@ -8,7 +8,10 @@ p_wiki = re.compile(r'/wiki/\S+')
 p_national = re.compile(r' national')
 p_digit = re.compile(r'\d+')
 p_goals = re.compile(r'\d+\sgoals?')
+p_assist = re.compile(r'\d+\sassists?')
 p_parenthesis = re.compile(r'\(.+\)')
+p_height_m = re.compile(r'\d\.\d*.*m')
+p_height = re.compile(r'\d\.\d*')
 
 
 def get_lists(url: str) -> ([], []):
@@ -32,6 +35,18 @@ def get_name(soup_table: BeautifulSoup) -> str:
 def get_age(soup: BeautifulSoup) -> int:
     age = soup.find('span', attrs={'class': 'noprint ForceAgeToShow'}).text
     return int(p_digit.search(age).group())
+
+
+def get_height(soup: BeautifulSoup):
+    rows = soup.findAll('tr')
+    for row in rows:
+        th = row.find('th')
+        if th and th.text == 'Height':
+            height = row.find('td').text
+            height_str = p_height_m.search(height).group()
+            height_meters = p_height.search(height_str).group()
+            return float(height_meters)
+    return None
 
 
 def get_team_league(soup: BeautifulSoup, year: int) -> (str, str):
@@ -70,6 +85,15 @@ def check_dates(dates_range_str: str, year: int):
     return False
 
 
+def cut_initial_chars(name: str) -> str:
+    i = -1
+    valid_start = False
+    while not valid_start:
+        i += 1
+        valid_start = name[i].isalnum()
+    return name[i:]
+
+
 def get_team(soup: BeautifulSoup, tournament_year: int):
     table_components = soup.findAll('tr')[::-1]
     teams_found, correct_team = False, False
@@ -85,9 +109,7 @@ def get_team(soup: BeautifulSoup, tournament_year: int):
                 if check_dates(most_recent_team_dates, tournament_year):
                     team_elem = most_recent_team.find('td')
                     team = team_elem.text
-                    if '→' in team:
-                        team = team.replace('→', '')
-                        team = p_parenthesis.sub('', team)
+                    team = cut_initial_chars(p_parenthesis.sub('', team))
                     team_url = p_wiki.search(str(team_elem))
                     team_url = get_pure_url(team_url.group())
                     correct_team = True
@@ -100,13 +122,17 @@ def get_team(soup: BeautifulSoup, tournament_year: int):
 def get_league(soup: BeautifulSoup) -> (str, str):
     table = soup.find('table', attrs={'class': 'infobox vcard'}).findAll('tr')
     league, league_url = 'No club', '-'
+    x = ''
     for row in table:
         row_content = row.find('th')
-        if row_content:
-            if row_content.text == 'League':
+        if row_content and (row_content.text == 'League' or x == 'next'):
+            x = ''
+            try:
                 league = row.find('td').text
                 url_league_element = row.find('td').find('a')
                 league_url = get_pure_url(p_wiki.search(str(url_league_element)).group())
+            except:
+                x = 'next'
     return league, league_url
 
 
@@ -122,12 +148,12 @@ def get_player_data(url_nation: str, url_player: str) -> {}:
     r_player = requests.get(url_player)
     soup_player = BeautifulSoup(r_player.content, 'html5lib')
     soup_player_table = soup_player.find('table', attrs={'class': 'infobox vcard'})
-
     name = get_name(soup_player_table)
     age = get_age(soup_player_table)
+    height = get_height(soup_player_table)
     team, league = get_team_league(soup_player_table, 2021)
     nation = get_nation(soup_nation)
-    player_data = {'name': name, 'age': age, 'club': team, 'league': league, 'country': nation}
+    player_data = {'name': name, 'age': age, 'height': height, 'club': team, 'league': league, 'country': nation}
     return player_data
 
 
@@ -137,9 +163,8 @@ def get_pure_url(url: str) -> str:
     return html_base + main[:-1]
 
 
-def get_goal_scorers(names: [], scored_goals_headlines: []) -> {str: {str}}:
+def get_goal_scorers(names: [], scored_goals_headlines: []) -> ({str: {str}}):
     players_urls = [p_url.findall(str(names[i])) for i in range(len(scored_goals_headlines))]
-
     players_data = []
     goals_num_ind = 0
     for players in players_urls:
@@ -158,10 +183,37 @@ def get_goal_scorers(names: [], scored_goals_headlines: []) -> {str: {str}}:
     return players_data
 
 
-def get_scored_goals_headlines(headlines: []) -> [str]:
-    sorted_headlines = [p_goals.search(str(headline)) for headline in headlines]
+def get_assistants(names: [], assists_num_headlines: [], start_ind: int):
+    assistant_names = names[start_ind:]
+    assistants_urls = [p_url.findall(str(assistant_names[i])) for i in range(len(assists_num_headlines))]
+    assistants_data = []
+    assists_num_ind = 0
+    for assistants in assistants_urls:
+        assists_num = assists_num_headlines[assists_num_ind]
+        assistants_num = len(assistants) // 2
+        i = 0
+        for assistant_ind in range(assistants_num):
+            nation_url = get_pure_url(assistants[i])
+            assistant_url = get_pure_url(assistants[i + 1])
+            i += 2
+            assistant_dict = get_player_data(nation_url, assistant_url)
+            assistant_dict['assists'] = assists_num
+            assistants_data.append(assistant_dict)
+            print(assistant_dict)
+        assists_num_ind += 1
+    return assistants_data
+
+
+def get_scored_goals_headlines(headlines: []) -> [int]:
+    sorted_headlines = [p_goals.search(headline.text) for headline in headlines if headline]
     sorted_headlines = [headline.group() for headline in sorted_headlines if headline]
-    return [int(re.search(r'\d', goals).group()) for goals in sorted_headlines]
+    return [int(p_digit.search(goals).group()) for goals in sorted_headlines]
+
+
+def get_assist_headlines(headlines: []) -> [int]:
+    assists_list = [p_assist.search(headline.text) for headline in headlines if headline]
+    assists_list = [headline.group() for headline in assists_list if headline]
+    return [int(p_digit.search(assists).group()) for assists in assists_list]
 
 
 def save_json(filename: str, players_dictionary: {}):
@@ -174,9 +226,14 @@ def save_json(filename: str, players_dictionary: {}):
 if __name__ == '__main__':
     stats_url = 'https://en.wikipedia.org/wiki/UEFA_Euro_2020_statistics'
     players_names, goals_headlines = get_lists(stats_url)
-    gols_scored_headlined = get_scored_goals_headlines(goals_headlines)
-    players_dict = get_goal_scorers(players_names, gols_scored_headlined)
-    save_json('../js/data.js', players_dict)
+    goals_scored_headlined = get_scored_goals_headlines(goals_headlines)
+    scorers_dict = get_goal_scorers(players_names, goals_scored_headlined)
+    save_json('../js/data.js', scorers_dict)
+
+    # goals_headlines_num = len(goals_scored_headlined) + 1
+    # assists_headlines = get_assist_headlines(goals_headlines)
+    # assistants_dict = get_assistants(players_names, assists_headlines, goals_headlines_num)
+    # save_json('../js/assists_data.js', assistants_dict)
 
 # TODO
 # - posortowac dane w kolkach
@@ -184,6 +241,7 @@ if __name__ == '__main__':
 # - asysyty i samoboje
 # - dodac pozycje
 # - dodac wysokosc i grubosc
-# - dadac klub z czasu turnieju (z czerwca)
 # - make 'Euro 2020 statistics' page header looking nicer
 # - add unicode flag
+# - fix colors in 'on-goal-scorers'
+# - add menu at the top of the page
