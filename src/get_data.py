@@ -109,7 +109,7 @@ def get_team(soup: BeautifulSoup, tournament_year: int):
                 if check_dates(most_recent_team_dates, tournament_year):
                     team_elem = most_recent_team.find('td')
                     team = team_elem.text
-                    team = cut_initial_chars(team)
+                    team = cut_initial_chars(p_parenthesis.sub('', team))
                     team_url = p_wiki.search(str(team_elem))
                     team_url = get_pure_url(team_url.group())
                     correct_team = True
@@ -230,10 +230,10 @@ if __name__ == '__main__':
     scorers_dict = get_goal_scorers(players_names, goals_scored_headlined)
     save_json('../js/data.js', scorers_dict)
 
-    goals_headlines_num = len(goals_scored_headlined) + 1
-    assists_headlines = get_assist_headlines(goals_headlines)
-    assistants_dict = get_assistants(players_names, assists_headlines, goals_headlines_num)
-    save_json('../js/assists_data.js', assistants_dict)
+    # goals_headlines_num = len(goals_scored_headlined) + 1
+    # assists_headlines = get_assist_headlines(goals_headlines)
+    # assistants_dict = get_assistants(players_names, assists_headlines, goals_headlines_num)
+    # save_json('../js/assists_data.js', assistants_dict)
 
 # TODO
 # - posortowac dane w kolkach
