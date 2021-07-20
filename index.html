@@ -19,6 +19,7 @@
 
         footer {
             text-align: right;
+            margin-right: 5%;
         }
 
         div.select_chart {
@@ -28,6 +29,11 @@
         .pie_chart_class {
             margin-left: auto;
             margin-right: auto;
+        }
+
+        #container {
+            width: 85%;
+            margin: auto;
         }
     </style>
     <meta charset="UTF-8">
@@ -53,6 +59,8 @@
         <p>Data source: <a href="https://en.wikipedia.org/wiki/UEFA_Euro_2020">Wikipedia</a></p>
         <p>Source code and contact: <a href="https://github.com/KajaBraz/FootballScorersAnalysis">Github</a></p>
     </footer>
+    <!-- it fixes drawing issue on safari version <14 on iphone -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=ResizeObserver"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js"></script>
     <script src="js/data.js"></script>
     <script>
@@ -108,14 +116,14 @@
             };
         }
 
-        function appendCanvas(title, labels, datas) {
+        function appendCanvas(title, labels, datas, type = "bar") {
             let canvas = document.createElement('canvas');
             canvas.width = "1500";
             canvas.height = "600";
             canvas.id = title;
-            let chart = new Chart(canvas.getContext('2d'), createChart(title, labels, datas, "bar"));
-            all_charts[title] = chart;
             document.getElementById('container').appendChild(canvas);
+            let chart = new Chart(canvas, createChart(title, labels, datas, type));
+            all_charts[title] = chart;
         }
 
         function fill_init(title, label_fill, data_fill) {
