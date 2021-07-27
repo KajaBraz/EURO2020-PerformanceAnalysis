@@ -21,8 +21,6 @@ def get_lists(url: str) -> ([], []):
     r = requests.get(url)
     soup = BeautifulSoup(r.content, 'html5lib')
     names = soup.findAll('div', attrs={'class': 'div-col'})
-    # names = soup.findAll('li')
-    # names = [ul.findAll('li') for ul in names]
     paragraphs = soup.findAll('p')
     headlines = [paragraph.find('b') for paragraph in paragraphs]
     if sum([headline != None and 'goal' in headline.text for headline in headlines]) == 0:
@@ -34,6 +32,50 @@ def get_lists(url: str) -> ([], []):
     print(headlines)
     return names, headlines
 
+
+def get_soup(url: str) -> BeautifulSoup:
+    r = requests.get(url)
+    return BeautifulSoup(r.content, 'html5lib')
+
+
+def get_scorers(soup: BeautifulSoup) -> [[str]]:
+    # names = soup.findAll('div', attrs={'class': 'div-col'})
+    li_elems = soup.findAll('li')
+    # names = [p_wiki.findall(str(li)) for li in li_elems if li]
+    names = map(lambda li: p_wiki.findall(str(li)), li_elems)
+    filtered = list(filter(lambda x: x, names))
+    return list(filtered)
+
+
+def get_goals_num(soup: BeautifulSoup):
+    goals = {}
+    body = soup.find('div', attrs={'class': 'mw-parser-output'})
+    headlines = body.findAll('b',text=p_goals)
+    if sum([headline is not None and 'goal' in headline.text for headline in headlines]) == 0:
+        headlines = body.findAll('dt', text=p_goals)
+
+    # filtered = filter(lambda x: p_goals.match(x.text),headlines)
+    # headlines = list((map(lambda x: p_goals.match(x.text).group(),filtered)))
+    print('H', set(headlines))
+    for h in set(headlines):
+        next_elem = h.findNext('ul').findAll('li')
+        goals[int(p_digit.search(h.text).group())]=next_elem
+        # print(h)
+        # print("***")
+        # print(next_elem)
+        # print('------')
+    return goals
+
+def extract_dict_data(goals_dictionary):
+    d = {}
+    for num, soup_elem in goals_dictionary.items():
+        print(num)
+        players = [player.find_all('a',href=True) for player in soup_elem]
+        pprint(players[0])
+        players_hrefs = [[href['href'] for href in player] for player in players]
+        d[num]=players_hrefs
+        print(players_hrefs)
+    return d
 
 def get_name(soup_table: BeautifulSoup) -> str:
     name = soup_table.find('caption', attrs={'class': 'fn'})
@@ -73,7 +115,7 @@ def get_height(soup: BeautifulSoup):
                 h_cm = p_height_cm.search(height)
                 height_str = h_cm.group()
                 height_cm = p_digit.search(height_str).group()
-                return float(height_cm)/100
+                return float(height_cm) / 100
     return None
 
 
@@ -183,7 +225,7 @@ def get_league(soup: BeautifulSoup) -> (str, str):
     try:
         table = soup.find('table', attrs={'class': 'infobox vcard'}).findAll('tr')
     except:
-        return league,league_url
+        return league, league_url
     x = ''
     for row in table:
         row_content = row.find('th')
@@ -299,16 +341,16 @@ def save_json(filename: str, players_dictionary: {}):
 
 
 if __name__ == '__main__':
-    # stats_url = 'https://en.wikipedia.org/wiki/UEFA_Euro_2020_statistics'
-    stats_url = 'https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_statistics'
-    # stats_url = 'https://en.wikipedia.org/wiki/UEFA_Euro_2012_statistics'
-    players_names, goals_headlines = get_lists(stats_url)
-    pprint(players_names)
-    pprint(len(players_names))
-    print(goals_headlines)
-    goals_scored_headlined = get_scored_goals_headlines(goals_headlines)
-    scorers_dict = get_goal_scorers(players_names, goals_scored_headlined, 2006)
-    save_json('../js/data_2006.js', scorers_dict)
+    stats_url = 'https://en.wikipedia.org/wiki/UEFA_Euro_2020_statistics'
+    # stats_url = 'https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_statistics'
+    # # stats_url = 'https://en.wikipedia.org/wiki/UEFA_Euro_2012_statistics'
+    # players_names, goals_headlines = get_lists(stats_url)
+    # pprint(players_names)
+    # pprint(len(players_names))
+    # print(goals_headlines)
+    # goals_scored_headlined = get_scored_goals_headlines(goals_headlines)
+    # scorers_dict = get_goal_scorers(players_names, goals_scored_headlined, 2006)
+    # save_json('../js/data_2006.js', scorers_dict)
 
     # goals_headlines_num = len(goals_scored_headlined) + 1
     # assists_headlines = get_assist_headlines(goals_headlines)
@@ -320,6 +362,13 @@ if __name__ == '__main__':
     # print("AAAA")
     # print(r)
     # print("BBBB")
+
+    soup = get_soup(stats_url)
+    d = get_goals_num(soup)
+    pprint(d)
+    print('----------------------------------------')
+    goals_dict = extract_dict_data(d)
+    pprint(goals_dict)
 
 # TODO
 # - posortowac dane w kolkach
