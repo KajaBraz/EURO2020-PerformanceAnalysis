@@ -26,10 +26,6 @@ def get_lists(url: str) -> ([], []):
     if sum([headline != None and 'goal' in headline.text for headline in headlines]) == 0:
         headlines = soup.findAll('dt')
         # headlines=[1]
-    print('get lists names')
-    pprint(names)
-    print('get lists headlines')
-    print(headlines)
     return names, headlines
 
 
@@ -50,32 +46,26 @@ def get_scorers(soup: BeautifulSoup) -> [[str]]:
 def get_goals_num(soup: BeautifulSoup):
     goals = {}
     body = soup.find('div', attrs={'class': 'mw-parser-output'})
-    headlines = body.findAll('b',text=p_goals)
+    headlines = body.findAll('b', text=p_goals)
     if sum([headline is not None and 'goal' in headline.text for headline in headlines]) == 0:
         headlines = body.findAll('dt', text=p_goals)
 
     # filtered = filter(lambda x: p_goals.match(x.text),headlines)
     # headlines = list((map(lambda x: p_goals.match(x.text).group(),filtered)))
-    print('H', set(headlines))
     for h in set(headlines):
         next_elem = h.findNext('ul').findAll('li')
-        goals[int(p_digit.search(h.text).group())]=next_elem
-        # print(h)
-        # print("***")
-        # print(next_elem)
-        # print('------')
+        goals[int(p_digit.search(h.text).group())] = next_elem
     return goals
 
+
 def extract_dict_data(goals_dictionary):
-    d = {}
+    url_dictiionary = {}
     for num, soup_elem in goals_dictionary.items():
-        print(num)
-        players = [player.find_all('a',href=True) for player in soup_elem]
-        pprint(players[0])
+        players = [player.find_all('a', href=True) for player in soup_elem]
         players_hrefs = [[href['href'] for href in player] for player in players]
-        d[num]=players_hrefs
-        print(players_hrefs)
-    return d
+        url_dictiionary[num] = [list(map(get_pure_url, player_urls)) for player_urls in players_hrefs]
+    return url_dictiionary
+
 
 def get_name(soup_table: BeautifulSoup) -> str:
     name = soup_table.find('caption', attrs={'class': 'fn'})
@@ -124,9 +114,9 @@ def get_team_league(soup: BeautifulSoup, year: int) -> (str, str):
     # print('****', team, team_url)
     league, country = '', ''
     if team_url != '':
-        # print('-----------------------------------------------')
-        # print(team, team_url)
-        # print('-----------------------------------------------')
+        print('-----------------------------------------------')
+        print(team, team_url)
+        print('-----------------------------------------------')
         r = requests.get(team_url)
         soup_league = BeautifulSoup(r.content, 'html5lib')
         league, league_url = get_league(soup_league)
@@ -153,11 +143,8 @@ def get_league_country(league_url: str):
 
 def check_dates(dates_range_str: str, year: int):
     last_date = dates_range_str.replace('0000', '').strip()
-    # print('laaast_date:', last_date)
     if (not last_date[-1].isdigit()) and int(p_digit.search(last_date).group()) < year:
-        # print('IF')
         return True
-    # print('ELSE', last_date[-1],p_digit.search(last_date).group())
     dates = [int(date) for date in p_digit.findall(dates_range_str)]
     if len(dates) == 1:
         if dates[0] == year:
@@ -171,12 +158,9 @@ def check_dates(dates_range_str: str, year: int):
 def cut_initial_chars(name: str) -> str:
     if name.strip() == "":
         return ""
-
     i = -1
     valid_start = False
-    # print('cut initial chars, NAME', name)
     while not valid_start:
-        # print(name)
         i += 1
         valid_start = name[i].isalnum()
     return name[i:]
@@ -211,12 +195,16 @@ def get_team(soup: BeautifulSoup, tournament_year: int):
                     # print("PO CUT")
                     team = cut_initial_chars(p_parenthesis.sub('', team))
                     team_url = p_wiki.search(str(team_elem))
+                    print('|||||||||||||||||||||||||', team)
+                    print('|||||||||||||||||||||||||', team_url)
                     team_url = get_pure_url(team_url.group())
+                    print('|||||||||||||||||||||||||', team_url)
                     correct_team = True
                 else:
                     # print('?else')
                     i += 1
         i += 1
+        print(team_url)
     return team.strip(), team_url
 
 
@@ -242,12 +230,10 @@ def get_league(soup: BeautifulSoup) -> (str, str):
 
 def get_nation(soup: BeautifulSoup) -> str:
     nation = soup.find('h1', attrs={'id': 'firstHeading'}).text
-    # print(nation)
     span = p_national.search(nation)
     if span:
         span = span.span()
         return nation[:span[0]]
-    # print(span)
     return nation
 
 
@@ -274,28 +260,18 @@ def get_player_data(url_nation: str, url_player: str, tournament_year: int) -> {
 def get_pure_url(url: str) -> str:
     html_base = 'https://en.wikipedia.org'
     main = p_wiki.search(url).group()
-    return html_base + main[:-1]
+    return html_base + main
 
 
-def get_goal_scorers(names: [], scored_goals_headlines: [], tournament_year: int) -> ({str: {str}}):
-    print('************************************************************88')
-    players_urls = [p_url.findall(str(names[i])) for i in range(len(scored_goals_headlines))]
-    print()
+def get_goal_scorers(goals_dictionary, tournament_year: int) -> ({str: {str}}):
     players_data = []
-    goals_num_ind = 0
-    for players in players_urls:
-        goals = scored_goals_headlines[goals_num_ind]
-        players_num = len(players) // 2
-        i = 0
-        for player_ind in range(players_num):
-            nation_url = get_pure_url(players[i])
-            player_url = get_pure_url(players[i + 1])
-            i += 2
+    for goals_num, players in goals_dictionary.items():
+        for player in players:
+            nation_url = player[0]
+            player_url = player[1]
             player_dict = get_player_data(nation_url, player_url, tournament_year)
-            player_dict['goals'] = goals
+            player_dict['goals'] = goals_num
             players_data.append(player_dict)
-            print(player_dict)
-        goals_num_ind += 1
     return players_data
 
 
@@ -321,7 +297,6 @@ def get_assistants(names: [], assists_num_headlines: [], start_ind: int, tournam
 
 
 def get_scored_goals_headlines(headlines: []) -> [int]:
-    print('-------------------------------------------------------------')
     sorted_headlines = [p_goals.search(headline.text) for headline in headlines if headline]
     sorted_headlines = [headline.group() for headline in sorted_headlines if headline]
     return [int(p_digit.search(goals).group()) for goals in sorted_headlines]
@@ -343,7 +318,7 @@ def save_json(filename: str, players_dictionary: {}):
 if __name__ == '__main__':
     stats_url = 'https://en.wikipedia.org/wiki/UEFA_Euro_2020_statistics'
     # stats_url = 'https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_statistics'
-    # # stats_url = 'https://en.wikipedia.org/wiki/UEFA_Euro_2012_statistics'
+    # stats_url = 'https://en.wikipedia.org/wiki/UEFA_Euro_2012_statistics'
     # players_names, goals_headlines = get_lists(stats_url)
     # pprint(players_names)
     # pprint(len(players_names))
@@ -365,10 +340,10 @@ if __name__ == '__main__':
 
     soup = get_soup(stats_url)
     d = get_goals_num(soup)
-    pprint(d)
     print('----------------------------------------')
     goals_dict = extract_dict_data(d)
-    pprint(goals_dict)
+    # pprint(goals_dict)
+    goal_scorers = get_goal_scorers(goals_dict, 2021)
 
 # TODO
 # - posortowac dane w kolkach
