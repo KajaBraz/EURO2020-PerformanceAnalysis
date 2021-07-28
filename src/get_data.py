@@ -15,6 +15,8 @@ p_parenthesis = re.compile(r'\(.+\)')
 p_height_m = re.compile(r'\d\.\d*.*m')
 p_height_cm = re.compile(r'\d*\s?cm')
 p_height = re.compile(r'\d\.\d*')
+p_birth_date_headline = re.compile(r'Date of birth|Born')
+p_national_team = re.compile(r'National team\.?')
 
 
 def get_lists(url: str) -> ([], []):
@@ -35,15 +37,13 @@ def get_soup(url: str) -> BeautifulSoup:
 
 
 def get_scorers(soup: BeautifulSoup) -> [[str]]:
-    # names = soup.findAll('div', attrs={'class': 'div-col'})
     li_elems = soup.findAll('li')
-    # names = [p_wiki.findall(str(li)) for li in li_elems if li]
     names = map(lambda li: p_wiki.findall(str(li)), li_elems)
     filtered = list(filter(lambda x: x, names))
     return list(filtered)
 
 
-def get_goals_num(soup: BeautifulSoup):
+def get_goals_num(soup: BeautifulSoup) -> {}:
     goals = {}
     body = soup.find('div', attrs={'class': 'mw-parser-output'})
     headlines = body.findAll('b', text=p_goals)
@@ -58,7 +58,7 @@ def get_goals_num(soup: BeautifulSoup):
     return goals
 
 
-def extract_dict_data(goals_dictionary):
+def extract_dict_data(goals_dictionary: {}) -> {}:
     url_dictiionary = {}
     for num, soup_elem in goals_dictionary.items():
         players = [player.find_all('a', href=True) for player in soup_elem]
@@ -69,54 +69,41 @@ def extract_dict_data(goals_dictionary):
 
 def get_name(soup_table: BeautifulSoup) -> str:
     name = soup_table.find('caption', attrs={'class': 'fn'})
+    print(name)
+    print(name.text)
     for s in name.find_all('style'):
         s.decompose()
     for s in name.find_all('span'):
         s.decompose()
     return ''.join([ch for ch in name.text if ch.isalpha() or ch == ' '])
+    # return name
 
 
 def get_age(soup: BeautifulSoup, tournament_year: int) -> int:
-    # age = soup.find('span', attrs={'class': 'noprint ForceAgeToShow'}).text
-    # return int(p_digit.search(age).group())
-    rows = soup.findAll('tr')
-    for row in rows:
-        th = row.find('th')
-        # print(th)
-        if th and th.text in ['Date of birth', 'Born']:
-            # print('if')
-            birth_date = row.find('td').text
-            return tournament_year - int(p_digit.search(birth_date).group())
-    return None
+    age_row = soup.find('th', text=p_birth_date_headline)
+    birth_date = age_row.find_next_sibling('td').text
+    return tournament_year - int(p_digit.search(birth_date).group())
 
 
 def get_height(soup: BeautifulSoup):
-    rows = soup.findAll('tr')
-    for row in rows:
-        th = row.find('th')
-        if th and th.text == 'Height':
-            height = row.find('td').text
-            h_meters = p_height_m.search(height)
-            if h_meters:
-                height_str = h_meters.group()
-                height_meters = p_height.search(height_str).group()
-                return float(height_meters)
-            else:
-                h_cm = p_height_cm.search(height)
-                height_str = h_cm.group()
-                height_cm = p_digit.search(height_str).group()
-                return float(height_cm) / 100
-    return None
+    height_row = soup.find('th', text='Height')
+    height = height_row.find_next_sibling('td').text
+    h_meters = p_height_m.search(height)
+    if h_meters:
+        height_str = h_meters.group()
+        height_meters = p_height.search(height_str).group()
+        return float(height_meters)
+    else:
+        h_cm = p_height_cm.search(height)
+        height_str = h_cm.group()
+        height_cm = p_digit.search(height_str).group()
+        return float(height_cm) / 100
 
 
 def get_team_league(soup: BeautifulSoup, year: int) -> (str, str):
     team, team_url = get_team(soup, year)
-    # print('****', team, team_url)
     league, country = '', ''
     if team_url != '':
-        print('-----------------------------------------------')
-        print(team, team_url)
-        print('-----------------------------------------------')
         r = requests.get(team_url)
         soup_league = BeautifulSoup(r.content, 'html5lib')
         league, league_url = get_league(soup_league)
@@ -128,13 +115,8 @@ def get_league_country(league_url: str):
     try:
         r = requests.get(league_url)
         soup = BeautifulSoup(r.content, 'html5lib')
-        table = soup.find('table', attrs={'class': 'infobox'}).findAll('tr')
-        country = '-'
-        for row in table:
-            row_content = row.find('th')
-            if row_content:
-                if row_content.text == 'Country':
-                    country = row.find('td').text
+        country_row = soup.find('th', text='Country')
+        country = country_row.find_next_sibling('td').text
         country = p_parenthesis.sub('', country)
         return country.strip()
     except:
@@ -167,6 +149,10 @@ def cut_initial_chars(name: str) -> str:
 
 
 def get_team(soup: BeautifulSoup, tournament_year: int):
+    # elem_after_teams = soup.find('th', p_national_team)
+    # print(elem_after_teams.text)
+    # teams = elem_after_teams.find_all_previous('th')
+
     table_components = soup.findAll('tr')[::-1]
     teams_found, correct_team = False, False
     i = 0
@@ -195,37 +181,28 @@ def get_team(soup: BeautifulSoup, tournament_year: int):
                     # print("PO CUT")
                     team = cut_initial_chars(p_parenthesis.sub('', team))
                     team_url = p_wiki.search(str(team_elem))
-                    print('|||||||||||||||||||||||||', team)
-                    print('|||||||||||||||||||||||||', team_url)
+                    # print('|||||||||||||||||||||||||', team)
                     team_url = get_pure_url(team_url.group())
-                    print('|||||||||||||||||||||||||', team_url)
+                    # print('|||||||||||||||||||||||||', team_url)
                     correct_team = True
                 else:
                     # print('?else')
                     i += 1
         i += 1
-        print(team_url)
+        # print(team_url)
     return team.strip(), team_url
 
 
 def get_league(soup: BeautifulSoup) -> (str, str):
     league, league_url = 'No club', '-'
     try:
-        table = soup.find('table', attrs={'class': 'infobox vcard'}).findAll('tr')
-    except:
+        league_headline = soup.find('table', attrs={'class': 'infobox vcard'}).find('th', text='League')
+        league = league_headline.find_next_sibling('td')
+        league_url = get_pure_url(league.find('a', href=True)['href'])
+        return league.text, league_url
+    except Exception as e:
+        print('EXCEPT', e)
         return league, league_url
-    x = ''
-    for row in table:
-        row_content = row.find('th')
-        if row_content and (row_content.text == 'League' or x == 'next'):
-            x = ''
-            try:
-                league = row.find('td').text
-                url_league_element = row.find('td').find('a')
-                league_url = get_pure_url(p_wiki.search(str(url_league_element)).group())
-            except:
-                x = 'next'
-    return league, league_url
 
 
 def get_nation(soup: BeautifulSoup) -> str:
@@ -244,15 +221,15 @@ def get_player_data(url_nation: str, url_player: str, tournament_year: int) -> {
     soup_player = BeautifulSoup(r_player.content, 'html5lib')
     soup_player_table = soup_player.find('table', attrs={'class': 'infobox vcard'})
     name = get_name(soup_player_table)
-    print(name)
+    # print(name)
     age = get_age(soup_player_table, tournament_year)
-    print(age)
+    # print(age)
     height = get_height(soup_player_table)
-    print('H', height)
+    # print('H', height)
     team, league = get_team_league(soup_player_table, tournament_year)
-    print(team, league)
+    # print(team, league)
     nation = get_nation(soup_nation)
-    print(nation)
+    # print(nation)
     player_data = {'name': name, 'age': age, 'height': height, 'club': team, 'league': league, 'country': nation}
     return player_data
 
@@ -260,6 +237,8 @@ def get_player_data(url_nation: str, url_player: str, tournament_year: int) -> {
 def get_pure_url(url: str) -> str:
     html_base = 'https://en.wikipedia.org'
     main = p_wiki.search(url).group()
+    if main[-1] == '"':
+        main = main[:-1]
     return html_base + main
 
 
@@ -271,6 +250,7 @@ def get_goal_scorers(goals_dictionary, tournament_year: int) -> ({str: {str}}):
             player_url = player[1]
             player_dict = get_player_data(nation_url, player_url, tournament_year)
             player_dict['goals'] = goals_num
+            print(player_dict)
             players_data.append(player_dict)
     return players_data
 
