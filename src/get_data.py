@@ -1,9 +1,12 @@
 import json
 import re
 from pprint import pprint
+from functools import reduce
+from typing import Tuple
 
 import requests
 from bs4 import BeautifulSoup
+from bs4.element import ResultSet
 
 p_url = re.compile(r'href=\S+')
 p_wiki = re.compile(r'/wiki/\S+')
@@ -135,6 +138,12 @@ def check_dates(dates_range_str: str, year: int):
     if dates[0] < year <= dates[1]:
         return True
     return False
+
+def check_dates_kuba(year_range: str, year: int) -> bool:
+    int_range = [int(x) if x else 9999 for x in re.split(r'\D', year_range)]
+    int_range = [x if x!=0 else 9999 for x in int_range]
+    int_range = int_range * 2 if len(int_range)==1 else int_range
+    return int_range[0] <= year <= int_range[1]
 
 
 def cut_initial_chars(name: str) -> str:
@@ -293,6 +302,32 @@ def save_json(filename: str, players_dictionary: {}):
         data = json.dumps(players_dictionary)
         players_file.write('playerData = ')
         players_file.write(data)
+
+
+def get_senior_career_trs(soup: BeautifulSoup) -> ResultSet:
+    trs = soup.findAll('tr')
+    take_after = lambda acc, elem: (acc[0]+[elem], True) if acc[1] else (acc[0], "Years" in elem.text and "Team" in elem.text)
+    (head_removed, temp) = reduce(take_after, trs, ([], False))
+    take_while = lambda acc, elem: (acc[0]+[elem], True) if "National team" not in elem.text and acc[1] else (acc[0], False)
+    (tail_removed, temp) = reduce(take_while, head_removed, ([], True))
+    return tail_removed
+
+
+def get_team_kuba(soup: BeautifulSoup, tournament_year: int) -> Tuple[str, str]:
+    for tr in get_senior_career_trs(soup):
+        years = tr.find('th').getText(strip=True)
+        url = tr.find('a')['href']
+        team_name = tr.find('a')['title']
+    result = [(x[0], x[1], x[3]) for x in map(parse_player_tr, get_senior_career_trs(soup)) if check_dates_kuba(x[2], tournament_year)]
+    if len(result) > 1:
+        result = [x for x in result if x[2]]
+    if len(result) == 0: return '', ''
+    team, url, on_loan = result[0]
+    return team, get_pure_url(url)
+
+
+def parse_player_tr(tr: BeautifulSoup) -> Tuple[str, str, str]:
+    return (tr.find('a')['title'], tr.find('a')['href'], tr.find('th').text, '(loan)' in tr.text)
 
 
 if __name__ == '__main__':
