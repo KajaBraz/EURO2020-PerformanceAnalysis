@@ -18,27 +18,9 @@ p_national_team = re.compile(r'.?National team.?')
 p_date_range = re.compile(r'\d{4}.*')
 
 
-def get_lists(url: str) -> ([], []):
-    r = requests.get(url)
-    soup = BeautifulSoup(r.content, 'html5lib')
-    names = soup.findAll('div', attrs={'class': 'div-col'})
-    paragraphs = soup.findAll('p')
-    headlines = [paragraph.find('b') for paragraph in paragraphs]
-    if sum([headline is not None and 'goal' in headline.text for headline in headlines]) == 0:
-        headlines = soup.findAll('dt')
-    return names, headlines
-
-
 def get_soup(url: str) -> BeautifulSoup:
     r = requests.get(url)
     return BeautifulSoup(r.content, 'html5lib')
-
-
-def get_scorers(soup: BeautifulSoup) -> [[str]]:
-    li_elems = soup.findAll('li')
-    names = map(lambda li: p_wiki.findall(str(li)), li_elems)
-    filtered = list(filter(lambda x: x, names))
-    return list(filtered)
 
 
 def get_goals_num(soup: BeautifulSoup, achievement_type: str) -> {}:
@@ -234,18 +216,6 @@ def get_assistants(assists_dictionary, tournament_year: int) -> ({str: {str}}):
             print(assistant_dict)
             assistants_data.append(assistant_dict)
     return assistants_data
-
-
-def get_scored_goals_headlines(headlines: []) -> [int]:
-    sorted_headlines = [p_goals.search(headline.text) for headline in headlines if headline]
-    sorted_headlines = [headline.group() for headline in sorted_headlines if headline]
-    return [int(p_digit.search(goals).group()) for goals in sorted_headlines]
-
-
-def get_assist_headlines(headlines: []) -> [int]:
-    assists_list = [p_assist.search(headline.text) for headline in headlines if headline]
-    assists_list = [headline.group() for headline in assists_list if headline]
-    return [int(p_digit.search(assists).group()) for assists in assists_list]
 
 
 def save_json(filename: str, players_dictionary: {}):
