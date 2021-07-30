@@ -1,7 +1,6 @@
 import get_data
 import requests
 from bs4 import BeautifulSoup
-import re
 
 def create_soup(url):
     r_player = requests.get(url)
