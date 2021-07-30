@@ -19,19 +19,8 @@ p_height_m = re.compile(r'\d\.\d*.*m')
 p_height_cm = re.compile(r'\d*\s?cm')
 p_height = re.compile(r'\d\.\d*')
 p_birth_date_headline = re.compile(r'Date of birth|Born')
-p_national_team = re.compile(r'National team\.?')
-
-
-def get_lists(url: str) -> ([], []):
-    r = requests.get(url)
-    soup = BeautifulSoup(r.content, 'html5lib')
-    names = soup.findAll('div', attrs={'class': 'div-col'})
-    paragraphs = soup.findAll('p')
-    headlines = [paragraph.find('b') for paragraph in paragraphs]
-    if sum([headline != None and 'goal' in headline.text for headline in headlines]) == 0:
-        headlines = soup.findAll('dt')
-        # headlines=[1]
-    return names, headlines
+p_national_team = re.compile(r'.?National team.?')
+p_date_range = re.compile(r'\d{4}.*')
 
 
 def get_soup(url: str) -> BeautifulSoup:
@@ -39,22 +28,23 @@ def get_soup(url: str) -> BeautifulSoup:
     return BeautifulSoup(r.content, 'html5lib')
 
 
-def get_scorers(soup: BeautifulSoup) -> [[str]]:
-    li_elems = soup.findAll('li')
-    names = map(lambda li: p_wiki.findall(str(li)), li_elems)
-    filtered = list(filter(lambda x: x, names))
-    return list(filtered)
+def get_goals_num(soup: BeautifulSoup, achievement_type: str) -> {}:
+    """
+    :param soup: wiki page soup with a given competition statistics
+    :param achievement_type: 'goals' or 'assists'
+    :return: dictionary with the goals/assists numbers as keys and lists of html players elements
+    """
+    if achievement_type == 'goals':
+        pattern = p_goals
+    else:
+        pattern = p_assist
 
-
-def get_goals_num(soup: BeautifulSoup) -> {}:
     goals = {}
     body = soup.find('div', attrs={'class': 'mw-parser-output'})
-    headlines = body.findAll('b', text=p_goals)
-    if sum([headline is not None and 'goal' in headline.text for headline in headlines]) == 0:
+    headlines = body.findAll('b', text=pattern)
+    if sum([headline is not None and achievement_type[:-1] in headline.text for headline in headlines]) == 0:
         headlines = body.findAll('dt', text=p_goals)
 
-    # filtered = filter(lambda x: p_goals.match(x.text),headlines)
-    # headlines = list((map(lambda x: p_goals.match(x.text).group(),filtered)))
     for h in set(headlines):
         next_elem = h.findNext('ul').findAll('li')
         goals[int(p_digit.search(h.text).group())] = next_elem
@@ -72,14 +62,11 @@ def extract_dict_data(goals_dictionary: {}) -> {}:
 
 def get_name(soup_table: BeautifulSoup) -> str:
     name = soup_table.find('caption', attrs={'class': 'fn'})
-    print(name)
-    print(name.text)
     for s in name.find_all('style'):
         s.decompose()
     for s in name.find_all('span'):
         s.decompose()
     return ''.join([ch for ch in name.text if ch.isalpha() or ch == ' '])
-    # return name
 
 
 def get_age(soup: BeautifulSoup, tournament_year: int) -> int:
@@ -88,7 +75,7 @@ def get_age(soup: BeautifulSoup, tournament_year: int) -> int:
     return tournament_year - int(p_digit.search(birth_date).group())
 
 
-def get_height(soup: BeautifulSoup):
+def get_height(soup: BeautifulSoup) -> float:
     height_row = soup.find('th', text='Height')
     height = height_row.find_next_sibling('td').text
     h_meters = p_height_m.search(height)
@@ -114,7 +101,7 @@ def get_team_league(soup: BeautifulSoup, year: int) -> (str, str):
     return team, f'{league} ({country})'
 
 
-def get_league_country(league_url: str):
+def get_league_country(league_url: str) -> str:
     try:
         r = requests.get(league_url)
         soup = BeautifulSoup(r.content, 'html5lib')
@@ -126,7 +113,7 @@ def get_league_country(league_url: str):
         return ''
 
 
-def check_dates(dates_range_str: str, year: int):
+def check_dates(dates_range_str: str, year: int) -> bool:
     last_date = dates_range_str.replace('0000', '').strip()
     if (not last_date[-1].isdigit()) and int(p_digit.search(last_date).group()) < year:
         return True
@@ -157,49 +144,19 @@ def cut_initial_chars(name: str) -> str:
     return name[i:]
 
 
-def get_team(soup: BeautifulSoup, tournament_year: int):
-    # elem_after_teams = soup.find('th', p_national_team)
-    # print(elem_after_teams.text)
-    # teams = elem_after_teams.find_all_previous('th')
-
-    table_components = soup.findAll('tr')[::-1]
-    teams_found, correct_team = False, False
-    i = 0
+def get_team(soup: BeautifulSoup, tournament_year: int) -> (str, str):
     team, team_url = '', ''
-    while not teams_found and i < len(table_components):
-        row = table_components[i].find('th')
-        if row and 'National team' in row.text:
-            # print(row.text)
-            teams_found = True
-            if table_components[i + 1].find('th').text == 'Total':
-                i += 1
-            while not correct_team:
-                most_recent_team = table_components[i + 1]
-                # pprint(most_recent_team)
-                # print('--------------')
-                most_recent_team_dates = most_recent_team.find('span')
-                # print("most recent  SPAN")
-                # pprint(most_recent_team_dates)
-                if not most_recent_team_dates or not most_recent_team_dates.text:
-                    return team, team_url
-                if most_recent_team_dates and check_dates(most_recent_team_dates.text, tournament_year):
-                    team_elem = most_recent_team.find('td')
-                    team = team_elem.text
-                    # print(most_recent_team_dates.text)
-                    # print('PRZED CUT', team)
-                    # print("PO CUT")
-                    team = cut_initial_chars(p_parenthesis.sub('', team))
-                    team_url = p_wiki.search(str(team_elem))
-                    # print('|||||||||||||||||||||||||', team)
-                    team_url = get_pure_url(team_url.group())
-                    # print('|||||||||||||||||||||||||', team_url)
-                    correct_team = True
-                else:
-                    # print('?else')
-                    i += 1
-        i += 1
-        # print(team_url)
-    return team.strip(), team_url
+    elem_after_teams = soup.find_all('th')
+    elem_after_teams = [elem for elem in elem_after_teams if elem and p_national_team.search(elem.text)]
+    th_elems = elem_after_teams[0].find_all_previous('th')
+    for th in th_elems:
+        date_range = th.text.strip()
+        if p_date_range.search(date_range) and check_dates(date_range, tournament_year):
+            team_elem = th.find_next_sibling('td')
+            team = cut_initial_chars(p_parenthesis.sub('', team_elem.text.strip()))
+            team_url = get_pure_url(team_elem.find('a', href=True)['href'])
+            return team, team_url
+    return team, team_url
 
 
 def get_league(soup: BeautifulSoup) -> (str, str):
@@ -230,15 +187,10 @@ def get_player_data(url_nation: str, url_player: str, tournament_year: int) -> {
     soup_player = BeautifulSoup(r_player.content, 'html5lib')
     soup_player_table = soup_player.find('table', attrs={'class': 'infobox vcard'})
     name = get_name(soup_player_table)
-    # print(name)
     age = get_age(soup_player_table, tournament_year)
-    # print(age)
     height = get_height(soup_player_table)
-    # print('H', height)
     team, league = get_team_league(soup_player_table, tournament_year)
-    # print(team, league)
     nation = get_nation(soup_nation)
-    # print(nation)
     player_data = {'name': name, 'age': age, 'height': height, 'club': team, 'league': league, 'country': nation}
     return player_data
 
@@ -264,37 +216,17 @@ def get_goal_scorers(goals_dictionary, tournament_year: int) -> ({str: {str}}):
     return players_data
 
 
-def get_assistants(names: [], assists_num_headlines: [], start_ind: int, tournament_year: int):
-    assistant_names = names[start_ind:]
-    assistants_urls = [p_url.findall(str(assistant_names[i])) for i in range(len(assists_num_headlines))]
+def get_assistants(assists_dictionary, tournament_year: int) -> ({str: {str}}):
     assistants_data = []
-    assists_num_ind = 0
-    for assistants in assistants_urls:
-        assists_num = assists_num_headlines[assists_num_ind]
-        assistants_num = len(assistants) // 2
-        i = 0
-        for assistant_ind in range(assistants_num):
-            nation_url = get_pure_url(assistants[i])
-            assistant_url = get_pure_url(assistants[i + 1])
-            i += 2
+    for assists_num, assistants in assists_dictionary:
+        for assistant in assistants:
+            nation_url = assistant[0]
+            assistant_url = assistant[1]
             assistant_dict = get_player_data(nation_url, assistant_url, tournament_year)
             assistant_dict['assists'] = assists_num
-            assistants_data.append(assistant_dict)
             print(assistant_dict)
-        assists_num_ind += 1
+            assistants_data.append(assistant_dict)
     return assistants_data
-
-
-def get_scored_goals_headlines(headlines: []) -> [int]:
-    sorted_headlines = [p_goals.search(headline.text) for headline in headlines if headline]
-    sorted_headlines = [headline.group() for headline in sorted_headlines if headline]
-    return [int(p_digit.search(goals).group()) for goals in sorted_headlines]
-
-
-def get_assist_headlines(headlines: []) -> [int]:
-    assists_list = [p_assist.search(headline.text) for headline in headlines if headline]
-    assists_list = [headline.group() for headline in assists_list if headline]
-    return [int(p_digit.search(assists).group()) for assists in assists_list]
 
 
 def save_json(filename: str, players_dictionary: {}):
@@ -334,39 +266,25 @@ if __name__ == '__main__':
     stats_url = 'https://en.wikipedia.org/wiki/UEFA_Euro_2020_statistics'
     # stats_url = 'https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_statistics'
     # stats_url = 'https://en.wikipedia.org/wiki/UEFA_Euro_2012_statistics'
-    # players_names, goals_headlines = get_lists(stats_url)
-    # pprint(players_names)
-    # pprint(len(players_names))
-    # print(goals_headlines)
-    # goals_scored_headlined = get_scored_goals_headlines(goals_headlines)
-    # scorers_dict = get_goal_scorers(players_names, goals_scored_headlined, 2006)
-    # save_json('../js/data_2006.js', scorers_dict)
 
-    # goals_headlines_num = len(goals_scored_headlined) + 1
-    # assists_headlines = get_assist_headlines(goals_headlines)
-    # assistants_dict = get_assistants(players_names, assists_headlines, goals_headlines_num)
-    # save_json('../js/assists_data.js', assistants_dict)
-
-    # r = get_player_data("https://en.wikipedia.org/wiki/Ecuador","https://en.wikipedia.org/wiki/Agust%C3%ADn_Delgado",2006)
-    # r = get_player_data("https://en.wikipedia.org/wiki/Italy","https://en.wikipedia.org/wiki/Clint_Dempsey",2006)
-    # print("AAAA")
-    # print(r)
-    # print("BBBB")
-
-    soup = get_soup(stats_url)
-    d = get_goals_num(soup)
-    print('----------------------------------------')
+    soup_2021 = get_soup(stats_url)
+    d = get_goals_num(soup_2021, 'goals')
     goals_dict = extract_dict_data(d)
-    # pprint(goals_dict)
     goal_scorers = get_goal_scorers(goals_dict, 2021)
+    save_json('../js/data_2021.js', goal_scorers)
 
-# TODO
-# - posortowac dane w kolkach
-# - dopasowac do copa america, serie a i innych lig
-# - asysyty i samoboje
-# - dodac pozycje
-# - dodac wysokosc i grubosc
-# - make 'Euro 2020 statistics' page header looking nicer
-# - add unicode flag
-# - fix colors in 'on-goal-scorers'
-# - add menu at the top of the page
+    d_a = get_goals_num(soup_2021, 'assists')
+    goals_dict = extract_dict_data(d_a)
+    goal_scorers = get_goal_scorers(goals_dict, 2021)
+    save_json('../js/data_assists_2021.js', goal_scorers)
+
+    # TODO
+    # - posortowac dane w kolkach
+    # - dopasowac do copa america, serie a i innych lig
+    # - asysyty i samoboje
+    # - dodac pozycje
+    # - dodac wysokosc i grubosc
+    # - make 'Euro 2020 statistics' page header looking nicer
+    # - add unicode flag
+    # - fix colors in 'on-goal-scorers'
+    # - add menu at the top of the page
