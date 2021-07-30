@@ -72,3 +72,15 @@ def test_get_team_kuba():
     team, url = get_data.get_team_kuba(soup, 2022)
     assert url == ''
     assert team == ''
+
+
+def test_get_team_kaja():
+    soup = create_soup('https://en.wikipedia.org/wiki/%C3%81lvaro_Morata')
+    team, url = get_data.get_team(soup, 2020)
+    assert url == 'https://en.wikipedia.org/wiki/Atl%C3%A9tico_Madrid'
+    assert team == 'Atlético Madrid'
+
+    soup = create_soup('https://en.wikipedia.org/wiki/Harry_Kane')
+    team, url = get_data.get_team(soup, 2013)
+    assert url == 'https://en.wikipedia.org/wiki/Norwich_City_F.C.'
+    assert team == 'Norwich City F.C.'
