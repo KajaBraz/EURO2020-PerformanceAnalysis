@@ -202,9 +202,10 @@ def get_pure_url(url: str) -> str:
     return html_base + main
 
 
-def get_goal_scorers(goals_dictionary, tournament_year: int) -> ({str: {str}}):
+def get_goal_scorers(goals_dictionary, tournament_year: int) -> {int: [{}]}:
     players_data = []
     for goals_num, players in goals_dictionary.items():
+        # players_data[goals_num] = []
         for player in players:
             nation_url = player[0]
             player_url = player[1]
@@ -212,6 +213,9 @@ def get_goal_scorers(goals_dictionary, tournament_year: int) -> ({str: {str}}):
             player_dict['goals'] = goals_num
             print(player_dict)
             players_data.append(player_dict)
+    players_data=sorted(players_data,key=lambda x:x['goals'],reverse=True)
+    print('*************************************************************')
+    print(players_data)
     return players_data
 
 
@@ -233,6 +237,17 @@ def save_json(filename: str, players_dictionary: {}):
         data = json.dumps(players_dictionary)
         players_file.write('playerData = ')
         players_file.write(data)
+
+    # goals_keys = sorted(players_dictionary.keys(), reverse=True)
+    # data_list = []
+    #
+    # with open(filename, 'w') as players_file:
+    #     for goal in goals_keys:
+    #         data_list.extend(players_dictionary[goal])
+    #
+    #     players_file.write('playerData = ')
+    #     data = json.dumps(data_list)
+    #     players_file.write(data)
 
 
 def get_senior_career_trs(soup: BeautifulSoup) -> ResultSet:
@@ -257,7 +272,7 @@ def get_team_kuba(soup: BeautifulSoup, tournament_year: int) -> Tuple[str, str]:
 
 
 def parse_player_tr(tr: BeautifulSoup):
-    return (tr.find('a')['title'], tr.find('a')['href'], tr.find('th').text, '(loan)' in tr.text)
+    return tr.find('a')['title'], tr.find('a')['href'], tr.find('th').text, '(loan)' in tr.text
 
 
 if __name__ == '__main__':
@@ -266,15 +281,16 @@ if __name__ == '__main__':
     # stats_url = 'https://en.wikipedia.org/wiki/UEFA_Euro_2012_statistics'
 
     soup_2021 = get_soup(stats_url)
+
     d = get_goals_num(soup_2021, 'goals')
     goals_dict = extract_dict_data(d)
     goal_scorers = get_goal_scorers(goals_dict, 2021)
     save_json('../js/data_2021.js', goal_scorers)
 
-    d_a = get_goals_num(soup_2021, 'assists')
-    goals_dict = extract_dict_data(d_a)
-    goal_scorers = get_goal_scorers(goals_dict, 2021)
-    save_json('../js/data_assists_2021.js', goal_scorers)
+    # d_a = get_goals_num(soup_2021, 'assists')
+    # goals_dict = extract_dict_data(d_a)
+    # goal_scorers = get_goal_scorers(goals_dict, 2021)
+    # save_json('../js/data_assists_2021.js', goal_scorers)
 
     # TODO
     # - posortowac dane w kolkach
