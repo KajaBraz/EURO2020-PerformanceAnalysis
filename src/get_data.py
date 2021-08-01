@@ -117,19 +117,18 @@ def check_dates(dates_range_str: str, year: int) -> bool:
     last_date = dates_range_str.replace('0000', '').strip()
     if (not last_date[-1].isdigit()) and int(p_digit.search(last_date).group()) < year:
         return True
-    dates = [int(date) for date in p_digit.findall(dates_range_str)]
-    if len(dates) == 1:
-        if dates[0] == year:
-            return True
-        return False
-    if dates[0] < year <= dates[1]:
+    dates = re.split(r'\D', dates_range_str)
+    if len(dates) == 1 and int(dates[0]) == year:
+        return True
+    if len(dates) == 2 and int(dates[0]) < year <= int(dates[1]):
         return True
     return False
 
+
 def check_dates_kuba(year_range: str, year: int) -> bool:
     int_range = [int(x) if x else 9999 for x in re.split(r'\D', year_range)]
-    int_range = [x if x!=0 else 9999 for x in int_range]
-    int_range = int_range * 2 if len(int_range)==1 else int_range
+    int_range = [x if x != 0 else 9999 for x in int_range]
+    int_range = int_range * 2 if len(int_range) == 1 else int_range
     return int_range[0] <= year <= int_range[1]
 
 
@@ -155,7 +154,7 @@ def get_team(soup: BeautifulSoup, tournament_year: int) -> (str, str):
             team_elem = th.find_next_sibling('td')
             team = cut_initial_chars(p_parenthesis.sub('', team_elem.text.strip()))
             team_url = get_pure_url(team_elem.find('a', href=True)['href'])
-            return team, team_url
+            return team.strip(), team_url
     return team, team_url
 
 
@@ -165,7 +164,7 @@ def get_league(soup: BeautifulSoup) -> (str, str):
         league_headline = soup.find('table', attrs={'class': 'infobox vcard'}).find('th', text='League')
         league = league_headline.find_next_sibling('td')
         league_url = get_pure_url(league.find('a', href=True)['href'])
-        return league.text, league_url
+        return league.text.strip(), league_url
     except Exception as e:
         print('EXCEPT', e)
         return league, league_url
@@ -177,7 +176,7 @@ def get_nation(soup: BeautifulSoup) -> str:
     if span:
         span = span.span()
         return nation[:span[0]]
-    return nation
+    return nation.strip()
 
 
 def get_player_data(url_nation: str, url_player: str, tournament_year: int) -> {}:
@@ -238,19 +237,18 @@ def save_json(filename: str, players_dictionary: {}):
 
 def get_senior_career_trs(soup: BeautifulSoup) -> ResultSet:
     trs = soup.findAll('tr')
-    take_after = lambda acc, elem: (acc[0]+[elem], True) if acc[1] else (acc[0], "Years" in elem.text and "Team" in elem.text)
+    take_after = lambda acc, elem: (acc[0] + [elem], True) if acc[1] else (
+        acc[0], "Years" in elem.text and "Team" in elem.text)
     (head_removed, temp) = reduce(take_after, trs, ([], False))
-    take_while = lambda acc, elem: (acc[0]+[elem], True) if "National team" not in elem.text and acc[1] else (acc[0], False)
+    take_while = lambda acc, elem: (acc[0] + [elem], True) if "National team" not in elem.text and acc[1] else (
+        acc[0], False)
     (tail_removed, temp) = reduce(take_while, head_removed, ([], True))
     return tail_removed
 
 
 def get_team_kuba(soup: BeautifulSoup, tournament_year: int) -> Tuple[str, str]:
-    for tr in get_senior_career_trs(soup):
-        years = tr.find('th').getText(strip=True)
-        url = tr.find('a')['href']
-        team_name = tr.find('a')['title']
-    result = [(x[0], x[1], x[3]) for x in map(parse_player_tr, get_senior_career_trs(soup)) if check_dates_kuba(x[2], tournament_year)]
+    result = [(x[0], x[1], x[3]) for x in map(parse_player_tr, get_senior_career_trs(soup)) if
+              check_dates_kuba(x[2], tournament_year)]
     if len(result) > 1:
         result = [x for x in result if x[2]]
     if len(result) == 0: return '', ''
@@ -258,7 +256,7 @@ def get_team_kuba(soup: BeautifulSoup, tournament_year: int) -> Tuple[str, str]:
     return team, get_pure_url(url)
 
 
-def parse_player_tr(tr: BeautifulSoup) -> Tuple[str, str, str]:
+def parse_player_tr(tr: BeautifulSoup):
     return (tr.find('a')['title'], tr.find('a')['href'], tr.find('th').text, '(loan)' in tr.text)
 
 
