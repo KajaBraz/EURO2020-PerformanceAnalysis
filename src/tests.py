@@ -48,19 +48,19 @@ def helper_get_team_test(get_team_function):
     soup = create_soup('https://en.wikipedia.org/wiki/Harry_Kane')
     team, url = get_team_function(soup, 2020)
     assert url == 'https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C.'
-    assert team == 'Tottenham Hotspur'
+    assert team == 'Tottenham Hotspur F.C.'
 
     team, url = get_team_function(soup, 2011)
     assert url == 'https://en.wikipedia.org/wiki/Leyton_Orient_F.C.'
-    assert team == 'Leyton Orient'
+    assert team == 'Leyton Orient F.C.'
 
     team, url = get_team_function(soup, 2012)
     assert url == 'https://en.wikipedia.org/wiki/Millwall_F.C.'
-    assert team == 'Millwall'
+    assert team == 'Millwall F.C.'
 
     team, url = get_team_function(soup, 2013)
     assert url == 'https://en.wikipedia.org/wiki/Leicester_City_F.C.'
-    assert team == 'Leicester City'
+    assert team == 'Leicester City F.C.'
 
     soup = create_soup('https://en.wikipedia.org/wiki/%C3%81lvaro_Morata')
     team, url = get_team_function(soup, 2020)
@@ -69,23 +69,28 @@ def helper_get_team_test(get_team_function):
 
     team, url = get_team_function(soup, 2021)
     assert url == 'https://en.wikipedia.org/wiki/Juventus_F.C.'
-    assert team == 'Juventus'
+    assert team == 'Juventus F.C.'
 
     soup = create_soup('https://en.wikipedia.org/wiki/Federico_Chiesa')
     team, url = get_team_function(soup, 2021)
     assert url == 'https://en.wikipedia.org/wiki/Juventus_F.C.'
-    assert team == 'Juventus'
+    assert team == 'Juventus F.C.'
 
     soup = create_soup('https://en.wikipedia.org/wiki/Mario_Gavranovi%C4%87')
     team, url = get_team_function(soup, 2021)
     assert url == 'https://en.wikipedia.org/wiki/GNK_Dinamo_Zagreb'
-    assert team == 'Dinamo Zagreb'
+    assert team == 'GNK Dinamo Zagreb'
 
     soup = create_soup('https://en.wikipedia.org/wiki/Goran_Pandev')
     team, url = get_team_function(soup, 2021)
     assert url == 'https://en.wikipedia.org/wiki/Genoa_C.F.C.'
-    assert team == 'Genoa'
+    assert team == 'Genoa C.F.C.'
 
     team, url = get_team_function(soup, 2022)
     assert url == ''
     assert team == ''
+
+    soup = create_soup('https://en.wikipedia.org/wiki/Martin_Braithwaite')
+    team, url = get_team_function(soup, 2021)
+    assert url == 'https://en.wikipedia.org/wiki/FC_Barcelona'
+    assert team == 'FC Barcelona'

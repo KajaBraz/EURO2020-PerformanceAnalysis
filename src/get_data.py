@@ -151,10 +151,10 @@ def get_team(soup: BeautifulSoup, tournament_year: int) -> (str, str):
     for th in th_elems:
         date_range = th.text.strip()
         if p_date_range.search(date_range) and check_dates(date_range, tournament_year):
-            team_elem = th.find_next_sibling('td')
-            team = cut_initial_chars(p_parenthesis.sub('', team_elem.text.strip()))
-            team_url = get_pure_url(team_elem.find('a', href=True)['href'])
-            return team.strip(), team_url
+            team_elem = th.find_next_sibling('td').find('a')
+            team = cut_initial_chars(p_parenthesis.sub('', team_elem['title'])).strip()
+            team_url = get_pure_url(team_elem['href'])
+            return team, team_url
     return team, team_url
 
 
@@ -205,7 +205,6 @@ def get_pure_url(url: str) -> str:
 def get_goal_scorers(goals_dictionary, tournament_year: int) -> {int: [{}]}:
     players_data = []
     for goals_num, players in goals_dictionary.items():
-        # players_data[goals_num] = []
         for player in players:
             nation_url = player[0]
             player_url = player[1]
@@ -213,9 +212,7 @@ def get_goal_scorers(goals_dictionary, tournament_year: int) -> {int: [{}]}:
             player_dict['goals'] = goals_num
             print(player_dict)
             players_data.append(player_dict)
-    players_data=sorted(players_data,key=lambda x:x['goals'],reverse=True)
-    print('*************************************************************')
-    print(players_data)
+    players_data = sorted(players_data, key=lambda x: x['goals'], reverse=True)
     return players_data
 
 
@@ -237,17 +234,6 @@ def save_json(filename: str, players_dictionary: {}):
         data = json.dumps(players_dictionary)
         players_file.write('playerData = ')
         players_file.write(data)
-
-    # goals_keys = sorted(players_dictionary.keys(), reverse=True)
-    # data_list = []
-    #
-    # with open(filename, 'w') as players_file:
-    #     for goal in goals_keys:
-    #         data_list.extend(players_dictionary[goal])
-    #
-    #     players_file.write('playerData = ')
-    #     data = json.dumps(data_list)
-    #     players_file.write(data)
 
 
 def get_senior_career_trs(soup: BeautifulSoup) -> ResultSet:
@@ -272,6 +258,7 @@ def get_team_kuba(soup: BeautifulSoup, tournament_year: int) -> Tuple[str, str]:
 
 
 def parse_player_tr(tr: BeautifulSoup):
+    print(tr)
     return tr.find('a')['title'], tr.find('a')['href'], tr.find('th').text, '(loan)' in tr.text
 
 
