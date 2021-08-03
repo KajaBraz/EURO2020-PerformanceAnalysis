@@ -196,6 +196,9 @@
 
         current_data = playerData.reduce(
             (acc, { height, goals }) => {
+                if (height == 0) {
+                    return acc;
+                }
                 let step = Math.floor(height * 100 / 5);
                 let min = step * 5;
                 let max = (step + 1) * 5 - 1;

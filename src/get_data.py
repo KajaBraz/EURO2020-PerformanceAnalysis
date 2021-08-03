@@ -34,16 +34,16 @@ def get_goals_num(soup: BeautifulSoup, achievement_type: str) -> {}:
     :param achievement_type: 'goals' or 'assists'
     :return: dictionary with the goals/assists numbers as keys and lists of html players elements
     """
+    pattern = ''
     if achievement_type == 'goals':
         pattern = p_goals
-    else:
+    elif achievement_type == 'assists':
         pattern = p_assist
 
     goals = {}
-    body = soup.find('div', attrs={'class': 'mw-parser-output'})
-    headlines = body.findAll('b', text=pattern)
-    if sum([headline is not None and achievement_type[:-1] in headline.text for headline in headlines]) == 0:
-        headlines = body.findAll('dt', text=p_goals)
+    headlines = soup.find_all('b', text=pattern)
+    if not headlines:
+        headlines = soup.find_all('dt', text=pattern)
 
     for h in set(headlines):
         next_elem = h.findNext('ul').findAll('li')
@@ -77,6 +77,8 @@ def get_age(soup: BeautifulSoup, tournament_year: int) -> int:
 
 def get_height(soup: BeautifulSoup) -> float:
     height_row = soup.find('th', text='Height')
+    if not height_row:
+        return 0
     height = height_row.find_next_sibling('td').text
     h_meters = p_height_m.search(height)
     if h_meters:
@@ -266,6 +268,7 @@ if __name__ == '__main__':
     stats_url = 'https://en.wikipedia.org/wiki/UEFA_Euro_2020_statistics'
     # stats_url = 'https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_statistics'
     # stats_url = 'https://en.wikipedia.org/wiki/UEFA_Euro_2012_statistics'
+    # stats_url = 'https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica_statistics'
 
     soup_2021 = get_soup(stats_url)
 
