@@ -62,7 +62,7 @@
     <!-- it fixes drawing issue on safari version <14 on iphone -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=ResizeObserver"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js"></script>
-    <script src="js/data.js"></script>
+    <script src="js/data_2021.js"></script>
     <script>
         function switch_to(type) {
             Object.keys(all_charts).forEach(id => {
@@ -132,12 +132,16 @@
             appendCanvas(title, labels[title], datas[title]);
         }
 
+        console.log("main 1");
         window.onload = function () {
+            console.log("on load");
             document.getElementById("bar_radio").checked = true;
             document.getElementById("pie_radio").checked = false;
             document.getElementById("one_goal").checked = false;
             document.getElementById("all_goals").innerHTML += all_goals;
         }
+
+        console.log("main 2");
 
         let all_goals = playerData.reduce((acc, { goals }) => acc + goals, 0);
         let all_charts = {};
@@ -179,21 +183,22 @@
         current_data = playerData.reduce(
             (acc, { age, goals }) => {
                 let step = Math.floor(age / 5);
-                let min = step * 5 + 1;
-                let max = (step + 1) * 5;
+                let min = step * 5;
+                let max = (step + 1) * 5 - 1;
                 let key = `${min} - ${max}`;
                 acc[key] = (acc[key] || 0) + goals;
                 return acc;
             }, {}
         );
+
         current_data = Object.entries(current_data).sort();
         fill_init("Goals by age", current_data.map(([k, v]) => k), current_data.map(([k, v]) => v));
 
         current_data = playerData.reduce(
             (acc, { height, goals }) => {
                 let step = Math.floor(height * 100 / 5);
-                let min = step * 5 + 1;
-                let max = (step + 1) * 5;
+                let min = step * 5;
+                let max = (step + 1) * 5 - 1;
                 let key = `${min} - ${max}`;
                 acc[key] = (acc[key] || 0) + goals;
                 return acc;
