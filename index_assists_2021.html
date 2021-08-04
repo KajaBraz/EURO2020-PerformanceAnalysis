@@ -64,6 +64,7 @@
 <body>
     <h1>2020/2021 Football Competitions</h1>
     <h1>Players Statistics</h1>
+
     <div class="competitions_list_container">
         <ul>
             <li><a href="index.html">Goals EURO 2020</a></li>
@@ -72,7 +73,8 @@
             <li><a href="index_assists_copa_2021.html">Assists Copa America 2021</a></li>
         </ul>
     </div>
-    <h3 id="all_goals">All goals scored (excluded own goals): </h3>
+
+    <h3 id="all_goals">All assists: </h3>
     <div class="select_chart">
         <input type="radio" id="bar_radio" name="chart_type" value="bar" onchange="switch_to('bar')" checked>
         <label for="bar_radio">Bar chart</label>
@@ -80,7 +82,7 @@
         <label for="pie_radio">Pie chart</label>
         <p>
             <input type="checkbox" id="one_goal" onchange="modify_one_goal(this)">
-            <label for="one_goal">Include one-goal-scorers</label>
+            <label for="one_goal">Include single assists</label>
         </p>
     </div>
     <div id='container'></div>
@@ -91,7 +93,7 @@
     <!-- it fixes drawing issue on safari version <14 on iphone -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=ResizeObserver"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js"></script>
-    <script src="js/data_2021.js"></script>
+    <script src="js/data_assists_2021.js"></script>
     <script>
         function switch_to(type) {
             Object.keys(all_charts).forEach(id => {
@@ -104,7 +106,7 @@
         }
 
         function modify_one_goal(checkbox) {
-            let title = "Scorers";
+            let title = "Assists";
             all_charts[title].data.labels = checkbox.checked ?
                 one_goal_labels : no_one_goal_labels;
             all_charts[title].data.datasets[0].data = checkbox.checked ?
@@ -183,7 +185,7 @@
         let one_goal_labels = playerData.map(({ name }) => name);
         let one_goal_datas = playerData.map(({ goals }) => goals);
 
-        fill_init("Scorers", no_one_goal_labels, no_one_goal_datas);
+        fill_init("Assists", no_one_goal_labels, no_one_goal_datas);
 
         current_data = playerData.reduce(
             (acc, { country, goals }) => {
@@ -191,7 +193,7 @@
                 return acc;
             }, {}
         );
-        fill_init("Goals by country (own goals excluded)", Object.keys(current_data), Object.values(current_data));
+        fill_init("Assists by country", Object.keys(current_data), Object.values(current_data));
 
         current_data = playerData.reduce(
             (acc, { club, goals }) => {
@@ -199,7 +201,7 @@
                 return acc;
             }, {}
         );
-        fill_init("Goals by club", Object.keys(current_data), Object.values(current_data));
+        fill_init("Assists by club", Object.keys(current_data), Object.values(current_data));
 
         current_data = playerData.reduce(
             (acc, { league, goals }) => {
@@ -207,7 +209,7 @@
                 return acc;
             }, {}
         );
-        fill_init("Goals by league", Object.keys(current_data), Object.values(current_data));
+        fill_init("Assists by league", Object.keys(current_data), Object.values(current_data));
 
         current_data = playerData.reduce(
             (acc, { age, goals }) => {
@@ -221,7 +223,7 @@
         );
 
         current_data = Object.entries(current_data).sort();
-        fill_init("Goals by age", current_data.map(([k, v]) => k), current_data.map(([k, v]) => v));
+        fill_init("Assists by age", current_data.map(([k, v]) => k), current_data.map(([k, v]) => v));
 
         current_data = playerData.reduce(
             (acc, { height, goals }) => {
@@ -237,7 +239,7 @@
             }, {}
         );
         current_data = Object.entries(current_data).sort();
-        fill_init("Goals by height (in cm)", current_data.map(([k, v]) => k), current_data.map(([k, v]) => v));
+        fill_init("Assists by height (in cm)", current_data.map(([k, v]) => k), current_data.map(([k, v]) => v));
     </script>
 </body>
 
