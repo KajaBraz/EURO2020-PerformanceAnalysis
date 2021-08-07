@@ -84,7 +84,7 @@ function start(dataToDraw, score) {
             return acc;
         }, {}
     );
-    fill_init(score + " by country (own goals excluded)", Object.keys(current_data), Object.values(current_data));
+    fill_init(document.getElementById("all_goals").innerHTML, Object.keys(current_data), Object.values(current_data));
 
     current_data = dataToDraw.reduce(
         (acc, { club, goals }) => {

@@ -64,17 +64,15 @@
 <body>
     <h1>2020/2021 Football Competitions</h1>
     <h1>Players Statistics</h1>
-
     <div class="competitions_list_container">
         <ul>
-            <li><a href="index.html">Goals EURO 2020</a></li>
+            <li><a href="index_goals_2021.html">Goals EURO 2020</a></li>
             <li><a href="index_assists_2021.html">Assists EURO 2020</a></li>
             <li><a href="index_goals_copa_2021.html">Goals Copa America 2021</a></li>
             <li><a href="index_assists_copa_2021.html">Assists Copa America 2021</a></li>
         </ul>
     </div>
-
-    <h3 id="all_goals">All goals scored (own goals exc): </h3>
+    <h3 id="all_goals">All goals scored (excluded own goals): </h3>
     <div class="select_chart">
         <input type="radio" id="bar_radio" name="chart_type" value="bar" onchange="switch_to('bar')" checked>
         <label for="bar_radio">Bar chart</label>
@@ -94,152 +92,9 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=ResizeObserver"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js"></script>
     <script src="js/data_2021_copa.js"></script>
+    <script src="js/functions.js"></script>
     <script>
-        function switch_to(type) {
-            Object.keys(all_charts).forEach(id => {
-                all_charts[id].destroy();
-                all_charts[id] = new Chart(
-                    document.getElementById(id).getContext("2d"),
-                    createChart(id, labels[id], datas[id], type)
-                );
-            });
-        }
-
-        function modify_one_goal(checkbox) {
-            let title = "Scorers";
-            all_charts[title].data.labels = checkbox.checked ?
-                one_goal_labels : no_one_goal_labels;
-            all_charts[title].data.datasets[0].data = checkbox.checked ?
-                one_goal_datas : no_one_goal_datas;
-            labels[title] = all_charts[title].data.labels;
-            datas[title] = all_charts[title].data.datasets[0].data;
-            all_charts[title].update();
-        }
-
-        function createChart(title, labels, datas, type) {
-            let step = 360 / datas.length;
-            let colorsHue = datas.map((elem, index) => `hsla(${index * step}, 100%, 50%, 0.25`);
-            return {
-                type: type,
-                data: {
-                    labels: labels,
-                    datasets: [{
-                        data: datas,
-                        backgroundColor: colorsHue
-                    }]
-                },
-                options: {
-                    plugins: {
-                        legend: {
-                            display: type == "bar" ? false : true,
-                            position: "bottom",
-                            maxHeight: 200
-                        },
-                        title: {
-                            display: true,
-                            text: title,
-                            font: {
-                                size: 20
-                            }
-                        }
-                    }
-                }
-            };
-        }
-
-        function appendCanvas(title, labels, datas, type = "bar") {
-            let canvas = document.createElement('canvas');
-            canvas.width = "1500";
-            canvas.height = "600";
-            canvas.id = title;
-            document.getElementById('container').appendChild(canvas);
-            let chart = new Chart(canvas, createChart(title, labels, datas, type));
-            all_charts[title] = chart;
-        }
-
-        function fill_init(title, label_fill, data_fill) {
-            labels[title] = label_fill;
-            datas[title] = data_fill;
-            appendCanvas(title, labels[title], datas[title]);
-        }
-
-        console.log("main 1");
-        window.onload = function () {
-            console.log("on load");
-            document.getElementById("bar_radio").checked = true;
-            document.getElementById("pie_radio").checked = false;
-            document.getElementById("one_goal").checked = false;
-            document.getElementById("all_goals").innerHTML += all_goals;
-        }
-
-        console.log("main 2");
-
-        let all_goals = playerData.reduce((acc, { goals }) => acc + goals, 0);
-        let all_charts = {};
-        let labels = {};
-        let datas = {};
-
-        let current_data = playerData.filter(({ goals }) => goals > 1);
-        let no_one_goal_labels = current_data.map(({ name }) => name);
-        let no_one_goal_datas = current_data.map(({ goals }) => goals);
-        let one_goal_labels = playerData.map(({ name }) => name);
-        let one_goal_datas = playerData.map(({ goals }) => goals);
-
-        fill_init("Scorers", no_one_goal_labels, no_one_goal_datas);
-
-        current_data = playerData.reduce(
-            (acc, { country, goals }) => {
-                acc[country] = (acc[country] || 0) + goals;
-                return acc;
-            }, {}
-        );
-        fill_init("Goals by country (own goals excluded)", Object.keys(current_data), Object.values(current_data));
-
-        current_data = playerData.reduce(
-            (acc, { club, goals }) => {
-                acc[club] = (acc[club] || 0) + goals;
-                return acc;
-            }, {}
-        );
-        fill_init("Goals by club", Object.keys(current_data), Object.values(current_data));
-
-        current_data = playerData.reduce(
-            (acc, { league, goals }) => {
-                acc[league] = (acc[league] || 0) + goals;
-                return acc;
-            }, {}
-        );
-        fill_init("Goals by league", Object.keys(current_data), Object.values(current_data));
-
-        current_data = playerData.reduce(
-            (acc, { age, goals }) => {
-                let step = Math.floor(age / 5);
-                let min = step * 5;
-                let max = (step + 1) * 5 - 1;
-                let key = `${min} - ${max}`;
-                acc[key] = (acc[key] || 0) + goals;
-                return acc;
-            }, {}
-        );
-
-        current_data = Object.entries(current_data).sort();
-        fill_init("Goals by age", current_data.map(([k, v]) => k), current_data.map(([k, v]) => v));
-
-        current_data = playerData.reduce(
-            (acc, { height, goals }) => {
-                if (height == 0) {
-                    return acc;
-                }
-                let step = Math.floor(height * 100 / 5);
-                let min = step * 5;
-                let max = (step + 1) * 5 - 1;
-                let key = `${min} - ${max}`;
-                acc[key] = (acc[key] || 0) + goals;
-                return acc;
-            }, {}
-        );
-        current_data = Object.entries(current_data).sort();
-        fill_init("Goals by height (in cm)", current_data.map(([k, v]) => k), current_data.map(([k, v]) => v));
+        start(playerData, "Goals");
     </script>
 </body>
 
