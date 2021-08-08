@@ -8,8 +8,7 @@ function switch_to(type) {
     });
 }
 
-function modify_one_goal(checkbox) {
-    let title = "Scorers";
+function modify_one_goal(checkbox, title) {
     all_charts[title].data.labels = checkbox.checked ?
         one_goal_labels : no_one_goal_labels;
     all_charts[title].data.datasets[0].data = checkbox.checked ?
@@ -75,7 +74,7 @@ function start(dataToDraw, score) {
 
     all_goals = dataToDraw.reduce((acc, { goals }) => acc + goals, 0);
     document.getElementById("all_goals").innerHTML += all_goals;
-    
+
     fill_init(score, no_one_goal_labels, no_one_goal_datas);
 
     current_data = dataToDraw.reduce(
@@ -85,6 +84,7 @@ function start(dataToDraw, score) {
         }, {}
     );
     fill_init(document.getElementById("all_goals").innerHTML, Object.keys(current_data), Object.values(current_data));
+    // fill_init(score, Object.keys(current_data), Object.values(current_data));
 
     current_data = dataToDraw.reduce(
         (acc, { club, goals }) => {
@@ -114,7 +114,7 @@ function start(dataToDraw, score) {
     );
 
     current_data = Object.entries(current_data).sort();
-    fill_init("Goals by age", current_data.map(([k, v]) => k), current_data.map(([k, v]) => v));
+    fill_init(score + " by age", current_data.map(([k, v]) => k), current_data.map(([k, v]) => v));
 
     current_data = playerData.reduce(
         (acc, { height, goals }) => {
