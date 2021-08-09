@@ -83,8 +83,7 @@ function start(dataToDraw, score) {
             return acc;
         }, {}
     );
-    fill_init(document.getElementById("all_goals").innerHTML, Object.keys(current_data), Object.values(current_data));
-    // fill_init(score, Object.keys(current_data), Object.values(current_data));
+    fill_init(score + " by country", Object.keys(current_data), Object.values(current_data));
 
     current_data = dataToDraw.reduce(
         (acc, { club, goals }) => {
@@ -116,11 +115,9 @@ function start(dataToDraw, score) {
     current_data = Object.entries(current_data).sort();
     fill_init(score + " by age", current_data.map(([k, v]) => k), current_data.map(([k, v]) => v));
 
-    current_data = playerData.reduce(
+    current_data = playerData.filter(({ height }) => height != 0);
+    current_data = current_data.reduce(
         (acc, { height, goals }) => {
-            if (height == 0) {
-                return acc;
-            }
             let step = Math.floor(height * 100 / 5);
             let min = step * 5;
             let max = (step + 1) * 5 - 1;

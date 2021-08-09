@@ -94,8 +94,8 @@ def get_height(soup: BeautifulSoup) -> float:
 
 def get_team_league(soup: BeautifulSoup, year: int) -> (str, str):
     team, team_url = get_team(soup, year)
-    league, country = '', ''
-    if team_url != '':
+    league, country = 'No club', 'Unknow'
+    if team_url != '-':
         r = requests.get(team_url)
         soup_league = BeautifulSoup(r.content, 'html5lib')
         league, league_url = get_league(soup_league)
@@ -112,7 +112,7 @@ def get_league_country(league_url: str) -> str:
         country = p_parenthesis.sub('', country)
         return country.strip()
     except:
-        return ''
+        return 'Unknown'
 
 
 def check_dates(dates_range_str: str, year: int) -> bool:
@@ -135,8 +135,8 @@ def check_dates_kuba(year_range: str, year: int) -> bool:
 
 
 def cut_initial_chars(name: str) -> str:
-    if name.strip() == "":
-        return ""
+    if name.strip() == '':
+        return ''
     i = -1
     valid_start = False
     while not valid_start:
@@ -146,7 +146,7 @@ def cut_initial_chars(name: str) -> str:
 
 
 def get_team(soup: BeautifulSoup, tournament_year: int) -> (str, str):
-    team, team_url = '', ''
+    team, team_url = 'No club', '-'
     elem_after_teams = soup.find_all('th')
     elem_after_teams = [elem for elem in elem_after_teams if elem and p_national_team.search(elem.text)]
     th_elems = elem_after_teams[0].find_all_previous('th')
@@ -169,7 +169,7 @@ def get_league(soup: BeautifulSoup) -> (str, str):
         return league.text.strip(), league_url
     except Exception as e:
         print('EXCEPT', e)
-        return league, league_url
+        return league.text.strip(), league_url
 
 
 def get_nation(soup: BeautifulSoup) -> str:
@@ -270,22 +270,21 @@ if __name__ == '__main__':
     # stats_url = 'https://en.wikipedia.org/wiki/UEFA_Euro_2012_statistics'
     # stats_url = 'https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica_statistics'
 
-    soup_2021 = get_soup(stats_url)
+    soup = get_soup(stats_url)
 
-    d = get_goals_num(soup_2021, 'goals')
+    d = get_goals_num(soup, 'goals')
     goals_dict = extract_dict_data(d)
     goal_scorers = get_goal_scorers(goals_dict, 2021)
     save_json('../js/data_2021.js', goal_scorers)
 
-    # d_a = get_goals_num(soup_2021, 'assists')
+    # d_a = get_goals_num(soup, 'assists')
     # goals_dict = extract_dict_data(d_a)
     # goal_scorers = get_goal_scorers(goals_dict, 2021)
     # save_json('../js/data_assists_2021.js', goal_scorers)
 
     # TODO
     # - posortowac dane w kolkach
-    # - dopasowac do copa america, serie a i innych lig
-    # - asysyty i samoboje
+    # - dopasowac do serie a i innych lig
     # - dodac pozycje
     # - dodac wysokosc i grubosc
     # - make 'Euro 2020 statistics' page header looking nicer
