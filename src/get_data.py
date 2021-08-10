@@ -42,13 +42,26 @@ def get_goals_num(soup: BeautifulSoup, achievement_type: str) -> {}:
 
     goals = {}
     headlines = soup.find_all('b', text=pattern)
+    print(headlines)
     if not headlines:
         headlines = soup.find_all('dt', text=pattern)
-
+    headlines = get_valid_headlines(headlines)
+    print(headlines)
     for h in set(headlines):
         next_elem = h.findNext('ul').findAll('li')
         goals[int(p_digit.search(h.text).group())] = next_elem
     return goals
+
+
+def get_valid_headlines(l: [BeautifulSoup]):
+    previous_num = p_digit.search(l[0].text).group()
+    correct = 1
+    for elem in l[1:]:
+        current_num = p_digit.search(elem.text).group()
+        if previous_num > current_num:
+            correct += 1
+        previous_num = current_num
+    return l[:correct]
 
 
 def extract_dict_data(goals_dictionary: {}) -> {}:
@@ -208,6 +221,7 @@ def get_goal_scorers(goals_dictionary, tournament_year: int) -> {int: [{}]}:
     players_data = []
     for goals_num, players in goals_dictionary.items():
         for player in players:
+            print(player)
             nation_url = player[0]
             player_url = player[1]
             player_dict = get_player_data(nation_url, player_url, tournament_year)
