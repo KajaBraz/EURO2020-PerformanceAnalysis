@@ -12,6 +12,7 @@ p_url = re.compile(r'href=\S+')
 p_wiki = re.compile(r'/wiki/\S+')
 p_national = re.compile(r' national')
 p_digit = re.compile(r'\d+')
+p_year = re.compile(r'\d{4}')
 p_goals = re.compile(r'\d+\sgoals?')
 p_assist = re.compile(r'\d+\sassists?')
 p_parenthesis = re.compile(r'\(.+\)')
@@ -73,8 +74,10 @@ def extract_dict_data(goals_dictionary: {}) -> {}:
     return url_dictiionary
 
 
-def get_name(soup_table: BeautifulSoup) -> str:
-    name = soup_table.find('caption', attrs={'class': 'fn'})
+def get_name(soup: BeautifulSoup) -> str:
+    name = soup.find('caption', attrs={'class': 'fn'})
+    if name is None:
+        name = soup.find('h1')
     for s in name.find_all('style'):
         s.decompose()
     for s in name.find_all('span'):
@@ -85,7 +88,7 @@ def get_name(soup_table: BeautifulSoup) -> str:
 def get_age(soup: BeautifulSoup, tournament_year: int) -> int:
     age_row = soup.find('th', text=p_birth_date_headline)
     birth_date = age_row.find_next_sibling('td').text
-    return tournament_year - int(p_digit.search(birth_date).group())
+    return tournament_year - int(p_year.search(birth_date).group())
 
 
 def get_height(soup: BeautifulSoup) -> float:
@@ -160,8 +163,8 @@ def cut_initial_chars(name: str) -> str:
 
 def get_team(soup: BeautifulSoup, tournament_year: int) -> (str, str):
     team, team_url = 'No club', '-'
-    elem_after_teams = soup.find_all('th')
-    elem_after_teams = [elem for elem in elem_after_teams if elem and p_national_team.search(elem.text)]
+    elems = soup.find_all('th')
+    elem_after_teams = [elem for elem in elems if elem and p_national_team.search(elem.text)]
     th_elems = elem_after_teams[0].find_all_previous('th')
     for th in th_elems:
         date_range = th.text.strip()
@@ -200,9 +203,10 @@ def get_player_data(url_nation: str, url_player: str, tournament_year: int) -> {
     r_player = requests.get(url_player)
     soup_player = BeautifulSoup(r_player.content, 'html5lib')
     soup_player_table = soup_player.find('table', attrs={'class': 'infobox vcard'})
-    name = get_name(soup_player_table)
-    age = get_age(soup_player_table, tournament_year)
-    height = get_height(soup_player_table)
+    # soup_player_table = soup_player.find('table')
+    name = get_name(soup_player)
+    age = get_age(soup_player, tournament_year)
+    height = get_height(soup_player)
     team, league = get_team_league(soup_player_table, tournament_year)
     nation = get_nation(soup_nation)
     player_data = {'name': name, 'age': age, 'height': height, 'club': team, 'league': league, 'country': nation}
