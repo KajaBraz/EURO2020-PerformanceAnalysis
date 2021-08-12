@@ -22,6 +22,7 @@ p_height = re.compile(r'\d\.\d*')
 p_birth_date_headline = re.compile(r'Date of birth|Born')
 p_national_team = re.compile(r'.?National team.?')
 p_date_range = re.compile(r'\d{4}.*')
+p_scoring = re.compile(r'Scoring.*')
 
 
 def get_soup(url: str) -> BeautifulSoup:
@@ -42,10 +43,18 @@ def get_goals_num(soup: BeautifulSoup, achievement_type: str) -> {}:
         pattern = p_assist
 
     goals = {}
+    # main_headline = soup.find(text=score_type)
+    # print(main_headline)
+    # headlines = main_headline.find_all_next(text=pattern)
+
+    # elem_after_lists = soup.find('span',attrs={"class":"toctext"},text='Scoring')
+    # headlines = elem_after_lists.find_all_previous(text=pattern)
+    # print(elem_after_lists)
+
     headlines = soup.find_all('b', text=pattern)
     print(headlines)
-    if not headlines:
-        headlines = soup.find_all('dt', text=pattern)
+    # if len(headlines) < 3:
+    #     headlines = soup.find_all('dt', text=pattern)
     headlines = get_valid_headlines(headlines)
     print(headlines)
     for h in set(headlines):
@@ -185,7 +194,7 @@ def get_league(soup: BeautifulSoup) -> (str, str):
         return league.text.strip(), league_url
     except Exception as e:
         print('EXCEPT', e)
-        return league.text.strip(), league_url
+        return league.strip(), league_url
 
 
 def get_nation(soup: BeautifulSoup) -> str:
@@ -287,6 +296,7 @@ if __name__ == '__main__':
     # stats_url = 'https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_statistics'
     # stats_url = 'https://en.wikipedia.org/wiki/UEFA_Euro_2012_statistics'
     # stats_url = 'https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica_statistics'
+    # stats_url = 'https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_statistics'
 
     soup = get_soup(stats_url)
 
