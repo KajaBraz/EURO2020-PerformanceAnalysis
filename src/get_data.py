@@ -53,8 +53,9 @@ def get_goals_num(soup: BeautifulSoup, achievement_type: str) -> {}:
 
     headlines = soup.find_all('b', text=pattern)
     print(headlines)
-    # if len(headlines) < 3:
-    #     headlines = soup.find_all('dt', text=pattern)
+    if not len(headlines):
+        headlines = soup.find_all('dt', text=pattern)
+        print(headlines)
     headlines = get_valid_headlines(headlines)
     print(headlines)
     for h in set(headlines):
