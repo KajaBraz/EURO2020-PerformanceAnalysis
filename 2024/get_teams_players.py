@@ -1,15 +1,19 @@
 import asyncio
 import json
-import time
+import re
 
 from playwright.async_api import async_playwright, Playwright
 
 
-async def get_page(playwright: Playwright, headless):
+async def set_up(playwright: Playwright, headless):
     chromium = playwright.chromium
     browser = await chromium.launch(headless=headless)
     page = await browser.new_page()
-    return page
+    return browser, page
+
+
+def tear_down(browser):
+    browser.close()
 
 
 async def get_national_teams(page, link):
@@ -25,14 +29,55 @@ async def get_teams_players(page, link):
     await page.goto(link)
     player_row_class = 'lineupTable__row'
     player_name_class = 'lineupTable__cell--name'
+    player_age_class = 'lineupTable__cell--age'
     player_flag_class = 'lineupTable__cell--flag'
 
     players = await page.locator(f'.{player_row_class}').all()
-    players_data = {await player.locator(f'.{player_name_class}').inner_text(): player.locator(f'.{player_flag_class}')
-                    for player in players}
-    players_data = {player.strip(): club.first for player, club in players_data.items()}
-    players_data = {player: await club.get_attribute('title') for player, club in players_data.items()}
+    players_data = {}
+
+    for player_row in players:
+        player = player_row.locator(f'.{player_name_class}')
+        name = (await player.inner_text()).strip()
+        name_parts = name.rsplit(' ', 1)
+        surname, first_name = name_parts if len(name_parts) == 2 else (name_parts[0], '')
+        age = await player_row.locator(f'.{player_age_class}').inner_text()
+        short_name = f'{surname} {first_name[0]}.' if first_name else surname
+        link = await player.get_attribute('href')
+        club = await player_row.locator(f'.{player_flag_class}').first.get_attribute('title')
+        players_data[name] = {'name': short_name, 'age': age, 'club_1': club, 'link': link}
+    await complete_team_players_data(page, players_data)
     return players_data
+
+
+async def get_extra_player_data(page, player_link):
+    link = f'https://www.flashscore.com{player_link}'
+    await page.goto(link)
+
+    role_class = 'playerTeam'
+    league_country_class = 'careerTab__competition'
+    club_href_class = 'careerTab__competitionHref'
+
+    role = await (page.locator(f'.{role_class}')).inner_text()
+    role = role.split(' ', 1)[0]
+    if role.lower() == 'coach':
+        return role, '', '', '', ''
+    value = page.get_by_text(re.compile(r'[$€]\w+')).first
+    value = await value.inner_text()
+    club = await (page.locator(f'.{club_href_class}').nth(0)).get_attribute('title')
+    competition = page.locator(f'.{league_country_class}').nth(1)
+    league_country = await (competition.locator('span')).get_attribute('title')
+    league = await (competition.locator('a')).get_attribute('title')
+    return role, value, club, league, league_country
+
+
+async def complete_team_players_data(page, team_players_dict):
+    for player, player_data in team_players_dict.items():
+        role, value, club, league, league_country = await get_extra_player_data(page, player_data['link'])
+        team_players_dict[player]['role'] = role
+        team_players_dict[player]['value'] = value
+        team_players_dict[player]['club_2'] = club
+        team_players_dict[player]['league'] = league
+        team_players_dict[player]['league_country'] = league_country
 
 
 def save_data(data):
@@ -43,17 +88,21 @@ def save_data(data):
 async def main():
     headless = True
     euro_link = 'https://www.flashscore.com/football/europe/euro/standings/#/EcpQtcVi/table'
+
     async with async_playwright() as playwright:
-        page = await get_page(playwright, headless)
+        browser, page = await set_up(playwright, headless)
         national_teams = await get_national_teams(page, euro_link)
         teams_data = {}
+
         for team, code in national_teams.items():
-            time.sleep(1)
+            if team in teams_data:
+                continue
             team_players_link = f'https://www.flashscore.com{code}squad/'
             team_players = await get_teams_players(page, team_players_link)
             teams_data[team] = team_players
 
         save_data(teams_data)
+        tear_down(browser)
 
 
 if __name__ == '__main__':
