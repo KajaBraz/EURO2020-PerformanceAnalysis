@@ -103,7 +103,7 @@ def retrieve_coaches(json_file):
 
 
 def read_json(json_file):
-    with open(json_file, 'r') as f:
+    with open(json_file, 'r', encoding='utf-8') as f:
         d = json.load(f)
     return d
 
