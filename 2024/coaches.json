@@ -1,0 +1,146 @@
+{
+    "Germany": {
+        "short_name": "Nagelsmann J.",
+        "age": "36",
+        "link": "/player/nagelsmann-julian/WrA6TDDO/",
+        "name": "Nagelsmann Julian"
+    },
+    "Switzerland": {
+        "short_name": "Yakin M.",
+        "age": "49",
+        "link": "/player/yakin-murat/AyuXqwIS/",
+        "name": "Yakin Murat"
+    },
+    "Scotland": {
+        "short_name": "Clarke S.",
+        "age": "60",
+        "link": "/player/clarke-steve/jNJafS5g/",
+        "name": "Clarke Steve"
+    },
+    "Hungary": {
+        "short_name": "Rossi M.",
+        "age": "59",
+        "link": "/player/rossi-marco/Gx7mvuu3/",
+        "name": "Rossi Marco"
+    },
+    "Spain": {
+        "short_name": "de la Fuente L.",
+        "age": "63",
+        "link": "/player/de-la-fuente-luis/OdRnqAIc/",
+        "name": "de la Fuente Luis"
+    },
+    "Italy": {
+        "short_name": "Spalletti L.",
+        "age": "65",
+        "link": "/player/spalletti-luciano/n3dg3lHR/",
+        "name": "Spalletti Luciano"
+    },
+    "Albania": {
+        "short_name": "Sylvinho",
+        "age": "50",
+        "link": "/player/sylvinho/vmRZ1yMS/",
+        "name": "Sylvinho"
+    },
+    "Croatia": {
+        "short_name": "Dalic Z.",
+        "age": "57",
+        "link": "/player/dalic-zlatko/K4p8lzlJ/",
+        "name": "Dalic Zlatko"
+    },
+    "England": {
+        "short_name": "Southgate G.",
+        "age": "53",
+        "link": "/player/southgate-gareth/t4YlwJ0P/",
+        "name": "Southgate Gareth"
+    },
+    "Denmark": {
+        "short_name": "Hjulmand K.",
+        "age": "52",
+        "link": "/player/hjulmand-kasper/rDQP1g6j/",
+        "name": "Hjulmand Kasper"
+    },
+    "Slovenia": {
+        "short_name": "Kek M.",
+        "age": "62",
+        "link": "/player/kek-matjaz/Qe6uSKd8/",
+        "name": "Kek Matjaz"
+    },
+    "Serbia": {
+        "short_name": "Stojkovic D.",
+        "age": "59",
+        "link": "/player/stojkovic-dragan/tGdkXKgU/",
+        "name": "Stojkovic Dragan"
+    },
+    "Netherlands": {
+        "short_name": "Koeman R.",
+        "age": "61",
+        "link": "/player/koeman-ronald/vHeYAvb2/",
+        "name": "Koeman Ronald"
+    },
+    "France": {
+        "short_name": "Deschamps D.",
+        "age": "55",
+        "link": "/player/deschamps-didier/M9jPX2nf/",
+        "name": "Deschamps Didier"
+    },
+    "Austria": {
+        "short_name": "Rangnick R.",
+        "age": "65",
+        "link": "/player/rangnick-ralf/4E1uDB0F/",
+        "name": "Rangnick Ralf"
+    },
+    "Poland": {
+        "short_name": "Probierz M.",
+        "age": "51",
+        "link": "/player/probierz-michal/U3T3otRD/",
+        "name": "Probierz Michal"
+    },
+    "Romania": {
+        "short_name": "Iordanescu E.",
+        "age": "46",
+        "link": "/player/iordanescu-edward/rDEUp8va/",
+        "name": "Iordanescu Edward"
+    },
+    "Belgium": {
+        "short_name": "Tedesco D.",
+        "age": "38",
+        "link": "/player/tedesco-domenico/CK2rJP9O/",
+        "name": "Tedesco Domenico"
+    },
+    "Slovakia": {
+        "short_name": "Calzona F.",
+        "age": "55",
+        "link": "/player/calzona-francesco/MVSS7qFe/",
+        "name": "Calzona Francesco"
+    },
+    "Ukraine": {
+        "short_name": "Rebrov S.",
+        "age": "50",
+        "link": "/player/rebrov-sergiy/Oz1ZAeaC/",
+        "name": "Rebrov Sergiy"
+    },
+    "Portugal": {
+        "short_name": "Martinez R.",
+        "age": "50",
+        "link": "/player/martinez-roberto/vVKL1ADJ/",
+        "name": "Martinez Roberto"
+    },
+    "Turkey": {
+        "short_name": "Montella V.",
+        "age": "50",
+        "link": "/player/montella-vincenzo/vcAWhGM6/",
+        "name": "Montella Vincenzo"
+    },
+    "Czech Republic": {
+        "short_name": "Hasek I.",
+        "age": "60",
+        "link": "/player/hasek-ivan/txv0G6yc/",
+        "name": "Hasek Ivan"
+    },
+    "Georgia": {
+        "short_name": "Sagnol W.",
+        "age": "47",
+        "link": "/player/sagnol-willy/YkESfxp3/",
+        "name": "Sagnol Willy"
+    }
+}

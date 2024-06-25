@@ -44,7 +44,7 @@ async def get_teams_players(page, link):
         short_name = f'{surname} {first_name[0]}.' if first_name else surname
         link = await player.get_attribute('href')
         club = await player_row.locator(f'.{player_flag_class}').first.get_attribute('title')
-        players_data[name] = {'name': short_name, 'age': age, 'club_1': club, 'link': link}
+        players_data[name] = {'name': short_name, 'age': age, 'link': link}
     await complete_team_players_data(page, players_data)
     return players_data
 
@@ -75,19 +75,48 @@ async def complete_team_players_data(page, team_players_dict):
         role, value, club, league, league_country = await get_extra_player_data(page, player_data['link'])
         team_players_dict[player]['role'] = role
         team_players_dict[player]['value'] = value
-        team_players_dict[player]['club_2'] = club
+        team_players_dict[player]['club'] = club
         team_players_dict[player]['league'] = league
         team_players_dict[player]['league_country'] = league_country
 
 
-def save_data(data):
-    with open('data.json', 'w', encoding='utf-8') as f:
+def retrieve_coaches(json_file):
+    json_data = read_json(json_file)
+    coaches = {}
+    for country, players in json_data.items():
+        for player, dd in players.items():
+            role = dd['role']
+            if role == 'Coach':
+                dd['name'] = player
+                dd.pop('role')
+                dd.pop('value')
+                dd.pop('club')
+                dd.pop('league')
+                dd.pop('league_country')
+                coaches[country] = dd
+
+    for country, coach_dict in coaches.items():
+        json_data[country].pop(coach_dict['name'])
+
+    save_data(json_data, 'players.json')
+    save_data(coaches, 'coaches.json')
+
+
+def read_json(json_file):
+    with open(json_file, 'r') as f:
+        d = json.load(f)
+    return d
+
+
+def save_data(data, file_name='data.json'):
+    with open(file_name, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
 
 
 async def main():
     headless = True
     euro_link = 'https://www.flashscore.com/football/europe/euro/standings/#/EcpQtcVi/table'
+    data_file = 'data.json'
 
     async with async_playwright() as playwright:
         browser, page = await set_up(playwright, headless)
@@ -101,8 +130,10 @@ async def main():
             team_players = await get_teams_players(page, team_players_link)
             teams_data[team] = team_players
 
-        save_data(teams_data)
+        save_data(teams_data, data_file)
         tear_down(browser)
+
+    retrieve_coaches(data_file)
 
 
 if __name__ == '__main__':
