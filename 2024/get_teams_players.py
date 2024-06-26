@@ -30,7 +30,6 @@ async def get_teams_players(page, link):
     player_row_class = 'lineupTable__row'
     player_name_class = 'lineupTable__cell--name'
     player_age_class = 'lineupTable__cell--age'
-    player_flag_class = 'lineupTable__cell--flag'
 
     players = await page.locator(f'.{player_row_class}').all()
     players_data = {}
@@ -43,7 +42,6 @@ async def get_teams_players(page, link):
         age = await player_row.locator(f'.{player_age_class}').inner_text()
         short_name = f'{surname} {first_name[0]}.' if first_name else surname
         link = await player.get_attribute('href')
-        club = await player_row.locator(f'.{player_flag_class}').first.get_attribute('title')
         players_data[name] = {'name': short_name, 'age': age, 'link': link}
     await complete_team_players_data(page, players_data)
     return players_data
@@ -83,6 +81,7 @@ async def complete_team_players_data(page, team_players_dict):
 def retrieve_coaches(json_file):
     json_data = read_json(json_file)
     coaches = {}
+    players = {}
     for country, players in json_data.items():
         for player, dd in players.items():
             role = dd['role']
@@ -100,6 +99,20 @@ def retrieve_coaches(json_file):
 
     save_data(json_data, 'players.json')
     save_data(coaches, 'coaches.json')
+
+
+def flatten_players_hierarchy(json_file, js_file_name='players.js'):
+    json_data = read_json(json_file)
+    all_players = []
+    for country, players in json_data.items():
+        for player, dd in players.items():
+            dd['national_team'] = country
+            dd['name'] = player
+            all_players.append(dd)
+
+    with open(js_file_name, 'w', encoding='utf-8') as f:
+        f.write('const players = ')
+        json.dump(all_players, f, ensure_ascii=False, indent=4)
 
 
 def read_json(json_file):
@@ -134,6 +147,7 @@ async def main():
         tear_down(browser)
 
     retrieve_coaches(data_file)
+    flatten_players_hierarchy('players.json', '../js/2024/players.js')
 
 
 if __name__ == '__main__':
