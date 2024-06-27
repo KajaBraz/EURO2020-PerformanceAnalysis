@@ -6,7 +6,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€4.8m",
         "club": "Bayern Munich",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Germany",
         "name": "Neuer Manuel"
@@ -18,7 +18,7 @@ const players = [
         "role": "Defender",
         "value": "€14.5m",
         "club": "VfB Stuttgart",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Germany",
         "name": "Mittelstadt Maximilian"
@@ -30,7 +30,7 @@ const players = [
         "role": "Defender",
         "value": "€24.1m",
         "club": "Real Madrid",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Germany",
         "name": "Rudiger Antonio"
@@ -42,7 +42,7 @@ const players = [
         "role": "Defender",
         "value": "€30.2m",
         "club": "Bayer Leverkusen",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Germany",
         "name": "Tah Jonathan"
@@ -54,7 +54,7 @@ const players = [
         "role": "Midfielder",
         "value": "€10.9m",
         "club": "Bayer Leverkusen",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Germany",
         "name": "Andrich Robert"
@@ -66,7 +66,7 @@ const players = [
         "role": "Midfielder",
         "value": "€12.1m",
         "club": "Dortmund",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Germany",
         "name": "Can Emre"
@@ -78,7 +78,7 @@ const players = [
         "role": "Midfielder",
         "value": "€8.1m",
         "club": "Brighton",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Germany",
         "name": "Gross Pascal"
@@ -90,7 +90,7 @@ const players = [
         "role": "Midfielder",
         "value": "€16.1m",
         "club": "Barcelona",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Germany",
         "name": "Gundogan Ilkay"
@@ -102,7 +102,7 @@ const players = [
         "role": "Midfielder",
         "value": "€59.6m",
         "club": "Arsenal",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Germany",
         "name": "Havertz Kai"
@@ -114,7 +114,7 @@ const players = [
         "role": "Midfielder",
         "value": "€62.1m",
         "club": "Bayern Munich",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Germany",
         "name": "Kimmich Joshua"
@@ -126,7 +126,7 @@ const players = [
         "role": "Midfielder",
         "value": "€12.4m",
         "club": "Real Madrid",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Germany",
         "name": "Kroos Toni"
@@ -138,7 +138,7 @@ const players = [
         "role": "Midfielder",
         "value": "€118.6m",
         "club": "Bayern Munich",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Germany",
         "name": "Musiala Jamal"
@@ -150,7 +150,7 @@ const players = [
         "role": "Midfielder",
         "value": "€113.9m",
         "club": "Bayer Leverkusen",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Germany",
         "name": "Wirtz Florian"
@@ -162,7 +162,7 @@ const players = [
         "role": "Forward",
         "value": "€24.8m",
         "club": "VfB Stuttgart",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Germany",
         "name": "Fuhrich Chris"
@@ -174,7 +174,7 @@ const players = [
         "role": "Forward",
         "value": "€15.5m",
         "club": "Dortmund",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Germany",
         "name": "Fullkrug Niclas"
@@ -186,7 +186,7 @@ const players = [
         "role": "Forward",
         "value": "€9.9m",
         "club": "Bayern Munich",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Germany",
         "name": "Muller Thomas"
@@ -198,7 +198,7 @@ const players = [
         "role": "Forward",
         "value": "€71.5m",
         "club": "Bayern Munich",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Germany",
         "name": "Sane Leroy"
@@ -210,7 +210,7 @@ const players = [
         "role": "Forward",
         "value": "€21.2m",
         "club": "VfB Stuttgart",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Germany",
         "name": "Undav Deniz"
@@ -222,7 +222,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€3.9m",
         "club": "Hoffenheim",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Germany",
         "name": "Baumann Oliver"
@@ -234,7 +234,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€28.9m",
         "club": "Barcelona",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Germany",
         "name": "ter Stegen Marc-Andre"
@@ -246,7 +246,7 @@ const players = [
         "role": "Defender",
         "value": "€17.9m",
         "club": "VfB Stuttgart",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Germany",
         "name": "Anton Waldemar"
@@ -258,7 +258,7 @@ const players = [
         "role": "Defender",
         "value": "€19.9m",
         "club": "RB Leipzig",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Germany",
         "name": "Henrichs Benjamin"
@@ -270,7 +270,7 @@ const players = [
         "role": "Defender",
         "value": "€17.6m",
         "club": "Eintracht Frankfurt",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Germany",
         "name": "Koch Robin"
@@ -282,7 +282,7 @@ const players = [
         "role": "Defender",
         "value": "€16.9m",
         "club": "RB Leipzig",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Germany",
         "name": "Raum David"
@@ -294,7 +294,7 @@ const players = [
         "role": "Defender",
         "value": "€29.4m",
         "club": "Dortmund",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Germany",
         "name": "Schlotterbeck Nico"
@@ -306,7 +306,7 @@ const players = [
         "role": "Forward",
         "value": "€23.1m",
         "club": "Hoffenheim",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Germany",
         "name": "Beier Maximilian"
@@ -318,7 +318,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€4.9m",
         "club": "Inter",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Switzerland",
         "name": "Sommer Yann"
@@ -330,7 +330,7 @@ const players = [
         "role": "Defender",
         "value": "€41.7m",
         "club": "Manchester City",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Switzerland",
         "name": "Akanji Manuel"
@@ -342,7 +342,7 @@ const players = [
         "role": "Defender",
         "value": "€3.4m",
         "club": "Torino",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Switzerland",
         "name": "Rodriguez Ricardo"
@@ -354,7 +354,7 @@ const players = [
         "role": "Defender",
         "value": "€9.8m",
         "club": "Newcastle Utd",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Switzerland",
         "name": "Schar Fabian"
@@ -366,7 +366,7 @@ const players = [
         "role": "Defender",
         "value": "€1.8m",
         "club": "VfB Stuttgart",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Switzerland",
         "name": "Stergiou Leonidas"
@@ -378,7 +378,7 @@ const players = [
         "role": "Defender",
         "value": "€3.4m",
         "club": "Mainz",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Switzerland",
         "name": "Widmer Silvan"
@@ -390,7 +390,7 @@ const players = [
         "role": "Midfielder",
         "value": "€5.5m",
         "club": "Bologna",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Switzerland",
         "name": "Aebischer Michel"
@@ -402,7 +402,7 @@ const players = [
         "role": "Midfielder",
         "value": "€14.7m",
         "club": "Burnley",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Switzerland",
         "name": "Amdouni Zeki"
@@ -414,7 +414,7 @@ const players = [
         "role": "Midfielder",
         "value": "€1.9m",
         "club": "Ludogorets",
-        "league": "Parva liga",
+        "league": "Parva liga (Bulgaria)",
         "league_country": "Bulgaria",
         "national_team": "Switzerland",
         "name": "Duah Kwadwo"
@@ -426,7 +426,7 @@ const players = [
         "role": "Midfielder",
         "value": "€6.4m",
         "club": "Bologna",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Switzerland",
         "name": "Freuler Remo"
@@ -438,7 +438,7 @@ const players = [
         "role": "Midfielder",
         "value": "€9.6m",
         "club": "Rennes",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "Switzerland",
         "name": "Rieder Fabian"
@@ -450,7 +450,7 @@ const players = [
         "role": "Midfielder",
         "value": "€2.5m",
         "club": "Chicago Fire",
-        "league": "MLS",
+        "league": "MLS (USA)",
         "league_country": "USA",
         "national_team": "Switzerland",
         "name": "Shaqiri Xherdan"
@@ -462,7 +462,7 @@ const players = [
         "role": "Midfielder",
         "value": "€1.1m",
         "club": "Toulouse",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "Switzerland",
         "name": "Sierro Vincent"
@@ -474,7 +474,7 @@ const players = [
         "role": "Midfielder",
         "value": "€6.5m",
         "club": "Augsburg",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Switzerland",
         "name": "Vargas Ruben"
@@ -486,7 +486,7 @@ const players = [
         "role": "Midfielder",
         "value": "€20.1m",
         "club": "Bayer Leverkusen",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Switzerland",
         "name": "Xhaka Granit"
@@ -498,7 +498,7 @@ const players = [
         "role": "Forward",
         "value": "€12.1m",
         "club": "Monaco",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "Switzerland",
         "name": "Embolo Breel"
@@ -510,7 +510,7 @@ const players = [
         "role": "Forward",
         "value": "€10.1m",
         "club": "Bologna",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Switzerland",
         "name": "Ndoye Dan"
@@ -522,7 +522,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€38.0m",
         "club": "Dortmund",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Switzerland",
         "name": "Kobel Gregor"
@@ -534,7 +534,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€3.4m",
         "club": "Lorient",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "Switzerland",
         "name": "Mvogo Yvon"
@@ -546,7 +546,7 @@ const players = [
         "role": "Defender",
         "value": "€9.9m",
         "club": "B. Monchengladbach",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Switzerland",
         "name": "Elvedi Nico"
@@ -558,7 +558,7 @@ const players = [
         "role": "Defender",
         "value": "€5.8m",
         "club": "Wolfsburg",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Switzerland",
         "name": "Zesiger Cedric"
@@ -570,7 +570,7 @@ const players = [
         "role": "Midfielder",
         "value": "€5.8m",
         "club": "Luzern",
-        "league": "Super League",
+        "league": "Super League (Switzerland)",
         "league_country": "Switzerland",
         "national_team": "Switzerland",
         "name": "Jashari Ardon"
@@ -582,7 +582,7 @@ const players = [
         "role": "Midfielder",
         "value": "€24.1m",
         "club": "Monaco",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "Switzerland",
         "name": "Zakaria Denis"
@@ -594,7 +594,7 @@ const players = [
         "role": "Midfielder",
         "value": "€2.0m",
         "club": "AEK",
-        "league": "Super League",
+        "league": "Super League (Greece)",
         "league_country": "Greece",
         "national_team": "Switzerland",
         "name": "Zuber Steven"
@@ -606,7 +606,7 @@ const players = [
         "role": "Forward",
         "value": "€19.3m",
         "club": "AC Milan",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Switzerland",
         "name": "Okafor Noah"
@@ -618,7 +618,7 @@ const players = [
         "role": "Forward",
         "value": "€993k",
         "club": "Lugano",
-        "league": "Super League",
+        "league": "Super League (Switzerland)",
         "league_country": "Switzerland",
         "national_team": "Switzerland",
         "name": "Steffen Renato"
@@ -630,7 +630,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€2.3m",
         "club": "Norwich",
-        "league": "Championship",
+        "league": "Championship (England)",
         "league_country": "England",
         "national_team": "Scotland",
         "name": "Gunn Angus"
@@ -642,7 +642,7 @@ const players = [
         "role": "Defender",
         "value": "€894k",
         "club": "Norwich",
-        "league": "Championship",
+        "league": "Championship (England)",
         "league_country": "England",
         "national_team": "Scotland",
         "name": "Hanley Grant"
@@ -654,7 +654,7 @@ const players = [
         "role": "Defender",
         "value": "€2.6m",
         "club": "Al Ettifaq FC",
-        "league": "Saudi Professional League",
+        "league": "Saudi Professional League (Saudi Arabia)",
         "league_country": "Saudi Arabia",
         "national_team": "Scotland",
         "name": "Hendry Jack"
@@ -666,7 +666,7 @@ const players = [
         "role": "Defender",
         "value": "€9.2m",
         "club": "FC Copenhagen",
-        "league": "Superliga",
+        "league": "Superliga (Denmark)",
         "league_country": "Denmark",
         "national_team": "Scotland",
         "name": "McKenna Scott"
@@ -678,7 +678,7 @@ const players = [
         "role": "Defender",
         "value": "€3.0m",
         "club": "Watford",
-        "league": "Championship",
+        "league": "Championship (England)",
         "league_country": "England",
         "national_team": "Scotland",
         "name": "Porteous Ryan"
@@ -690,7 +690,7 @@ const players = [
         "role": "Defender",
         "value": "€1.8m",
         "club": "Celtic",
-        "league": "Premiership",
+        "league": "Premiership (Scotland)",
         "league_country": "Scotland",
         "national_team": "Scotland",
         "name": "Ralston Anthony"
@@ -702,7 +702,7 @@ const players = [
         "role": "Defender",
         "value": "€35.2m",
         "club": "Liverpool",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Scotland",
         "name": "Robertson Andrew"
@@ -714,7 +714,7 @@ const players = [
         "role": "Defender",
         "value": "€11.6m",
         "club": "Real Sociedad",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Scotland",
         "name": "Tierney Kieran"
@@ -726,7 +726,7 @@ const players = [
         "role": "Midfielder",
         "value": "€11.6m",
         "club": "Bournemouth",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Scotland",
         "name": "Christie Ryan"
@@ -738,7 +738,7 @@ const players = [
         "role": "Midfielder",
         "value": "€17.6m",
         "club": "Brighton",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Scotland",
         "name": "Gilmour Billy"
@@ -750,7 +750,7 @@ const players = [
         "role": "Midfielder",
         "value": "€29.8m",
         "club": "Aston Villa",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Scotland",
         "name": "McGinn John"
@@ -762,7 +762,7 @@ const players = [
         "role": "Midfielder",
         "value": "€8.8m",
         "club": "Celtic",
-        "league": "Premiership",
+        "league": "Premiership (Scotland)",
         "league_country": "Scotland",
         "national_team": "Scotland",
         "name": "McGregor Callum"
@@ -774,7 +774,7 @@ const players = [
         "role": "Midfielder",
         "value": "€881k",
         "club": "Norwich",
-        "league": "Championship",
+        "league": "Championship (England)",
         "league_country": "England",
         "national_team": "Scotland",
         "name": "McLean Kenny"
@@ -786,7 +786,7 @@ const players = [
         "role": "Midfielder",
         "value": "€32.2m",
         "club": "Manchester United",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Scotland",
         "name": "McTominay Scott"
@@ -798,7 +798,7 @@ const players = [
         "role": "Forward",
         "value": "€14.3m",
         "club": "Southampton",
-        "league": "Championship",
+        "league": "Championship (England)",
         "league_country": "England",
         "national_team": "Scotland",
         "name": "Adams Che"
@@ -810,7 +810,7 @@ const players = [
         "role": "Forward",
         "value": "€2.5m",
         "club": "Hearts",
-        "league": "Premiership",
+        "league": "Premiership (Scotland)",
         "league_country": "Scotland",
         "national_team": "Scotland",
         "name": "Shankland Lawrence"
@@ -822,7 +822,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€675k",
         "club": "Hearts",
-        "league": "Premiership",
+        "league": "Premiership (Scotland)",
         "league_country": "Scotland",
         "national_team": "Scotland",
         "name": "Clark Zander"
@@ -834,7 +834,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€596k",
         "club": "Motherwell",
-        "league": "Premiership",
+        "league": "Premiership (Scotland)",
         "league_country": "Scotland",
         "national_team": "Scotland",
         "name": "Kelly Liam"
@@ -846,7 +846,7 @@ const players = [
         "role": "Defender",
         "value": "€936k",
         "club": "Leeds",
-        "league": "Championship",
+        "league": "Championship (England)",
         "league_country": "England",
         "national_team": "Scotland",
         "name": "Cooper Liam"
@@ -858,7 +858,7 @@ const players = [
         "role": "Defender",
         "value": "€6.7m",
         "club": "Celtic",
-        "league": "Premiership",
+        "league": "Premiership (Scotland)",
         "league_country": "Scotland",
         "national_team": "Scotland",
         "name": "Taylor Greg"
@@ -870,7 +870,7 @@ const players = [
         "role": "Midfielder",
         "value": "€2.0m",
         "club": "Southampton",
-        "league": "Championship",
+        "league": "Championship (England)",
         "league_country": "England",
         "national_team": "Scotland",
         "name": "Armstrong Stuart"
@@ -882,7 +882,7 @@ const players = [
         "role": "Midfielder",
         "value": "€1.4m",
         "club": "Rangers",
-        "league": "Premiership",
+        "league": "Premiership (Scotland)",
         "league_country": "Scotland",
         "national_team": "Scotland",
         "name": "Jack Ryan"
@@ -894,7 +894,7 @@ const players = [
         "role": "Midfielder",
         "value": "€1.8m",
         "club": "Bristol City",
-        "league": "Championship",
+        "league": "Championship (England)",
         "league_country": "England",
         "national_team": "Scotland",
         "name": "McCrorie Ross"
@@ -906,7 +906,7 @@ const players = [
         "role": "Midfielder",
         "value": "€3.9m",
         "club": "New York Red Bulls",
-        "league": "MLS",
+        "league": "MLS (USA)",
         "league_country": "USA",
         "national_team": "Scotland",
         "name": "Morgan Lewis"
@@ -918,7 +918,7 @@ const players = [
         "role": "Forward",
         "value": "€2.3m",
         "club": "Bristol City",
-        "league": "Championship",
+        "league": "Championship (England)",
         "league_country": "England",
         "national_team": "Scotland",
         "name": "Conway Tommy"
@@ -930,7 +930,7 @@ const players = [
         "role": "Forward",
         "value": "€1.5m",
         "club": "Celtic",
-        "league": "Premiership",
+        "league": "Premiership (Scotland)",
         "league_country": "Scotland",
         "national_team": "Scotland",
         "name": "Forrest James"
@@ -942,7 +942,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€3.2m",
         "club": "RB Leipzig",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Hungary",
         "name": "Gulacsi Peter"
@@ -954,7 +954,7 @@ const players = [
         "role": "Defender",
         "value": "€2.0m",
         "club": "Servette",
-        "league": "Super League",
+        "league": "Super League (Switzerland)",
         "league_country": "Switzerland",
         "national_team": "Hungary",
         "name": "Bolla Bendeguz"
@@ -966,7 +966,7 @@ const players = [
         "role": "Defender",
         "value": "€2.3m",
         "club": "Hertha Berlin",
-        "league": "2. Bundesliga",
+        "league": "2. Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Hungary",
         "name": "Dardai Marton"
@@ -978,7 +978,7 @@ const players = [
         "role": "Defender",
         "value": "€369k",
         "club": "Fehervar FC",
-        "league": "OTP Bank Liga",
+        "league": "OTP Bank Liga (Hungary)",
         "league_country": "Hungary",
         "national_team": "Hungary",
         "name": "Fiola Attila"
@@ -990,7 +990,7 @@ const players = [
         "role": "Defender",
         "value": "€19.6m",
         "club": "Bournemouth",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Hungary",
         "name": "Kerkez Milos"
@@ -1002,7 +1002,7 @@ const players = [
         "role": "Defender",
         "value": "€570k",
         "club": "Omonia",
-        "league": "Cyta Championship",
+        "league": "Cyta Championship (Cyprus)",
         "league_country": "Cyprus",
         "national_team": "Hungary",
         "name": "Lang Adam"
@@ -1014,7 +1014,7 @@ const players = [
         "role": "Defender",
         "value": "€596k",
         "club": "Puskas Academy",
-        "league": "OTP Bank Liga",
+        "league": "OTP Bank Liga (Hungary)",
         "league_country": "Hungary",
         "national_team": "Hungary",
         "name": "Nagy Zsolt"
@@ -1026,7 +1026,7 @@ const players = [
         "role": "Defender",
         "value": "€9.9m",
         "club": "RB Leipzig",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Hungary",
         "name": "Orban Willi"
@@ -1038,7 +1038,7 @@ const players = [
         "role": "Defender",
         "value": "€5.8m",
         "club": "Freiburg",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Hungary",
         "name": "Szalai Attila"
@@ -1050,7 +1050,7 @@ const players = [
         "role": "Midfielder",
         "value": "€8.1m",
         "club": "Philadelphia Union",
-        "league": "MLS",
+        "league": "MLS (USA)",
         "league_country": "USA",
         "national_team": "Hungary",
         "name": "Gazdag Daniel"
@@ -1062,7 +1062,7 @@ const players = [
         "role": "Midfielder",
         "value": "€1.4m",
         "club": "Hajduk Split",
-        "league": "HNL",
+        "league": "HNL (Croatia)",
         "league_country": "Croatia",
         "national_team": "Hungary",
         "name": "Kleinheisler Laszlo"
@@ -1074,7 +1074,7 @@ const players = [
         "role": "Midfielder",
         "value": "€950k",
         "club": "Spezia",
-        "league": "Serie B",
+        "league": "Serie B (Italy)",
         "league_country": "Italy",
         "national_team": "Hungary",
         "name": "Nagy Adam"
@@ -1086,7 +1086,7 @@ const players = [
         "role": "Midfielder",
         "value": "€4.8m",
         "club": "Union Berlin",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Hungary",
         "name": "Schafer Andras"
@@ -1098,7 +1098,7 @@ const players = [
         "role": "Midfielder",
         "value": "€77.7m",
         "club": "Liverpool",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Hungary",
         "name": "Szoboszlai Dominik"
@@ -1110,7 +1110,7 @@ const players = [
         "role": "Forward",
         "value": "€1.0m",
         "club": "Ulsan HD",
-        "league": "K League 1",
+        "league": "K League 1 (South Korea)",
         "league_country": "South Korea",
         "national_team": "Hungary",
         "name": "Adam Martin"
@@ -1122,7 +1122,7 @@ const players = [
         "role": "Forward",
         "value": "€760k",
         "club": "Ujpest",
-        "league": "OTP Bank Liga",
+        "league": "OTP Bank Liga (Hungary)",
         "league_country": "Hungary",
         "national_team": "Hungary",
         "name": "Csoboth Kevin"
@@ -1134,7 +1134,7 @@ const players = [
         "role": "Forward",
         "value": "€15.1m",
         "club": "Freiburg",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Hungary",
         "name": "Sallai Roland"
@@ -1146,7 +1146,7 @@ const players = [
         "role": "Forward",
         "value": "€2.1m",
         "club": "Ferencvaros",
-        "league": "OTP Bank Liga",
+        "league": "OTP Bank Liga (Hungary)",
         "league_country": "Hungary",
         "national_team": "Hungary",
         "name": "Varga Barnabas"
@@ -1158,7 +1158,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€2.4m",
         "club": "Ferencvaros",
-        "league": "OTP Bank Liga",
+        "league": "OTP Bank Liga (Hungary)",
         "league_country": "Hungary",
         "national_team": "Hungary",
         "name": "Dibusz Denes"
@@ -1170,7 +1170,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€461k",
         "club": "Paks",
-        "league": "OTP Bank Liga",
+        "league": "OTP Bank Liga (Hungary)",
         "league_country": "Hungary",
         "national_team": "Hungary",
         "name": "Szappanos Peter"
@@ -1182,7 +1182,7 @@ const players = [
         "role": "Defender",
         "value": "€1.7m",
         "club": "Parma",
-        "league": "Serie B",
+        "league": "Serie B (Italy)",
         "league_country": "Italy",
         "national_team": "Hungary",
         "name": "Balogh Botond"
@@ -1194,7 +1194,7 @@ const players = [
         "role": "Defender",
         "value": "€760k",
         "club": "Ferencvaros",
-        "league": "OTP Bank Liga",
+        "league": "OTP Bank Liga (Hungary)",
         "league_country": "Hungary",
         "national_team": "Hungary",
         "name": "Botka Endre"
@@ -1206,7 +1206,7 @@ const players = [
         "role": "Defender",
         "value": "€979k",
         "club": "Le Havre",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "Hungary",
         "name": "Nego Loic"
@@ -1218,7 +1218,7 @@ const players = [
         "role": "Midfielder",
         "value": "€894k",
         "club": "Kecskemeti TE",
-        "league": "OTP Bank Liga",
+        "league": "OTP Bank Liga (Hungary)",
         "league_country": "Hungary",
         "national_team": "Hungary",
         "name": "Horvath Krisztofer"
@@ -1230,7 +1230,7 @@ const players = [
         "role": "Midfielder",
         "value": "€665k",
         "club": "MTK Budapest",
-        "league": "OTP Bank Liga",
+        "league": "OTP Bank Liga (Hungary)",
         "league_country": "Hungary",
         "national_team": "Hungary",
         "name": "Kata Mihaly"
@@ -1242,7 +1242,7 @@ const players = [
         "role": "Midfielder",
         "value": "€2.4m",
         "club": "Sunderland",
-        "league": "Championship",
+        "league": "Championship (England)",
         "league_country": "England",
         "national_team": "Hungary",
         "name": "Styles Callum"
@@ -1254,7 +1254,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€23.4m",
         "club": "Ath Bilbao",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Spain",
         "name": "Simon Unai"
@@ -1266,7 +1266,7 @@ const players = [
         "role": "Defender",
         "value": "€11.9m",
         "club": "Real Madrid",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Spain",
         "name": "Carvajal Daniel"
@@ -1278,7 +1278,7 @@ const players = [
         "role": "Defender",
         "value": "€24.5m",
         "club": "Chelsea",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Spain",
         "name": "Cucurella Marc"
@@ -1290,7 +1290,7 @@ const players = [
         "role": "Defender",
         "value": "€4.0m",
         "club": "Real Madrid",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Spain",
         "name": "Fernandez Nacho"
@@ -1302,7 +1302,7 @@ const players = [
         "role": "Defender",
         "value": "€24.8m",
         "club": "Al Nassr",
-        "league": "Saudi Professional League",
+        "league": "Saudi Professional League (Saudi Arabia)",
         "league_country": "Saudi Arabia",
         "national_team": "Spain",
         "name": "Laporte Aymeric"
@@ -1314,7 +1314,7 @@ const players = [
         "role": "Defender",
         "value": "€39.1m",
         "club": "Real Sociedad",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Spain",
         "name": "Le Normand Robin"
@@ -1326,7 +1326,7 @@ const players = [
         "role": "Midfielder",
         "value": "€25.2m",
         "club": "Villarreal",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Spain",
         "name": "Baena Alex"
@@ -1338,7 +1338,7 @@ const players = [
         "role": "Midfielder",
         "value": "€50.3m",
         "club": "Real Sociedad",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Spain",
         "name": "Merino Mikel"
@@ -1350,7 +1350,7 @@ const players = [
         "role": "Midfielder",
         "value": "€54.6m",
         "club": "RB Leipzig",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Spain",
         "name": "Olmo Dani"
@@ -1362,7 +1362,7 @@ const players = [
         "role": "Midfielder",
         "value": "€48.2m",
         "club": "Real Sociedad",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Spain",
         "name": "Oyarzabal Mikel"
@@ -1374,7 +1374,7 @@ const players = [
         "role": "Midfielder",
         "value": "€80.6m",
         "club": "Barcelona",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Spain",
         "name": "Pedri"
@@ -1386,7 +1386,7 @@ const players = [
         "role": "Midfielder",
         "value": "€115.4m",
         "club": "Manchester City",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Spain",
         "name": "Rodri"
@@ -1398,7 +1398,7 @@ const players = [
         "role": "Midfielder",
         "value": "€30.2m",
         "club": "PSG",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "Spain",
         "name": "Ruiz Fabian"
@@ -1410,7 +1410,7 @@ const players = [
         "role": "Midfielder",
         "value": "€48.9m",
         "club": "Real Sociedad",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Spain",
         "name": "Zubimendi Martin"
@@ -1422,7 +1422,7 @@ const players = [
         "role": "Forward",
         "value": "€19.9m",
         "club": "Atl. Madrid",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Spain",
         "name": "Morata Alvaro"
@@ -1434,7 +1434,7 @@ const players = [
         "role": "Forward",
         "value": "€7.1m",
         "club": "Betis",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Spain",
         "name": "Perez Ayoze"
@@ -1446,7 +1446,7 @@ const players = [
         "role": "Forward",
         "value": "€34.3m",
         "club": "Barcelona",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Spain",
         "name": "Torres Ferran"
@@ -1458,7 +1458,7 @@ const players = [
         "role": "Forward",
         "value": "€51.1m",
         "club": "Ath Bilbao",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Spain",
         "name": "Williams Nico"
@@ -1470,7 +1470,7 @@ const players = [
         "role": "Forward",
         "value": "€80.8m",
         "club": "Barcelona",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Spain",
         "name": "Yamal Lamine"
@@ -1482,7 +1482,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€33.8m",
         "club": "Arsenal",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Spain",
         "name": "Raya David"
@@ -1494,7 +1494,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€24.8m",
         "club": "Real Sociedad",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Spain",
         "name": "Remiro Alex"
@@ -1506,7 +1506,7 @@ const players = [
         "role": "Defender",
         "value": "€47.9m",
         "club": "Bayer Leverkusen",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Spain",
         "name": "Grimaldo Alejandro"
@@ -1518,7 +1518,7 @@ const players = [
         "role": "Defender",
         "value": "€2.9m",
         "club": "Sevilla",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Spain",
         "name": "Navas Jesus"
@@ -1530,7 +1530,7 @@ const players = [
         "role": "Defender",
         "value": "€24.1m",
         "club": "Ath Bilbao",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Spain",
         "name": "Vivian Dani"
@@ -1542,7 +1542,7 @@ const players = [
         "role": "Midfielder",
         "value": "€14.9m",
         "club": "Barcelona",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Spain",
         "name": "Lopez Fermin"
@@ -1554,7 +1554,7 @@ const players = [
         "role": "Forward",
         "value": "€5.1m",
         "club": "Real Madrid",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Spain",
         "name": "Joselu"
@@ -1566,7 +1566,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€40.8m",
         "club": "PSG",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "Italy",
         "name": "Donnarumma Gianluigi"
@@ -1578,7 +1578,7 @@ const players = [
         "role": "Defender",
         "value": "€72.5m",
         "club": "Inter",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Italy",
         "name": "Bastoni Alessandro"
@@ -1590,7 +1590,7 @@ const players = [
         "role": "Defender",
         "value": "€24.5m",
         "club": "Bologna",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Italy",
         "name": "Calafiori Riccardo"
@@ -1602,7 +1602,7 @@ const players = [
         "role": "Defender",
         "value": "€24.1m",
         "club": "Juventus",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Italy",
         "name": "Cambiaso Andrea"
@@ -1614,7 +1614,7 @@ const players = [
         "role": "Defender",
         "value": "€3.9m",
         "club": "Inter",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Italy",
         "name": "Darmian Matteo"
@@ -1626,7 +1626,7 @@ const players = [
         "role": "Defender",
         "value": "€18.4m",
         "club": "Napoli",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Italy",
         "name": "Di Lorenzo Giovanni"
@@ -1638,7 +1638,7 @@ const players = [
         "role": "Defender",
         "value": "€52.5m",
         "club": "Inter",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Italy",
         "name": "Dimarco Federico"
@@ -1650,7 +1650,7 @@ const players = [
         "role": "Midfielder",
         "value": "€76.6m",
         "club": "Inter",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Italy",
         "name": "Barella Nicolo"
@@ -1662,7 +1662,7 @@ const players = [
         "role": "Midfielder",
         "value": "€19.3m",
         "club": "AS Roma",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Italy",
         "name": "Cristante Bryan"
@@ -1674,7 +1674,7 @@ const players = [
         "role": "Midfielder",
         "value": "€5.9m",
         "club": "Verona",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Italy",
         "name": "Folorunsho Michael"
@@ -1686,7 +1686,7 @@ const players = [
         "role": "Midfielder",
         "value": "€29.8m",
         "club": "Inter",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Italy",
         "name": "Frattesi Davide"
@@ -1698,7 +1698,7 @@ const players = [
         "role": "Midfielder",
         "value": "€14.9m",
         "club": "Arsenal",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Italy",
         "name": "Jorginho"
@@ -1710,7 +1710,7 @@ const players = [
         "role": "Midfielder",
         "value": "€25.5m",
         "club": "AS Roma",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Italy",
         "name": "Pellegrini Lorenzo"
@@ -1722,7 +1722,7 @@ const players = [
         "role": "Forward",
         "value": "€39.7m",
         "club": "Juventus",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Italy",
         "name": "Chiesa Federico"
@@ -1734,7 +1734,7 @@ const players = [
         "role": "Forward",
         "value": "€26.2m",
         "club": "Napoli",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Italy",
         "name": "Raspadori Giacomo"
@@ -1746,7 +1746,7 @@ const players = [
         "role": "Forward",
         "value": "€15.9m",
         "club": "Genoa",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Italy",
         "name": "Retegui Mateo"
@@ -1758,7 +1758,7 @@ const players = [
         "role": "Forward",
         "value": "€23.8m",
         "club": "Atalanta",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Italy",
         "name": "Scamacca Gianluca"
@@ -1770,7 +1770,7 @@ const players = [
         "role": "Forward",
         "value": "€22.2m",
         "club": "Lazio",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Italy",
         "name": "Zaccagni Mattia"
@@ -1782,7 +1782,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€14.5m",
         "club": "Napoli",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Italy",
         "name": "Meret Alex"
@@ -1794,7 +1794,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€34.3m",
         "club": "Tottenham",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Italy",
         "name": "Vicario Guglielmo"
@@ -1806,7 +1806,7 @@ const players = [
         "role": "Defender",
         "value": "€9.8m",
         "club": "Torino",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Italy",
         "name": "Bellanova Raoul"
@@ -1818,7 +1818,7 @@ const players = [
         "role": "Defender",
         "value": "€30.6m",
         "club": "Torino",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Italy",
         "name": "Buongiorno Alessandro"
@@ -1830,7 +1830,7 @@ const players = [
         "role": "Defender",
         "value": "€17.6m",
         "club": "Juventus",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Italy",
         "name": "Gatti Federico"
@@ -1842,7 +1842,7 @@ const players = [
         "role": "Defender",
         "value": "€20.1m",
         "club": "AS Roma",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Italy",
         "name": "Mancini Gianluca"
@@ -1854,7 +1854,7 @@ const players = [
         "role": "Midfielder",
         "value": "€14.7m",
         "club": "Juventus",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Italy",
         "name": "Fagioli Nicolo"
@@ -1866,7 +1866,7 @@ const players = [
         "role": "Forward",
         "value": "€5.0m",
         "club": "AS Roma",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Italy",
         "name": "El Shaarawy Stephan"
@@ -1878,7 +1878,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€2.9m",
         "club": "Brentford",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Albania",
         "name": "Strakosha Thomas"
@@ -1890,7 +1890,7 @@ const players = [
         "role": "Defender",
         "value": "€964k",
         "club": "CFR Cluj",
-        "league": "Liga 1",
+        "league": "Liga 1 (Romania)",
         "league_country": "Romania",
         "national_team": "Albania",
         "name": "Ajeti Arlind"
@@ -1902,7 +1902,7 @@ const players = [
         "role": "Defender",
         "value": "€9.8m",
         "club": "Atalanta",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Albania",
         "name": "Djimsiti Berat"
@@ -1914,7 +1914,7 @@ const players = [
         "role": "Defender",
         "value": "€2.9m",
         "club": "Lazio",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Albania",
         "name": "Hysaj Elseid"
@@ -1926,7 +1926,7 @@ const players = [
         "role": "Defender",
         "value": "€1.5m",
         "club": "Lokomotiv Moscow",
-        "league": "Premier League",
+        "league": "Premier League (Russia)",
         "league_country": "Russia",
         "national_team": "Albania",
         "name": "Mitaj Mario"
@@ -1938,7 +1938,7 @@ const players = [
         "role": "Midfielder",
         "value": "€15.4m",
         "club": "Inter",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Albania",
         "name": "Asllani Kristjan"
@@ -1950,7 +1950,7 @@ const players = [
         "role": "Midfielder",
         "value": "€5.8m",
         "club": "Sassuolo",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Albania",
         "name": "Bajrami Nedim"
@@ -1962,7 +1962,7 @@ const players = [
         "role": "Midfielder",
         "value": "€468k",
         "club": "Darmstadt",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Albania",
         "name": "Gjasula Klaus"
@@ -1974,7 +1974,7 @@ const players = [
         "role": "Midfielder",
         "value": "€2.4m",
         "club": "Sparta Prague",
-        "league": "FORTUNA:LIGA",
+        "league": "FORTUNA:LIGA (Czech Republic)",
         "league_country": "Czech Republic",
         "national_team": "Albania",
         "name": "Laci Qazim"
@@ -1986,7 +1986,7 @@ const players = [
         "role": "Midfielder",
         "value": "€3.7m",
         "club": "Lecce",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Albania",
         "name": "Ramadani Ylber"
@@ -1998,7 +1998,7 @@ const players = [
         "role": "Forward",
         "value": "€1.2m",
         "club": "Gwangju FC",
-        "league": "K League 1",
+        "league": "K League 1 (South Korea)",
         "league_country": "South Korea",
         "national_team": "Albania",
         "name": "Asani Jasir"
@@ -2010,7 +2010,7 @@ const players = [
         "role": "Forward",
         "value": "€26.6m",
         "club": "Fulham",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Albania",
         "name": "Broja Armando"
@@ -2022,7 +2022,7 @@ const players = [
         "role": "Forward",
         "value": "€1.5m",
         "club": "Rubin Kazan",
-        "league": "Premier League",
+        "league": "Premier League (Russia)",
         "league_country": "Russia",
         "national_team": "Albania",
         "name": "Daku Mirlind"
@@ -2034,7 +2034,7 @@ const players = [
         "role": "Forward",
         "value": "€964k",
         "club": "Din. Zagreb",
-        "league": "HNL",
+        "league": "HNL (Croatia)",
         "league_country": "Croatia",
         "national_team": "Albania",
         "name": "Hoxha Arber"
@@ -2046,7 +2046,7 @@ const players = [
         "role": "Forward",
         "value": "€2.9m",
         "club": "Sivasspor",
-        "league": "Super Lig",
+        "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "national_team": "Albania",
         "name": "Manaj Rey"
@@ -2058,7 +2058,7 @@ const players = [
         "role": "Forward",
         "value": "€10.9m",
         "club": "Besiktas",
-        "league": "Super Lig",
+        "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "national_team": "Albania",
         "name": "Muci Ernest"
@@ -2070,7 +2070,7 @@ const players = [
         "role": "Forward",
         "value": "€3.0m",
         "club": "Bani Yas",
-        "league": "UAE League",
+        "league": "UAE League (United Arab Emirates)",
         "league_country": "United Arab Emirates",
         "national_team": "Albania",
         "name": "Seferi Taulant"
@@ -2082,7 +2082,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€482k",
         "club": "Empoli",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Albania",
         "name": "Berisha Etrit"
@@ -2094,7 +2094,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€1.4m",
         "club": "Cittadella",
-        "league": "Serie B",
+        "league": "Serie B (Italy)",
         "league_country": "Italy",
         "national_team": "Albania",
         "name": "Kastrati Elhan"
@@ -2106,7 +2106,7 @@ const players = [
         "role": "Defender",
         "value": "€380k",
         "club": "Voluntari",
-        "league": "Liga 1",
+        "league": "Liga 1 (Romania)",
         "league_country": "Romania",
         "national_team": "Albania",
         "name": "Aliji Naser"
@@ -2118,7 +2118,7 @@ const players = [
         "role": "Defender",
         "value": "€2.4m",
         "club": "Rayo Vallecano",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Albania",
         "name": "Balliu Ivan"
@@ -2130,7 +2130,7 @@ const players = [
         "role": "Defender",
         "value": "€2.9m",
         "club": "Empoli",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Albania",
         "name": "Ismajli Ardian"
@@ -2142,7 +2142,7 @@ const players = [
         "role": "Defender",
         "value": "€7.1m",
         "club": "Sassuolo",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Albania",
         "name": "Kumbulla Marash"
@@ -2154,7 +2154,7 @@ const players = [
         "role": "Defender",
         "value": "€908k",
         "club": "Famalicao",
-        "league": "Liga Portugal",
+        "league": "Liga Portugal (Portugal)",
         "league_country": "Portugal",
         "national_team": "Albania",
         "name": "Mihaj Enea"
@@ -2166,7 +2166,7 @@ const players = [
         "role": "Midfielder",
         "value": "€190k",
         "club": "Grasshoppers",
-        "league": "Super League",
+        "league": "Super League (Switzerland)",
         "league_country": "Switzerland",
         "national_team": "Albania",
         "name": "Abrashi Amir"
@@ -2178,7 +2178,7 @@ const players = [
         "role": "Midfielder",
         "value": "€461k",
         "club": "Lecce",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Albania",
         "name": "Berisha Medon"
@@ -2190,7 +2190,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€10.6m",
         "club": "Fenerbahce",
-        "league": "Super Lig",
+        "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "national_team": "Croatia",
         "name": "Livakovic Dominik"
@@ -2202,7 +2202,7 @@ const players = [
         "role": "Defender",
         "value": "€75.5m",
         "club": "Manchester City",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Croatia",
         "name": "Gvardiol Josko"
@@ -2214,7 +2214,7 @@ const players = [
         "role": "Defender",
         "value": "€9.9m",
         "club": "Union Berlin",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Croatia",
         "name": "Juranovic Josip"
@@ -2226,7 +2226,7 @@ const players = [
         "role": "Defender",
         "value": "€5.7m",
         "club": "Lecce",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Croatia",
         "name": "Pongracic Marin"
@@ -2238,7 +2238,7 @@ const players = [
         "role": "Defender",
         "value": "€7.9m",
         "club": "Ajax",
-        "league": "Eredivisie",
+        "league": "Eredivisie (Netherlands)",
         "league_country": "Netherlands",
         "national_team": "Croatia",
         "name": "Sosa Borna"
@@ -2250,7 +2250,7 @@ const players = [
         "role": "Defender",
         "value": "€27.8m",
         "club": "Bayer Leverkusen",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Croatia",
         "name": "Stanisic Josip"
@@ -2262,7 +2262,7 @@ const players = [
         "role": "Defender",
         "value": "€15.1m",
         "club": "Ajax",
-        "league": "Eredivisie",
+        "league": "Eredivisie (Netherlands)",
         "league_country": "Netherlands",
         "national_team": "Croatia",
         "name": "Sutalo Josip"
@@ -2274,7 +2274,7 @@ const players = [
         "role": "Midfielder",
         "value": "€19.4m",
         "club": "Din. Zagreb",
-        "league": "HNL",
+        "league": "HNL (Croatia)",
         "league_country": "Croatia",
         "national_team": "Croatia",
         "name": "Baturina Martin"
@@ -2286,7 +2286,7 @@ const players = [
         "role": "Midfielder",
         "value": "€18.1m",
         "club": "Al Nassr",
-        "league": "Saudi Professional League",
+        "league": "Saudi Professional League (Saudi Arabia)",
         "league_country": "Saudi Arabia",
         "national_team": "Croatia",
         "name": "Brozovic Marcelo"
@@ -2298,7 +2298,7 @@ const players = [
         "role": "Midfielder",
         "value": "€30.2m",
         "club": "Manchester City",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Croatia",
         "name": "Kovacic Mateo"
@@ -2310,7 +2310,7 @@ const players = [
         "role": "Midfielder",
         "value": "€25.2m",
         "club": "Wolfsburg",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Croatia",
         "name": "Majer Lovro"
@@ -2322,7 +2322,7 @@ const players = [
         "role": "Midfielder",
         "value": "€8.3m",
         "club": "Real Madrid",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Croatia",
         "name": "Modric Luka"
@@ -2334,7 +2334,7 @@ const players = [
         "role": "Midfielder",
         "value": "€12.9m",
         "club": "Atalanta",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Croatia",
         "name": "Pasalic Mario"
@@ -2346,7 +2346,7 @@ const players = [
         "role": "Midfielder",
         "value": "€4.1m",
         "club": "Hajduk Split",
-        "league": "HNL",
+        "league": "HNL (Croatia)",
         "league_country": "Croatia",
         "national_team": "Croatia",
         "name": "Perisic Ivan"
@@ -2358,7 +2358,7 @@ const players = [
         "role": "Midfielder",
         "value": "€17.6m",
         "club": "Salzburg",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Austria)",
         "league_country": "Austria",
         "national_team": "Croatia",
         "name": "Sucic Luka"
@@ -2370,7 +2370,7 @@ const players = [
         "role": "Forward",
         "value": "€4.8m",
         "club": "Osasuna",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Croatia",
         "name": "Budimir Ante"
@@ -2382,7 +2382,7 @@ const players = [
         "role": "Forward",
         "value": "€6.1m",
         "club": "Hoffenheim",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Croatia",
         "name": "Kramaric Andrej"
@@ -2394,7 +2394,7 @@ const players = [
         "role": "Forward",
         "value": "€5.2m",
         "club": "Din. Zagreb",
-        "league": "HNL",
+        "league": "HNL (Croatia)",
         "league_country": "Croatia",
         "national_team": "Croatia",
         "name": "Petkovic Bruno"
@@ -2406,7 +2406,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€2.7m",
         "club": "Paphos",
-        "league": "Cyta Championship",
+        "league": "Cyta Championship (Cyprus)",
         "league_country": "Cyprus",
         "national_team": "Croatia",
         "name": "Ivusic Ivica"
@@ -2418,7 +2418,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€3.2m",
         "club": "Rijeka",
-        "league": "HNL",
+        "league": "HNL (Croatia)",
         "league_country": "Croatia",
         "national_team": "Croatia",
         "name": "Labrovic Nediljko"
@@ -2430,7 +2430,7 @@ const players = [
         "role": "Defender",
         "value": "€3.9m",
         "club": "Sassuolo",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Croatia",
         "name": "Erlic Martin"
@@ -2442,7 +2442,7 @@ const players = [
         "role": "Defender",
         "value": "€1.5m",
         "club": "AEK",
-        "league": "Super League",
+        "league": "Super League (Greece)",
         "league_country": "Greece",
         "national_team": "Croatia",
         "name": "Vida Domagoj"
@@ -2454,7 +2454,7 @@ const players = [
         "role": "Midfielder",
         "value": "€12.4m",
         "club": "Feyenoord",
-        "league": "Eredivisie",
+        "league": "Eredivisie (Netherlands)",
         "league_country": "Netherlands",
         "national_team": "Croatia",
         "name": "Ivanusec Luka"
@@ -2466,7 +2466,7 @@ const players = [
         "role": "Midfielder",
         "value": "€3.4m",
         "club": "Rijeka",
-        "league": "HNL",
+        "league": "HNL (Croatia)",
         "league_country": "Croatia",
         "national_team": "Croatia",
         "name": "Pasalic Marco"
@@ -2478,7 +2478,7 @@ const players = [
         "role": "Midfielder",
         "value": "€12.5m",
         "club": "Torino",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Croatia",
         "name": "Vlasic Nikola"
@@ -2490,7 +2490,7 @@ const players = [
         "role": "Forward",
         "value": "€1.7m",
         "club": "Rijeka",
-        "league": "HNL",
+        "league": "HNL (Croatia)",
         "league_country": "Croatia",
         "national_team": "Croatia",
         "name": "Pjaca Marko"
@@ -2502,7 +2502,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€21.2m",
         "club": "Everton",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "England",
         "name": "Pickford Jordan"
@@ -2514,7 +2514,7 @@ const players = [
         "role": "Defender",
         "value": "€72.5m",
         "club": "Liverpool",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "England",
         "name": "Alexander-Arnold Trent"
@@ -2526,7 +2526,7 @@ const players = [
         "role": "Defender",
         "value": "€37.2m",
         "club": "Crystal Palace",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "England",
         "name": "Guehi Marc"
@@ -2538,7 +2538,7 @@ const players = [
         "role": "Defender",
         "value": "€37.2m",
         "club": "Manchester City",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "England",
         "name": "Stones John"
@@ -2550,7 +2550,7 @@ const players = [
         "role": "Defender",
         "value": "€11.1m",
         "club": "Newcastle Utd",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "England",
         "name": "Trippier Kieran"
@@ -2562,7 +2562,7 @@ const players = [
         "role": "Defender",
         "value": "€12.9m",
         "club": "Manchester City",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "England",
         "name": "Walker Kyle"
@@ -2574,7 +2574,7 @@ const players = [
         "role": "Midfielder",
         "value": "€196.6m",
         "club": "Real Madrid",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "England",
         "name": "Bellingham Jude"
@@ -2586,7 +2586,7 @@ const players = [
         "role": "Midfielder",
         "value": "€48.3m",
         "club": "Crystal Palace",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "England",
         "name": "Eze Eberechi"
@@ -2598,7 +2598,7 @@ const players = [
         "role": "Midfielder",
         "value": "€132.8m",
         "club": "Manchester City",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "England",
         "name": "Foden Phil"
@@ -2610,7 +2610,7 @@ const players = [
         "role": "Midfielder",
         "value": "€47.7m",
         "club": "Chelsea",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "England",
         "name": "Gallagher Conor"
@@ -2622,7 +2622,7 @@ const players = [
         "role": "Midfielder",
         "value": "€34.3m",
         "club": "Manchester United",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "England",
         "name": "Mainoo Kobbie"
@@ -2634,7 +2634,7 @@ const players = [
         "role": "Midfielder",
         "value": "€109.2m",
         "club": "Arsenal",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "England",
         "name": "Rice Declan"
@@ -2646,7 +2646,7 @@ const players = [
         "role": "Midfielder",
         "value": "€134.6m",
         "club": "Arsenal",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "England",
         "name": "Saka Bukayo"
@@ -2658,7 +2658,7 @@ const players = [
         "role": "Forward",
         "value": "€48.9m",
         "club": "West Ham",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "England",
         "name": "Bowen Jarrod"
@@ -2670,7 +2670,7 @@ const players = [
         "role": "Forward",
         "value": "€112.3m",
         "club": "Bayern Munich",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "England",
         "name": "Kane Harry"
@@ -2682,7 +2682,7 @@ const players = [
         "role": "Forward",
         "value": "€64.5m",
         "club": "Aston Villa",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "England",
         "name": "Watkins Ollie"
@@ -2694,7 +2694,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€11.2m",
         "club": "Crystal Palace",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "England",
         "name": "Henderson Dean"
@@ -2706,7 +2706,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€23.4m",
         "club": "Arsenal",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "England",
         "name": "Ramsdale Aaron"
@@ -2718,7 +2718,7 @@ const players = [
         "role": "Defender",
         "value": "€11.9m",
         "club": "Brighton",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "England",
         "name": "Dunk Lewis"
@@ -2730,7 +2730,7 @@ const players = [
         "role": "Defender",
         "value": "€24.1m",
         "club": "Liverpool",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "England",
         "name": "Gomez Joe"
@@ -2742,7 +2742,7 @@ const players = [
         "role": "Defender",
         "value": "€33.3m",
         "club": "Aston Villa",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "England",
         "name": "Konsa Ezri"
@@ -2754,7 +2754,7 @@ const players = [
         "role": "Defender",
         "value": "€34.7m",
         "club": "Manchester United",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "England",
         "name": "Shaw Luke"
@@ -2766,7 +2766,7 @@ const players = [
         "role": "Midfielder",
         "value": "€56.2m",
         "club": "Chelsea",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "England",
         "name": "Palmer Cole"
@@ -2778,7 +2778,7 @@ const players = [
         "role": "Midfielder",
         "value": "€19.9m",
         "club": "Crystal Palace",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "England",
         "name": "Wharton Adam"
@@ -2790,7 +2790,7 @@ const players = [
         "role": "Forward",
         "value": "€48.9m",
         "club": "Newcastle Utd",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "England",
         "name": "Gordon Anthony"
@@ -2802,7 +2802,7 @@ const players = [
         "role": "Forward",
         "value": "€51.1m",
         "club": "Brentford",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "England",
         "name": "Toney Ivan"
@@ -2814,7 +2814,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€964k",
         "club": "Anderlecht",
-        "league": "Jupiler Pro League",
+        "league": "Jupiler Pro League (Belgium)",
         "league_country": "Belgium",
         "national_team": "Denmark",
         "name": "Schmeichel Kasper"
@@ -2826,7 +2826,7 @@ const players = [
         "role": "Defender",
         "value": "€34.7m",
         "club": "Crystal Palace",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Denmark",
         "name": "Andersen Joachim"
@@ -2838,7 +2838,7 @@ const players = [
         "role": "Defender",
         "value": "€14.5m",
         "club": "Benfica",
-        "league": "Liga Portugal",
+        "league": "Liga Portugal (Portugal)",
         "league_country": "Portugal",
         "national_team": "Denmark",
         "name": "Bah Alexander"
@@ -2850,7 +2850,7 @@ const players = [
         "role": "Defender",
         "value": "€39.7m",
         "club": "Barcelona",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Denmark",
         "name": "Christensen Andreas"
@@ -2862,7 +2862,7 @@ const players = [
         "role": "Defender",
         "value": "€14.7m",
         "club": "Bologna",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Denmark",
         "name": "Kristiansen Victor"
@@ -2874,7 +2874,7 @@ const players = [
         "role": "Defender",
         "value": "€14.1m",
         "club": "Wolfsburg",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Denmark",
         "name": "Maehle Joakim"
@@ -2886,7 +2886,7 @@ const players = [
         "role": "Defender",
         "value": "€3.6m",
         "club": "Leicester",
-        "league": "Championship",
+        "league": "Championship (England)",
         "league_country": "England",
         "national_team": "Denmark",
         "name": "Vestergaard Jannik"
@@ -2898,7 +2898,7 @@ const players = [
         "role": "Midfielder",
         "value": "€9.9m",
         "club": "Brentford",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Denmark",
         "name": "Damsgaard Mikkel"
@@ -2910,7 +2910,7 @@ const players = [
         "role": "Midfielder",
         "value": "€2.4m",
         "club": "Anderlecht",
-        "league": "Jupiler Pro League",
+        "league": "Jupiler Pro League (Belgium)",
         "league_country": "Belgium",
         "national_team": "Denmark",
         "name": "Delaney Thomas"
@@ -2922,7 +2922,7 @@ const players = [
         "role": "Midfielder",
         "value": "€10.1m",
         "club": "Manchester United",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Denmark",
         "name": "Eriksen Christian"
@@ -2934,7 +2934,7 @@ const players = [
         "role": "Midfielder",
         "value": "€29.4m",
         "club": "Sporting Lisbon",
-        "league": "Liga Portugal",
+        "league": "Liga Portugal (Portugal)",
         "league_country": "Portugal",
         "national_team": "Denmark",
         "name": "Hjulmand Morten"
@@ -2946,7 +2946,7 @@ const players = [
         "role": "Midfielder",
         "value": "€20.4m",
         "club": "Tottenham",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Denmark",
         "name": "Hojbjerg Pierre-Emile"
@@ -2958,7 +2958,7 @@ const players = [
         "role": "Midfielder",
         "value": "€20.4m",
         "club": "Brentford",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Denmark",
         "name": "Norgaard Christian"
@@ -2970,7 +2970,7 @@ const players = [
         "role": "Forward",
         "value": "€11.4m",
         "club": "Anderlecht",
-        "league": "Jupiler Pro League",
+        "league": "Jupiler Pro League (Belgium)",
         "league_country": "Belgium",
         "national_team": "Denmark",
         "name": "Dolberg Kasper"
@@ -2982,7 +2982,7 @@ const players = [
         "role": "Forward",
         "value": "€63.6m",
         "club": "Manchester United",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Denmark",
         "name": "Hojlund Rasmus"
@@ -2994,7 +2994,7 @@ const players = [
         "role": "Forward",
         "value": "€6.5m",
         "club": "RB Leipzig",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Denmark",
         "name": "Poulsen Yussuf"
@@ -3006,7 +3006,7 @@ const players = [
         "role": "Forward",
         "value": "€18.6m",
         "club": "Club Brugge KV",
-        "league": "Jupiler Pro League",
+        "league": "Jupiler Pro League (Belgium)",
         "league_country": "Belgium",
         "national_team": "Denmark",
         "name": "Skov Olsen Andreas"
@@ -3018,7 +3018,7 @@ const players = [
         "role": "Forward",
         "value": "€20.1m",
         "club": "Wolfsburg",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Denmark",
         "name": "Wind Jonas"
@@ -3030,7 +3030,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€8.8m",
         "club": "Leicester",
-        "league": "Championship",
+        "league": "Championship (England)",
         "league_country": "England",
         "national_team": "Denmark",
         "name": "Hermansen Mads"
@@ -3042,7 +3042,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€5.2m",
         "club": "Union Berlin",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Denmark",
         "name": "Ronnow Frederik"
@@ -3054,7 +3054,7 @@ const players = [
         "role": "Defender",
         "value": "€2.0m",
         "club": "AC Milan",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Denmark",
         "name": "Kjaer Simon"
@@ -3066,7 +3066,7 @@ const players = [
         "role": "Defender",
         "value": "€9.5m",
         "club": "AS Roma",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Denmark",
         "name": "Kristensen Rasmus"
@@ -3078,7 +3078,7 @@ const players = [
         "role": "Defender",
         "value": "€950k",
         "club": "Brentford",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Denmark",
         "name": "Zanka"
@@ -3090,7 +3090,7 @@ const players = [
         "role": "Midfielder",
         "value": "€2.9m",
         "club": "Burnley",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Denmark",
         "name": "Bruun Larsen Jacob"
@@ -3102,7 +3102,7 @@ const players = [
         "role": "Midfielder",
         "value": "€30.2m",
         "club": "Brentford",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Denmark",
         "name": "Jensen Mathias"
@@ -3114,7 +3114,7 @@ const players = [
         "role": "Forward",
         "value": "€12.1m",
         "club": "Anderlecht",
-        "league": "Jupiler Pro League",
+        "league": "Jupiler Pro League (Belgium)",
         "league_country": "Belgium",
         "national_team": "Denmark",
         "name": "Dreyer Anders"
@@ -3126,7 +3126,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€28.1m",
         "club": "Atl. Madrid",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Slovenia",
         "name": "Oblak Jan"
@@ -3138,7 +3138,7 @@ const players = [
         "role": "Defender",
         "value": "€9.9m",
         "club": "Udinese",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Slovenia",
         "name": "Bijol Jaka"
@@ -3150,7 +3150,7 @@ const players = [
         "role": "Defender",
         "value": "€3.4m",
         "club": "Orlando City",
-        "league": "MLS",
+        "league": "MLS (USA)",
         "league_country": "USA",
         "national_team": "Slovenia",
         "name": "Brekalo David"
@@ -3162,7 +3162,7 @@ const players = [
         "role": "Defender",
         "value": "€2.9m",
         "club": "PFC Sochi",
-        "league": "Premier League",
+        "league": "Premier League (Russia)",
         "league_country": "Russia",
         "national_team": "Slovenia",
         "name": "Drkusic Vanja"
@@ -3174,7 +3174,7 @@ const players = [
         "role": "Defender",
         "value": "€604k",
         "club": "Gornik Zabrze",
-        "league": "Ekstraklasa",
+        "league": "Ekstraklasa (Poland)",
         "league_country": "Poland",
         "national_team": "Slovenia",
         "name": "Janza Erik"
@@ -3186,7 +3186,7 @@ const players = [
         "role": "Defender",
         "value": "€772k",
         "club": "Celje",
-        "league": "Prva liga",
+        "league": "Prva liga (Slovenia)",
         "league_country": "Slovenia",
         "national_team": "Slovenia",
         "name": "Karnicnik Zan"
@@ -3198,7 +3198,7 @@ const players = [
         "role": "Defender",
         "value": "€1.4m",
         "club": "Sampdoria",
-        "league": "Serie B",
+        "league": "Serie B (Italy)",
         "league_country": "Italy",
         "national_team": "Slovenia",
         "name": "Stojanovic Petar"
@@ -3210,7 +3210,7 @@ const players = [
         "role": "Midfielder",
         "value": "€2.9m",
         "club": "Panathinaikos",
-        "league": "Super League",
+        "league": "Super League (Greece)",
         "league_country": "Greece",
         "national_team": "Slovenia",
         "name": "Gnezda Cerin Adam"
@@ -3222,7 +3222,7 @@ const players = [
         "role": "Midfielder",
         "value": "€3.9m",
         "club": "Sturm Graz",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Austria)",
         "league_country": "Austria",
         "national_team": "Slovenia",
         "name": "Gorenc Stankovic Jon"
@@ -3234,7 +3234,7 @@ const players = [
         "role": "Midfielder",
         "value": "€636k",
         "club": "Sudtirol",
-        "league": "Serie B",
+        "league": "Serie B (Italy)",
         "league_country": "Italy",
         "national_team": "Slovenia",
         "name": "Kurtic Jasmin"
@@ -3246,7 +3246,7 @@ const players = [
         "role": "Midfielder",
         "value": "€2.4m",
         "club": "Panathinaikos",
-        "league": "Super League",
+        "league": "Super League (Greece)",
         "league_country": "Greece",
         "national_team": "Slovenia",
         "name": "Verbic Benjamin"
@@ -3258,7 +3258,7 @@ const players = [
         "role": "Forward",
         "value": "€3.9m",
         "club": "Lugano",
-        "league": "Super League",
+        "league": "Super League (Switzerland)",
         "league_country": "Switzerland",
         "national_team": "Slovenia",
         "name": "Celar Zan"
@@ -3270,7 +3270,7 @@ const players = [
         "role": "Forward",
         "value": "€1.4m",
         "club": "O. Ljubljana",
-        "league": "Prva liga",
+        "league": "Prva liga (Slovenia)",
         "league_country": "Slovenia",
         "national_team": "Slovenia",
         "name": "Elsnik Timi Max"
@@ -3282,7 +3282,7 @@ const players = [
         "role": "Forward",
         "value": "€2.6m",
         "club": "Pisa",
-        "league": "Serie B",
+        "league": "Serie B (Italy)",
         "league_country": "Italy",
         "national_team": "Slovenia",
         "name": "Mlakar Jan"
@@ -3294,7 +3294,7 @@ const players = [
         "role": "Forward",
         "value": "€48.9m",
         "club": "RB Leipzig",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Slovenia",
         "name": "Sesko Benjamin"
@@ -3306,7 +3306,7 @@ const players = [
         "role": "Forward",
         "value": "€4.9m",
         "club": "Panathinaikos",
-        "league": "Super League",
+        "league": "Super League (Greece)",
         "league_country": "Greece",
         "national_team": "Slovenia",
         "name": "Sporar Andraz"
@@ -3318,7 +3318,7 @@ const players = [
         "role": "Forward",
         "value": "€1.9m",
         "club": "Bordeaux",
-        "league": "Ligue 2",
+        "league": "Ligue 2 (France)",
         "league_country": "France",
         "national_team": "Slovenia",
         "name": "Vipotnik Zan"
@@ -3330,7 +3330,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€468k",
         "club": "APOEL",
-        "league": "Cyta Championship",
+        "league": "Cyta Championship (Cyprus)",
         "league_country": "Cyprus",
         "national_team": "Slovenia",
         "name": "Belec Vid"
@@ -3342,7 +3342,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€294k",
         "club": "Vejle",
-        "league": "Superliga",
+        "league": "Superliga (Denmark)",
         "league_country": "Denmark",
         "national_team": "Slovenia",
         "name": "Vekic Igor"
@@ -3354,7 +3354,7 @@ const players = [
         "role": "Defender",
         "value": "€1.3m",
         "club": "Alanyaspor",
-        "league": "Super Lig",
+        "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "national_team": "Slovenia",
         "name": "Balkovec Jure"
@@ -3366,7 +3366,7 @@ const players = [
         "role": "Defender",
         "value": "€1.1m",
         "club": "Lech Poznan",
-        "league": "Ekstraklasa",
+        "league": "Ekstraklasa (Poland)",
         "league_country": "Poland",
         "national_team": "Slovenia",
         "name": "Blazic Miha"
@@ -3378,7 +3378,7 @@ const players = [
         "role": "Defender",
         "value": "€794k",
         "club": "Spartak Trnava",
-        "league": "Nike liga",
+        "league": "Nike liga (Slovakia)",
         "league_country": "Slovakia",
         "national_team": "Slovenia",
         "name": "Zeljkovic Adrian"
@@ -3390,7 +3390,7 @@ const players = [
         "role": "Midfielder",
         "value": "€3.1m",
         "club": "Sturm Graz",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Austria)",
         "league_country": "Austria",
         "national_team": "Slovenia",
         "name": "Horvat Tomi"
@@ -3402,7 +3402,7 @@ const players = [
         "role": "Midfielder",
         "value": "€311k",
         "club": "Maribor",
-        "league": "Prva liga",
+        "league": "Prva liga (Slovenia)",
         "league_country": "Slovenia",
         "national_team": "Slovenia",
         "name": "Ilicic Josip"
@@ -3414,7 +3414,7 @@ const players = [
         "role": "Midfielder",
         "value": "€8.8m",
         "club": "Udinese",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Slovenia",
         "name": "Lovric Sandi"
@@ -3426,7 +3426,7 @@ const players = [
         "role": "Forward",
         "value": "€868k",
         "club": "Bodo/Glimt",
-        "league": "Eliteserien",
+        "league": "Eliteserien (Norway)",
         "league_country": "Norway",
         "national_team": "Slovenia",
         "name": "Zugelj Nino"
@@ -3438,7 +3438,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€9.5m",
         "club": "Mallorca",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Serbia",
         "name": "Rajkovic Predrag"
@@ -3450,7 +3450,7 @@ const players = [
         "role": "Defender",
         "value": "€15.4m",
         "club": "Fiorentina",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Serbia",
         "name": "Milenkovic Nikola"
@@ -3462,7 +3462,7 @@ const players = [
         "role": "Defender",
         "value": "€906k",
         "club": "Panathinaikos",
-        "league": "Super League",
+        "league": "Super League (Greece)",
         "league_country": "Greece",
         "national_team": "Serbia",
         "name": "Mladenovic Filip"
@@ -3474,7 +3474,7 @@ const players = [
         "role": "Defender",
         "value": "€25.9m",
         "club": "Salzburg",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Austria)",
         "league_country": "Austria",
         "national_team": "Serbia",
         "name": "Pavlovic Strahinja"
@@ -3486,7 +3486,7 @@ const players = [
         "role": "Defender",
         "value": "€4.3m",
         "club": "Werder Bremen",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Serbia",
         "name": "Veljkovic Milos"
@@ -3498,7 +3498,7 @@ const players = [
         "role": "Midfielder",
         "value": "€5.8m",
         "club": "Sparta Prague",
-        "league": "FORTUNA:LIGA",
+        "league": "FORTUNA:LIGA (Czech Republic)",
         "league_country": "Czech Republic",
         "national_team": "Serbia",
         "name": "Birmancevic Veljko"
@@ -3510,7 +3510,7 @@ const players = [
         "role": "Midfielder",
         "value": "€3.5m",
         "club": "AEK",
-        "league": "Super League",
+        "league": "Super League (Greece)",
         "league_country": "Greece",
         "national_team": "Serbia",
         "name": "Gacinovic Mijat"
@@ -3522,7 +3522,7 @@ const players = [
         "role": "Midfielder",
         "value": "€3.8m",
         "club": "Sevilla",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Serbia",
         "name": "Gudelj Nemanja"
@@ -3534,7 +3534,7 @@ const players = [
         "role": "Midfielder",
         "value": "€17.9m",
         "club": "Torino",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Serbia",
         "name": "Ilic Ivan"
@@ -3546,7 +3546,7 @@ const players = [
         "role": "Midfielder",
         "value": "€8.9m",
         "club": "Juventus",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Serbia",
         "name": "Kostic Filip"
@@ -3558,7 +3558,7 @@ const players = [
         "role": "Midfielder",
         "value": "€9.5m",
         "club": "Fulham",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Serbia",
         "name": "Lukic Sasa"
@@ -3570,7 +3570,7 @@ const players = [
         "role": "Midfielder",
         "value": "€36.7m",
         "club": "Al Hilal",
-        "league": "Saudi Professional League",
+        "league": "Saudi Professional League (Saudi Arabia)",
         "league_country": "Saudi Arabia",
         "national_team": "Serbia",
         "name": "Milinkovic-Savic Sergej"
@@ -3582,7 +3582,7 @@ const players = [
         "role": "Midfielder",
         "value": "€19.0m",
         "club": "Udinese",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Serbia",
         "name": "Samardzic Lazar"
@@ -3594,7 +3594,7 @@ const players = [
         "role": "Midfielder",
         "value": "€7.0m",
         "club": "PAOK",
-        "league": "Super League",
+        "league": "Super League (Greece)",
         "league_country": "Greece",
         "national_team": "Serbia",
         "name": "Zivkovic Andrija"
@@ -3606,7 +3606,7 @@ const players = [
         "role": "Forward",
         "value": "€6.8m",
         "club": "AC Milan",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Serbia",
         "name": "Jovic Luka"
@@ -3618,7 +3618,7 @@ const players = [
         "role": "Forward",
         "value": "€28.6m",
         "club": "Al Hilal",
-        "league": "Saudi Professional League",
+        "league": "Saudi Professional League (Saudi Arabia)",
         "league_country": "Saudi Arabia",
         "national_team": "Serbia",
         "name": "Mitrovic Aleksandar"
@@ -3630,7 +3630,7 @@ const players = [
         "role": "Forward",
         "value": "€4.1m",
         "club": "Fenerbahce",
-        "league": "Super Lig",
+        "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "national_team": "Serbia",
         "name": "Tadic Dusan"
@@ -3642,7 +3642,7 @@ const players = [
         "role": "Forward",
         "value": "€63.6m",
         "club": "Juventus",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Serbia",
         "name": "Vlahovic Dusan"
@@ -3654,7 +3654,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€4.8m",
         "club": "Torino",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Serbia",
         "name": "Milinkovic-Savic Vanja"
@@ -3666,7 +3666,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€14.3m",
         "club": "Chelsea",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Serbia",
         "name": "Petrovic Djordje"
@@ -3678,7 +3678,7 @@ const players = [
         "role": "Defender",
         "value": "€3.8m",
         "club": "Spartak Moscow",
-        "league": "Premier League",
+        "league": "Premier League (Russia)",
         "league_country": "Russia",
         "national_team": "Serbia",
         "name": "Babic Srdjan"
@@ -3690,7 +3690,7 @@ const players = [
         "role": "Defender",
         "value": "€1.2m",
         "club": "Crvena zvezda",
-        "league": "Super Liga",
+        "league": "Super Liga (Serbia)",
         "league_country": "Serbia",
         "national_team": "Serbia",
         "name": "Spajic Uros"
@@ -3702,7 +3702,7 @@ const players = [
         "role": "Defender",
         "value": "€2.0m",
         "club": "TSC Backa Topola",
-        "league": "Super Liga",
+        "league": "Super Liga (Serbia)",
         "league_country": "Serbia",
         "national_team": "Serbia",
         "name": "Stojic Nemanja"
@@ -3714,7 +3714,7 @@ const players = [
         "role": "Midfielder",
         "value": "€5.7m",
         "club": "Getafe",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Serbia",
         "name": "Maksimovic Nemanja"
@@ -3726,7 +3726,7 @@ const players = [
         "role": "Midfielder",
         "value": "€1.7m",
         "club": "Crvena zvezda",
-        "league": "Super Liga",
+        "league": "Super Liga (Serbia)",
         "league_country": "Serbia",
         "national_team": "Serbia",
         "name": "Mijailovic Srdjan"
@@ -3738,7 +3738,7 @@ const players = [
         "role": "Forward",
         "value": "€5.8m",
         "club": "Salzburg",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Austria)",
         "league_country": "Austria",
         "national_team": "Serbia",
         "name": "Ratkov Petar"
@@ -3750,7 +3750,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€14.9m",
         "club": "Brighton",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Netherlands",
         "name": "Verbruggen Bart"
@@ -3762,7 +3762,7 @@ const players = [
         "role": "Defender",
         "value": "€39.7m",
         "club": "Manchester City",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Netherlands",
         "name": "Ake Nathan"
@@ -3774,7 +3774,7 @@ const players = [
         "role": "Defender",
         "value": "€27.2m",
         "club": "Inter",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Netherlands",
         "name": "Dumfries Denzel"
@@ -3786,7 +3786,7 @@ const players = [
         "role": "Defender",
         "value": "€51.1m",
         "club": "Bayer Leverkusen",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Netherlands",
         "name": "Frimpong Jeremie"
@@ -3798,7 +3798,7 @@ const players = [
         "role": "Defender",
         "value": "€30.9m",
         "club": "Feyenoord",
-        "league": "Eredivisie",
+        "league": "Eredivisie (Netherlands)",
         "league_country": "Netherlands",
         "national_team": "Netherlands",
         "name": "Geertruida Lutsharel"
@@ -3810,7 +3810,7 @@ const players = [
         "role": "Defender",
         "value": "€7.9m",
         "club": "Inter",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Netherlands",
         "name": "de Vrij Stefan"
@@ -3822,7 +3822,7 @@ const players = [
         "role": "Defender",
         "value": "€32.2m",
         "club": "Liverpool",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Netherlands",
         "name": "van Dijk Virgil"
@@ -3834,7 +3834,7 @@ const players = [
         "role": "Defender",
         "value": "€48.9m",
         "club": "Tottenham",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Netherlands",
         "name": "van de Ven Micky"
@@ -3846,7 +3846,7 @@ const players = [
         "role": "Midfielder",
         "value": "€23.2m",
         "club": "AC Milan",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Netherlands",
         "name": "Reijnders Tijjani"
@@ -3858,7 +3858,7 @@ const players = [
         "role": "Midfielder",
         "value": "€24.8m",
         "club": "PSV",
-        "league": "Eredivisie",
+        "league": "Eredivisie (Netherlands)",
         "league_country": "Netherlands",
         "national_team": "Netherlands",
         "name": "Schouten Jerdy"
@@ -3870,7 +3870,7 @@ const players = [
         "role": "Midfielder",
         "value": "€80.6m",
         "club": "RB Leipzig",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Netherlands",
         "name": "Simons Xavi"
@@ -3882,7 +3882,7 @@ const players = [
         "role": "Midfielder",
         "value": "€34.0m",
         "club": "PSV",
-        "league": "Eredivisie",
+        "league": "Eredivisie (Netherlands)",
         "league_country": "Netherlands",
         "national_team": "Netherlands",
         "name": "Veerman Joey"
@@ -3894,7 +3894,7 @@ const players = [
         "role": "Midfielder",
         "value": "€5.0m",
         "club": "Al Ettifaq FC",
-        "league": "Saudi Professional League",
+        "league": "Saudi Professional League (Saudi Arabia)",
         "league_country": "Saudi Arabia",
         "national_team": "Netherlands",
         "name": "Wijnaldum Georginio"
@@ -3906,7 +3906,7 @@ const players = [
         "role": "Forward",
         "value": "€12.4m",
         "club": "Atl. Madrid",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Netherlands",
         "name": "Depay Memphis"
@@ -3918,7 +3918,7 @@ const players = [
         "role": "Forward",
         "value": "€53.2m",
         "club": "Liverpool",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Netherlands",
         "name": "Gakpo Cody"
@@ -3930,7 +3930,7 @@ const players = [
         "role": "Forward",
         "value": "€40.3m",
         "club": "Dortmund",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Netherlands",
         "name": "Malen Donyell"
@@ -3942,7 +3942,7 @@ const players = [
         "role": "Forward",
         "value": "€6.9m",
         "club": "Hoffenheim",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Netherlands",
         "name": "Weghorst Wout"
@@ -3954,7 +3954,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€12.0m",
         "club": "Feyenoord",
-        "league": "Eredivisie",
+        "league": "Eredivisie (Netherlands)",
         "league_country": "Netherlands",
         "national_team": "Netherlands",
         "name": "Bijlow Justin"
@@ -3966,7 +3966,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€11.6m",
         "club": "Brentford",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Netherlands",
         "name": "Flekken Mark"
@@ -3978,7 +3978,7 @@ const players = [
         "role": "Defender",
         "value": "€3.0m",
         "club": "Girona",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Netherlands",
         "name": "Blind Daley"
@@ -3990,7 +3990,7 @@ const players = [
         "role": "Defender",
         "value": "€28.9m",
         "club": "Dortmund",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Netherlands",
         "name": "Maatsen Ian"
@@ -4002,7 +4002,7 @@ const players = [
         "role": "Defender",
         "value": "€63.6m",
         "club": "Bayern Munich",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Netherlands",
         "name": "de Ligt Matthijs"
@@ -4014,7 +4014,7 @@ const players = [
         "role": "Midfielder",
         "value": "€33.8m",
         "club": "Liverpool",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Netherlands",
         "name": "Gravenberch Ryan"
@@ -4026,7 +4026,7 @@ const players = [
         "role": "Forward",
         "value": "€19.9m",
         "club": "Ajax",
-        "league": "Eredivisie",
+        "league": "Eredivisie (Netherlands)",
         "league_country": "Netherlands",
         "national_team": "Netherlands",
         "name": "Bergwijn Steven"
@@ -4038,7 +4038,7 @@ const players = [
         "role": "Forward",
         "value": "€24.5m",
         "club": "Ajax",
-        "league": "Eredivisie",
+        "league": "Eredivisie (Netherlands)",
         "league_country": "Netherlands",
         "national_team": "Netherlands",
         "name": "Brobbey Brian"
@@ -4050,7 +4050,7 @@ const players = [
         "role": "Forward",
         "value": "€38.6m",
         "club": "Bologna",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Netherlands",
         "name": "Zirkzee Joshua"
@@ -4062,7 +4062,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€38.0m",
         "club": "AC Milan",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "France",
         "name": "Maignan Mike"
@@ -4074,7 +4074,7 @@ const players = [
         "role": "Defender",
         "value": "€60.4m",
         "club": "AC Milan",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "France",
         "name": "Hernandez Theo"
@@ -4086,7 +4086,7 @@ const players = [
         "role": "Defender",
         "value": "€48.9m",
         "club": "Barcelona",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "France",
         "name": "Kounde Jules"
@@ -4098,7 +4098,7 @@ const players = [
         "role": "Defender",
         "value": "€77.2m",
         "club": "Arsenal",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "France",
         "name": "Saliba William"
@@ -4110,7 +4110,7 @@ const players = [
         "role": "Defender",
         "value": "€48.2m",
         "club": "Bayern Munich",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "France",
         "name": "Upamecano Dayot"
@@ -4122,7 +4122,7 @@ const players = [
         "role": "Midfielder",
         "value": "€89.4m",
         "club": "Real Madrid",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "France",
         "name": "Camavinga Eduardo"
@@ -4134,7 +4134,7 @@ const players = [
         "role": "Midfielder",
         "value": "€27.4m",
         "club": "Monaco",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "France",
         "name": "Fofana Youssouf"
@@ -4146,7 +4146,7 @@ const players = [
         "role": "Midfielder",
         "value": "€10.1m",
         "club": "Al Ittihad",
-        "league": "Saudi Professional League",
+        "league": "Saudi Professional League (Saudi Arabia)",
         "league_country": "Saudi Arabia",
         "national_team": "France",
         "name": "Kante N'Golo"
@@ -4158,7 +4158,7 @@ const players = [
         "role": "Midfielder",
         "value": "€39.7m",
         "club": "Juventus",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "France",
         "name": "Rabiot Adrien"
@@ -4170,7 +4170,7 @@ const players = [
         "role": "Midfielder",
         "value": "€93.2m",
         "club": "Real Madrid",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "France",
         "name": "Tchouameni Aurelien"
@@ -4182,7 +4182,7 @@ const players = [
         "role": "Forward",
         "value": "€66.4m",
         "club": "Bayern Munich",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "France",
         "name": "Coman Kingsley"
@@ -4194,7 +4194,7 @@ const players = [
         "role": "Forward",
         "value": "€63.8m",
         "club": "PSG",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "France",
         "name": "Dembele Ousmane"
@@ -4206,7 +4206,7 @@ const players = [
         "role": "Forward",
         "value": "€4.0m",
         "club": "AC Milan",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "France",
         "name": "Giroud Olivier"
@@ -4218,7 +4218,7 @@ const players = [
         "role": "Forward",
         "value": "€26.6m",
         "club": "Atl. Madrid",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "France",
         "name": "Griezmann Antoine"
@@ -4230,7 +4230,7 @@ const players = [
         "role": "Forward",
         "value": "€57.9m",
         "club": "PSG",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "France",
         "name": "Kolo Muani Randal"
@@ -4242,7 +4242,7 @@ const players = [
         "role": "Forward",
         "value": "€199.1m",
         "club": "PSG",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "France",
         "name": "Mbappe Kylian"
@@ -4254,7 +4254,7 @@ const players = [
         "role": "Forward",
         "value": "€59.6m",
         "club": "Inter",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "France",
         "name": "Thuram Marcus"
@@ -4266,7 +4266,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€9.6m",
         "club": "West Ham",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "France",
         "name": "Areola Alphonse"
@@ -4278,7 +4278,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€14.3m",
         "club": "Lens",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "France",
         "name": "Samba Brice"
@@ -4290,7 +4290,7 @@ const players = [
         "role": "Defender",
         "value": "€14.9m",
         "club": "Marseille",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "France",
         "name": "Clauss Jonathan"
@@ -4302,7 +4302,7 @@ const players = [
         "role": "Defender",
         "value": "€44.0m",
         "club": "Liverpool",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "France",
         "name": "Konate Ibrahima"
@@ -4314,7 +4314,7 @@ const players = [
         "role": "Defender",
         "value": "€19.3m",
         "club": "Real Madrid",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "France",
         "name": "Mendy Ferland"
@@ -4326,7 +4326,7 @@ const players = [
         "role": "Defender",
         "value": "€49.6m",
         "club": "Inter",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "France",
         "name": "Pavard Benjamin"
@@ -4338,7 +4338,7 @@ const players = [
         "role": "Midfielder",
         "value": "€59.6m",
         "club": "PSG",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "France",
         "name": "Zaire-Emery Warren"
@@ -4350,7 +4350,7 @@ const players = [
         "role": "Forward",
         "value": "€40.3m",
         "club": "PSG",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "France",
         "name": "Barcola Bradley"
@@ -4362,7 +4362,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€1.4m",
         "club": "Brondby",
-        "league": "Superliga",
+        "league": "Superliga (Denmark)",
         "league_country": "Denmark",
         "national_team": "Austria",
         "name": "Pentz Patrick"
@@ -4374,7 +4374,7 @@ const players = [
         "role": "Defender",
         "value": "€24.8m",
         "club": "Lens",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "Austria",
         "name": "Danso Kevin"
@@ -4386,7 +4386,7 @@ const players = [
         "role": "Defender",
         "value": "€19.6m",
         "club": "Freiburg",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Austria",
         "name": "Lienhart Philipp"
@@ -4398,7 +4398,7 @@ const players = [
         "role": "Defender",
         "value": "€1.4m",
         "club": "Mainz",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Austria",
         "name": "Mwene Phillipp"
@@ -4410,7 +4410,7 @@ const players = [
         "role": "Defender",
         "value": "€12.7m",
         "club": "Bologna",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Austria",
         "name": "Posch Stefan"
@@ -4422,7 +4422,7 @@ const players = [
         "role": "Defender",
         "value": "€4.5m",
         "club": "Feyenoord",
-        "league": "Eredivisie",
+        "league": "Eredivisie (Netherlands)",
         "league_country": "Netherlands",
         "national_team": "Austria",
         "name": "Trauner Gernot"
@@ -4434,7 +4434,7 @@ const players = [
         "role": "Defender",
         "value": "€13.7m",
         "club": "B. Monchengladbach",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Austria",
         "name": "Wober Maximilian"
@@ -4446,7 +4446,7 @@ const players = [
         "role": "Midfielder",
         "value": "€20.4m",
         "club": "RB Leipzig",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Austria",
         "name": "Baumgartner Christoph"
@@ -4458,7 +4458,7 @@ const players = [
         "role": "Midfielder",
         "value": "€6.5m",
         "club": "Hoffenheim",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Austria",
         "name": "Grillitsch Florian"
@@ -4470,7 +4470,7 @@ const players = [
         "role": "Midfielder",
         "value": "€26.6m",
         "club": "Bayern Munich",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Austria",
         "name": "Laimer Konrad"
@@ -4482,7 +4482,7 @@ const players = [
         "role": "Midfielder",
         "value": "€8.1m",
         "club": "Sturm Graz",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Austria)",
         "league_country": "Austria",
         "national_team": "Austria",
         "name": "Prass Alexander"
@@ -4494,7 +4494,7 @@ const players = [
         "role": "Midfielder",
         "value": "€20.4m",
         "club": "Dortmund",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Austria",
         "name": "Sabitzer Marcel"
@@ -4506,7 +4506,7 @@ const players = [
         "role": "Midfielder",
         "value": "€6.4m",
         "club": "Werder Bremen",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Austria",
         "name": "Schmid Romano"
@@ -4518,7 +4518,7 @@ const players = [
         "role": "Midfielder",
         "value": "€15.9m",
         "club": "RB Leipzig",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Austria",
         "name": "Seiwald Nicolas"
@@ -4530,7 +4530,7 @@ const players = [
         "role": "Midfielder",
         "value": "€16.6m",
         "club": "Wolfsburg",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Austria",
         "name": "Wimmer Patrick"
@@ -4542,7 +4542,7 @@ const players = [
         "role": "Forward",
         "value": "€4.8m",
         "club": "Inter",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Austria",
         "name": "Arnautovic Marko"
@@ -4554,7 +4554,7 @@ const players = [
         "role": "Forward",
         "value": "€8.1m",
         "club": "Freiburg",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Austria",
         "name": "Gregoritsch Michael"
@@ -4566,7 +4566,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€1.7m",
         "club": "Rapid Vienna",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Austria)",
         "league_country": "Austria",
         "national_team": "Austria",
         "name": "Hedl Niklas"
@@ -4578,7 +4578,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€285k",
         "club": "Royale Union SG",
-        "league": "Jupiler Pro League",
+        "league": "Jupiler Pro League (Belgium)",
         "league_country": "Belgium",
         "national_team": "Austria",
         "name": "Lindner Heinz"
@@ -4590,7 +4590,7 @@ const players = [
         "role": "Defender",
         "value": "€6.6m",
         "club": "Salzburg",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Austria)",
         "league_country": "Austria",
         "national_team": "Austria",
         "name": "Daniliuc Flavius"
@@ -4602,7 +4602,7 @@ const players = [
         "role": "Defender",
         "value": "€3.5m",
         "club": "Rapid Vienna",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Austria)",
         "league_country": "Austria",
         "national_team": "Austria",
         "name": "Querfeld Leopold"
@@ -4614,7 +4614,7 @@ const players = [
         "role": "Midfielder",
         "value": "€3.4m",
         "club": "1. FC Koln",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Austria",
         "name": "Kainz Florian"
@@ -4626,7 +4626,7 @@ const players = [
         "role": "Midfielder",
         "value": "€2.4m",
         "club": "Rapid Vienna",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Austria)",
         "league_country": "Austria",
         "national_team": "Austria",
         "name": "Seidl Matthias"
@@ -4638,7 +4638,7 @@ const players = [
         "role": "Midfielder",
         "value": "€950k",
         "club": "Bristol City",
-        "league": "Championship",
+        "league": "Championship (England)",
         "league_country": "England",
         "national_team": "Austria",
         "name": "Weimann Andreas"
@@ -4650,7 +4650,7 @@ const players = [
         "role": "Forward",
         "value": "€1.4m",
         "club": "Hartberg",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Austria)",
         "league_country": "Austria",
         "national_team": "Austria",
         "name": "Entrup Maximilian"
@@ -4662,7 +4662,7 @@ const players = [
         "role": "Forward",
         "value": "€3.1m",
         "club": "Rapid Vienna",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Austria)",
         "league_country": "Austria",
         "national_team": "Austria",
         "name": "Grull Marco"
@@ -4674,7 +4674,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€8.1m",
         "club": "Juventus",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Poland",
         "name": "Szczesny Wojciech"
@@ -4686,7 +4686,7 @@ const players = [
         "role": "Defender",
         "value": "€10.6m",
         "club": "Southampton",
-        "league": "Championship",
+        "league": "Championship (England)",
         "league_country": "England",
         "national_team": "Poland",
         "name": "Bednarek Jan"
@@ -4698,7 +4698,7 @@ const players = [
         "role": "Defender",
         "value": "€1.4m",
         "club": "Empoli",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Poland",
         "name": "Bereszynski Bartosz"
@@ -4710,7 +4710,7 @@ const players = [
         "role": "Defender",
         "value": "€2.7m",
         "club": "Verona",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Poland",
         "name": "Dawidowicz Pawel"
@@ -4722,7 +4722,7 @@ const players = [
         "role": "Defender",
         "value": "€24.5m",
         "club": "Arsenal",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Poland",
         "name": "Kiwior Jakub"
@@ -4734,7 +4734,7 @@ const players = [
         "role": "Defender",
         "value": "€482k",
         "club": "Lech Poznan",
-        "league": "Ekstraklasa",
+        "league": "Ekstraklasa (Poland)",
         "league_country": "Poland",
         "national_team": "Poland",
         "name": "Salamon Bartosz"
@@ -4746,7 +4746,7 @@ const players = [
         "role": "Midfielder",
         "value": "€8.8m",
         "club": "Lens",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "Poland",
         "name": "Frankowski Przemyslaw"
@@ -4758,7 +4758,7 @@ const players = [
         "role": "Midfielder",
         "value": "€9.6m",
         "club": "Brighton",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Poland",
         "name": "Moder Jakub"
@@ -4770,7 +4770,7 @@ const players = [
         "role": "Midfielder",
         "value": "€2.5m",
         "club": "Ludogorets",
-        "league": "Parva liga",
+        "league": "Parva liga (Bulgaria)",
         "league_country": "Bulgaria",
         "national_team": "Poland",
         "name": "Piotrowski Jakub"
@@ -4782,7 +4782,7 @@ const players = [
         "role": "Midfielder",
         "value": "€489k",
         "club": "Jagiellonia",
-        "league": "Ekstraklasa",
+        "league": "Ekstraklasa (Poland)",
         "league_country": "Poland",
         "national_team": "Poland",
         "name": "Romanczuk Taras"
@@ -4794,7 +4794,7 @@ const players = [
         "role": "Midfielder",
         "value": "€4.9m",
         "club": "Atlanta United",
-        "league": "MLS",
+        "league": "MLS (USA)",
         "league_country": "USA",
         "national_team": "Poland",
         "name": "Slisz Bartosz"
@@ -4806,7 +4806,7 @@ const players = [
         "role": "Midfielder",
         "value": "€20.1m",
         "club": "Fenerbahce",
-        "league": "Super Lig",
+        "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "national_team": "Poland",
         "name": "Szymanski Sebastian"
@@ -4818,7 +4818,7 @@ const players = [
         "role": "Midfielder",
         "value": "€3.7m",
         "club": "Bologna",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Poland",
         "name": "Urbanski Kacper"
@@ -4830,7 +4830,7 @@ const players = [
         "role": "Midfielder",
         "value": "€11.7m",
         "club": "AS Roma",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Poland",
         "name": "Zalewski Nicola"
@@ -4842,7 +4842,7 @@ const players = [
         "role": "Midfielder",
         "value": "€25.2m",
         "club": "Napoli",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Poland",
         "name": "Zielinski Piotr"
@@ -4854,7 +4854,7 @@ const players = [
         "role": "Forward",
         "value": "€5.8m",
         "club": "Antalyaspor",
-        "league": "Super Lig",
+        "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "national_team": "Poland",
         "name": "Buksa Adam"
@@ -4866,7 +4866,7 @@ const players = [
         "role": "Forward",
         "value": "€532k",
         "club": "Pogon Szczecin",
-        "league": "Ekstraklasa",
+        "league": "Ekstraklasa (Poland)",
         "league_country": "Poland",
         "national_team": "Poland",
         "name": "Grosicki Kamil"
@@ -4878,7 +4878,7 @@ const players = [
         "role": "Forward",
         "value": "€15.5m",
         "club": "Barcelona",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Poland",
         "name": "Lewandowski Robert"
@@ -4890,7 +4890,7 @@ const players = [
         "role": "Forward",
         "value": "€5.3m",
         "club": "Basaksehir",
-        "league": "Super Lig",
+        "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "national_team": "Poland",
         "name": "Piatek Krzysztof"
@@ -4902,7 +4902,7 @@ const players = [
         "role": "Forward",
         "value": "€6.0m",
         "club": "Verona",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Poland",
         "name": "Swiderski Karol"
@@ -4914,7 +4914,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€17.4m",
         "club": "Nice",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "Poland",
         "name": "Bulka Marcin"
@@ -4926,7 +4926,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€3.4m",
         "club": "Bologna",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Poland",
         "name": "Skorupski Lukasz"
@@ -4938,7 +4938,7 @@ const players = [
         "role": "Defender",
         "value": "€1.4m",
         "club": "Kaiserslautern",
-        "league": "2. Bundesliga",
+        "league": "2. Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Poland",
         "name": "Puchacz Tymoteusz"
@@ -4950,7 +4950,7 @@ const players = [
         "role": "Defender",
         "value": "€2.4m",
         "club": "Empoli",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Poland",
         "name": "Walukiewicz Sebastian"
@@ -4962,7 +4962,7 @@ const players = [
         "role": "Midfielder",
         "value": "€3.4m",
         "club": "AEK",
-        "league": "Super League",
+        "league": "Super League (Greece)",
         "league_country": "Greece",
         "national_team": "Poland",
         "name": "Szymanski Damian"
@@ -4974,7 +4974,7 @@ const players = [
         "role": "Forward",
         "value": "€3.7m",
         "club": "Club Brugge KV",
-        "league": "Jupiler Pro League",
+        "league": "Jupiler Pro League (Belgium)",
         "league_country": "Belgium",
         "national_team": "Poland",
         "name": "Skoras Michal"
@@ -4986,7 +4986,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€214k",
         "club": "Gaziantep",
-        "league": "Super Lig",
+        "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "national_team": "Romania",
         "name": "Nita Florin"
@@ -4998,7 +4998,7 @@ const players = [
         "role": "Defender",
         "value": "€1.6m",
         "club": "Univ. Craiova",
-        "league": "Liga 1",
+        "league": "Liga 1 (Romania)",
         "league_country": "Romania",
         "national_team": "Romania",
         "name": "Bancu Nicusor"
@@ -5010,7 +5010,7 @@ const players = [
         "role": "Defender",
         "value": "€3.1m",
         "club": "Al Akhdoud",
-        "league": "Saudi Professional League",
+        "league": "Saudi Professional League (Saudi Arabia)",
         "league_country": "Saudi Arabia",
         "national_team": "Romania",
         "name": "Burca Andrei"
@@ -5022,7 +5022,7 @@ const players = [
         "role": "Defender",
         "value": "€24.8m",
         "club": "Tottenham",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Romania",
         "name": "Dragusin Radu"
@@ -5034,7 +5034,7 @@ const players = [
         "role": "Defender",
         "value": "€1.5m",
         "club": "Rakow",
-        "league": "Ekstraklasa",
+        "league": "Ekstraklasa (Poland)",
         "league_country": "Poland",
         "national_team": "Romania",
         "name": "Racovitan Bogdan"
@@ -5046,7 +5046,7 @@ const players = [
         "role": "Defender",
         "value": "€1.5m",
         "club": "Rayo Vallecano",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Romania",
         "name": "Ratiu Andrei"
@@ -5058,7 +5058,7 @@ const players = [
         "role": "Defender",
         "value": "€685k",
         "club": "Paphos",
-        "league": "Cyta Championship",
+        "league": "Cyta Championship (Cyprus)",
         "league_country": "Cyprus",
         "national_team": "Romania",
         "name": "Rus Adrian"
@@ -5070,7 +5070,7 @@ const players = [
         "role": "Midfielder",
         "value": "€2.5m",
         "club": "Alaves",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Romania",
         "name": "Hagi Ianis"
@@ -5082,7 +5082,7 @@ const players = [
         "role": "Midfielder",
         "value": "€1.5m",
         "club": "Pisa",
-        "league": "Serie B",
+        "league": "Serie B (Italy)",
         "league_country": "Italy",
         "national_team": "Romania",
         "name": "Marin Marius"
@@ -5094,7 +5094,7 @@ const players = [
         "role": "Midfielder",
         "value": "€2.5m",
         "club": "Empoli",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Romania",
         "name": "Marin Razvan"
@@ -5106,7 +5106,7 @@ const players = [
         "role": "Midfielder",
         "value": "€950k",
         "club": "Gaziantep",
-        "league": "Super Lig",
+        "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "national_team": "Romania",
         "name": "Sorescu Deian"
@@ -5118,7 +5118,7 @@ const players = [
         "role": "Midfielder",
         "value": "€5.2m",
         "club": "Damac",
-        "league": "Saudi Professional League",
+        "league": "Saudi Professional League (Saudi Arabia)",
         "league_country": "Saudi Arabia",
         "national_team": "Romania",
         "name": "Stanciu Nicolae"
@@ -5130,7 +5130,7 @@ const players = [
         "role": "Forward",
         "value": "€794k",
         "club": "Muaither SC",
-        "league": "QSL",
+        "league": "QSL (Qatar)",
         "league_country": "Qatar",
         "national_team": "Romania",
         "name": "Alibec Denis"
@@ -5142,7 +5142,7 @@ const players = [
         "role": "Forward",
         "value": "€6.0m",
         "club": "FCSB",
-        "league": "Liga 1",
+        "league": "Liga 1 (Romania)",
         "league_country": "Romania",
         "national_team": "Romania",
         "name": "Coman Florinel"
@@ -5154,7 +5154,7 @@ const players = [
         "role": "Forward",
         "value": "€2.9m",
         "club": "Gaziantep",
-        "league": "Super Lig",
+        "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "national_team": "Romania",
         "name": "Dragus Denis"
@@ -5166,7 +5166,7 @@ const players = [
         "role": "Forward",
         "value": "€6.8m",
         "club": "Parma",
-        "league": "Serie B",
+        "league": "Serie B (Italy)",
         "league_country": "Italy",
         "national_team": "Romania",
         "name": "Man Dennis"
@@ -5178,7 +5178,7 @@ const players = [
         "role": "Forward",
         "value": "€1.9m",
         "club": "Parma",
-        "league": "Serie B",
+        "league": "Serie B (Italy)",
         "league_country": "Italy",
         "national_team": "Romania",
         "name": "Mihaila Valentin"
@@ -5190,7 +5190,7 @@ const players = [
         "role": "Forward",
         "value": "€6.5m",
         "club": "FCSB",
-        "league": "Liga 1",
+        "league": "Liga 1 (Romania)",
         "league_country": "Romania",
         "national_team": "Romania",
         "name": "Olaru Darius"
@@ -5202,7 +5202,7 @@ const players = [
         "role": "Forward",
         "value": "€1.9m",
         "club": "Bari",
-        "league": "Serie B",
+        "league": "Serie B (Italy)",
         "league_country": "Italy",
         "national_team": "Romania",
         "name": "Puscas George"
@@ -5214,7 +5214,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€2.4m",
         "club": "Atl. Madrid",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Romania",
         "name": "Moldovan Horatiu"
@@ -5226,7 +5226,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€2.8m",
         "club": "FCSB",
-        "league": "Liga 1",
+        "league": "Liga 1 (Romania)",
         "league_country": "Romania",
         "national_team": "Romania",
         "name": "Tarnovanu Stefan"
@@ -5238,7 +5238,7 @@ const players = [
         "role": "Defender",
         "value": "€675k",
         "club": "CFR Cluj",
-        "league": "Liga 1",
+        "league": "Liga 1 (Romania)",
         "league_country": "Romania",
         "national_team": "Romania",
         "name": "Mogos Vasile"
@@ -5250,7 +5250,7 @@ const players = [
         "role": "Defender",
         "value": "€1.1m",
         "club": "Palermo",
-        "league": "Serie B",
+        "league": "Serie B (Italy)",
         "league_country": "Italy",
         "national_team": "Romania",
         "name": "Nedelcearu Ionut"
@@ -5262,7 +5262,7 @@ const players = [
         "role": "Midfielder",
         "value": "€3.2m",
         "club": "Konyaspor",
-        "league": "Super Lig",
+        "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "national_team": "Romania",
         "name": "Cicaldau Alexandru"
@@ -5274,7 +5274,7 @@ const players = [
         "role": "Midfielder",
         "value": "€2.3m",
         "club": "FCSB",
-        "league": "Liga 1",
+        "league": "Liga 1 (Romania)",
         "league_country": "Romania",
         "national_team": "Romania",
         "name": "Sut Adrian"
@@ -5286,7 +5286,7 @@ const players = [
         "role": "Forward",
         "value": "€1.1m",
         "club": "CFR Cluj",
-        "league": "Liga 1",
+        "league": "Liga 1 (Romania)",
         "league_country": "Romania",
         "national_team": "Romania",
         "name": "Birligea Daniel"
@@ -5298,7 +5298,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€7.6m",
         "club": "Wolfsburg",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Belgium",
         "name": "Casteels Koen"
@@ -5310,7 +5310,7 @@ const players = [
         "role": "Defender",
         "value": "€16.4m",
         "club": "Fulham",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Belgium",
         "name": "Castagne Timothy"
@@ -5322,7 +5322,7 @@ const players = [
         "role": "Defender",
         "value": "€14.3m",
         "club": "Anderlecht",
-        "league": "Jupiler Pro League",
+        "league": "Jupiler Pro League (Belgium)",
         "league_country": "Belgium",
         "national_team": "Belgium",
         "name": "Debast Zeno"
@@ -5334,7 +5334,7 @@ const players = [
         "role": "Defender",
         "value": "€19.6m",
         "club": "Leicester",
-        "league": "Championship",
+        "league": "Championship (England)",
         "league_country": "England",
         "national_team": "Belgium",
         "name": "Faes Wout"
@@ -5346,7 +5346,7 @@ const players = [
         "role": "Defender",
         "value": "€19.6m",
         "club": "Rennes",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "Belgium",
         "name": "Theate Arthur"
@@ -5358,7 +5358,7 @@ const players = [
         "role": "Defender",
         "value": "€1.5m",
         "club": "Anderlecht",
-        "league": "Jupiler Pro League",
+        "league": "Jupiler Pro League (Belgium)",
         "league_country": "Belgium",
         "national_team": "Belgium",
         "name": "Vertonghen Jan"
@@ -5370,7 +5370,7 @@ const players = [
         "role": "Midfielder",
         "value": "€65.5m",
         "club": "Manchester City",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Belgium",
         "name": "De Bruyne Kevin"
@@ -5382,7 +5382,7 @@ const players = [
         "role": "Midfielder",
         "value": "€21.2m",
         "club": "Lyon",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "Belgium",
         "name": "Mangala Orel"
@@ -5394,7 +5394,7 @@ const players = [
         "role": "Midfielder",
         "value": "€48.9m",
         "club": "Everton",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Belgium",
         "name": "Onana Amadou"
@@ -5406,7 +5406,7 @@ const players = [
         "role": "Midfielder",
         "value": "€25.2m",
         "club": "Aston Villa",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Belgium",
         "name": "Tielemans Youri"
@@ -5418,7 +5418,7 @@ const players = [
         "role": "Forward",
         "value": "€41.4m",
         "club": "PSV",
-        "league": "Eredivisie",
+        "league": "Eredivisie (Netherlands)",
         "league_country": "Netherlands",
         "national_team": "Belgium",
         "name": "Bakayoko Johan"
@@ -5430,7 +5430,7 @@ const players = [
         "role": "Forward",
         "value": "€18.6m",
         "club": "Al Shabab",
-        "league": "Saudi Professional League",
+        "league": "Saudi Professional League (Saudi Arabia)",
         "league_country": "Saudi Arabia",
         "national_team": "Belgium",
         "name": "Carrasco Yannick"
@@ -5442,7 +5442,7 @@ const players = [
         "role": "Forward",
         "value": "€70.1m",
         "club": "Manchester City",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Belgium",
         "name": "Doku Jeremy"
@@ -5454,7 +5454,7 @@ const players = [
         "role": "Forward",
         "value": "€30.6m",
         "club": "AS Roma",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Belgium",
         "name": "Lukaku Romelu"
@@ -5466,7 +5466,7 @@ const players = [
         "role": "Forward",
         "value": "€15.3m",
         "club": "Sevilla",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Belgium",
         "name": "Lukebakio Dodi"
@@ -5478,7 +5478,7 @@ const players = [
         "role": "Forward",
         "value": "€57.0m",
         "club": "RB Leipzig",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Belgium",
         "name": "Openda Lois"
@@ -5490,7 +5490,7 @@ const players = [
         "role": "Forward",
         "value": "€38.8m",
         "club": "Arsenal",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Belgium",
         "name": "Trossard Leandro"
@@ -5502,7 +5502,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€2.7m",
         "club": "Luton",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Belgium",
         "name": "Kaminski Thomas"
@@ -5514,7 +5514,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€6.6m",
         "club": "Nottingham",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Belgium",
         "name": "Sels Matz"
@@ -5526,7 +5526,7 @@ const players = [
         "role": "Defender",
         "value": "€2.4m",
         "club": "Trabzonspor",
-        "league": "Super Lig",
+        "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "national_team": "Belgium",
         "name": "Meunier Thomas"
@@ -5538,7 +5538,7 @@ const players = [
         "role": "Midfielder",
         "value": "€8.3m",
         "club": "Club Brugge KV",
-        "league": "Jupiler Pro League",
+        "league": "Jupiler Pro League (Belgium)",
         "league_country": "Belgium",
         "national_team": "Belgium",
         "name": "De Cuyper Maxim"
@@ -5550,7 +5550,7 @@ const players = [
         "role": "Midfielder",
         "value": "€28.5m",
         "club": "Atalanta",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Belgium",
         "name": "De Ketelaere Charles"
@@ -5562,7 +5562,7 @@ const players = [
         "role": "Midfielder",
         "value": "€28.9m",
         "club": "Atl. Madrid",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Belgium",
         "name": "Vermeeren Arthur"
@@ -5574,7 +5574,7 @@ const players = [
         "role": "Midfielder",
         "value": "€11.6m",
         "club": "Wolfsburg",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Belgium",
         "name": "Vranckx Aster"
@@ -5586,7 +5586,7 @@ const players = [
         "role": "Midfielder",
         "value": "€3.9m",
         "club": "Atl. Madrid",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Belgium",
         "name": "Witsel Axel"
@@ -5598,7 +5598,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€964k",
         "club": "Newcastle Utd",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Slovakia",
         "name": "Dubravka Martin"
@@ -5610,7 +5610,7 @@ const players = [
         "role": "Defender",
         "value": "€36.2m",
         "club": "Feyenoord",
-        "league": "Eredivisie",
+        "league": "Eredivisie (Netherlands)",
         "league_country": "Netherlands",
         "national_team": "Slovakia",
         "name": "Hancko David"
@@ -5622,7 +5622,7 @@ const players = [
         "role": "Defender",
         "value": "€1.7m",
         "club": "Cagliari",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Slovakia",
         "name": "Obert Adam"
@@ -5634,7 +5634,7 @@ const players = [
         "role": "Defender",
         "value": "€281k",
         "club": "Hertha Berlin",
-        "league": "2. Bundesliga",
+        "league": "2. Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Slovakia",
         "name": "Pekarik Peter"
@@ -5646,7 +5646,7 @@ const players = [
         "role": "Defender",
         "value": "€40.3m",
         "club": "PSG",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "Slovakia",
         "name": "Skriniar Milan"
@@ -5658,7 +5658,7 @@ const players = [
         "role": "Defender",
         "value": "€4.0m",
         "club": "FC Copenhagen",
-        "league": "Superliga",
+        "league": "Superliga (Denmark)",
         "league_country": "Denmark",
         "national_team": "Slovakia",
         "name": "Vavro Denis"
@@ -5670,7 +5670,7 @@ const players = [
         "role": "Midfielder",
         "value": "€5.0m",
         "club": "Hamburger",
-        "league": "2. Bundesliga",
+        "league": "2. Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Slovakia",
         "name": "Benes Laszlo"
@@ -5682,7 +5682,7 @@ const players = [
         "role": "Midfielder",
         "value": "€3.9m",
         "club": "Verona",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Slovakia",
         "name": "Duda Ondrej"
@@ -5694,7 +5694,7 @@ const players = [
         "role": "Midfielder",
         "value": "€5.2m",
         "club": "Sparta Prague",
-        "league": "FORTUNA:LIGA",
+        "league": "FORTUNA:LIGA (Czech Republic)",
         "league_country": "Czech Republic",
         "national_team": "Slovakia",
         "name": "Haraslin Lukas"
@@ -5706,7 +5706,7 @@ const players = [
         "role": "Midfielder",
         "value": "€919k",
         "club": "Slovan Bratislava",
-        "league": "Nike liga",
+        "league": "Nike liga (Slovakia)",
         "league_country": "Slovakia",
         "national_team": "Slovakia",
         "name": "Kucka Juraj"
@@ -5718,7 +5718,7 @@ const players = [
         "role": "Midfielder",
         "value": "€29.8m",
         "club": "Napoli",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Slovakia",
         "name": "Lobotka Stanislav"
@@ -5730,7 +5730,7 @@ const players = [
         "role": "Midfielder",
         "value": "€6.0m",
         "club": "Verona",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Slovakia",
         "name": "Suslov Tomas"
@@ -5742,7 +5742,7 @@ const players = [
         "role": "Forward",
         "value": "€4.5m",
         "club": "Boavista",
-        "league": "Liga Portugal",
+        "league": "Liga Portugal (Portugal)",
         "league_country": "Portugal",
         "national_team": "Slovakia",
         "name": "Bozenik Robert"
@@ -5754,7 +5754,7 @@ const players = [
         "role": "Forward",
         "value": "€723k",
         "club": "Ascoli",
-        "league": "Serie B",
+        "league": "Serie B (Italy)",
         "league_country": "Italy",
         "national_team": "Slovakia",
         "name": "Duris David"
@@ -5766,7 +5766,7 @@ const players = [
         "role": "Forward",
         "value": "€4.8m",
         "club": "Feyenoord",
-        "league": "Eredivisie",
+        "league": "Eredivisie (Netherlands)",
         "league_country": "Netherlands",
         "national_team": "Slovakia",
         "name": "Sauer Leo"
@@ -5778,7 +5778,7 @@ const players = [
         "role": "Forward",
         "value": "€1.9m",
         "club": "Slavia Prague",
-        "league": "FORTUNA:LIGA",
+        "league": "FORTUNA:LIGA (Czech Republic)",
         "league_country": "Czech Republic",
         "national_team": "Slovakia",
         "name": "Schranz Ivan"
@@ -5790,7 +5790,7 @@ const players = [
         "role": "Forward",
         "value": "€1.1m",
         "club": "Slovan Bratislava",
-        "league": "Nike liga",
+        "league": "Nike liga (Slovakia)",
         "league_country": "Slovakia",
         "national_team": "Slovakia",
         "name": "Strelec David"
@@ -5802,7 +5802,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€1.4m",
         "club": "New England Revolution",
-        "league": "MLS",
+        "league": "MLS (USA)",
         "league_country": "USA",
         "national_team": "Slovakia",
         "name": "Ravas Henrich"
@@ -5814,7 +5814,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€2.8m",
         "club": "Fulham",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Slovakia",
         "name": "Rodak Marek"
@@ -5826,7 +5826,7 @@ const players = [
         "role": "Defender",
         "value": "€596k",
         "club": "Hatta",
-        "league": "UAE League",
+        "league": "UAE League (United Arab Emirates)",
         "league_country": "United Arab Emirates",
         "national_team": "Slovakia",
         "name": "De Marco Vernon"
@@ -5838,7 +5838,7 @@ const players = [
         "role": "Defender",
         "value": "€1.4m",
         "club": "Salernitana",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Slovakia",
         "name": "Gyomber Norbert"
@@ -5850,7 +5850,7 @@ const players = [
         "role": "Defender",
         "value": "€608k",
         "club": "Spartak Trnava",
-        "league": "Nike liga",
+        "league": "Nike liga (Slovakia)",
         "league_country": "Slovakia",
         "national_team": "Slovakia",
         "name": "Kosa Sebastian"
@@ -5862,7 +5862,7 @@ const players = [
         "role": "Midfielder",
         "value": "€3.3m",
         "club": "Bochum",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Slovakia",
         "name": "Bero Matus"
@@ -5874,7 +5874,7 @@ const players = [
         "role": "Midfielder",
         "value": "€3.9m",
         "club": "Genk",
-        "league": "Jupiler Pro League",
+        "league": "Jupiler Pro League (Belgium)",
         "league_country": "Belgium",
         "national_team": "Slovakia",
         "name": "Hrosovsky Patrik"
@@ -5886,7 +5886,7 @@ const players = [
         "role": "Midfielder",
         "value": "€2.0m",
         "club": "Ostrava",
-        "league": "FORTUNA:LIGA",
+        "league": "FORTUNA:LIGA (Czech Republic)",
         "league_country": "Czech Republic",
         "national_team": "Slovakia",
         "name": "Rigo Tomas"
@@ -5898,7 +5898,7 @@ const players = [
         "role": "Forward",
         "value": "€713k",
         "club": "Liberec",
-        "league": "FORTUNA:LIGA",
+        "league": "FORTUNA:LIGA (Czech Republic)",
         "league_country": "Czech Republic",
         "national_team": "Slovakia",
         "name": "Tupta Lubomir"
@@ -5910,7 +5910,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€15.9m",
         "club": "Real Madrid",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Ukraine",
         "name": "Lunin Andriy"
@@ -5922,7 +5922,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€23.8m",
         "club": "Benfica",
-        "league": "Liga Portugal",
+        "league": "Liga Portugal (Portugal)",
         "league_country": "Portugal",
         "national_team": "Ukraine",
         "name": "Trubin Anatoliy"
@@ -5934,7 +5934,7 @@ const players = [
         "role": "Defender",
         "value": "€3.7m",
         "club": "Shakhtar Donetsk",
-        "league": "Premier League",
+        "league": "Premier League (Ukraine)",
         "league_country": "Ukraine",
         "national_team": "Ukraine",
         "name": "Konoplya Yukhym"
@@ -5946,7 +5946,7 @@ const players = [
         "role": "Defender",
         "value": "€19.6m",
         "club": "Shakhtar Donetsk",
-        "league": "Premier League",
+        "league": "Premier League (Ukraine)",
         "league_country": "Ukraine",
         "national_team": "Ukraine",
         "name": "Matviienko Mykola"
@@ -5958,7 +5958,7 @@ const players = [
         "role": "Defender",
         "value": "€2.0m",
         "club": "LASK Linz",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Austria)",
         "league_country": "Austria",
         "national_team": "Ukraine",
         "name": "Talovierov Maksym"
@@ -5970,7 +5970,7 @@ const players = [
         "role": "Defender",
         "value": "€26.6m",
         "club": "Bournemouth",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Ukraine",
         "name": "Zabarnyi Ilya"
@@ -5982,7 +5982,7 @@ const players = [
         "role": "Defender",
         "value": "€42.9m",
         "club": "Arsenal",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Ukraine",
         "name": "Zinchenko Oleksandr"
@@ -5994,7 +5994,7 @@ const players = [
         "role": "Midfielder",
         "value": "€2.5m",
         "club": "Dynamo Kyiv",
-        "league": "Premier League",
+        "league": "Premier League (Ukraine)",
         "league_country": "Ukraine",
         "national_team": "Ukraine",
         "name": "Brazhko Volodymyr"
@@ -6006,7 +6006,7 @@ const players = [
         "role": "Midfielder",
         "value": "€9.6m",
         "club": "Genoa",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Ukraine",
         "name": "Malinovsky Ruslan"
@@ -6018,7 +6018,7 @@ const players = [
         "role": "Midfielder",
         "value": "€6.0m",
         "club": "Dynamo Kyiv",
-        "league": "Premier League",
+        "league": "Premier League (Ukraine)",
         "league_country": "Ukraine",
         "national_team": "Ukraine",
         "name": "Shaparenko Mykola"
@@ -6030,7 +6030,7 @@ const players = [
         "role": "Midfielder",
         "value": "€2.9m",
         "club": "Shakhtar Donetsk",
-        "league": "Premier League",
+        "league": "Premier League (Ukraine)",
         "league_country": "Ukraine",
         "national_team": "Ukraine",
         "name": "Stepanenko Taras"
@@ -6042,7 +6042,7 @@ const players = [
         "role": "Midfielder",
         "value": "€25.2m",
         "club": "Shakhtar Donetsk",
-        "league": "Premier League",
+        "league": "Premier League (Ukraine)",
         "league_country": "Ukraine",
         "national_team": "Ukraine",
         "name": "Sudakov Georgiy"
@@ -6054,7 +6054,7 @@ const players = [
         "role": "Midfielder",
         "value": "€2.1m",
         "club": "Westerlo",
-        "league": "Jupiler Pro League",
+        "league": "Jupiler Pro League (Belgium)",
         "league_country": "Belgium",
         "national_team": "Ukraine",
         "name": "Sydorchuk Sergiy"
@@ -6066,7 +6066,7 @@ const players = [
         "role": "Midfielder",
         "value": "€28.2m",
         "club": "Girona",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Ukraine",
         "name": "Tsygankov Viktor"
@@ -6078,7 +6078,7 @@ const players = [
         "role": "Midfielder",
         "value": "€2.9m",
         "club": "Dynamo Kyiv",
-        "league": "Premier League",
+        "league": "Premier League (Ukraine)",
         "league_country": "Ukraine",
         "national_team": "Ukraine",
         "name": "Tymchyk Oleksandr"
@@ -6090,7 +6090,7 @@ const players = [
         "role": "Forward",
         "value": "€30.2m",
         "club": "Girona",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Ukraine",
         "name": "Dovbyk Artem"
@@ -6102,7 +6102,7 @@ const players = [
         "role": "Forward",
         "value": "€34.7m",
         "club": "Chelsea",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Ukraine",
         "name": "Mudryk Mykhailo"
@@ -6114,7 +6114,7 @@ const players = [
         "role": "Forward",
         "value": "€3.8m",
         "club": "Valencia",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Ukraine",
         "name": "Yaremchuk Roman"
@@ -6126,7 +6126,7 @@ const players = [
         "role": "Forward",
         "value": "€2.0m",
         "club": "Dynamo Kyiv",
-        "league": "Premier League",
+        "league": "Premier League (Ukraine)",
         "league_country": "Ukraine",
         "national_team": "Ukraine",
         "name": "Yarmolenko Andriy"
@@ -6138,7 +6138,7 @@ const players = [
         "role": "Forward",
         "value": "€4.9m",
         "club": "Shakhtar Donetsk",
-        "league": "Premier League",
+        "league": "Premier League (Ukraine)",
         "league_country": "Ukraine",
         "national_team": "Ukraine",
         "name": "Zubkov Oleksandr"
@@ -6150,7 +6150,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€6.9m",
         "club": "Dynamo Kyiv",
-        "league": "Premier League",
+        "league": "Premier League (Ukraine)",
         "league_country": "Ukraine",
         "national_team": "Ukraine",
         "name": "Bushchan Georgi"
@@ -6162,7 +6162,7 @@ const players = [
         "role": "Defender",
         "value": "€4.8m",
         "club": "Shakhtar Donetsk",
-        "league": "Premier League",
+        "league": "Premier League (Ukraine)",
         "league_country": "Ukraine",
         "national_team": "Ukraine",
         "name": "Bondar Valeriy"
@@ -6174,7 +6174,7 @@ const players = [
         "role": "Defender",
         "value": "€2.4m",
         "club": "Zhytomyr",
-        "league": "Premier League",
+        "league": "Premier League (Ukraine)",
         "league_country": "Ukraine",
         "national_team": "Ukraine",
         "name": "Mykhaylichenko Bogdan"
@@ -6186,7 +6186,7 @@ const players = [
         "role": "Defender",
         "value": "€26.6m",
         "club": "Everton",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Ukraine",
         "name": "Mykolenko Vitali"
@@ -6198,7 +6198,7 @@ const players = [
         "role": "Defender",
         "value": "€1.9m",
         "club": "SK Dnipro-1",
-        "league": "Premier League",
+        "league": "Premier League (Ukraine)",
         "league_country": "Ukraine",
         "national_team": "Ukraine",
         "name": "Svatok Oleksandr"
@@ -6210,7 +6210,7 @@ const players = [
         "role": "Forward",
         "value": "€6.2m",
         "club": "Dynamo Kyiv",
-        "league": "Premier League",
+        "league": "Premier League (Ukraine)",
         "league_country": "Ukraine",
         "national_team": "Ukraine",
         "name": "Vanat Vladyslav"
@@ -6222,7 +6222,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€43.4m",
         "club": "FC Porto",
-        "league": "Liga Portugal",
+        "league": "Liga Portugal (Portugal)",
         "league_country": "Portugal",
         "national_team": "Portugal",
         "name": "Costa Diogo"
@@ -6234,7 +6234,7 @@ const players = [
         "role": "Defender",
         "value": "€31.1m",
         "club": "Barcelona",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Portugal",
         "name": "Cancelo Joao"
@@ -6246,7 +6246,7 @@ const players = [
         "role": "Defender",
         "value": "€36.7m",
         "club": "Manchester United",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Portugal",
         "name": "Dalot Diogo"
@@ -6258,7 +6258,7 @@ const players = [
         "role": "Defender",
         "value": "€77.2m",
         "club": "Manchester City",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Portugal",
         "name": "Dias Ruben"
@@ -6270,7 +6270,7 @@ const players = [
         "role": "Defender",
         "value": "€40.3m",
         "club": "Sporting Lisbon",
-        "league": "Liga Portugal",
+        "league": "Liga Portugal (Portugal)",
         "league_country": "Portugal",
         "national_team": "Portugal",
         "name": "Inacio Goncalo"
@@ -6282,7 +6282,7 @@ const players = [
         "role": "Defender",
         "value": "€63.0m",
         "club": "PSG",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "Portugal",
         "name": "Mendes Nuno"
@@ -6294,7 +6294,7 @@ const players = [
         "role": "Defender",
         "value": "€772k",
         "club": "FC Porto",
-        "league": "Liga Portugal",
+        "league": "Liga Portugal (Portugal)",
         "league_country": "Portugal",
         "national_team": "Portugal",
         "name": "Pepe"
@@ -6306,7 +6306,7 @@ const players = [
         "role": "Defender",
         "value": "€11.7m",
         "club": "Wolves",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Portugal",
         "name": "Semedo Nelson"
@@ -6318,7 +6318,7 @@ const players = [
         "role": "Defender",
         "value": "€44.0m",
         "club": "Benfica",
-        "league": "Liga Portugal",
+        "league": "Liga Portugal (Portugal)",
         "league_country": "Portugal",
         "national_team": "Portugal",
         "name": "Silva Antonio"
@@ -6330,7 +6330,7 @@ const players = [
         "role": "Midfielder",
         "value": "€75.5m",
         "club": "Manchester United",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Portugal",
         "name": "Fernandes Bruno"
@@ -6342,7 +6342,7 @@ const players = [
         "role": "Midfielder",
         "value": "€45.3m",
         "club": "Benfica",
-        "league": "Liga Portugal",
+        "league": "Liga Portugal (Portugal)",
         "league_country": "Portugal",
         "national_team": "Portugal",
         "name": "Neves Joao"
@@ -6354,7 +6354,7 @@ const players = [
         "role": "Midfielder",
         "value": "€40.8m",
         "club": "Al Hilal",
-        "league": "Saudi Professional League",
+        "league": "Saudi Professional League (Saudi Arabia)",
         "league_country": "Saudi Arabia",
         "national_team": "Portugal",
         "name": "Neves Ruben"
@@ -6366,7 +6366,7 @@ const players = [
         "role": "Midfielder",
         "value": "€54.6m",
         "club": "Fulham",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Portugal",
         "name": "Palhinha Joao"
@@ -6378,7 +6378,7 @@ const players = [
         "role": "Midfielder",
         "value": "€82.8m",
         "club": "Manchester City",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Portugal",
         "name": "Silva Bernardo"
@@ -6390,7 +6390,7 @@ const players = [
         "role": "Midfielder",
         "value": "€44.0m",
         "club": "PSG",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "Portugal",
         "name": "Vitinha"
@@ -6402,7 +6402,7 @@ const players = [
         "role": "Forward",
         "value": "€15.7m",
         "club": "FC Porto",
-        "league": "Liga Portugal",
+        "league": "Liga Portugal (Portugal)",
         "league_country": "Portugal",
         "national_team": "Portugal",
         "name": "Conceicao Francisco"
@@ -6414,7 +6414,7 @@ const players = [
         "role": "Forward",
         "value": "€51.8m",
         "club": "Liverpool",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Portugal",
         "name": "Diogo Jota"
@@ -6426,7 +6426,7 @@ const players = [
         "role": "Forward",
         "value": "€89.4m",
         "club": "AC Milan",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Portugal",
         "name": "Leao Rafael"
@@ -6438,7 +6438,7 @@ const players = [
         "role": "Forward",
         "value": "€56.2m",
         "club": "Wolves",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Portugal",
         "name": "Neto Pedro"
@@ -6450,7 +6450,7 @@ const players = [
         "role": "Forward",
         "value": "€15.1m",
         "club": "Al Nassr",
-        "league": "Saudi Professional League",
+        "league": "Saudi Professional League (Saudi Arabia)",
         "league_country": "Saudi Arabia",
         "national_team": "Portugal",
         "name": "Ronaldo Cristiano"
@@ -6462,7 +6462,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€1.9m",
         "club": "AS Roma",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Portugal",
         "name": "Patricio Rui"
@@ -6474,7 +6474,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€15.0m",
         "club": "Wolves",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Portugal",
         "name": "Sa Jose"
@@ -6486,7 +6486,7 @@ const players = [
         "role": "Midfielder",
         "value": "€49.6m",
         "club": "Manchester City",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Portugal",
         "name": "Nunes Matheus"
@@ -6498,7 +6498,7 @@ const players = [
         "role": "Midfielder",
         "value": "€8.9m",
         "club": "PSG",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "Portugal",
         "name": "Pereira Danilo"
@@ -6510,7 +6510,7 @@ const players = [
         "role": "Forward",
         "value": "€30.2m",
         "club": "Barcelona",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Portugal",
         "name": "Joao Felix"
@@ -6522,7 +6522,7 @@ const players = [
         "role": "Forward",
         "value": "€52.5m",
         "club": "PSG",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "Portugal",
         "name": "Ramos Goncalo"
@@ -6534,7 +6534,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€9.4m",
         "club": "Manchester United",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Turkey",
         "name": "Bayindir Altay"
@@ -6546,7 +6546,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€1.3m",
         "club": "Besiktas",
-        "league": "Super Lig",
+        "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "national_team": "Turkey",
         "name": "Gunok Mert"
@@ -6558,7 +6558,7 @@ const players = [
         "role": "Defender",
         "value": "€2.8m",
         "club": "Panathinaikos",
-        "league": "Super League",
+        "league": "Super League (Greece)",
         "league_country": "Greece",
         "national_team": "Turkey",
         "name": "Akaydin Samet"
@@ -6570,7 +6570,7 @@ const players = [
         "role": "Defender",
         "value": "€4.6m",
         "club": "Galatasaray",
-        "league": "Super Lig",
+        "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "national_team": "Turkey",
         "name": "Ayhan Kaan"
@@ -6582,7 +6582,7 @@ const players = [
         "role": "Defender",
         "value": "€9.8m",
         "club": "Galatasaray",
-        "league": "Super Lig",
+        "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "national_team": "Turkey",
         "name": "Bardakci Abdulkerim"
@@ -6594,7 +6594,7 @@ const players = [
         "role": "Defender",
         "value": "€5.8m",
         "club": "AS Roma",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Turkey",
         "name": "Celik Zeki"
@@ -6606,7 +6606,7 @@ const players = [
         "role": "Defender",
         "value": "€17.6m",
         "club": "Al Ahli SC",
-        "league": "Saudi Professional League",
+        "league": "Saudi Professional League (Saudi Arabia)",
         "league_country": "Saudi Arabia",
         "national_team": "Turkey",
         "name": "Demiral Merih"
@@ -6618,7 +6618,7 @@ const players = [
         "role": "Defender",
         "value": "€21.3m",
         "club": "Fenerbahce",
-        "league": "Super Lig",
+        "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "national_team": "Turkey",
         "name": "Kadioglu Ferdi"
@@ -6630,7 +6630,7 @@ const players = [
         "role": "Defender",
         "value": "€4.5m",
         "club": "Fenerbahce",
-        "league": "Super Lig",
+        "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "national_team": "Turkey",
         "name": "Muldur Mert"
@@ -6642,7 +6642,7 @@ const players = [
         "role": "Midfielder",
         "value": "€42.0m",
         "club": "Inter",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Turkey",
         "name": "Calhanoglu Hakan"
@@ -6654,7 +6654,7 @@ const players = [
         "role": "Midfielder",
         "value": "€16.4m",
         "club": "Real Madrid",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Turkey",
         "name": "Guler Arda"
@@ -6666,7 +6666,7 @@ const players = [
         "role": "Midfielder",
         "value": "€30.6m",
         "club": "Benfica",
-        "league": "Liga Portugal",
+        "league": "Liga Portugal (Portugal)",
         "league_country": "Portugal",
         "national_team": "Turkey",
         "name": "Kokcu Orkun"
@@ -6678,7 +6678,7 @@ const players = [
         "role": "Midfielder",
         "value": "€12.5m",
         "club": "Dortmund",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Turkey",
         "name": "Ozcan Salih"
@@ -6690,7 +6690,7 @@ const players = [
         "role": "Midfielder",
         "value": "€9.6m",
         "club": "Lille",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "Turkey",
         "name": "Yazici Yusuf"
@@ -6702,7 +6702,7 @@ const players = [
         "role": "Midfielder",
         "value": "€10.2m",
         "club": "Fenerbahce",
-        "league": "Super Lig",
+        "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "national_team": "Turkey",
         "name": "Yuksek Ismail"
@@ -6714,7 +6714,7 @@ const players = [
         "role": "Forward",
         "value": "€5.0m",
         "club": "Leicester",
-        "league": "Championship",
+        "league": "Championship (England)",
         "league_country": "England",
         "national_team": "Turkey",
         "name": "Akgun Yunus"
@@ -6726,7 +6726,7 @@ const players = [
         "role": "Forward",
         "value": "€17.1m",
         "club": "Galatasaray",
-        "league": "Super Lig",
+        "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "national_team": "Turkey",
         "name": "Akturkoglu Kerem"
@@ -6738,7 +6738,7 @@ const players = [
         "role": "Forward",
         "value": "€31.1m",
         "club": "Juventus",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Turkey",
         "name": "Yildiz Kenan"
@@ -6750,7 +6750,7 @@ const players = [
         "role": "Forward",
         "value": "€12.7m",
         "club": "Galatasaray",
-        "league": "Super Lig",
+        "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "national_team": "Turkey",
         "name": "Yilmaz Baris Alper"
@@ -6762,7 +6762,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€7.4m",
         "club": "Trabzonspor",
-        "league": "Super Lig",
+        "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "national_team": "Turkey",
         "name": "Cakir Ugurcan"
@@ -6774,7 +6774,7 @@ const players = [
         "role": "Defender",
         "value": "€7.2m",
         "club": "Ajax",
-        "league": "Eredivisie",
+        "league": "Eredivisie (Netherlands)",
         "league_country": "Netherlands",
         "national_team": "Turkey",
         "name": "Kaplan Ahmetcan"
@@ -6786,7 +6786,7 @@ const players = [
         "role": "Defender",
         "value": "€4.3m",
         "club": "Kasimpasa",
-        "league": "Super Lig",
+        "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "national_team": "Turkey",
         "name": "Ozcan Yasin"
@@ -6798,7 +6798,7 @@ const players = [
         "role": "Midfielder",
         "value": "€3.0m",
         "club": "West Brom",
-        "league": "Championship",
+        "league": "Championship (England)",
         "league_country": "England",
         "national_team": "Turkey",
         "name": "Yokuslu Okay"
@@ -6810,7 +6810,7 @@ const players = [
         "role": "Forward",
         "value": "€8.8m",
         "club": "Fenerbahce",
-        "league": "Super Lig",
+        "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "national_team": "Turkey",
         "name": "Kahveci Irfan Can"
@@ -6822,7 +6822,7 @@ const players = [
         "role": "Forward",
         "value": "€7.3m",
         "club": "Besiktas",
-        "league": "Super Lig",
+        "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "national_team": "Turkey",
         "name": "Kilicsoy Semih"
@@ -6834,7 +6834,7 @@ const players = [
         "role": "Forward",
         "value": "€2.6m",
         "club": "Besiktas",
-        "league": "Super Lig",
+        "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "national_team": "Turkey",
         "name": "Tosun Cenk"
@@ -6846,7 +6846,7 @@ const players = [
         "role": "Forward",
         "value": "€3.8m",
         "club": "Rennes",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "Turkey",
         "name": "Yildirim Bertug"
@@ -6858,7 +6858,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€3.3m",
         "club": "Slavia Prague",
-        "league": "FORTUNA:LIGA",
+        "league": "FORTUNA:LIGA (Czech Republic)",
         "league_country": "Czech Republic",
         "national_team": "Czech Republic",
         "name": "Stanek Jindrich"
@@ -6870,7 +6870,7 @@ const players = [
         "role": "Defender",
         "value": "€8.8m",
         "club": "West Ham",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Czech Republic",
         "name": "Coufal Vladimir"
@@ -6882,7 +6882,7 @@ const players = [
         "role": "Defender",
         "value": "€3.3m",
         "club": "Plzen",
-        "league": "FORTUNA:LIGA",
+        "league": "FORTUNA:LIGA (Czech Republic)",
         "league_country": "Czech Republic",
         "national_team": "Czech Republic",
         "name": "Hranac Robin"
@@ -6894,7 +6894,7 @@ const players = [
         "role": "Defender",
         "value": "€7.7m",
         "club": "Hoffenheim",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Czech Republic",
         "name": "Jurasek David"
@@ -6906,7 +6906,7 @@ const players = [
         "role": "Defender",
         "value": "€6.0m",
         "club": "Sparta Prague",
-        "league": "FORTUNA:LIGA",
+        "league": "FORTUNA:LIGA (Czech Republic)",
         "league_country": "Czech Republic",
         "national_team": "Czech Republic",
         "name": "Krejci Ladislav"
@@ -6918,7 +6918,7 @@ const players = [
         "role": "Midfielder",
         "value": "€4.8m",
         "club": "Fiorentina",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Czech Republic",
         "name": "Barak Antonin"
@@ -6930,7 +6930,7 @@ const players = [
         "role": "Midfielder",
         "value": "€8.1m",
         "club": "Wolfsburg",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Czech Republic",
         "name": "Cerny Vaclav"
@@ -6942,7 +6942,7 @@ const players = [
         "role": "Midfielder",
         "value": "€2.2m",
         "club": "Slavia Prague",
-        "league": "FORTUNA:LIGA",
+        "league": "FORTUNA:LIGA (Czech Republic)",
         "league_country": "Czech Republic",
         "national_team": "Czech Republic",
         "name": "Doudera David"
@@ -6954,7 +6954,7 @@ const players = [
         "role": "Midfielder",
         "value": "€2.4m",
         "club": "Slavia Prague",
-        "league": "FORTUNA:LIGA",
+        "league": "FORTUNA:LIGA (Czech Republic)",
         "league_country": "Czech Republic",
         "national_team": "Czech Republic",
         "name": "Holes Tomas"
@@ -6966,7 +6966,7 @@ const players = [
         "role": "Midfielder",
         "value": "€6.0m",
         "club": "Slavia Prague",
-        "league": "FORTUNA:LIGA",
+        "league": "FORTUNA:LIGA (Czech Republic)",
         "league_country": "Czech Republic",
         "national_team": "Czech Republic",
         "name": "Jurasek Matej"
@@ -6978,7 +6978,7 @@ const players = [
         "role": "Midfielder",
         "value": "€3.9m",
         "club": "Feyenoord",
-        "league": "Eredivisie",
+        "league": "Eredivisie (Netherlands)",
         "league_country": "Netherlands",
         "national_team": "Czech Republic",
         "name": "Lingr Ondrej"
@@ -6990,7 +6990,7 @@ const players = [
         "role": "Midfielder",
         "value": "€2.9m",
         "club": "Slavia Prague",
-        "league": "FORTUNA:LIGA",
+        "league": "FORTUNA:LIGA (Czech Republic)",
         "league_country": "Czech Republic",
         "national_team": "Czech Republic",
         "name": "Provod Lukas"
@@ -7002,7 +7002,7 @@ const players = [
         "role": "Midfielder",
         "value": "€1.9m",
         "club": "Slavia Prague",
-        "league": "FORTUNA:LIGA",
+        "league": "FORTUNA:LIGA (Czech Republic)",
         "league_country": "Czech Republic",
         "national_team": "Czech Republic",
         "name": "Sevcik Petr"
@@ -7014,7 +7014,7 @@ const players = [
         "role": "Midfielder",
         "value": "€35.7m",
         "club": "West Ham",
-        "league": "Premier League",
+        "league": "Premier League (England)",
         "league_country": "England",
         "national_team": "Czech Republic",
         "name": "Soucek Tomas"
@@ -7026,7 +7026,7 @@ const players = [
         "role": "Midfielder",
         "value": "€4.8m",
         "club": "Plzen",
-        "league": "FORTUNA:LIGA",
+        "league": "FORTUNA:LIGA (Czech Republic)",
         "league_country": "Czech Republic",
         "national_team": "Czech Republic",
         "name": "Sulc Pavel"
@@ -7038,7 +7038,7 @@ const players = [
         "role": "Forward",
         "value": "€2.7m",
         "club": "Plzen",
-        "league": "FORTUNA:LIGA",
+        "league": "FORTUNA:LIGA (Czech Republic)",
         "league_country": "Czech Republic",
         "national_team": "Czech Republic",
         "name": "Chory Tomas"
@@ -7050,7 +7050,7 @@ const players = [
         "role": "Forward",
         "value": "€4.2m",
         "club": "Slavia Prague",
-        "league": "FORTUNA:LIGA",
+        "league": "FORTUNA:LIGA (Czech Republic)",
         "league_country": "Czech Republic",
         "national_team": "Czech Republic",
         "name": "Chytil Mojmir"
@@ -7062,7 +7062,7 @@ const players = [
         "role": "Forward",
         "value": "€11.9m",
         "club": "Bayer Leverkusen",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Czech Republic",
         "name": "Hlozek Adam"
@@ -7074,7 +7074,7 @@ const players = [
         "role": "Forward",
         "value": "€4.1m",
         "club": "Sparta Prague",
-        "league": "FORTUNA:LIGA",
+        "league": "FORTUNA:LIGA (Czech Republic)",
         "league_country": "Czech Republic",
         "national_team": "Czech Republic",
         "name": "Kuchta Jan"
@@ -7086,7 +7086,7 @@ const players = [
         "role": "Forward",
         "value": "€21.8m",
         "club": "Bayer Leverkusen",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Czech Republic",
         "name": "Schick Patrik"
@@ -7098,7 +7098,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€950k",
         "club": "Sturm Graz",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Austria)",
         "league_country": "Austria",
         "national_team": "Czech Republic",
         "name": "Jaros Vitezslav"
@@ -7110,7 +7110,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€4.8m",
         "club": "Bayer Leverkusen",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Czech Republic",
         "name": "Kovar Matej"
@@ -7122,7 +7122,7 @@ const players = [
         "role": "Defender",
         "value": "€9.1m",
         "club": "Sparta Prague",
-        "league": "FORTUNA:LIGA",
+        "league": "FORTUNA:LIGA (Czech Republic)",
         "league_country": "Czech Republic",
         "national_team": "Czech Republic",
         "name": "Vitik Martin"
@@ -7134,7 +7134,7 @@ const players = [
         "role": "Defender",
         "value": "€3.8m",
         "club": "Slavia Prague",
-        "league": "FORTUNA:LIGA",
+        "league": "FORTUNA:LIGA (Czech Republic)",
         "league_country": "Czech Republic",
         "national_team": "Czech Republic",
         "name": "Vlcek Tomas"
@@ -7146,7 +7146,7 @@ const players = [
         "role": "Defender",
         "value": "€4.0m",
         "club": "Slavia Prague",
-        "league": "FORTUNA:LIGA",
+        "league": "FORTUNA:LIGA (Czech Republic)",
         "league_country": "Czech Republic",
         "national_team": "Czech Republic",
         "name": "Zima David"
@@ -7158,7 +7158,7 @@ const players = [
         "role": "Midfielder",
         "value": "€675k",
         "club": "Plzen",
-        "league": "FORTUNA:LIGA",
+        "league": "FORTUNA:LIGA (Czech Republic)",
         "league_country": "Czech Republic",
         "national_team": "Czech Republic",
         "name": "Cerv Lukas"
@@ -7170,7 +7170,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€34.7m",
         "club": "Valencia",
-        "league": "LaLiga",
+        "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "national_team": "Georgia",
         "name": "Mamardashvili Giorgi"
@@ -7182,7 +7182,7 @@ const players = [
         "role": "Defender",
         "value": "€734k",
         "club": "APOEL",
-        "league": "Cyta Championship",
+        "league": "Cyta Championship (Cyprus)",
         "league_country": "Cyprus",
         "national_team": "Georgia",
         "name": "Dvali Lasha"
@@ -7194,7 +7194,7 @@ const players = [
         "role": "Defender",
         "value": "€369k",
         "club": "Persepolis",
-        "league": "Persian Gulf Pro League",
+        "league": "Persian Gulf Pro League (Iran)",
         "league_country": "Iran",
         "national_team": "Georgia",
         "name": "Gvelesiani Giorgi"
@@ -7206,7 +7206,7 @@ const players = [
         "role": "Defender",
         "value": "€298k",
         "club": "Slovan Bratislava",
-        "league": "Nike liga",
+        "league": "Nike liga (Slovakia)",
         "league_country": "Slovakia",
         "national_team": "Georgia",
         "name": "Kashia Guram"
@@ -7218,7 +7218,7 @@ const players = [
         "role": "Defender",
         "value": "€675k",
         "club": "Al Akhdoud",
-        "league": "Saudi Professional League",
+        "league": "Saudi Professional League (Saudi Arabia)",
         "league_country": "Saudi Arabia",
         "national_team": "Georgia",
         "name": "Kvirkvelia Solomon"
@@ -7230,7 +7230,7 @@ const players = [
         "role": "Defender",
         "value": "€1.2m",
         "club": "Cremonese",
-        "league": "Serie B",
+        "league": "Serie B (Italy)",
         "league_country": "Italy",
         "national_team": "Georgia",
         "name": "Lochoshvili Luka"
@@ -7242,7 +7242,7 @@ const players = [
         "role": "Midfielder",
         "value": "€665k",
         "club": "Wolfsberger AC",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Austria)",
         "league_country": "Austria",
         "national_team": "Georgia",
         "name": "Altunashvili Sandro"
@@ -7254,7 +7254,7 @@ const players = [
         "role": "Midfielder",
         "value": "€2.7m",
         "club": "Watford",
-        "league": "Championship",
+        "league": "Championship (England)",
         "league_country": "England",
         "national_team": "Georgia",
         "name": "Chakvetadze Giorgi"
@@ -7266,7 +7266,7 @@ const players = [
         "role": "Midfielder",
         "value": "€489k",
         "club": "Cracovia",
-        "league": "Ekstraklasa",
+        "league": "Ekstraklasa (Poland)",
         "league_country": "Poland",
         "national_team": "Georgia",
         "name": "Kakabadze Otar"
@@ -7278,7 +7278,7 @@ const players = [
         "role": "Midfielder",
         "value": "€964k",
         "club": "Levante",
-        "league": "LaLiga2",
+        "league": "LaLiga2 (Spain)",
         "league_country": "Spain",
         "national_team": "Georgia",
         "name": "Kochorashvili Giorgi"
@@ -7290,7 +7290,7 @@ const players = [
         "role": "Midfielder",
         "value": "€993k",
         "club": "Univ. Craiova",
-        "league": "Liga 1",
+        "league": "Liga 1 (Romania)",
         "league_country": "Romania",
         "national_team": "Georgia",
         "name": "Mekvabishvili Anzor"
@@ -7302,7 +7302,7 @@ const players = [
         "role": "Midfielder",
         "value": "€806k",
         "club": "Dinamo Batumi",
-        "league": "Crystalbet Erovnuli Liga",
+        "league": "Crystalbet Erovnuli Liga (Georgia)",
         "league_country": "Georgia",
         "national_team": "Georgia",
         "name": "Tsitaishvili Georgiy"
@@ -7314,7 +7314,7 @@ const players = [
         "role": "Forward",
         "value": "€2.6m",
         "club": "Bordeaux",
-        "league": "Ligue 2",
+        "league": "Ligue 2 (France)",
         "league_country": "France",
         "national_team": "Georgia",
         "name": "Davitashvili Zuriko"
@@ -7326,7 +7326,7 @@ const players = [
         "role": "Forward",
         "value": "€87.4m",
         "club": "Napoli",
-        "league": "Serie A",
+        "league": "Serie A (Italy)",
         "league_country": "Italy",
         "national_team": "Georgia",
         "name": "Kvaratskhelia Khvicha"
@@ -7338,7 +7338,7 @@ const players = [
         "role": "Forward",
         "value": "€1.6m",
         "club": "APOEL",
-        "league": "Cyta Championship",
+        "league": "Cyta Championship (Cyprus)",
         "league_country": "Cyprus",
         "national_team": "Georgia",
         "name": "Kvilitaia Giorgi"
@@ -7350,7 +7350,7 @@ const players = [
         "role": "Forward",
         "value": "€2.0m",
         "club": "Atlanta United",
-        "league": "MLS",
+        "league": "MLS (USA)",
         "league_country": "USA",
         "national_team": "Georgia",
         "name": "Lobjanidze Saba"
@@ -7362,7 +7362,7 @@ const players = [
         "role": "Forward",
         "value": "€9.3m",
         "club": "Metz",
-        "league": "Ligue 1",
+        "league": "Ligue 1 (France)",
         "league_country": "France",
         "national_team": "Georgia",
         "name": "Mikautadze Georges"
@@ -7374,7 +7374,7 @@ const players = [
         "role": "Forward",
         "value": "€685k",
         "club": "Karlsruher",
-        "league": "2. Bundesliga",
+        "league": "2. Bundesliga (Germany)",
         "league_country": "Germany",
         "national_team": "Georgia",
         "name": "Zivzivadze Budu"
@@ -7386,7 +7386,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€587k",
         "club": "Qarabag Agdam",
-        "league": "Premier League",
+        "league": "Premier League (Azerbaijan)",
         "league_country": "Azerbaijan",
         "national_team": "Georgia",
         "name": "Gugeshashvili Luka"
@@ -7398,7 +7398,7 @@ const players = [
         "role": "Goalkeeper",
         "value": "€96k",
         "club": "Dinamo Tbilisi",
-        "league": "Crystalbet Erovnuli Liga",
+        "league": "Crystalbet Erovnuli Liga (Georgia)",
         "league_country": "Georgia",
         "national_team": "Georgia",
         "name": "Loria Giorgi"
@@ -7410,7 +7410,7 @@ const players = [
         "role": "Defender",
         "value": "€482k",
         "club": "Panetolikos",
-        "league": "Super League",
+        "league": "Super League (Greece)",
         "league_country": "Greece",
         "national_team": "Georgia",
         "name": "Tabidze Jemal"
@@ -7422,7 +7422,7 @@ const players = [
         "role": "Midfielder",
         "value": "€3.0m",
         "club": "Sturm Graz",
-        "league": "Bundesliga",
+        "league": "Bundesliga (Austria)",
         "league_country": "Austria",
         "national_team": "Georgia",
         "name": "Kiteishvili Otar"
@@ -7434,7 +7434,7 @@ const players = [
         "role": "Midfielder",
         "value": "€587k",
         "club": "Lech Poznan",
-        "league": "Ekstraklasa",
+        "league": "Ekstraklasa (Poland)",
         "league_country": "Poland",
         "national_team": "Georgia",
         "name": "Kvekveskiri Nika"
@@ -7446,7 +7446,7 @@ const players = [
         "role": "Midfielder",
         "value": "€2.4m",
         "club": "Basel",
-        "league": "Super League",
+        "league": "Super League (Switzerland)",
         "league_country": "Switzerland",
         "national_team": "Georgia",
         "name": "Sigua Gabriel"
@@ -7458,7 +7458,7 @@ const players = [
         "role": "Forward",
         "value": "€2.4m",
         "club": "Shakhtar Donetsk",
-        "league": "Premier League",
+        "league": "Premier League (Ukraine)",
         "league_country": "Ukraine",
         "national_team": "Georgia",
         "name": "Gocholeishvili Giorgi"
@@ -7470,7 +7470,7 @@ const players = [
         "role": "Forward",
         "value": "€713k",
         "club": "Panetolikos",
-        "league": "Super League",
+        "league": "Super League (Greece)",
         "league_country": "Greece",
         "national_team": "Georgia",
         "name": "Shengelia Levan"

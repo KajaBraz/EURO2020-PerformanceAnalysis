@@ -1,4 +1,5 @@
 function start(dataToDraw, score) {
+    shuffle_array(dataToDraw);
     let clubs_grouped = Object.groupBy(dataToDraw, ({ club }) => club);
     var club_cnts = new Object();
     for (const [key, value] of Object.entries(clubs_grouped)) {

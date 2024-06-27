@@ -74,14 +74,13 @@ async def complete_team_players_data(page, team_players_dict):
         team_players_dict[player]['role'] = role
         team_players_dict[player]['value'] = value
         team_players_dict[player]['club'] = club
-        team_players_dict[player]['league'] = league
+        team_players_dict[player]['league'] = f'{league} ({league_country})'
         team_players_dict[player]['league_country'] = league_country
 
 
-def retrieve_coaches(json_file):
+def retrieve_coaches(json_file, json_players, json_coaches):
     json_data = read_json(json_file)
     coaches = {}
-    players = {}
     for country, players in json_data.items():
         for player, dd in players.items():
             role = dd['role']
@@ -97,8 +96,8 @@ def retrieve_coaches(json_file):
     for country, coach_dict in coaches.items():
         json_data[country].pop(coach_dict['name'])
 
-    save_data(json_data, 'players.json')
-    save_data(coaches, 'coaches.json')
+    save_data(json_data, json_players)
+    save_data(coaches, json_coaches)
 
 
 def flatten_players_hierarchy(json_file, js_file_name='players.js'):
@@ -129,7 +128,10 @@ def save_data(data, file_name='data.json'):
 async def main():
     headless = True
     euro_link = 'https://www.flashscore.com/football/europe/euro/standings/#/EcpQtcVi/table'
-    data_file = 'data.json'
+    data_json = 'data.json'
+    players_json = 'players.json'
+    coaches_json = 'coaches.json'
+    players_js = '../../js/2024/players.js'
 
     async with async_playwright() as playwright:
         browser, page = await set_up(playwright, headless)
@@ -143,11 +145,11 @@ async def main():
             team_players = await get_teams_players(page, team_players_link)
             teams_data[team] = team_players
 
-        save_data(teams_data, data_file)
+        save_data(teams_data, data_json)
         tear_down(browser)
 
-    retrieve_coaches(data_file)
-    flatten_players_hierarchy('players.json', '../../js/2024/players.js')
+    retrieve_coaches(data_json, players_json, coaches_json)
+    flatten_players_hierarchy(players_json, players_js)
 
 
 if __name__ == '__main__':

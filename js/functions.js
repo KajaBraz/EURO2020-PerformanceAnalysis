@@ -64,3 +64,10 @@ function fill_init(title, label_fill, data_fill) {
     datas[title] = data_fill;
     appendCanvas(title, labels[title], datas[title]);
 }
+
+function shuffle_array(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
