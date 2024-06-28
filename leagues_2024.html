@@ -55,6 +55,10 @@
             padding: 5px;
             text-decoration: none;
         }
+
+        #include_cnt {
+            width: 25px;
+        }
     </style>
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -78,10 +82,10 @@
         <label for="bar_radio">Bar chart</label>
         <input type="radio" id="pie_radio" name="chart_type" value="pie" onchange="switch_to('pie')">
         <label for="pie_radio">Pie chart</label>
-        <!-- <p>
-            <input type="checkbox" id="one_goal" onchange="modify_one_goal(this, 'Goals')">
-            <label for="one_goal">Include one-goal-scorers</label>
-        </p> -->
+        <p>
+            <label for="one_goal">Include clubs with the minimum number of players:</label>
+            <input id="include_cnt" value="4" onkeyup="modify_chart_by_cnt(this, 'Clubs', club_cnts)">
+        </p>
     </div>
     <div id='container'></div>
     <footer>

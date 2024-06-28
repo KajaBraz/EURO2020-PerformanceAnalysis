@@ -18,6 +18,30 @@ function modify_one_goal(checkbox, title) {
     all_charts[title].update();
 }
 
+function modify_chart_by_cnt(input_elem, title, data_obj) {
+    let cnt_str = input_elem.value;
+    if (!isNaN(cnt_str)) {
+        var cnt = Number(cnt_str);
+    }
+    filter_object_by_cnt(data_obj, cnt);
+    all_charts[title].data.labels = no_one_goal_labels;
+    all_charts[title].data.datasets[0].data = no_one_goal_datas;
+
+    labels[title] = all_charts[title].data.labels;
+    datas[title] = all_charts[title].data.datasets[0].data;
+    all_charts[title].update();
+}
+
+function filter_object_by_cnt(obj, cnt) {
+    no_one_goal_labels = [];
+    no_one_goal_datas = [];
+    for (const [key, value] of Object.entries(obj)) {
+        if (value >= cnt) {
+            no_one_goal_labels.push(key);
+            no_one_goal_datas.push(value);
+        }
+    }
+}
 function createChart(title, labels, datas, type) {
     let step = 360 / datas.length;
     let colorsHue = datas.map((elem, index) => `hsla(${index * step}, 100%, 50%, 0.25`);
