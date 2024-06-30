@@ -293,18 +293,18 @@ def parse_player_tr(tr: BeautifulSoup):
 
 
 if __name__ == '__main__':
-    stats_url = 'https://en.wikipedia.org/wiki/UEFA_Euro_2020_statistics'
+    # stats_url = 'https://en.wikipedia.org/wiki/UEFA_Euro_2020_statistics'
     # stats_url = 'https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_statistics'
     # stats_url = 'https://en.wikipedia.org/wiki/UEFA_Euro_2012_statistics'
-    # stats_url = 'https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica_statistics'
+    stats_url = 'https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica_statistics'
     # stats_url = 'https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_statistics'
 
     soup = get_soup(stats_url)
-
+    #
     d = get_goals_num(soup, 'goals')
     goals_dict = extract_dict_data(d)
     goal_scorers = get_goal_scorers(goals_dict, 2021)
-    save_json('../js/data_2021.js', goal_scorers)
+    # save_json('../js/data_2021.js', goal_scorers)
 
     # d_a = get_goals_num(soup, 'assists')
     # goals_dict = extract_dict_data(d_a)

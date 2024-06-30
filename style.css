@@ -1,0 +1,87 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+canvas {
+    margin: 20px;
+    margin-bottom: 50px;
+    max-height: 750px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+}
+
+footer {
+    text-align: right;
+    margin-right: 5%;
+}
+
+div.select_chart {
+    margin: 3%;
+    text-align: center;
+}
+
+.pie_chart_class {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container {
+    width: 90%;
+    margin: auto;
+}
+
+.competitions_list_container {
+    text-align: center;
+}
+
+.competitions_list_container ul {
+    border: 2px solid black;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 2px;
+}
+
+.competitions_list_container li {
+    display: inline-block;
+}
+
+.competitions_list_container li a {
+    display: inline-block;
+    background: rgb(102, 102, 102);
+    color: #FFF;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.chart_container {
+    margin-top: 4%;
+}
+
+.competitions_list_header {
+    margin-bottom: 0%;
+}
+
+.subtitle {
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: lighter;
+}
+
+.cnt_box {
+    width: 25px;
+    text-align: center;
+}
+
+.include_cnt {
+    align-items: center;
+    text-align: center;
+}
