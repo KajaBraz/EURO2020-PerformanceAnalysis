@@ -49,7 +49,16 @@ function filter_object_by_cnt(obj, cnt) {
 }
 
 function createChart(title, labels, datas, type) {
+    // TODO - the previous method creates a bug when only a few items are displayed in the chart (colours difficult to distinguish)
+    // Apply the fix to create a new chart instead of modifying it each time when its size changes (e.g., from 50 to 5) to prevent a narrow colour range
+    // let step = 360 / datas.length;
+    // let colorsHue = datas.map((elem, index) => `hsla(${index * step}, 100%, 50%, 0.25`);
     let colorsHue = datas.map((_elem, _index) => `hsla(${Math.floor(Math.random() * 361)}, 100%, 50%, 0.3`);
+
+    // TODO - temp solution not to display the chart's title for the 2024 page (the titles there are separate html elements)
+    if (document.getElementsByTagName("title")[0].innerHTML == "Clubs and Leagues") {
+        title = '';
+    }
     return {
         type: type,
         data: {
@@ -65,14 +74,14 @@ function createChart(title, labels, datas, type) {
                     display: type == "bar" ? false : true,
                     position: "bottom",
                     maxHeight: 200
+                },
+                title: {
+                    display: true,
+                    text: title,
+                    font: {
+                        size: 20
+                    }
                 }
-                // title: {
-                //     display: true,
-                //     text: title,
-                //     font: {
-                //         size: 20
-                //     }
-                // }
             }
         }
     };
