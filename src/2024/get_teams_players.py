@@ -12,8 +12,8 @@ async def set_up(playwright: Playwright, headless):
     return browser, page
 
 
-def tear_down(browser):
-    browser.close()
+async def tear_down(browser):
+    await browser.close()
 
 
 async def get_national_teams(page, link):
@@ -146,7 +146,7 @@ async def main():
             teams_data[team] = team_players
 
         save_data(teams_data, data_json)
-        tear_down(browser)
+        await tear_down(browser)
 
     retrieve_coaches(data_json, players_json, coaches_json)
     flatten_players_hierarchy(players_json, players_js)
