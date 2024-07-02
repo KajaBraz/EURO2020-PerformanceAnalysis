@@ -17,7 +17,7 @@ async def tear_down(browser):
 
 
 async def get_national_teams(page, link):
-    await page.goto(link)
+    await page.goto(link, timeout=10000)
 
     national_team_class = 'tableCellParticipant__name'
     national_teams = await page.locator(f'.{national_team_class}').all()
@@ -26,10 +26,11 @@ async def get_national_teams(page, link):
 
 
 async def get_teams_players(page, link):
-    await page.goto(link)
+    await page.goto(link, timeout=10000)
     player_row_class = 'lineupTable__row'
     player_name_class = 'lineupTable__cell--name'
     player_age_class = 'lineupTable__cell--age'
+    player_flag_class = 'lineupTable__cell--flag'
 
     players = await page.locator(f'.{player_row_class}').all()
     players_data = {}
@@ -42,29 +43,35 @@ async def get_teams_players(page, link):
         age = await player_row.locator(f'.{player_age_class}').inner_text()
         short_name = f'{surname} {first_name[0]}.' if first_name else surname
         link = await player.get_attribute('href')
-        players_data[name] = {'name': short_name, 'age': age, 'link': link}
+        club = await player_row.locator(f'.{player_flag_class}').first.get_attribute('title')
+        players_data[name] = {'name': short_name, 'age': age, 'club_ref': club, 'link': link}
     await complete_team_players_data(page, players_data)
     return players_data
 
 
 async def get_extra_player_data(page, player_link):
     link = f'https://www.flashscore.com{player_link}'
-    await page.goto(link)
+    await page.goto(link, timeout=10000)
 
     role_class = 'playerTeam'
     league_country_class = 'careerTab__competition'
     club_href_class = 'careerTab__competitionHref'
 
-    role = await (page.locator(f'.{role_class}')).inner_text()
-    role = role.split(' ', 1)[0]
-    if role.lower() == 'coach':
-        return role, '', '', '', ''
-    value = page.get_by_text(re.compile(r'[$€]\w+')).first
-    value = await value.inner_text()
-    club = await (page.locator(f'.{club_href_class}').nth(0)).get_attribute('title')
-    competition = page.locator(f'.{league_country_class}').nth(1)
-    league_country = await (competition.locator('span')).get_attribute('title')
-    league = await (competition.locator('a')).get_attribute('title')
+    role, value, club, league, league_country = '', '', '', '', ''
+
+    try:
+        role = await (page.locator(f'.{role_class}')).inner_text()
+        role = role.split(' ', 1)[0]
+        if role.lower() == 'coach' or role == '':
+            return role, '', '', '', ''
+        value = page.get_by_text(re.compile(r'[$€]\w+')).first
+        value = await value.inner_text()
+        club = await (page.locator(f'.{club_href_class}').nth(0)).get_attribute('title')
+        competition = page.locator(f'.{league_country_class}').nth(1)
+        league_country = await (competition.locator('span')).get_attribute('title')
+        league = await (competition.locator('a')).get_attribute('title')
+    except Exception:
+        print('***EXCEPTION***', player_link)
     return role, value, club, league, league_country
 
 
@@ -89,6 +96,7 @@ def retrieve_coaches(json_file, json_players, json_coaches):
                 dd.pop('role')
                 dd.pop('value')
                 dd.pop('club')
+                dd.pop('club_ref')
                 dd.pop('league')
                 dd.pop('league_country')
                 coaches[country] = dd
@@ -125,17 +133,10 @@ def save_data(data, file_name='data.json'):
         json.dump(data, f, ensure_ascii=False, indent=4)
 
 
-async def main():
-    headless = True
-    euro_link = 'https://www.flashscore.com/football/europe/euro/standings/#/EcpQtcVi/table'
-    data_json = 'data.json'
-    players_json = 'players.json'
-    coaches_json = 'coaches.json'
-    players_js = '../../js/2024/players.js'
-
+async def main(link, data_json, players_json, coaches_json, players_js):
     async with async_playwright() as playwright:
         browser, page = await set_up(playwright, headless)
-        national_teams = await get_national_teams(page, euro_link)
+        national_teams = await get_national_teams(page, link)
         teams_data = {}
 
         for team, code in national_teams.items():
@@ -152,5 +153,29 @@ async def main():
     flatten_players_hierarchy(players_json, players_js)
 
 
+def analyse_clubs(json_file='data.json'):
+    with open(json_file, 'r', encoding='utf-8') as f:
+        d = json.load(f)
+    cnt = 0
+    for country, players in d.items():
+        for player, players_dict in players.items():
+            if players_dict['role'] != 'Coach' and players_dict['club'] != players_dict['club_ref']:
+                cnt += 1
+                print(f'{cnt}. {country} - {player} - {players_dict["link"]}'
+                      f'\n\t{players_dict["club"]} - {players_dict["club_ref"]}')
+
+
 if __name__ == '__main__':
-    asyncio.run(main())
+    headless = True
+    euro_link = 'https://www.flashscore.com/football/europe/euro/standings/#/EcpQtcVi/table'
+    copa_link = 'https://www.flashscore.com/football/south-america/copa-america/standings/#/zDzsPsN5/live'
+    data_json_file = 'data.json'
+    players_json_file = 'players.json'
+    coaches_json_file = 'coaches.json'
+    players_js_file = '../../js/2024/players.js'
+    copa_files = [f'{pref}_copa.{ext}' for pref, ext in [name.rsplit('.', 1) for name in (
+                                                data_json_file, players_json_file, coaches_json_file, players_js_file)]]
+
+    asyncio.run(main(euro_link, data_json_file, players_json_file, coaches_json_file, players_js_file))
+    asyncio.run(main(copa_link, *copa_files))
+    # analyse_clubs(data_json_file)
