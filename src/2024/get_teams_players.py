@@ -44,7 +44,7 @@ async def get_teams_players(page, link):
         short_name = f'{surname} {first_name[0]}.' if first_name else surname
         link = await player.get_attribute('href')
         club = await player_row.locator(f'.{player_flag_class}').first.get_attribute('title')
-        players_data[name] = {'name': short_name, 'age': age, 'club_ref': club, 'link': link}
+        players_data[name] = {'short_name': short_name, 'age': age, 'club_ref': club, 'link': link}
     await complete_team_players_data(page, players_data)
     return players_data
 
