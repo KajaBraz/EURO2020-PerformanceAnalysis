@@ -1,0 +1,82 @@
+{
+    "Argentina": {
+        "name": "Scaloni Lionel",
+        "age": "46",
+        "link": "/player/scaloni-lionel/A1A2ibcF/"
+    },
+    "Canada": {
+        "name": "Marsch Jesse",
+        "age": "50",
+        "link": "/player/marsch-jesse/tKl2KpPk/"
+    },
+    "Chile": {
+        "name": "Gareca Ricardo",
+        "age": "66",
+        "link": "/player/gareca-ricardo/zoS0gtch/"
+    },
+    "Peru": {
+        "name": "Fossati Jorge",
+        "age": "71",
+        "link": "/player/fossati-jorge/YPTHWSzd/"
+    },
+    "Venezuela": {
+        "name": "Batista Fernando",
+        "age": "53",
+        "link": "/player/batista-fernando/hG9kwk7n/"
+    },
+    "Ecuador": {
+        "name": "Sanchez Bas Felix",
+        "age": "48",
+        "link": "/player/sanchez-felix/tzaBj2hD/"
+    },
+    "Mexico": {
+        "name": "Lozano Espin Jaime Arturo",
+        "age": "45",
+        "link": "/player/lozano-jaime/K06lsoI9/"
+    },
+    "Jamaica": {
+        "name": "Hallgrimsson Heimir",
+        "age": "57",
+        "link": "/player/hallgrimsson-heimir/hS9vPWAm/"
+    },
+    "Uruguay": {
+        "name": "Bielsa Marcelo",
+        "age": "68",
+        "link": "/player/bielsa-marcelo/8xZo4kDI/"
+    },
+    "USA": {
+        "name": "Berhalter Gregg",
+        "age": "50",
+        "link": "/player/berhalter-gregg/QsnKsrgl/"
+    },
+    "Panama": {
+        "name": "Christiansen Thomas",
+        "age": "51",
+        "link": "/player/christiansen-thomas/AuojCcV5/"
+    },
+    "Bolivia": {
+        "name": "Carlos Antonio",
+        "age": "55",
+        "link": "/player/carlos-antonio/zVfqI7Bm/"
+    },
+    "Colombia": {
+        "name": "Lorenzo Nestor",
+        "age": "58",
+        "link": "/player/lorenzo-nestor-gabriel/EHstnYWI/"
+    },
+    "Brazil": {
+        "name": "Silvestre Junior Dorival",
+        "age": "62",
+        "link": "/player/junior-dorival/hWy8sVW9/"
+    },
+    "Costa Rica": {
+        "name": "Alfaro Gustavo",
+        "age": "61",
+        "link": "/player/alfaro-gustavo/pd7yjljQ/"
+    },
+    "Paraguay": {
+        "name": "Garnero Daniel",
+        "age": "55",
+        "link": "/player/garnero-daniel/zaqOthLg/"
+    }
+}
