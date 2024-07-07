@@ -2,17 +2,23 @@ function start(dataToDraw, score) {
     shuffle_array(dataToDraw);
 
     let clubs_grouped = Object.groupBy(dataToDraw, ({ club }) => club);
-
+    // let cnt = 0;
     for (const [key, value] of Object.entries(clubs_grouped)) {
-        club_cnts[key] = value.length;
+        // console.log(`${cnt}. ${key} - ${value[0]}`);
+        club_players[key] = [];
+        for (p of Object.entries(value)){
+            club_players[key].push(p[1]["name"]);
+        }
+        // cnt += 1;
     }
 
     // TODO - rename variables (one_goal, no_one_goal) to reflect what the data stands for (doesn't apply to 2024 anymore but still to 2020)
     // (currently the variables are global and used in common functions for 2020 and 2024)
 
-    let clubs_data = filter_object_by_cnt(club_cnts, Number(document.getElementById("include_cnt_box_clubs").value));
+    let clubs_data = filter_object_by_cnt(club_players, Number(document.getElementById("include_cnt_box_clubs").value));
     let clubs_chart_labels = clubs_data[0];
     let clubs_chart_values = clubs_data[1];
+    // console.log('PLAYERS',club_players)
 
     fill_init(`${score}Clubs`, clubs_chart_labels, clubs_chart_values, "clubs_container");
 
@@ -48,6 +54,7 @@ let labels = {};
 let datas = {};
 
 let club_cnts = new Object();
+let club_players = new Object();
 let league_cnts = new Object();
 let leagues_countries_cnts = new Object();
 

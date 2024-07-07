@@ -3,7 +3,7 @@ function switch_to(type) {
         all_charts[id].destroy();
         all_charts[id] = new Chart(
             document.getElementById(id).getContext("2d"),
-            createChart(id, labels[id], datas[id], type)
+            createChart(id, labels[id], datas[id], datas[id], type)
         );
     });
 }
@@ -28,6 +28,10 @@ function modify_chart_by_cnt(input_elem, title, data_obj) {
     let new_chart_labels = new_data[0];
     let new_chart_values = new_data[1];
 
+    if (typeof (new_chart_values[0]) === "object") {
+        new_chart_values = new_chart_values.map(item => item.length);
+    }
+
     all_charts[title].data.labels = new_chart_labels;
     all_charts[title].data.datasets[0].data = new_chart_values;
 
@@ -40,15 +44,26 @@ function filter_object_by_cnt(obj, cnt) {
     var new_chart_labels = [];
     var new_chart_values = [];
     for (const [key, value] of Object.entries(obj)) {
-        if (value >= cnt) {
-            new_chart_labels.push(key);
-            new_chart_values.push(value);
+        if (typeof (value) === "object") {
+            // console.log('if', key, value.length)
+            if (value.length >= cnt) {
+                console.log('  ok')
+                new_chart_labels.push(key);
+                new_chart_values.push(value);
+            }
+        } else {
+            if (value >= cnt) {
+                new_chart_labels.push(key);
+                new_chart_values.push(value);
+            }
+
         }
     }
+    console.log('*', new_chart_labels)
     return [new_chart_labels, new_chart_values]
 }
 
-function createChart(title, labels, datas, type) {
+function createChart(title, labels, datas, full_data, type) {
     // TODO - the previous method creates a bug when only a few items are displayed in the chart (colours difficult to distinguish)
     // Apply the fix to create a new chart instead of modifying it each time when its size changes (e.g., from 50 to 5) to prevent a narrow colour range
     // let step = 360 / datas.length;
@@ -81,26 +96,37 @@ function createChart(title, labels, datas, type) {
                     font: {
                         size: 20
                     }
-                }
+                },
+            },
+            onClick: (e) => {
+                console.log('AAAAAAAAA', e.chart.tooltip.title);
+                console.log(full_data);
             }
         }
     };
 }
 
-function appendCanvas(title, labels, datas, parent_id = "container", type = "bar") {
+function appendCanvas(title, labels, datas, full_data, parent_id = "container", type = "bar") {
     let canvas = document.createElement('canvas');
     canvas.width = "1500";
     canvas.height = "600";
     canvas.id = title;
     document.getElementById(parent_id).appendChild(canvas);
-    let chart = new Chart(canvas, createChart(title, labels, datas, type));
+    let chart = new Chart(canvas, createChart(title, labels, datas, full_data, type));
     all_charts[title] = chart;
 }
 
 function fill_init(title, label_fill, data_fill, append_to_elem_id = "container") {
     labels[title] = label_fill;
-    datas[title] = data_fill;
-    appendCanvas(title, labels[title], datas[title], append_to_elem_id);
+
+    if (typeof (data_fill[0]) === "object") {
+        datas[title] = data_fill.map(details_array => details_array.length);
+    } else {
+        datas[title] = data_fill;
+    }
+    // console.log('**',datas[title])
+
+    appendCanvas(title, labels[title], datas[title], data_fill, append_to_elem_id);
 }
 
 function shuffle_array(array) {
