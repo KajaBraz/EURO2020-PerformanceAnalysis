@@ -1,9 +1,11 @@
+// TODO - consider removing one of the following global variables: datas and all_charts
+
 function switch_to(type) {
     Object.keys(all_charts).forEach(id => {
         all_charts[id].destroy();
         all_charts[id] = new Chart(
             document.getElementById(id).getContext("2d"),
-            createChart(id, labels[id], datas[id], datas[id], type)
+            createChart(id, labels[id], datas[id]["values"], datas[id]["full"], type)
         );
     });
 }
@@ -21,45 +23,41 @@ function modify_one_goal(checkbox, title) {
 
 function modify_chart_by_cnt(input_elem, title, data_obj) {
     let cnt_str = input_elem.value;
+
     if (!isNaN(cnt_str)) {
         var cnt = Number(cnt_str);
     }
+
     let new_data = filter_object_by_cnt(data_obj, cnt);
     let new_chart_labels = new_data[0];
     let new_chart_values = new_data[1];
-
-    if (typeof (new_chart_values[0]) === "object") {
-        new_chart_values = new_chart_values.map(item => item.length);
-    }
 
     all_charts[title].data.labels = new_chart_labels;
     all_charts[title].data.datasets[0].data = new_chart_values;
 
     labels[title] = all_charts[title].data.labels;
-    datas[title] = all_charts[title].data.datasets[0].data;
+    datas[title]["values"] = all_charts[title].data.datasets[0].data;
+
     all_charts[title].update();
 }
 
 function filter_object_by_cnt(obj, cnt) {
     var new_chart_labels = [];
     var new_chart_values = [];
+
     for (const [key, value] of Object.entries(obj)) {
         if (typeof (value) === "object") {
-            // console.log('if', key, value.length)
             if (value.length >= cnt) {
-                console.log('  ok')
                 new_chart_labels.push(key);
-                new_chart_values.push(value);
+                new_chart_values.push(value.length);
             }
         } else {
             if (value >= cnt) {
                 new_chart_labels.push(key);
                 new_chart_values.push(value);
             }
-
         }
     }
-    console.log('*', new_chart_labels)
     return [new_chart_labels, new_chart_values]
 }
 
@@ -72,8 +70,9 @@ function createChart(title, labels, datas, full_data, type) {
 
     // TODO - temp solution not to display the chart's title for the 2024 page (the titles there are separate html elements)
     if (document.getElementsByTagName("title")[0].innerHTML == "Clubs and Leagues") {
-        title = '';
+        title = "";
     }
+
     return {
         type: type,
         data: {
@@ -97,13 +96,16 @@ function createChart(title, labels, datas, full_data, type) {
                         size: 20
                     }
                 },
-            },
-            onClick: (e) => {
-                console.log('AAAAAAAAA', e.chart.tooltip.title);
-                console.log(full_data);
+                tooltip: {
+                    callbacks: {
+                        afterLabel: function (context) {
+                            return full_data[context.label];
+                        }
+                    }
+                }
             }
         }
-    };
+    }
 }
 
 function appendCanvas(title, labels, datas, full_data, parent_id = "container", type = "bar") {
@@ -116,17 +118,10 @@ function appendCanvas(title, labels, datas, full_data, parent_id = "container", 
     all_charts[title] = chart;
 }
 
-function fill_init(title, label_fill, data_fill, append_to_elem_id = "container") {
+function fill_init(title, label_fill, data_fill, append_to_elem_id = "container", full_data = NaN) {
     labels[title] = label_fill;
-
-    if (typeof (data_fill[0]) === "object") {
-        datas[title] = data_fill.map(details_array => details_array.length);
-    } else {
-        datas[title] = data_fill;
-    }
-    // console.log('**',datas[title])
-
-    appendCanvas(title, labels[title], datas[title], data_fill, append_to_elem_id);
+    datas[title] = { "values": data_fill, "full": full_data };
+    appendCanvas(title, labels[title], data_fill, full_data, append_to_elem_id);
 }
 
 function shuffle_array(array) {
