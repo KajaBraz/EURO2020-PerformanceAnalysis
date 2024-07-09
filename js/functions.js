@@ -97,9 +97,21 @@ function createChart(title, labels, datas, full_data, type) {
                     }
                 },
                 tooltip: {
+                    // titleMarginBottom: 10,
+                    // titleFont: {size: 14},
                     callbacks: {
                         afterLabel: function (context) {
-                            return full_data[context.label];
+                            if (full_data) {
+                                let rows = 20;
+                                let all_names = full_data[context.label];
+                                let players_in_row_num = Math.ceil(all_names.length / rows)
+                                let display_names = [];
+                                for (let i = 0; i < rows + 1; i++) {
+                                    var new_row = all_names.slice(i * players_in_row_num, i * players_in_row_num + players_in_row_num);
+                                    display_names.push(new_row.join(" - "));
+                                }
+                                return display_names.join("\n");
+                            }
                         }
                     }
                 }
@@ -129,4 +141,8 @@ function shuffle_array(array) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
+}
+
+function parse_player_info(player_data) {
+    return `${player_data["short_name"]} (${player_data["national_team"].slice(0, 3).toUpperCase()})`;
 }
