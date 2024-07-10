@@ -7,7 +7,7 @@ function start(dataToDraw, score) {
     for (const [key, value] of Object.entries(clubs_grouped)) {
         club_players[key] = [];
         for (let player of Object.entries(value)) {
-            let player_info = parse_player_info(player[1]);
+            let player_info = parse_player_info_country(player[1], "short_name", "national_team");
             club_players[key].push(player_info);
         }
         club_cnts[key] = value.length;
@@ -29,7 +29,7 @@ function start(dataToDraw, score) {
     for (const [key, value] of Object.entries(leagues_grouped)) {
         league_players[key] = [];
         for (let player of Object.entries(value)) {
-            let player_info = parse_player_info(player[1]);
+            let player_info = parse_player_info_country(player[1], "short_name", "national_team");
             league_players[key].push(player_info);
             // league_players[key].push(player[1]["short_name"]);
         }
@@ -49,7 +49,7 @@ function start(dataToDraw, score) {
     for (const [key, value] of Object.entries(leagues_countries_grouped)) {
         leagues_countries_players[key] = [];
         for (let player of Object.entries(value)) {
-            let player_info = parse_player_info(player[1]);
+            let player_info = parse_player_info_country(player[1], "short_name", "national_team");
             leagues_countries_players[key].push(player_info);
         }
         leagues_countries_cnts[key] = value.length;
