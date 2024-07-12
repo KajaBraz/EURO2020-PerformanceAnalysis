@@ -57,7 +57,7 @@ function start(dataToDraw, score) {
     for (const [key, value] of Object.entries(leagues_grouped_info)) {
         leagues_grouped[key] = [];
         for (let player of Object.entries(value)) {
-            leagues_grouped[key].push(parse_player_info_goals_for_league(player[1], "name", "goals", "country", "club"));
+            leagues_grouped[key].push(parse_player_info_goals(player[1], "name", "goals", "country", "club"));
         }
     }
 
@@ -84,7 +84,7 @@ function start(dataToDraw, score) {
     for (const [key, value] of Object.entries(age_grouped_info)) {
         let age_label = assign_label("age", age_labels, key);
         for (let player of Object.entries(value)) {
-            age_grouped[age_label].push(parse_player_info_age(player[1], "name", "age", "goals", "country"));
+            age_grouped[age_label].push(parse_player_info_attr(player[1], "name", "age", "goals", "country"));
         }
     }
 
@@ -111,7 +111,7 @@ function start(dataToDraw, score) {
     for (const [key, value] of Object.entries(height_grouped_info)) {
         let height_label = assign_label("height", height_labels, key * 100);
         for (let player of Object.entries(value)) {
-            height_grouped[height_label].push(parse_player_info_height(player[1], "name", "height", "goals", "country"));
+            height_grouped[height_label].push(parse_player_info_attr(player[1], "name", "height", "goals", "country"));
         }
     }
 

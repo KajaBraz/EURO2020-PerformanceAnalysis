@@ -97,8 +97,8 @@ function createChart(title, labels, datas, full_data, type) {
                     }
                 },
                 tooltip: {
-                    // titleMarginBottom: 10,
-                    // titleFont: {size: 14},
+                    titleMarginBottom: 10,
+                    titleFont: { size: 14, weight: "bolder" },
                     callbacks: {
                         afterLabel: function (context) {
                             if (full_data) {
@@ -147,60 +147,29 @@ function parse_player_info_country(player_data, name_key, country_key) {
     return `${player_data[name_key]} (${player_data[country_key].slice(0, 3).toUpperCase()})`;
 }
 
-function parse_player_info_goals(player_data, name_key, goals_key, country_key = "") {
-    let goal_num = player_data[goals_key];
-    switch (country_key) {
-        case "":
-            return `${player_data[name_key]} (${goal_num})`;
-        default:
-            let national_team = player_data[country_key].slice(0, 3).toUpperCase();
-            let goal_str = goal_num > 1 ? "goals" : "goal";
-            return `${player_data[name_key]} (${goal_num} ${goal_str} for ${national_team})`;
-    }
-}
-
-function parse_player_info_goals_for_league(player_data, name_key, goals_key, country_key = "", league_key = "") {
-    let goal_num = player_data[goals_key];
-    let club_info_str = league_key ? `${player_data[league_key]} player; ` : "";
-    let brackets_text = "";
-    switch (country_key) {
-        case "":
-            brackets_text = `${goal_num}`;
-        default:
-            let national_team = player_data[country_key].slice(0, 3).toUpperCase();
-            let goal_str = goal_num > 1 ? "goals" : "goal";
-            brackets_text = `${goal_num} ${goal_str} for ${national_team}`;
-    }
+function parse_player_info_goals(player_data, name_key, goal_key, country_key = "", club_key = "") {
+    let goal_num = player_data[goal_key];
+    let goal_str = goal_num > 1 ? "goals" : "goal";
+    let national_team = country_key != "" ? player_data[country_key].slice(0, 3).toUpperCase() : "";
+    let brackets_text = national_team != "" ? `${goal_num} ${goal_str} for ${national_team}` : `${goal_num}  ${goal_str}`;
+    let club_info_str = club_key ? `${player_data[club_key]}; ` : "";
     return `${player_data[name_key]} (${club_info_str}${brackets_text})`;
-
 }
 
-function parse_player_info_age(player_data, name_key, age_key, goal_key = "goals", country_key = "") {
+function parse_player_info_attr(player_data, name_key, attr_key, goal_key, country_key = "") {
     let goal_num = player_data[goal_key];
     let goal_str = goal_num > 1 ? "goals" : "goal";
-    let goals = `${goal_num} ${goal_str}`;
-    let age = `${player_data[age_key]}`;
-    switch (country_key) {
-        case "":
-            return `${player_data[name_key]} (${age} years; ${goals})`;
-        default:
-            let national_team = player_data[country_key].slice(0, 3).toUpperCase();
-            return `${player_data[name_key]} (${age} years; ${goals} for ${national_team})`;
-    }
-}
+    let national_team = country_key != "" ? player_data[country_key].slice(0, 3).toUpperCase() : "";
+    let extra_bracket_info = national_team != "" ? `${goal_num} ${goal_str} for ${national_team}` : `${goal_num} ${goal_str}`;
 
-function parse_player_info_height(player_data, name_key, height_key, goal_key = "", country_key = "") {
-    let goal_num = player_data[goal_key];
-    let national_team = player_data[country_key].slice(0, 3).toUpperCase();
-    let goal_str = goal_num > 1 ? "goals" : "goal";
-    let goals = `${goal_num} ${goal_str}`;
-    let player_height = player_data[height_key] * 100;
-    switch (country_key) {
-        case "":
-            return `${player_data[name_key]} (${player_height} cm; ${goals})`;
-        default:
-            return `${player_data[name_key]} (${player_height} cm; ${goals} for ${national_team})`;
+    if (attr_key == "age") {
+        attr_str = `${player_data[attr_key]} years`;
+    } else if (attr_key == "height") {
+        var height = player_data[attr_key];
+        height = height < 100 ? height *= 100 : height;
+        attr_str = `${height} cm`;
     }
+    return `${player_data[name_key]} (${attr_str}; ${extra_bracket_info})`;
 }
 
 function assign_label(label_type, labels, value) {
@@ -208,10 +177,12 @@ function assign_label(label_type, labels, value) {
         age: /\d+/g,
         height: /[\d+\.]+/g
     };
+
     let ranges = new Object();
     labels.forEach(label => {
         ranges[label] = label.match(num_patterns[label_type]);
     });
+
     for (const [range, [r1, r2]] of Object.entries(ranges)) {
         if (value >= r1 && value <= r2) {
             return range;
