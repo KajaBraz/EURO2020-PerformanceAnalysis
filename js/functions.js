@@ -108,7 +108,7 @@ function createChart(title, labels, datas, full_data, type) {
                                 let display_names = [];
                                 for (let i = 0; i < rows + 1; i++) {
                                     var new_row = all_names.slice(i * players_in_row_num, i * players_in_row_num + players_in_row_num);
-                                    display_names.push(new_row.join(" - "));
+                                    display_names.push(new_row.join("  -  "));
                                 }
                                 return display_names.join("\n");
                             }
@@ -147,18 +147,18 @@ function parse_player_info_country(player_data, name_key, country_key) {
     return `${player_data[name_key]} (${player_data[country_key].slice(0, 3).toUpperCase()})`;
 }
 
-function parse_player_info_goals(player_data, name_key, goal_key, country_key = "", club_key = "") {
+function parse_player_info_goals(player_data, name_key, goal_key, country_key = "", club_key = "", score_type = "goal") {
     let goal_num = player_data[goal_key];
-    let goal_str = goal_num > 1 ? "goals" : "goal";
+    let goal_str = goal_num > 1 ? `${score_type}s` : score_type;
     let national_team = country_key != "" ? player_data[country_key].slice(0, 3).toUpperCase() : "";
-    let brackets_text = national_team != "" ? `${goal_num} ${goal_str} for ${national_team}` : `${goal_num}  ${goal_str}`;
+    let brackets_text = national_team != "" ? `${goal_num} ${goal_str} for ${national_team}` : `${goal_num} ${goal_str}`;
     let club_info_str = club_key ? `${player_data[club_key]}; ` : "";
     return `${player_data[name_key]} (${club_info_str}${brackets_text})`;
 }
 
-function parse_player_info_attr(player_data, name_key, attr_key, goal_key, country_key = "") {
+function parse_player_info_attr(player_data, name_key, attr_key, goal_key, country_key = "", score_type = "goal") {
     let goal_num = player_data[goal_key];
-    let goal_str = goal_num > 1 ? "goals" : "goal";
+    let goal_str = goal_num > 1 ? `${score_type}s` : score_type;
     let national_team = country_key != "" ? player_data[country_key].slice(0, 3).toUpperCase() : "";
     let extra_bracket_info = national_team != "" ? `${goal_num} ${goal_str} for ${national_team}` : `${goal_num} ${goal_str}`;
 

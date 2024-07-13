@@ -1,4 +1,6 @@
 function start(dataToDraw, score) {
+    const score_type = score.toLowerCase().includes("goal") ? "goal" : "assist";
+
     current_data = dataToDraw.filter(({ goals }) => goals > 1);
     no_one_goal_labels = current_data.map(({ name }) => name);
     no_one_goal_datas = current_data.map(({ goals }) => goals);
@@ -22,7 +24,7 @@ function start(dataToDraw, score) {
     for (const [key, value] of Object.entries(countries_grouped_info)) {
         countries_grouped[key] = [];
         for (let player of Object.entries(value)) {
-            countries_grouped[key].push(parse_player_info_goals(player[1], "name", "goals"));
+            countries_grouped[key].push(parse_player_info_goals(player[1], "name", "goals", "", "", score_type));
         }
     }
 
@@ -40,7 +42,7 @@ function start(dataToDraw, score) {
     for (const [key, value] of Object.entries(clubs_grouped_info)) {
         clubs_grouped[key] = [];
         for (let player of Object.entries(value)) {
-            clubs_grouped[key].push(parse_player_info_goals(player[1], "name", "goals", "country"));
+            clubs_grouped[key].push(parse_player_info_goals(player[1], "name", "goals", "country", "", score_type));
         }
     }
     fill_init(score + " by club", Object.keys(current_data), Object.values(current_data), undefined, clubs_grouped);
@@ -57,7 +59,7 @@ function start(dataToDraw, score) {
     for (const [key, value] of Object.entries(leagues_grouped_info)) {
         leagues_grouped[key] = [];
         for (let player of Object.entries(value)) {
-            leagues_grouped[key].push(parse_player_info_goals(player[1], "name", "goals", "country", "club"));
+            leagues_grouped[key].push(parse_player_info_goals(player[1], "name", "goals", "country", "club", score_type));
         }
     }
 
@@ -84,7 +86,7 @@ function start(dataToDraw, score) {
     for (const [key, value] of Object.entries(age_grouped_info)) {
         let age_label = assign_label("age", age_labels, key);
         for (let player of Object.entries(value)) {
-            age_grouped[age_label].push(parse_player_info_attr(player[1], "name", "age", "goals", "country"));
+            age_grouped[age_label].push(parse_player_info_attr(player[1], "name", "age", "goals", "country", score_type));
         }
     }
 
@@ -111,7 +113,7 @@ function start(dataToDraw, score) {
     for (const [key, value] of Object.entries(height_grouped_info)) {
         let height_label = assign_label("height", height_labels, key * 100);
         for (let player of Object.entries(value)) {
-            height_grouped[height_label].push(parse_player_info_attr(player[1], "name", "height", "goals", "country"));
+            height_grouped[height_label].push(parse_player_info_attr(player[1], "name", "height", "goals", "country", score_type));
         }
     }
 
