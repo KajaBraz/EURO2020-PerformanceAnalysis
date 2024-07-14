@@ -19,7 +19,7 @@
             <li><a href="index.html">Clubs and Leagues EURO 2024</a></li>
             <li><a href="leagues_2024_copa.html">Clubs and Leagues COPA 2024</a></li>
         </ul>
-        <h4 class="competitions_list_header">Other Graphs</h4>
+        <h4 class="competitions_list_header">2020/21 Graphs</h4>
         <ul>
             <li><a href="goals_2021.html">Goals EURO 2020</a></li>
             <li><a href="assists_2021.html">Assists EURO 2020</a></li>
@@ -41,7 +41,7 @@
             <p class="include_cnt">
                 <label for="one_goal">Include clubs with the minimum number of players:</label>
                 <input class="cnt_box" id="include_cnt_box_clubs" value="4"
-                    onkeyup="modify_chart_by_cnt(this, 'Clubs', club_cnts)">
+                    onkeyup="modify_chart_by_cnt(this, 'Clubs', club_players)">
             </p>
         </div>
         <div class="chart_container" id="leagues_container">
@@ -50,7 +50,7 @@
             <p class="include_cnt">
                 <label for="one_goal">Include leagues with the minimum number of players:</label>
                 <input class="cnt_box" id="include_cnt_box_leagues" value="3"
-                    onkeyup="modify_chart_by_cnt(this, 'Leagues', league_cnts)">
+                    onkeyup="modify_chart_by_cnt(this, 'Leagues', league_players)">
             </p>
         </div>
         <div class="chart_container" id="country_competition_container">
@@ -59,7 +59,7 @@
             <p class="include_cnt">
                 <label for="one_goal">Include leagues' countries with the minimum number of players:</label>
                 <input class="cnt_box" id="include_cnt_box_countries" value="1"
-                    onkeyup="modify_chart_by_cnt(this, 'Countries', leagues_countries_cnts)">
+                    onkeyup="modify_chart_by_cnt(this, 'Countries', leagues_countries_players)">
             </p>
         </div>
     </div>
