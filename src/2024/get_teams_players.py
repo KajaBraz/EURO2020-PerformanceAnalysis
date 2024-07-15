@@ -31,6 +31,8 @@ async def get_teams_players(page, link):
     player_name_class = 'lineupTable__cell--name'
     player_age_class = 'lineupTable__cell--age'
     player_flag_class = 'lineupTable__cell--flag'
+    player_goal_class = 'lineupTable__cell--goal'
+    player_assist_class = 'lineupTable__cell--assist'
 
     players = await page.locator(f'.{player_row_class}').all()
     players_data = {}
@@ -44,7 +46,13 @@ async def get_teams_players(page, link):
         short_name = f'{surname} {first_name[0]}.' if first_name else surname
         link = await player.get_attribute('href')
         club = await player_row.locator(f'.{player_flag_class}').first.get_attribute('title')
-        players_data[name] = {'short_name': short_name, 'age': age, 'club_ref': club, 'link': link}
+        try:
+            goals = await player_row.locator(f'.{player_goal_class}').inner_text()
+            assists = await player_row.locator(f'.{player_assist_class}').inner_text()
+        except:
+            goals, assists = 0, 0
+        players_data[name] = {'short_name': short_name, 'age': age, 'club_ref': club, 'goals': int(goals),
+                              'assists': int(assists), 'link': link}
     await complete_team_players_data(page, players_data)
     return players_data
 
@@ -99,6 +107,8 @@ def retrieve_coaches(json_file, json_players, json_coaches):
                 dd.pop('club_ref')
                 dd.pop('league')
                 dd.pop('league_country')
+                dd.pop('goals')
+                dd.pop('assists')
                 coaches[country] = dd
 
     for country, coach_dict in coaches.items():
@@ -174,8 +184,8 @@ if __name__ == '__main__':
     coaches_json_file = 'coaches.json'
     players_js_file = '../../js/2024/players.js'
     copa_files = [f'{pref}_copa.{ext}' for pref, ext in [name.rsplit('.', 1) for name in (
-                                                data_json_file, players_json_file, coaches_json_file, players_js_file)]]
+        data_json_file, players_json_file, coaches_json_file, players_js_file)]]
 
     asyncio.run(main(euro_link, data_json_file, players_json_file, coaches_json_file, players_js_file))
     asyncio.run(main(copa_link, *copa_files))
-    # analyse_clubs(data_json_file)
+    analyse_clubs(data_json_file)
