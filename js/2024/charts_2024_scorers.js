@@ -1,9 +1,9 @@
 function start(dataToDraw, score) {
     const score_type = score.toLowerCase().includes("goal") ? "goal" : "assist";
-
+    
+    // TODO - get rid of the fixed key "goals" (it requires having two data files; "assists" have to be renamed to "goals" in js data file to make the charts work)
     dataToDraw = dataToDraw.filter(({ goals }) => goals > 0);
     current_data = dataToDraw.filter(({ goals }) => goals > 1);
-    console.log(current_data);
     no_one_goal_labels = current_data.map(({ name }) => name);
     no_one_goal_datas = current_data.map(({ goals }) => goals);
     one_goal_labels = dataToDraw.map(({ name }) => name);
@@ -101,17 +101,17 @@ function start(dataToDraw, score) {
     current_data = Object.entries(current_data).sort();
     fill_init(score + " by age", current_data.map(([k, v]) => k), current_data.map(([k, v]) => v), undefined, age_grouped);
 
-    current_data = players.filter(({ height }) => height != 0);
-    current_data = current_data.reduce(
-        (acc, { height, goals }) => {
-            let step = Math.floor(height * 100 / 5);
-            let min = step * 5;
-            let max = (step + 1) * 5 - 1;
-            let key = `${min} - ${max}`;
-            acc[key] = (acc[key] || 0) + goals;
-            return acc;
-        }, {}
-    );
+    // current_data = players.filter(({ height }) => height != 0);
+    // current_data = current_data.reduce(
+    //     (acc, { height, goals }) => {
+    //         let step = Math.floor(height * 100 / 5);
+    //         let min = step * 5;
+    //         let max = (step + 1) * 5 - 1;
+    //         let key = `${min} - ${max}`;
+    //         acc[key] = (acc[key] || 0) + goals;
+    //         return acc;
+    //     }, {}
+    // );
 }
 
 let all_goals;
