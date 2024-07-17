@@ -8,7 +8,9 @@
             "value": "€27.0m",
             "club": "Aston Villa",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Acuna Marcos": {
             "short_name": "Acuna M.",
@@ -18,7 +20,9 @@
             "value": "€4.9m",
             "club": "Sevilla",
             "league": "LaLiga (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 0,
+            "assists": 0
         },
         "Martinez Quarta Lucas": {
             "short_name": "Martinez Quarta L.",
@@ -28,7 +32,9 @@
             "value": "€13.7m",
             "club": "Fiorentina",
             "league": "Serie A (Italy)",
-            "league_country": "Italy"
+            "league_country": "Italy",
+            "goals": 0,
+            "assists": 0
         },
         "Molina Nahuel": {
             "short_name": "Molina N.",
@@ -38,7 +44,9 @@
             "value": "€33.8m",
             "club": "Atl. Madrid",
             "league": "LaLiga (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 0,
+            "assists": 0
         },
         "Montiel Gonzalo": {
             "short_name": "Montiel G.",
@@ -48,7 +56,9 @@
             "value": "€9.8m",
             "club": "Nottingham",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Otamendi Nicolas": {
             "short_name": "Otamendi N.",
@@ -58,7 +68,9 @@
             "value": "€1.6m",
             "club": "Benfica",
             "league": "Liga Portugal (Portugal)",
-            "league_country": "Portugal"
+            "league_country": "Portugal",
+            "goals": 0,
+            "assists": 0
         },
         "Pezzella German": {
             "short_name": "Pezzella G.",
@@ -68,7 +80,9 @@
             "value": "€4.9m",
             "club": "Betis",
             "league": "LaLiga (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 0,
+            "assists": 0
         },
         "Romero Cristian Gabriel": {
             "short_name": "Romero Cristian G.",
@@ -78,7 +92,9 @@
             "value": "€62.1m",
             "club": "Tottenham",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Tagliafico Nicolas": {
             "short_name": "Tagliafico N.",
@@ -88,7 +104,9 @@
             "value": "€8.1m",
             "club": "Lyon",
             "league": "Ligue 1 (France)",
-            "league_country": "France"
+            "league_country": "France",
+            "goals": 0,
+            "assists": 0
         },
         "Fernandez Enzo": {
             "short_name": "Fernandez E.",
@@ -98,7 +116,9 @@
             "value": "€84.0m",
             "club": "Chelsea",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 1
         },
         "Lo Celso Giovani": {
             "short_name": "Lo Celso G.",
@@ -108,7 +128,9 @@
             "value": "€16.6m",
             "club": "Tottenham",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Mac Allister Alexis": {
             "short_name": "Mac Allister A.",
@@ -118,7 +140,9 @@
             "value": "€72.5m",
             "club": "Liverpool",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 1
         },
         "Palacios Exequiel": {
             "short_name": "Palacios E.",
@@ -128,7 +152,9 @@
             "value": "€40.3m",
             "club": "Bayer Leverkusen",
             "league": "Bundesliga (Germany)",
-            "league_country": "Germany"
+            "league_country": "Germany",
+            "goals": 0,
+            "assists": 0
         },
         "Paredes Leandro": {
             "short_name": "Paredes L.",
@@ -138,7 +164,9 @@
             "value": "€7.9m",
             "club": "AS Roma",
             "league": "Serie A (Italy)",
-            "league_country": "Italy"
+            "league_country": "Italy",
+            "goals": 0,
+            "assists": 0
         },
         "de Paul Rodrigo": {
             "short_name": "de Paul R.",
@@ -148,7 +176,9 @@
             "value": "€30.2m",
             "club": "Atl. Madrid",
             "league": "LaLiga (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 0,
+            "assists": 0
         },
         "Alvarez Julian": {
             "short_name": "Alvarez J.",
@@ -158,7 +188,9 @@
             "value": "€90.6m",
             "club": "Manchester City",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 1,
+            "assists": 0
         },
         "Di Maria Angel": {
             "short_name": "Di Maria A.",
@@ -168,7 +200,9 @@
             "value": "€4.4m",
             "club": "Benfica",
             "league": "Liga Portugal (Portugal)",
-            "league_country": "Portugal"
+            "league_country": "Portugal",
+            "goals": 0,
+            "assists": 1
         },
         "Garnacho Alejandro": {
             "short_name": "Garnacho A.",
@@ -178,7 +212,9 @@
             "value": "€39.7m",
             "club": "Manchester United",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Gonzalez Nicolas": {
             "short_name": "Gonzalez N.",
@@ -188,7 +224,9 @@
             "value": "€41.4m",
             "club": "Fiorentina",
             "league": "Serie A (Italy)",
-            "league_country": "Italy"
+            "league_country": "Italy",
+            "goals": 0,
+            "assists": 0
         },
         "Martinez Lautaro": {
             "short_name": "Martinez L.",
@@ -198,7 +236,9 @@
             "value": "€113.9m",
             "club": "Inter",
             "league": "Serie A (Italy)",
-            "league_country": "Italy"
+            "league_country": "Italy",
+            "goals": 4,
+            "assists": 0
         },
         "Messi Lionel": {
             "short_name": "Messi L.",
@@ -208,12 +248,9 @@
             "value": "€34.0m",
             "club": "Inter Miami",
             "league": "MLS (USA)",
-            "league_country": "USA"
-        },
-        "Samuel Walter": {
-            "short_name": "Samuel Walter",
-            "age": "46",
-            "link": "/player/samuel-walter/je8Pdo0t/"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 1
         },
         "Martinez Lisandro": {
             "short_name": "Martinez L.",
@@ -223,7 +260,9 @@
             "value": "€44.0m",
             "club": "Manchester United",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Carboni Valentin": {
             "short_name": "Carboni V.",
@@ -233,7 +272,9 @@
             "value": "€14.5m",
             "club": "Monza",
             "league": "Serie A (Italy)",
-            "league_country": "Italy"
+            "league_country": "Italy",
+            "goals": 0,
+            "assists": 0
         },
         "Rodriguez Guido": {
             "short_name": "Rodriguez G.",
@@ -243,7 +284,9 @@
             "value": "€23.1m",
             "club": "Betis",
             "league": "LaLiga (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 0,
+            "assists": 0
         },
         "Armani Franco": {
             "short_name": "Armani F.",
@@ -253,7 +296,9 @@
             "value": "€1.2m",
             "club": "River Plate",
             "league": "Liga Profesional (Argentina)",
-            "league_country": "Argentina"
+            "league_country": "Argentina",
+            "goals": 0,
+            "assists": 0
         },
         "Rulli Geronimo": {
             "short_name": "Rulli G.",
@@ -263,7 +308,9 @@
             "value": "€6.2m",
             "club": "Ajax",
             "league": "Eredivisie (Netherlands)",
-            "league_country": "Netherlands"
+            "league_country": "Netherlands",
+            "goals": 0,
+            "assists": 0
         }
     },
     "Canada": {
@@ -275,7 +322,9 @@
             "value": "€3.0m",
             "club": "Portland Timbers",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Bombito Moise": {
             "short_name": "Bombito M.",
@@ -285,7 +334,9 @@
             "value": "€950k",
             "club": "Colorado Rapids",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Cornelius Derek": {
             "short_name": "Cornelius D.",
@@ -295,7 +346,9 @@
             "value": "€2.5m",
             "club": "Malmo FF",
             "league": "Allsvenskan (Sweden)",
-            "league_country": "Sweden"
+            "league_country": "Sweden",
+            "goals": 0,
+            "assists": 0
         },
         "Davies Alphonso": {
             "short_name": "Davies A.",
@@ -305,7 +358,9 @@
             "value": "€52.5m",
             "club": "Bayern Munich",
             "league": "Bundesliga (Germany)",
-            "league_country": "Germany"
+            "league_country": "Germany",
+            "goals": 0,
+            "assists": 0
         },
         "Johnston Alistair": {
             "short_name": "Johnston A.",
@@ -315,7 +370,9 @@
             "value": "€7.6m",
             "club": "Celtic",
             "league": "Premiership (Scotland)",
-            "league_country": "Scotland"
+            "league_country": "Scotland",
+            "goals": 0,
+            "assists": 0
         },
         "Laryea Richie": {
             "short_name": "Laryea R.",
@@ -325,7 +382,9 @@
             "value": "€2.0m",
             "club": "Toronto FC",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Miller Kamal": {
             "short_name": "Miller K.",
@@ -335,7 +394,9 @@
             "value": "€3.3m",
             "club": "Portland Timbers",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Eustaquio Stephen": {
             "short_name": "Eustaquio S.",
@@ -345,7 +406,9 @@
             "value": "€13.9m",
             "club": "FC Porto",
             "league": "Liga Portugal (Portugal)",
-            "league_country": "Portugal"
+            "league_country": "Portugal",
+            "goals": 0,
+            "assists": 0
         },
         "Kone Ismael": {
             "short_name": "Kone I.",
@@ -355,7 +418,9 @@
             "value": "€10.5m",
             "club": "Watford",
             "league": "Championship (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Osorio Jonathan": {
             "short_name": "Osorio J.",
@@ -365,7 +430,9 @@
             "value": "€2.4m",
             "club": "Toronto FC",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Buchanan Tajon": {
             "short_name": "Buchanan T.",
@@ -375,7 +442,9 @@
             "value": "€7.6m",
             "club": "Inter",
             "league": "Serie A (Italy)",
-            "league_country": "Italy"
+            "league_country": "Italy",
+            "goals": 0,
+            "assists": 0
         },
         "David Jonathan": {
             "short_name": "David J.",
@@ -385,7 +454,9 @@
             "value": "€49.6m",
             "club": "Lille",
             "league": "Ligue 1 (France)",
-            "league_country": "France"
+            "league_country": "France",
+            "goals": 1,
+            "assists": 0
         },
         "Larin Cyle": {
             "short_name": "Larin C.",
@@ -395,7 +466,9 @@
             "value": "€4.9m",
             "club": "Mallorca",
             "league": "LaLiga (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 0,
+            "assists": 0
         },
         "Millar Liam": {
             "short_name": "Millar L.",
@@ -405,7 +478,9 @@
             "value": "€2.2m",
             "club": "Preston",
             "league": "Championship (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Oluwaseyi Tanitoluwa": {
             "short_name": "Oluwaseyi T.",
@@ -415,7 +490,9 @@
             "value": "€333k",
             "club": "Minnesota United",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Russell-Rowe Jacen": {
             "short_name": "Russell-Rowe J.",
@@ -425,7 +502,9 @@
             "value": "€1.4m",
             "club": "Columbus Crew",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Shaffelburg Jacob": {
             "short_name": "Shaffelburg J.",
@@ -435,7 +514,9 @@
             "value": "€3.4m",
             "club": "Nashville SC",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 1
         },
         "McGill Tom": {
             "short_name": "McGill T.",
@@ -445,7 +526,9 @@
             "value": "€596k",
             "club": "Brighton",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "St.Clair Dayne": {
             "short_name": "St.Clair D.",
@@ -455,7 +538,9 @@
             "value": "€1.9m",
             "club": "Minnesota United",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "De Fougerolles Luc": {
             "short_name": "De Fougerolles L.",
@@ -465,7 +550,9 @@
             "value": "€238k",
             "club": "Fulham U21",
             "league": "Premier League 2 (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Hiebert Kyle": {
             "short_name": "Hiebert K.",
@@ -475,7 +562,9 @@
             "value": "€1.4m",
             "club": "St. Louis City",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Waterman Joel": {
             "short_name": "Waterman J.",
@@ -485,7 +574,9 @@
             "value": "€2.4m",
             "club": "CF Montreal",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Ahmed Ali": {
             "short_name": "Ahmed A.",
@@ -495,7 +586,9 @@
             "value": "€2.0m",
             "club": "Vancouver Whitecaps",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Choiniere Mathieu": {
             "short_name": "Choiniere M.",
@@ -505,7 +598,9 @@
             "value": "€2.4m",
             "club": "CF Montreal",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Piette Samuel": {
             "short_name": "Piette S.",
@@ -515,7 +610,9 @@
             "value": "€1.9m",
             "club": "CF Montreal",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Bair Theo": {
             "short_name": "Bair T.",
@@ -525,7 +622,9 @@
             "value": "€713k",
             "club": "Motherwell",
             "league": "Premiership (Scotland)",
-            "league_country": "Scotland"
+            "league_country": "Scotland",
+            "goals": 0,
+            "assists": 0
         },
         "Hoilett Junior": {
             "short_name": "Hoilett J.",
@@ -535,7 +634,9 @@
             "value": "€193k",
             "club": "Aberdeen",
             "league": "Premiership (Scotland)",
-            "league_country": "Scotland"
+            "league_country": "Scotland",
+            "goals": 0,
+            "assists": 0
         }
     },
     "Chile": {
@@ -547,7 +648,9 @@
             "value": "€2.9m",
             "club": "Colo Colo",
             "league": "Primera Division (Chile)",
-            "league_country": "Chile"
+            "league_country": "Chile",
+            "goals": 0,
+            "assists": 0
         },
         "Catalan Matias": {
             "short_name": "Catalan M.",
@@ -557,7 +660,9 @@
             "value": "€2.0m",
             "club": "Talleres Cordoba",
             "league": "Liga Profesional (Argentina)",
-            "league_country": "Argentina"
+            "league_country": "Argentina",
+            "goals": 0,
+            "assists": 0
         },
         "Diaz Paulo": {
             "short_name": "Diaz P.",
@@ -567,7 +672,9 @@
             "value": "€5.0m",
             "club": "River Plate",
             "league": "Liga Profesional (Argentina)",
-            "league_country": "Argentina"
+            "league_country": "Argentina",
+            "goals": 0,
+            "assists": 0
         },
         "Maripan Guillermo": {
             "short_name": "Maripan G.",
@@ -577,7 +684,9 @@
             "value": "€9.8m",
             "club": "Monaco",
             "league": "Ligue 1 (France)",
-            "league_country": "France"
+            "league_country": "France",
+            "goals": 0,
+            "assists": 0
         },
         "Pulgar Erick": {
             "short_name": "Pulgar E.",
@@ -587,7 +696,9 @@
             "value": "€4.9m",
             "club": "Flamengo RJ",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Suazo Gabriel": {
             "short_name": "Suazo G.",
@@ -597,7 +708,9 @@
             "value": "€2.9m",
             "club": "Toulouse",
             "league": "Ligue 1 (France)",
-            "league_country": "France"
+            "league_country": "France",
+            "goals": 0,
+            "assists": 0
         },
         "Echeverria Rodrigo": {
             "short_name": "Echeverria R.",
@@ -607,7 +720,9 @@
             "value": "€3.0m",
             "club": "Everton",
             "league": " Primera División (Chile)",
-            "league_country": "Argentina"
+            "league_country": "Argentina",
+            "goals": 0,
+            "assists": 0
         },
         "Guerrero Pena Maximiliano Gabriel": {
             "short_name": "Guerrero Pena Maximiliano G.",
@@ -617,7 +732,9 @@
             "value": "€964k",
             "club": "U. De Chile",
             "league": "Primera Division (Chile)",
-            "league_country": "Chile"
+            "league_country": "Chile",
+            "goals": 0,
+            "assists": 0
         },
         "Nunez Marcelino": {
             "short_name": "Nunez M.",
@@ -627,7 +744,9 @@
             "value": "€4.9m",
             "club": "Norwich",
             "league": "Championship (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Perez Cesar": {
             "short_name": "Perez C.",
@@ -637,7 +756,9 @@
             "value": "€1.9m",
             "club": "Union La Calera",
             "league": "Primera Division (Chile)",
-            "league_country": "Chile"
+            "league_country": "Chile",
+            "goals": 0,
+            "assists": 0
         },
         "Valdes Contreras Diego Alfonso": {
             "short_name": "Valdes Contreras Diego A.",
@@ -647,7 +768,9 @@
             "value": "€7.3m",
             "club": "Club America",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Brereton Diaz Ben": {
             "short_name": "Brereton Diaz B.",
@@ -657,7 +780,9 @@
             "value": "€6.9m",
             "club": "Sheffield Utd",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Davila Victor": {
             "short_name": "Davila V.",
@@ -667,7 +792,9 @@
             "value": "€6.0m",
             "club": "CSKA Moscow",
             "league": "Premier League (Russia)",
-            "league_country": "Russia"
+            "league_country": "Russia",
+            "goals": 0,
+            "assists": 0
         },
         "Osorio Dario": {
             "short_name": "Osorio D.",
@@ -677,7 +804,9 @@
             "value": "€4.8m",
             "club": "Midtjylland",
             "league": "Superliga (Denmark)",
-            "league_country": "Denmark"
+            "league_country": "Denmark",
+            "goals": 0,
+            "assists": 0
         },
         "Sanchez Alexis": {
             "short_name": "Sanchez A.",
@@ -687,7 +816,9 @@
             "value": "€2.5m",
             "club": "Inter",
             "league": "Serie A (Italy)",
-            "league_country": "Italy"
+            "league_country": "Italy",
+            "goals": 0,
+            "assists": 0
         },
         "Arias Gabriel": {
             "short_name": "Arias G.",
@@ -697,7 +828,9 @@
             "value": "€936k",
             "club": "Racing Club",
             "league": "Liga Profesional (Argentina)",
-            "league_country": "Argentina"
+            "league_country": "Argentina",
+            "goals": 0,
+            "assists": 0
         },
         "Bravo Claudio": {
             "short_name": "Bravo C.",
@@ -707,7 +840,9 @@
             "value": "€868k",
             "club": "Betis",
             "league": "LaLiga (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 0,
+            "assists": 0
         },
         "Fernandez Nicolas": {
             "short_name": "Fernandez N.",
@@ -717,7 +852,9 @@
             "value": "€760k",
             "club": "A. Italiano",
             "league": "Primera Division (Chile)",
-            "league_country": "Chile"
+            "league_country": "Chile",
+            "goals": 0,
+            "assists": 0
         },
         "Galdames Thomas": {
             "short_name": "Galdames T.",
@@ -727,7 +864,9 @@
             "value": "€1.9m",
             "club": "Godoy Cruz",
             "league": "Liga Profesional (Argentina)",
-            "league_country": "Argentina"
+            "league_country": "Argentina",
+            "goals": 0,
+            "assists": 0
         },
         "Isla Mauricio": {
             "short_name": "Isla M.",
@@ -737,7 +876,9 @@
             "value": "€372k",
             "club": "Independiente",
             "league": "Liga Profesional (Argentina)",
-            "league_country": "Argentina"
+            "league_country": "Argentina",
+            "goals": 0,
+            "assists": 0
         },
         "Lichnovsky Igor": {
             "short_name": "Lichnovsky I.",
@@ -747,7 +888,9 @@
             "value": "€4.0m",
             "club": "Club America",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Bolados Marcos": {
             "short_name": "Bolados M.",
@@ -757,7 +900,9 @@
             "value": "€723k",
             "club": "Colo Colo",
             "league": "Primera Division (Chile)",
-            "league_country": "Chile"
+            "league_country": "Chile",
+            "goals": 0,
+            "assists": 0
         },
         "Eduardo Vargas": {
             "short_name": "Eduardo V.",
@@ -767,7 +912,9 @@
             "value": "€964k",
             "club": "Atletico-MG",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Kuscevic Benjamin": {
             "short_name": "Kuscevic B.",
@@ -777,7 +924,9 @@
             "value": "€993k",
             "club": "Fortaleza",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Zavala Cristian": {
             "short_name": "Zavala C.",
@@ -787,7 +936,9 @@
             "value": "€979k",
             "club": "Colo Colo",
             "league": "Primera Division (Chile)",
-            "league_country": "Chile"
+            "league_country": "Chile",
+            "goals": 0,
+            "assists": 0
         },
         "Pavez Esteban": {
             "short_name": "Pavez E.",
@@ -797,7 +948,9 @@
             "value": "€665k",
             "club": "Colo Colo",
             "league": "Primera Division (Chile)",
-            "league_country": "Chile"
+            "league_country": "Chile",
+            "goals": 0,
+            "assists": 0
         }
     },
     "Peru": {
@@ -809,7 +962,9 @@
             "value": "€1.4m",
             "club": "Orlando City",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Abram Luis": {
             "short_name": "Abram L.",
@@ -819,7 +974,9 @@
             "value": "€2.8m",
             "club": "Atlanta United",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Advincula Luis": {
             "short_name": "Advincula L.",
@@ -829,7 +986,9 @@
             "value": "€1.1m",
             "club": "Boca Juniors",
             "league": "Liga Profesional (Argentina)",
-            "league_country": "Argentina"
+            "league_country": "Argentina",
+            "goals": 0,
+            "assists": 0
         },
         "Araujo Miguel": {
             "short_name": "Araujo M.",
@@ -839,7 +998,9 @@
             "value": "€784k",
             "club": "Portland Timbers",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 2,
+            "assists": 1
         },
         "Callens Alexander": {
             "short_name": "Callens A.",
@@ -849,7 +1010,9 @@
             "value": "€1.4m",
             "club": "AEK",
             "league": "Super League (Greece)",
-            "league_country": "Greece"
+            "league_country": "Greece",
+            "goals": 0,
+            "assists": 0
         },
         "Corzo Aldo": {
             "short_name": "Corzo A.",
@@ -859,7 +1022,9 @@
             "value": "€374k",
             "club": "Universitario de Deportes",
             "league": "Liga 1 (Peru)",
-            "league_country": "Peru"
+            "league_country": "Peru",
+            "goals": 0,
+            "assists": 0
         },
         "Lopez Marcos": {
             "short_name": "Lopez M.",
@@ -869,7 +1034,9 @@
             "value": "€2.9m",
             "club": "Feyenoord",
             "league": "Eredivisie (Netherlands)",
-            "league_country": "Netherlands"
+            "league_country": "Netherlands",
+            "goals": 0,
+            "assists": 0
         },
         "Santamaria Anderson": {
             "short_name": "Santamaria A.",
@@ -879,7 +1046,9 @@
             "value": "€1.1m",
             "club": "Atlas",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Zambrano Carlos": {
             "short_name": "Zambrano C.",
@@ -889,7 +1058,9 @@
             "value": "€392k",
             "club": "A. Lima",
             "league": "Liga 1 (Peru)",
-            "league_country": "Peru"
+            "league_country": "Peru",
+            "goals": 0,
+            "assists": 0
         },
         "Carrillo Andre": {
             "short_name": "Carrillo A.",
@@ -899,7 +1070,9 @@
             "value": "€1.8m",
             "club": "Al Qadisiya",
             "league": "Division 1 (Saudi Arabia)",
-            "league_country": "Saudi Arabia"
+            "league_country": "Saudi Arabia",
+            "goals": 0,
+            "assists": 0
         },
         "Cartagena Wilder": {
             "short_name": "Cartagena W.",
@@ -909,7 +1082,9 @@
             "value": "€2.3m",
             "club": "Orlando City",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Castillo Jesus": {
             "short_name": "Castillo J.",
@@ -919,7 +1094,9 @@
             "value": "€760k",
             "club": "Gil Vicente",
             "league": "Liga Portugal (Portugal)",
-            "league_country": "Portugal"
+            "league_country": "Portugal",
+            "goals": 0,
+            "assists": 0
         },
         "Pena Sergio": {
             "short_name": "Pena S.",
@@ -929,7 +1106,9 @@
             "value": "€2.4m",
             "club": "Malmo FF",
             "league": "Allsvenskan (Sweden)",
-            "league_country": "Sweden"
+            "league_country": "Sweden",
+            "goals": 0,
+            "assists": 0
         },
         "Quispe Cordova Piero Aldair": {
             "short_name": "Quispe Cordova Piero A.",
@@ -939,7 +1118,9 @@
             "value": "€1.8m",
             "club": "U.N.A.M.- Pumas",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Zanelatto Franco": {
             "short_name": "Zanelatto F.",
@@ -949,7 +1130,9 @@
             "value": "€855k",
             "club": "A. Lima",
             "league": "Liga 1 (Peru)",
-            "league_country": "Peru"
+            "league_country": "Peru",
+            "goals": 0,
+            "assists": 0
         },
         "Flores Edison": {
             "short_name": "Flores E.",
@@ -959,7 +1142,9 @@
             "value": "€1.1m",
             "club": "Universitario de Deportes",
             "league": "Liga 1 (Peru)",
-            "league_country": "Peru"
+            "league_country": "Peru",
+            "goals": 0,
+            "assists": 0
         },
         "Grimaldo Joao": {
             "short_name": "Grimaldo J.",
@@ -969,7 +1154,9 @@
             "value": "€1.5m",
             "club": "Sporting Cristal",
             "league": "Liga 1 (Peru)",
-            "league_country": "Peru"
+            "league_country": "Peru",
+            "goals": 0,
+            "assists": 0
         },
         "Lapadula Gianluca": {
             "short_name": "Lapadula G.",
@@ -979,7 +1166,9 @@
             "value": "€1.8m",
             "club": "Cagliari",
             "league": "Serie A (Italy)",
-            "league_country": "Italy"
+            "league_country": "Italy",
+            "goals": 0,
+            "assists": 0
         },
         "Paolo Guerrero": {
             "short_name": "Paolo G.",
@@ -989,7 +1178,9 @@
             "value": "€169k",
             "club": "Cesar Vallejo",
             "league": "Liga 1 (Peru)",
-            "league_country": "Peru"
+            "league_country": "Peru",
+            "goals": 0,
+            "assists": 0
         },
         "Polo Andy": {
             "short_name": "Polo A.",
@@ -999,7 +1190,9 @@
             "value": "€783k",
             "club": "Universitario de Deportes",
             "league": "Liga 1 (Peru)",
-            "league_country": "Peru"
+            "league_country": "Peru",
+            "goals": 0,
+            "assists": 0
         },
         "Reyna Bryan": {
             "short_name": "Reyna B.",
@@ -1009,7 +1202,9 @@
             "value": "€1.0m",
             "club": "Belgrano",
             "league": "Liga Profesional (Argentina)",
-            "league_country": "Argentina"
+            "league_country": "Argentina",
+            "goals": 0,
+            "assists": 0
         },
         "Sonne Oliver": {
             "short_name": "Sonne O.",
@@ -1019,7 +1214,9 @@
             "value": "€1.1m",
             "club": "Silkeborg",
             "league": "Superliga (Denmark)",
-            "league_country": "Denmark"
+            "league_country": "Denmark",
+            "goals": 0,
+            "assists": 0
         },
         "Cueva Christian": {
             "short_name": "Cueva C.",
@@ -1029,7 +1226,9 @@
             "value": "€530k",
             "club": "Al Fateh",
             "league": "Saudi Professional League (Saudi Arabia)",
-            "league_country": "Peru"
+            "league_country": "Peru",
+            "goals": 0,
+            "assists": 0
         },
         "Rivera Jose": {
             "short_name": "Rivera J.",
@@ -1039,7 +1238,9 @@
             "value": "€451k",
             "club": "Universitario de Deportes",
             "league": "Liga 1 (Peru)",
-            "league_country": "Peru"
+            "league_country": "Peru",
+            "goals": 0,
+            "assists": 0
         },
         "Caceda Carlos": {
             "short_name": "Caceda C.",
@@ -1049,7 +1250,9 @@
             "value": "€447k",
             "club": "FBC Melgar",
             "league": "Liga 1 (Peru)",
-            "league_country": "Peru"
+            "league_country": "Peru",
+            "goals": 0,
+            "assists": 0
         },
         "Romero Diego": {
             "short_name": "Romero D.",
@@ -1059,7 +1262,9 @@
             "value": "€465k",
             "club": "Universitario de Deportes",
             "league": "Liga 1 (Peru)",
-            "league_country": "Peru"
+            "league_country": "Peru",
+            "goals": 0,
+            "assists": 0
         }
     },
     "Venezuela": {
@@ -1071,7 +1276,9 @@
             "value": "€434k",
             "club": "U. Catolica",
             "league": "Liga Pro (Ecuador)",
-            "league_country": "Ecuador"
+            "league_country": "Ecuador",
+            "goals": 0,
+            "assists": 0
         },
         "Angel Wilker": {
             "short_name": "Angel W.",
@@ -1081,7 +1288,9 @@
             "value": "€230k",
             "club": "Criciuma",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Ferraresi Nahuel": {
             "short_name": "Ferraresi N.",
@@ -1091,7 +1300,9 @@
             "value": "€1.5m",
             "club": "Sao Paulo",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Jhon Chancellor": {
             "short_name": "Jhon C.",
@@ -1101,7 +1312,9 @@
             "value": "€374k",
             "club": "Metropolitanos",
             "league": "Liga FUTVE (Venezuela)",
-            "league_country": "Venezuela"
+            "league_country": "Venezuela",
+            "goals": 0,
+            "assists": 0
         },
         "Makoun Christian": {
             "short_name": "Makoun C.",
@@ -1111,7 +1324,9 @@
             "value": "€1.1m",
             "club": "Anorthosis",
             "league": "Cyta Championship (Cyprus)",
-            "league_country": "Cyprus"
+            "league_country": "Cyprus",
+            "goals": 0,
+            "assists": 0
         },
         "Navarro Miguel": {
             "short_name": "Navarro M.",
@@ -1121,7 +1336,9 @@
             "value": "€772k",
             "club": "Talleres Cordoba",
             "league": "Liga Profesional (Argentina)",
-            "league_country": "Argentina"
+            "league_country": "Argentina",
+            "goals": 0,
+            "assists": 0
         },
         "Osorio Yordan": {
             "short_name": "Osorio Y.",
@@ -1131,7 +1348,9 @@
             "value": "€1.8m",
             "club": "Parma",
             "league": "Serie B (Italy)",
-            "league_country": "Italy"
+            "league_country": "Italy",
+            "goals": 0,
+            "assists": 0
         },
         "Casseres Cristian": {
             "short_name": "Casseres C.",
@@ -1141,7 +1360,9 @@
             "value": "€3.4m",
             "club": "Toulouse",
             "league": "Ligue 1 (France)",
-            "league_country": "France"
+            "league_country": "France",
+            "goals": 0,
+            "assists": 0
         },
         "Gonzalez Alexander": {
             "short_name": "Gonzalez A.",
@@ -1151,7 +1372,9 @@
             "value": "€428k",
             "club": "Emelec",
             "league": "Liga Pro (Ecuador)",
-            "league_country": "Ecuador"
+            "league_country": "Ecuador",
+            "goals": 0,
+            "assists": 0
         },
         "Herrera Yangel": {
             "short_name": "Herrera Y.",
@@ -1161,7 +1384,9 @@
             "value": "€20.1m",
             "club": "Girona",
             "league": "LaLiga (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 0,
+            "assists": 1
         },
         "Martinez Jose": {
             "short_name": "Martinez J.",
@@ -1171,7 +1396,9 @@
             "value": "€2.4m",
             "club": "Philadelphia Union",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Rincon Tomas": {
             "short_name": "Rincon T.",
@@ -1181,7 +1408,9 @@
             "value": "€281k",
             "club": "Santos",
             "league": "Serie B (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Bello Eduard": {
             "short_name": "Bello E.",
@@ -1191,7 +1420,9 @@
             "value": "€783k",
             "club": "Mazatlan FC",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 2,
+            "assists": 0
         },
         "Machis Darwin": {
             "short_name": "Machis D.",
@@ -1201,7 +1432,9 @@
             "value": "€2.0m",
             "club": "Cadiz CF",
             "league": "LaLiga (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 0,
+            "assists": 0
         },
         "Ramirez Eric": {
             "short_name": "Ramirez E.",
@@ -1211,7 +1444,9 @@
             "value": "€796k",
             "club": "Atl. Nacional",
             "league": "Primera A (Colombia)",
-            "league_country": "Colombia"
+            "league_country": "Colombia",
+            "goals": 1,
+            "assists": 0
         },
         "Rondon Salomon": {
             "short_name": "Rondon S.",
@@ -1221,7 +1456,9 @@
             "value": "€1.0m",
             "club": "Pachuca",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 2,
+            "assists": 1
         },
         "Savarino Jefferson": {
             "short_name": "Savarino J.",
@@ -1231,7 +1468,9 @@
             "value": "€4.0m",
             "club": "Botafogo RJ",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Soteldo Yeferson": {
             "short_name": "Soteldo Y.",
@@ -1241,7 +1480,9 @@
             "value": "€5.2m",
             "club": "Gremio",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Aramburu Jon": {
             "short_name": "Aramburu J.",
@@ -1251,7 +1492,9 @@
             "value": "€2.0m",
             "club": "Real Sociedad",
             "league": "LaLiga (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 0,
+            "assists": 1
         },
         "Cadiz Jhonder": {
             "short_name": "Cadiz J.",
@@ -1261,7 +1504,9 @@
             "value": "€1.7m",
             "club": "Famalicao",
             "league": "Liga Portugal (Portugal)",
-            "league_country": "Portugal"
+            "league_country": "Portugal",
+            "goals": 1,
+            "assists": 0
         },
         "Contreras Jose": {
             "short_name": "Contreras J.",
@@ -1271,7 +1516,9 @@
             "value": "€820k",
             "club": "Aguilas",
             "league": "Primera A (Colombia)",
-            "league_country": "Colombia"
+            "league_country": "Colombia",
+            "goals": 0,
+            "assists": 0
         },
         "Graterol Joel": {
             "short_name": "Graterol J.",
@@ -1281,7 +1528,9 @@
             "value": "€665k",
             "club": "America De Cali",
             "league": "Primera A (Colombia)",
-            "league_country": "Colombia"
+            "league_country": "Colombia",
+            "goals": 0,
+            "assists": 0
         },
         "Andrade Kervin": {
             "short_name": "Andrade K.",
@@ -1291,7 +1540,9 @@
             "value": "€806k",
             "club": "Fortaleza",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 1
         },
         "Lacava Matias": {
             "short_name": "Lacava M.",
@@ -1301,7 +1552,9 @@
             "value": "€665k",
             "club": "Vizela",
             "league": "Liga Portugal (Portugal)",
-            "league_country": "Portugal"
+            "league_country": "Portugal",
+            "goals": 0,
+            "assists": 0
         },
         "Pereira Daniel": {
             "short_name": "Pereira D.",
@@ -1311,7 +1564,9 @@
             "value": "€2.3m",
             "club": "Austin FC",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Segovia Telasco": {
             "short_name": "Segovia T.",
@@ -1321,7 +1576,9 @@
             "value": "€386k",
             "club": "Casa Pia",
             "league": "Liga Portugal (Portugal)",
-            "league_country": "Portugal"
+            "league_country": "Portugal",
+            "goals": 0,
+            "assists": 0
         }
     },
     "Ecuador": {
@@ -1333,7 +1590,9 @@
             "value": "€489k",
             "club": "LDU Quito",
             "league": "Liga Pro (Ecuador)",
-            "league_country": "Ecuador"
+            "league_country": "Ecuador",
+            "goals": 0,
+            "assists": 0
         },
         "Galindez Hernan": {
             "short_name": "Galindez H.",
@@ -1343,7 +1602,9 @@
             "value": "€328k",
             "club": "Huracan",
             "league": "Liga Profesional (Argentina)",
-            "league_country": "Argentina"
+            "league_country": "Argentina",
+            "goals": 0,
+            "assists": 0
         },
         "Ramirez Moises": {
             "short_name": "Ramirez M.",
@@ -1353,7 +1614,9 @@
             "value": "€1.4m",
             "club": "Independiente del Valle",
             "league": "Liga Pro (Ecuador)",
-            "league_country": "Ecuador"
+            "league_country": "Ecuador",
+            "goals": 0,
+            "assists": 0
         },
         "Hincapie Piero": {
             "short_name": "Hincapie P.",
@@ -1363,7 +1626,9 @@
             "value": "€34.3m",
             "club": "Bayer Leverkusen",
             "league": "Bundesliga (Germany)",
-            "league_country": "Germany"
+            "league_country": "Germany",
+            "goals": 1,
+            "assists": 0
         },
         "Hurtado Andres": {
             "short_name": "Hurtado A.",
@@ -1373,7 +1638,9 @@
             "value": "€1.8m",
             "club": "Bragantino",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Pacho Willian": {
             "short_name": "Pacho W.",
@@ -1383,7 +1650,9 @@
             "value": "€30.2m",
             "club": "Eintracht Frankfurt",
             "league": "Bundesliga (Germany)",
-            "league_country": "Germany"
+            "league_country": "Germany",
+            "goals": 0,
+            "assists": 0
         },
         "Preciado Angelo": {
             "short_name": "Preciado A.",
@@ -1393,7 +1662,9 @@
             "value": "€4.8m",
             "club": "Sparta Prague",
             "league": "FORTUNA:LIGA (Czech Republic)",
-            "league_country": "Czech Republic"
+            "league_country": "Czech Republic",
+            "goals": 0,
+            "assists": 0
         },
         "Torres Felix": {
             "short_name": "Torres F.",
@@ -1403,7 +1674,9 @@
             "value": "€6.0m",
             "club": "Corinthians",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Caicedo Moises": {
             "short_name": "Caicedo M.",
@@ -1413,7 +1686,9 @@
             "value": "€80.6m",
             "club": "Chelsea",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 1
         },
         "Cifuentes Jose": {
             "short_name": "Cifuentes J.",
@@ -1423,7 +1698,9 @@
             "value": "€6.9m",
             "club": "Cruzeiro",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Franco Alan": {
             "short_name": "Franco A.",
@@ -1433,7 +1710,9 @@
             "value": "€2.8m",
             "club": "Atletico-MG",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Gruezo Carlos": {
             "short_name": "Gruezo C.",
@@ -1443,7 +1722,9 @@
             "value": "€2.8m",
             "club": "San Jose Earthquakes",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 1
         },
         "Ortiz Joao": {
             "short_name": "Ortiz J.",
@@ -1453,7 +1734,9 @@
             "value": "€1.9m",
             "club": "Independiente del Valle",
             "league": "Liga Pro (Ecuador)",
-            "league_country": "Ecuador"
+            "league_country": "Ecuador",
+            "goals": 0,
+            "assists": 0
         },
         "Paez Kendry": {
             "short_name": "Paez K.",
@@ -1463,7 +1746,9 @@
             "value": "€10.4m",
             "club": "Independiente del Valle",
             "league": "Liga Pro (Ecuador)",
-            "league_country": "Ecuador"
+            "league_country": "Ecuador",
+            "goals": 1,
+            "assists": 0
         },
         "Rodriguez Kevin": {
             "short_name": "Rodriguez K.",
@@ -1473,7 +1758,9 @@
             "value": "€2.9m",
             "club": "Royale Union SG",
             "league": "Jupiler Pro League (Belgium)",
-            "league_country": "Belgium"
+            "league_country": "Belgium",
+            "goals": 0,
+            "assists": 0
         },
         "Caicedo Jordy": {
             "short_name": "Caicedo J.",
@@ -1483,7 +1770,9 @@
             "value": "€3.3m",
             "club": "Atlas",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Mena Angel": {
             "short_name": "Mena A.",
@@ -1493,7 +1782,9 @@
             "value": "€906k",
             "club": "Club Leon",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Valencia Enner": {
             "short_name": "Valencia E.",
@@ -1503,7 +1794,9 @@
             "value": "€2.7m",
             "club": "Internacional",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Corozo Alman Janner Hitcler": {
             "short_name": "Corozo Alman Janner H.",
@@ -1513,7 +1806,9 @@
             "value": "€675k",
             "club": "Barcelona SC",
             "league": "Liga Pro (Ecuador)",
-            "league_country": "Ecuador"
+            "league_country": "Ecuador",
+            "goals": 0,
+            "assists": 0
         },
         "Yeboah John": {
             "short_name": "Yeboah J.",
@@ -1523,7 +1818,9 @@
             "value": "€1.5m",
             "club": "Rakow",
             "league": "Ekstraklasa (Poland)",
-            "league_country": "Poland"
+            "league_country": "Poland",
+            "goals": 0,
+            "assists": 0
         },
         "Minda Alan": {
             "short_name": "Minda A.",
@@ -1533,7 +1830,9 @@
             "value": "€4.0m",
             "club": "Cercle Brugge KSV",
             "league": "Jupiler Pro League (Belgium)",
-            "league_country": "Belgium"
+            "league_country": "Belgium",
+            "goals": 1,
+            "assists": 0
         },
         "Sarmiento Jeremy": {
             "short_name": "Sarmiento J.",
@@ -1543,7 +1842,9 @@
             "value": "€3.5m",
             "club": "Ipswich",
             "league": "Championship (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 1,
+            "assists": 0
         },
         "Loor Layan": {
             "short_name": "Loor L.",
@@ -1553,7 +1854,9 @@
             "value": "€979k",
             "club": "U. Catolica",
             "league": "Liga Pro (Ecuador)",
-            "league_country": "Ecuador"
+            "league_country": "Ecuador",
+            "goals": 0,
+            "assists": 0
         },
         "Micolta Andres": {
             "short_name": "Micolta A.",
@@ -1563,7 +1866,9 @@
             "value": "€713k",
             "club": "Pachuca",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Ordonez Joel": {
             "short_name": "Ordonez J.",
@@ -1573,7 +1878,9 @@
             "value": "€2.4m",
             "club": "Club Brugge",
             "league": "Jupiler Pro League (Belgium)",
-            "league_country": "Belgium"
+            "league_country": "Belgium",
+            "goals": 0,
+            "assists": 0
         },
         "Porozo Vernaza Jackson Gabriel": {
             "short_name": "Porozo Vernaza Jackson G.",
@@ -1583,7 +1890,9 @@
             "value": "€3.2m",
             "club": "Kasimpasa",
             "league": "Super Lig (Turkey)",
-            "league_country": "Turkey"
+            "league_country": "Turkey",
+            "goals": 0,
+            "assists": 0
         }
     },
     "Mexico": {
@@ -1595,7 +1904,9 @@
             "value": "€936k",
             "club": "U.N.A.M.- Pumas",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Arteaga Gerardo": {
             "short_name": "Arteaga G.",
@@ -1605,7 +1916,9 @@
             "value": "€5.9m",
             "club": "Monterrey",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 1,
+            "assists": 0
         },
         "Montes Cesar": {
             "short_name": "Montes C.",
@@ -1615,7 +1928,9 @@
             "value": "€2.9m",
             "club": "Almeria",
             "league": "LaLiga (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 0,
+            "assists": 0
         },
         "Reyes Israel": {
             "short_name": "Reyes I.",
@@ -1625,7 +1940,9 @@
             "value": "€3.9m",
             "club": "Club America",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Sanchez Jorge": {
             "short_name": "Sanchez J.",
@@ -1635,7 +1952,9 @@
             "value": "€3.9m",
             "club": "FC Porto",
             "league": "Liga Portugal (Portugal)",
-            "league_country": "Portugal"
+            "league_country": "Portugal",
+            "goals": 0,
+            "assists": 0
         },
         "Vasquez Johan": {
             "short_name": "Vasquez J.",
@@ -1645,7 +1964,9 @@
             "value": "€6.0m",
             "club": "Genoa",
             "league": "Serie A (Italy)",
-            "league_country": "Italy"
+            "league_country": "Italy",
+            "goals": 0,
+            "assists": 0
         },
         "Alvarado Roberto": {
             "short_name": "Alvarado R.",
@@ -1655,7 +1976,9 @@
             "value": "€6.9m",
             "club": "Guadalajara Chivas",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Alvarez Edson": {
             "short_name": "Alvarez E.",
@@ -1665,7 +1988,9 @@
             "value": "€34.3m",
             "club": "West Ham",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Antuna Uriel": {
             "short_name": "Antuna U.",
@@ -1675,7 +2000,9 @@
             "value": "€3.9m",
             "club": "Cruz Azul",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Chavez Luis": {
             "short_name": "Chavez L.",
@@ -1685,7 +2012,9 @@
             "value": "€8.3m",
             "club": "Dynamo Moscow",
             "league": "Premier League (Russia)",
-            "league_country": "Russia"
+            "league_country": "Russia",
+            "goals": 0,
+            "assists": 0
         },
         "Pineda Orbelin": {
             "short_name": "Pineda O.",
@@ -1695,7 +2024,9 @@
             "value": "€6.5m",
             "club": "AEK",
             "league": "Super League (Greece)",
-            "league_country": "Greece"
+            "league_country": "Greece",
+            "goals": 0,
+            "assists": 0
         },
         "Rodriguez Carlos": {
             "short_name": "Rodriguez C.",
@@ -1705,7 +2036,9 @@
             "value": "€5.9m",
             "club": "Cruz Azul",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Romo Luis": {
             "short_name": "Romo L.",
@@ -1715,7 +2048,9 @@
             "value": "€6.4m",
             "club": "Monterrey",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 1
         },
         "Sanchez Erick": {
             "short_name": "Sanchez E.",
@@ -1725,7 +2060,9 @@
             "value": "€9.9m",
             "club": "Pachuca",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Gimenez Santiago Tomas": {
             "short_name": "Gimenez Santiago T.",
@@ -1735,7 +2072,9 @@
             "value": "€43.4m",
             "club": "Feyenoord",
             "league": "Eredivisie (Netherlands)",
-            "league_country": "Netherlands"
+            "league_country": "Netherlands",
+            "goals": 0,
+            "assists": 0
         },
         "Huerta Valera Cesar Saul": {
             "short_name": "Huerta Valera Cesar S.",
@@ -1745,7 +2084,9 @@
             "value": "€4.9m",
             "club": "U.N.A.M.- Pumas",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Martinez Ayala Guillermo": {
             "short_name": "Martinez Ayala G.",
@@ -1755,7 +2096,9 @@
             "value": "€2.9m",
             "club": "U.N.A.M.- Pumas",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Quinones Julian": {
             "short_name": "Quinones J.",
@@ -1765,7 +2108,9 @@
             "value": "€10.5m",
             "club": "Club America",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Vega Alexis": {
             "short_name": "Vega A.",
@@ -1775,7 +2120,9 @@
             "value": "€5.5m",
             "club": "Toluca",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Acevedo Carlos": {
             "short_name": "Acevedo C.",
@@ -1785,7 +2132,9 @@
             "value": "€3.7m",
             "club": "Santos Laguna",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Rangel Aguilar Jose Raul": {
             "short_name": "Rangel Aguilar Jose R.",
@@ -1795,7 +2144,9 @@
             "value": "€936k",
             "club": "Guadalajara Chivas",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Garcia Caprizo Brian Alberto": {
             "short_name": "Garcia Caprizo Brian A.",
@@ -1805,7 +2156,9 @@
             "value": "€2.8m",
             "club": "Toluca",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Orozco Jesus": {
             "short_name": "Orozco J.",
@@ -1815,7 +2168,9 @@
             "value": "€5.5m",
             "club": "Guadalajara Chivas",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Flores Marcelo": {
             "short_name": "Flores M.",
@@ -1825,7 +2180,9 @@
             "value": "€794k",
             "club": "U.A.N.L.- Tigres",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Gonzalez Bryan": {
             "short_name": "Gonzalez B.",
@@ -1835,7 +2192,9 @@
             "value": "€1.5m",
             "club": "Pachuca",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Cortizo Jordi": {
             "short_name": "Cortizo J.",
@@ -1845,7 +2204,9 @@
             "value": "€4.0m",
             "club": "Monterrey",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         }
     },
     "Jamaica": {
@@ -1857,7 +2218,9 @@
             "value": "€166k",
             "club": "El Paso",
             "league": "USL Championship (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Bernard Di'Shon": {
             "short_name": "Bernard D.",
@@ -1867,7 +2230,9 @@
             "value": "€1.5m",
             "club": "Sheffield Wed",
             "league": "Championship (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Hector Michael": {
             "short_name": "Hector M.",
@@ -1877,7 +2242,9 @@
             "value": "€343k",
             "club": "Charlton",
             "league": "League One (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "King Richard": {
             "short_name": "King R.",
@@ -1887,7 +2254,9 @@
             "value": "€47k",
             "club": "Cavalier",
             "league": "Premier League (Jamaica)",
-            "league_country": "Jamaica"
+            "league_country": "Jamaica",
+            "goals": 0,
+            "assists": 0
         },
         "Leigh Greg": {
             "short_name": "Leigh G.",
@@ -1897,7 +2266,9 @@
             "value": "€220k",
             "club": "Oxford Utd",
             "league": "League One (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Lembikisa Dexter": {
             "short_name": "Lembikisa D.",
@@ -1907,7 +2278,9 @@
             "value": "€2.9m",
             "club": "Hearts",
             "league": "Premiership (Scotland)",
-            "league_country": "Scotland"
+            "league_country": "Scotland",
+            "goals": 0,
+            "assists": 0
         },
         "Lowe Damion": {
             "short_name": "Lowe D.",
@@ -1917,7 +2290,9 @@
             "value": "€587k",
             "club": "Philadelphia Union",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Anderson Karoy": {
             "short_name": "Anderson K.",
@@ -1927,7 +2302,9 @@
             "value": "€117k",
             "club": "Charlton",
             "league": "League One (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "De Cordova-Reid Bobby": {
             "short_name": "De Cordova-Reid B.",
@@ -1937,7 +2314,9 @@
             "value": "€5.8m",
             "club": "Fulham",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Lambert Kevon": {
             "short_name": "Lambert K.",
@@ -1947,7 +2326,9 @@
             "value": "€265k",
             "club": "San Antonio",
             "league": "USL Championship (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Palmer Kasey": {
             "short_name": "Palmer K.",
@@ -1957,7 +2338,9 @@
             "value": "€964k",
             "club": "Coventry",
             "league": "Championship (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Antonio Michail": {
             "short_name": "Antonio M.",
@@ -1967,7 +2350,9 @@
             "value": "€5.9m",
             "club": "West Ham",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 1,
+            "assists": 0
         },
         "Cephas Renaldo": {
             "short_name": "Cephas R.",
@@ -1977,7 +2362,9 @@
             "value": "€1.5m",
             "club": "Ankaragucu",
             "league": "Super Lig (Turkey)",
-            "league_country": "Turkey"
+            "league_country": "Turkey",
+            "goals": 0,
+            "assists": 0
         },
         "Dixon Kaheim": {
             "short_name": "Dixon K.",
@@ -1987,7 +2374,9 @@
             "value": "",
             "club": "Arnett Gardens",
             "league": "Premier League (Jamaica)",
-            "league_country": "Jamaica"
+            "league_country": "Jamaica",
+            "goals": 0,
+            "assists": 0
         },
         "Marshall Alex": {
             "short_name": "Marshall A.",
@@ -1997,7 +2386,9 @@
             "value": "€110k",
             "club": "Portmore",
             "league": "Premier League (Jamaica)",
-            "league_country": "Jamaica"
+            "league_country": "Jamaica",
+            "goals": 0,
+            "assists": 0
         },
         "Nicholson Shamar": {
             "short_name": "Nicholson S.",
@@ -2007,7 +2398,9 @@
             "value": "€5.8m",
             "club": "Clermont",
             "league": "Ligue 1 (France)",
-            "league_country": "France"
+            "league_country": "France",
+            "goals": 0,
+            "assists": 0
         },
         "Pinnock Ethan": {
             "short_name": "Pinnock E.",
@@ -2017,7 +2410,9 @@
             "value": "€14.5m",
             "club": "Brentford",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Latibeaudiere Joel": {
             "short_name": "Latibeaudiere J.",
@@ -2027,7 +2422,9 @@
             "value": "€2.4m",
             "club": "Coventry",
             "league": "Championship (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Gray Demarai": {
             "short_name": "Gray D.",
@@ -2037,7 +2434,9 @@
             "value": "€9.9m",
             "club": "Al Ettifaq",
             "league": "Saudi Professional League (Saudi Arabia)",
-            "league_country": "Saudi Arabia"
+            "league_country": "Saudi Arabia",
+            "goals": 0,
+            "assists": 0
         },
         "Blake Andre": {
             "short_name": "Blake A.",
@@ -2047,7 +2446,9 @@
             "value": "€2.0m",
             "club": "Philadelphia Union",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Boyce-Clarke Coniah": {
             "short_name": "Boyce-Clarke C.",
@@ -2057,7 +2458,9 @@
             "value": "€147k",
             "club": "Reading U21",
             "league": "Premier League 2 (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Davis Shaquan": {
             "short_name": "Davis S.",
@@ -2067,7 +2470,9 @@
             "value": "",
             "club": "Mount Pleasant",
             "league": "Premier League (Jamaica)",
-            "league_country": "Jamaica"
+            "league_country": "Jamaica",
+            "goals": 0,
+            "assists": 0
         },
         "Bell Amari'i": {
             "short_name": "Bell A.",
@@ -2077,7 +2482,9 @@
             "value": "€2.4m",
             "club": "Luton",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Bell Jon": {
             "short_name": "Bell J.",
@@ -2087,7 +2494,9 @@
             "value": "€281k",
             "club": "Seattle Sounders",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Harding Wes": {
             "short_name": "Harding W.",
@@ -2097,7 +2506,9 @@
             "value": "€1.1m",
             "club": "Millwall",
             "league": "Championship (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         }
     },
     "Uruguay": {
@@ -2109,7 +2520,9 @@
             "value": "€1.9m",
             "club": "Junior",
             "league": "Primera A (Colombia)",
-            "league_country": "Colombia"
+            "league_country": "Colombia",
+            "goals": 0,
+            "assists": 0
         },
         "Rochet Sergio": {
             "short_name": "Rochet S.",
@@ -2119,7 +2532,9 @@
             "value": "€3.4m",
             "club": "Internacional",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Araujo Ronald": {
             "short_name": "Araujo R.",
@@ -2129,7 +2544,9 @@
             "value": "€67.5m",
             "club": "Barcelona",
             "league": "LaLiga (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 0,
+            "assists": 1
         },
         "Caceres Sebastian": {
             "short_name": "Caceres S.",
@@ -2139,7 +2556,9 @@
             "value": "€6.9m",
             "club": "Club America",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Gimenez Jose Maria": {
             "short_name": "Gimenez Jose M.",
@@ -2149,7 +2568,9 @@
             "value": "€23.4m",
             "club": "Atl. Madrid",
             "league": "LaLiga (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 0,
+            "assists": 0
         },
         "Olivera Mathias": {
             "short_name": "Olivera M.",
@@ -2159,7 +2580,9 @@
             "value": "€16.9m",
             "club": "Napoli",
             "league": "Serie A (Italy)",
-            "league_country": "Italy"
+            "league_country": "Italy",
+            "goals": 1,
+            "assists": 0
         },
         "Vina Matias": {
             "short_name": "Vina M.",
@@ -2169,7 +2592,9 @@
             "value": "€8.1m",
             "club": "Flamengo RJ",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 1,
+            "assists": 1
         },
         "Bentancur Rodrigo": {
             "short_name": "Bentancur R.",
@@ -2179,7 +2604,9 @@
             "value": "€35.2m",
             "club": "Tottenham",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 1,
+            "assists": 0
         },
         "Canobbio Agustin": {
             "short_name": "Canobbio A.",
@@ -2189,7 +2616,9 @@
             "value": "€5.0m",
             "club": "Athletico-PR",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Nandez Nahitan": {
             "short_name": "Nandez N.",
@@ -2199,7 +2628,9 @@
             "value": "€4.9m",
             "club": "Cagliari",
             "league": "Serie A (Italy)",
-            "league_country": "Italy"
+            "league_country": "Italy",
+            "goals": 0,
+            "assists": 0
         },
         "Ugarte Manuel": {
             "short_name": "Ugarte M.",
@@ -2209,7 +2640,9 @@
             "value": "€60.4m",
             "club": "PSG",
             "league": "Ligue 1 (France)",
-            "league_country": "France"
+            "league_country": "France",
+            "goals": 0,
+            "assists": 0
         },
         "Valverde Federico": {
             "short_name": "Valverde F.",
@@ -2219,7 +2652,9 @@
             "value": "€102.1m",
             "club": "Real Madrid",
             "league": "LaLiga (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 1,
+            "assists": 0
         },
         "de Arrascaeta Giorgian": {
             "short_name": "de Arrascaeta G.",
@@ -2229,7 +2664,9 @@
             "value": "€15.5m",
             "club": "Flamengo RJ",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 1
         },
         "de la Cruz Nicolas": {
             "short_name": "de la Cruz N.",
@@ -2239,7 +2676,9 @@
             "value": "€14.5m",
             "club": "Flamengo RJ",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 2
         },
         "Araujo Maximiliano": {
             "short_name": "Araujo M.",
@@ -2249,7 +2688,9 @@
             "value": "€7.9m",
             "club": "Toluca",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Nunez Darwin": {
             "short_name": "Nunez D.",
@@ -2259,7 +2700,9 @@
             "value": "€71.5m",
             "club": "Liverpool",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 2,
+            "assists": 0
         },
         "Olivera Cristian": {
             "short_name": "Olivera C.",
@@ -2269,7 +2712,9 @@
             "value": "€4.0m",
             "club": "Los Angeles FC",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Pellistri Facundo": {
             "short_name": "Pellistri F.",
@@ -2279,7 +2724,9 @@
             "value": "€9.9m",
             "club": "Granada CF",
             "league": "LaLiga (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 1,
+            "assists": 1
         },
         "Rodriguez Brian": {
             "short_name": "Rodriguez B.",
@@ -2289,7 +2736,9 @@
             "value": "€4.9m",
             "club": "Club America",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Suarez Luis": {
             "short_name": "Suarez L.",
@@ -2299,7 +2748,9 @@
             "value": "€3.9m",
             "club": "Inter Miami",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Olaza Lucas": {
             "short_name": "Olaza L.",
@@ -2309,7 +2760,9 @@
             "value": "€2.9m",
             "club": "Krasnodar",
             "league": "Premier League (Russia)",
-            "league_country": "Russia"
+            "league_country": "Russia",
+            "goals": 0,
+            "assists": 0
         },
         "Israel Franco": {
             "short_name": "Israel F.",
@@ -2319,7 +2772,9 @@
             "value": "€2.3m",
             "club": "Sporting CP",
             "league": "Liga Portugal (Portugal)",
-            "league_country": "Portugal"
+            "league_country": "Portugal",
+            "goals": 0,
+            "assists": 0
         },
         "Varela Guillermo": {
             "short_name": "Varela G.",
@@ -2329,7 +2784,9 @@
             "value": "€1.7m",
             "club": "Flamengo RJ",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Marichal Nicolas": {
             "short_name": "Marichal N.",
@@ -2339,7 +2796,9 @@
             "value": "€2.9m",
             "club": "Dynamo Moscow",
             "league": "Premier League (Russia)",
-            "league_country": "Russia"
+            "league_country": "Russia",
+            "goals": 0,
+            "assists": 0
         },
         "Martinez Emiliano": {
             "short_name": "Martinez E.",
@@ -2349,7 +2808,9 @@
             "value": "€4.0m",
             "club": "Midtjylland",
             "league": "Superliga (Denmark)",
-            "league_country": "Denmark"
+            "league_country": "Denmark",
+            "goals": 0,
+            "assists": 0
         },
         "Ocampo Brian": {
             "short_name": "Ocampo B.",
@@ -2359,7 +2820,9 @@
             "value": "€936k",
             "club": "Cadiz CF",
             "league": "LaLiga (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 0,
+            "assists": 0
         }
     },
     "USA": {
@@ -2371,7 +2834,9 @@
             "value": "€1.4m",
             "club": "Cardiff",
             "league": "Championship (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Turner Matt": {
             "short_name": "Turner M.",
@@ -2381,7 +2846,9 @@
             "value": "€8.6m",
             "club": "Nottingham",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Carter-Vickers Cameron": {
             "short_name": "Carter-Vickers C.",
@@ -2391,7 +2858,9 @@
             "value": "",
             "club": "Celtic",
             "league": "Premiership (Scotland)",
-            "league_country": "Scotland"
+            "league_country": "Scotland",
+            "goals": 0,
+            "assists": 0
         },
         "Ream Tim": {
             "short_name": "Ream T.",
@@ -2401,7 +2870,9 @@
             "value": "€979k",
             "club": "Fulham",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Richards Chris": {
             "short_name": "Richards C.",
@@ -2411,7 +2882,9 @@
             "value": "€9.9m",
             "club": "Crystal Palace",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Robinson Antonee": {
             "short_name": "Robinson A.",
@@ -2421,7 +2894,9 @@
             "value": "€20.7m",
             "club": "Fulham",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 1
         },
         "Scally Joe": {
             "short_name": "Scally J.",
@@ -2431,7 +2906,9 @@
             "value": "€11.4m",
             "club": "B. Monchengladbach",
             "league": "Bundesliga (Germany)",
-            "league_country": "Germany"
+            "league_country": "Germany",
+            "goals": 0,
+            "assists": 0
         },
         "Aaronson Brenden": {
             "short_name": "Aaronson B.",
@@ -2441,7 +2918,9 @@
             "value": "€13.5m",
             "club": "Union Berlin",
             "league": "Bundesliga (Germany)",
-            "league_country": "Germany"
+            "league_country": "Germany",
+            "goals": 0,
+            "assists": 0
         },
         "Adams Tyler": {
             "short_name": "Adams T.",
@@ -2451,7 +2930,9 @@
             "value": "€17.6m",
             "club": "Bournemouth",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Johnny Cardoso": {
             "short_name": "Johnny C.",
@@ -2461,7 +2942,9 @@
             "value": "€9.8m",
             "club": "Betis",
             "league": "LaLiga (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 0,
+            "assists": 0
         },
         "McKennie Weston": {
             "short_name": "McKennie W.",
@@ -2471,7 +2954,9 @@
             "value": "€24.8m",
             "club": "Juventus",
             "league": "Serie A (Italy)",
-            "league_country": "Italy"
+            "league_country": "Italy",
+            "goals": 0,
+            "assists": 0
         },
         "Musah Yunus": {
             "short_name": "Musah Y.",
@@ -2481,7 +2966,9 @@
             "value": "€21.9m",
             "club": "AC Milan",
             "league": "Serie A (Italy)",
-            "league_country": "Italy"
+            "league_country": "Italy",
+            "goals": 0,
+            "assists": 0
         },
         "Reyna Giovanni": {
             "short_name": "Reyna G.",
@@ -2491,7 +2978,9 @@
             "value": "€20.7m",
             "club": "Nottingham",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Weah Timothy": {
             "short_name": "Weah T.",
@@ -2501,7 +2990,9 @@
             "value": "€13.7m",
             "club": "Juventus",
             "league": "Serie A (Italy)",
-            "league_country": "Italy"
+            "league_country": "Italy",
+            "goals": 0,
+            "assists": 1
         },
         "de la Torre Luca": {
             "short_name": "de la Torre L.",
@@ -2511,7 +3002,9 @@
             "value": "€3.3m",
             "club": "Celta Vigo",
             "league": "LaLiga (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 0,
+            "assists": 0
         },
         "Balogun Folarin": {
             "short_name": "Balogun F.",
@@ -2521,7 +3014,9 @@
             "value": "€29.4m",
             "club": "Monaco",
             "league": "Ligue 1 (France)",
-            "league_country": "France"
+            "league_country": "France",
+            "goals": 2,
+            "assists": 0
         },
         "Pepi Ricardo": {
             "short_name": "Pepi R.",
@@ -2531,7 +3026,9 @@
             "value": "€10.6m",
             "club": "PSV",
             "league": "Eredivisie (Netherlands)",
-            "league_country": "Netherlands"
+            "league_country": "Netherlands",
+            "goals": 0,
+            "assists": 0
         },
         "Pulisic Christian": {
             "short_name": "Pulisic C.",
@@ -2541,7 +3038,9 @@
             "value": "€34.0m",
             "club": "AC Milan",
             "league": "Serie A (Italy)",
-            "league_country": "Italy"
+            "league_country": "Italy",
+            "goals": 1,
+            "assists": 1
         },
         "Sargent Joshua": {
             "short_name": "Sargent J.",
@@ -2551,7 +3050,9 @@
             "value": "€11.7m",
             "club": "Norwich",
             "league": "Championship (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Johnson Sean": {
             "short_name": "Johnson S.",
@@ -2561,7 +3062,9 @@
             "value": "€1.2m",
             "club": "Toronto FC",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Dest Sergino": {
             "short_name": "Dest S.",
@@ -2571,7 +3074,9 @@
             "value": "€21.5m",
             "club": "PSV",
             "league": "Eredivisie (Netherlands)",
-            "league_country": "Netherlands"
+            "league_country": "Netherlands",
+            "goals": 0,
+            "assists": 0
         },
         "Lund Kristoffer": {
             "short_name": "Lund K.",
@@ -2581,7 +3086,9 @@
             "value": "€2.5m",
             "club": "Palermo",
             "league": "Serie B (Italy)",
-            "league_country": "Italy"
+            "league_country": "Italy",
+            "goals": 0,
+            "assists": 0
         },
         "McKenzie Mark": {
             "short_name": "McKenzie M.",
@@ -2591,7 +3098,9 @@
             "value": "€5.8m",
             "club": "Genk",
             "league": "Jupiler Pro League (Belgium)",
-            "league_country": "Belgium"
+            "league_country": "Belgium",
+            "goals": 0,
+            "assists": 0
         },
         "Moore Shaquell": {
             "short_name": "Moore S.",
@@ -2601,7 +3110,9 @@
             "value": "€1.5m",
             "club": "Nashville SC",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Robinson Miles": {
             "short_name": "Robinson M.",
@@ -2611,7 +3122,9 @@
             "value": "€5.0m",
             "club": "FC Cincinnati",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Tillman Malik": {
             "short_name": "Tillman M.",
@@ -2621,7 +3134,9 @@
             "value": "€16.6m",
             "club": "PSV",
             "league": "Eredivisie (Netherlands)",
-            "league_country": "Netherlands"
+            "league_country": "Netherlands",
+            "goals": 0,
+            "assists": 0
         },
         "Tillman Timothy": {
             "short_name": "Tillman T.",
@@ -2631,7 +3146,9 @@
             "value": "€1.5m",
             "club": "Los Angeles FC",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Wright Haji": {
             "short_name": "Wright H.",
@@ -2641,7 +3158,9 @@
             "value": "€6.8m",
             "club": "Coventry",
             "league": "Championship (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         }
     },
     "Panama": {
@@ -2653,7 +3172,9 @@
             "value": "€380k",
             "club": "Nacional",
             "league": "Primera Division (Uruguay)",
-            "league_country": "Uruguay"
+            "league_country": "Uruguay",
+            "goals": 0,
+            "assists": 0
         },
         "Anderson Eduardo": {
             "short_name": "Anderson E.",
@@ -2663,7 +3184,9 @@
             "value": "€238k",
             "club": "Saprissa",
             "league": "Primera Division (Costa Rica)",
-            "league_country": "Panama"
+            "league_country": "Panama",
+            "goals": 0,
+            "assists": 0
         },
         "Blackman Cesar": {
             "short_name": "Blackman C.",
@@ -2673,7 +3196,9 @@
             "value": "€530k",
             "club": "Slovan Bratislava",
             "league": "Nike liga (Slovakia)",
-            "league_country": "Slovakia"
+            "league_country": "Slovakia",
+            "goals": 1,
+            "assists": 0
         },
         "Cordoba Jose": {
             "short_name": "Cordoba J.",
@@ -2683,7 +3208,9 @@
             "value": "€3.0m",
             "club": "Levski Sofia",
             "league": "Parva liga (Bulgaria)",
-            "league_country": "Bulgaria"
+            "league_country": "Bulgaria",
+            "goals": 0,
+            "assists": 0
         },
         "Davis Eric": {
             "short_name": "Davis E.",
@@ -2693,7 +3220,9 @@
             "value": "€298k",
             "club": "Kosice",
             "league": "Nike liga (Slovakia)",
-            "league_country": "Slovakia"
+            "league_country": "Slovakia",
+            "goals": 0,
+            "assists": 1
         },
         "Farina Edgardo": {
             "short_name": "Farina E.",
@@ -2703,7 +3232,9 @@
             "value": "€143k",
             "club": "Municipal",
             "league": "Liga Nacional (Guatemala)",
-            "league_country": "Guatemala"
+            "league_country": "Guatemala",
+            "goals": 0,
+            "assists": 0
         },
         "Miller Roderick": {
             "short_name": "Miller R.",
@@ -2713,7 +3244,9 @@
             "value": "€241k",
             "club": "Turan",
             "league": "Premier League (Azerbaijan)",
-            "league_country": "Azerbaijan"
+            "league_country": "Azerbaijan",
+            "goals": 0,
+            "assists": 0
         },
         "Murillo Michael": {
             "short_name": "Murillo M.",
@@ -2723,7 +3256,9 @@
             "value": "€3.0m",
             "club": "Marseille",
             "league": "Ligue 1 (France)",
-            "league_country": "France"
+            "league_country": "France",
+            "goals": 1,
+            "assists": 0
         },
         "Ayarza Abdiel": {
             "short_name": "Ayarza A.",
@@ -2733,7 +3268,9 @@
             "value": "€538k",
             "club": "Cienciano",
             "league": "Liga 1 (Peru)",
-            "league_country": "Peru"
+            "league_country": "Peru",
+            "goals": 0,
+            "assists": 1
         },
         "Barcenas Yoel": {
             "short_name": "Barcenas Y.",
@@ -2743,7 +3280,9 @@
             "value": "€993k",
             "club": "Mazatlan FC",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Carrasquilla Alcazar Adalberto Eliecer": {
             "short_name": "Carrasquilla Alcazar Adalberto E.",
@@ -2753,7 +3292,9 @@
             "value": "€4.4m",
             "club": "Houston Dynamo",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Godoy Anibal": {
             "short_name": "Godoy A.",
@@ -2763,7 +3304,9 @@
             "value": "€289k",
             "club": "Nashville SC",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Gondola Freddy": {
             "short_name": "Gondola F.",
@@ -2773,7 +3316,9 @@
             "value": "€281k",
             "club": "Maccabi Bnei Raina",
             "league": "Ligat ha'Al (Israel)",
-            "league_country": "Israel"
+            "league_country": "Israel",
+            "goals": 0,
+            "assists": 1
         },
         "Guerrero Eduardo": {
             "short_name": "Guerrero E.",
@@ -2783,7 +3328,9 @@
             "value": "€738k",
             "club": "FK Zorya Luhansk",
             "league": "Premier League (Ukraine)",
-            "league_country": "Ukraine"
+            "league_country": "Ukraine",
+            "goals": 1,
+            "assists": 0
         },
         "Martinez Christian": {
             "short_name": "Martinez C.",
@@ -2793,7 +3340,9 @@
             "value": "€245k",
             "club": "Plaza Amador",
             "league": "LPF (Panama)",
-            "league_country": "Panama"
+            "league_country": "Panama",
+            "goals": 0,
+            "assists": 1
         },
         "Puma": {
             "short_name": "Puma",
@@ -2803,7 +3352,9 @@
             "value": "€1.5m",
             "club": "Famalicao",
             "league": "Liga Portugal (Portugal)",
-            "league_country": "Portugal"
+            "league_country": "Portugal",
+            "goals": 0,
+            "assists": 0
         },
         "Welch Jovani": {
             "short_name": "Welch J.",
@@ -2813,7 +3364,9 @@
             "value": "€161k",
             "club": "Academico Viseu",
             "league": "Liga Portugal 2 (Portugal)",
-            "league_country": "Portugal"
+            "league_country": "Portugal",
+            "goals": 0,
+            "assists": 0
         },
         "Diaz Ismael": {
             "short_name": "Diaz I.",
@@ -2823,7 +3376,9 @@
             "value": "€1.5m",
             "club": "U. Catolica",
             "league": "Liga Pro (Ecuador)",
-            "league_country": "Ecuador"
+            "league_country": "Ecuador",
+            "goals": 0,
+            "assists": 0
         },
         "Fajardo Nelson Jose": {
             "short_name": "Fajardo Nelson J.",
@@ -2833,7 +3388,9 @@
             "value": "€734k",
             "club": "U. Catolica",
             "league": "Liga Pro (Ecuador)",
-            "league_country": "Ecuador"
+            "league_country": "Ecuador",
+            "goals": 2,
+            "assists": 0
         },
         "Yanis Cesar": {
             "short_name": "Yanis C.",
@@ -2843,7 +3400,9 @@
             "value": "€190k",
             "club": "San Carlos",
             "league": "Primera Division (Costa Rica)",
-            "league_country": "Costa Rica"
+            "league_country": "Costa Rica",
+            "goals": 1,
+            "assists": 0
         },
         "Mosquera Orlando": {
             "short_name": "Mosquera O.",
@@ -2853,7 +3412,9 @@
             "value": "€338k",
             "club": "Maccabi Tel Aviv",
             "league": "Ligat ha'Al (Israel)",
-            "league_country": "Israel"
+            "league_country": "Israel",
+            "goals": 0,
+            "assists": 0
         },
         "Lenis Kahiser": {
             "short_name": "Lenis K.",
@@ -2863,7 +3424,9 @@
             "value": "€328k",
             "club": "Jaguares de Cordoba",
             "league": "Primera A (Colombia)",
-            "league_country": "Colombia"
+            "league_country": "Colombia",
+            "goals": 0,
+            "assists": 0
         },
         "Samudio Cesar": {
             "short_name": "Samudio C.",
@@ -2873,7 +3436,9 @@
             "value": "€218k",
             "club": "Marathon",
             "league": "Liga Nacional (Honduras)",
-            "league_country": "Honduras"
+            "league_country": "Honduras",
+            "goals": 0,
+            "assists": 0
         },
         "Anderson Ivan": {
             "short_name": "Anderson I.",
@@ -2883,7 +3448,9 @@
             "value": "€356k",
             "club": "Fortaleza",
             "league": "Primera A (Colombia)",
-            "league_country": "Colombia"
+            "league_country": "Colombia",
+            "goals": 0,
+            "assists": 0
         },
         "Valencia Omar": {
             "short_name": "Valencia O.",
@@ -2893,7 +3460,9 @@
             "value": "€87k",
             "club": "New York Red Bulls",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Harvey Carlos": {
             "short_name": "Harvey C.",
@@ -2903,7 +3472,9 @@
             "value": "€176k",
             "club": "Minnesota United",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         }
     },
     "Bolivia": {
@@ -2915,7 +3486,9 @@
             "value": "€665k",
             "club": "The Strongest",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Cuellar Hector": {
             "short_name": "Cuellar H.",
@@ -2925,7 +3498,9 @@
             "value": "€579k",
             "club": "Always Ready",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Haquin Luis": {
             "short_name": "Haquin L.",
@@ -2935,7 +3510,9 @@
             "value": "€415k",
             "club": "Ponte Preta",
             "league": "Serie B (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Medina Roman Diego Daniel": {
             "short_name": "Medina Roman Diego D.",
@@ -2945,7 +3522,9 @@
             "value": "€796k",
             "club": "Always Ready",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Sagredo Jose": {
             "short_name": "Sagredo J.",
@@ -2955,7 +3534,9 @@
             "value": "€691k",
             "club": "Bolivar",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Arrascaita Jaime": {
             "short_name": "Arrascaita J.",
@@ -2965,7 +3546,9 @@
             "value": "€627k",
             "club": "The Strongest",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Fernandez Roberto": {
             "short_name": "Fernandez R.",
@@ -2975,7 +3558,9 @@
             "value": "€936k",
             "club": "Baltika",
             "league": "Premier League (Russia)",
-            "league_country": "Russia"
+            "league_country": "Russia",
+            "goals": 0,
+            "assists": 0
         },
         "Jusino Adrian": {
             "short_name": "Jusino A.",
@@ -2985,7 +3570,9 @@
             "value": "€536k",
             "club": "The Strongest",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Justiniano Leonel": {
             "short_name": "Justiniano L.",
@@ -2995,7 +3582,9 @@
             "value": "€374k",
             "club": "Bolivar",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Miguelito": {
             "short_name": "Miguelito",
@@ -3005,7 +3594,9 @@
             "value": "€482k",
             "club": "Santos",
             "league": "Serie B (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Saucedo Fernando": {
             "short_name": "Saucedo F.",
@@ -3015,7 +3606,9 @@
             "value": "€190k",
             "club": "Bolivar",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Suarez Marcelo": {
             "short_name": "Suarez M.",
@@ -3025,7 +3618,9 @@
             "value": "€408k",
             "club": "Always Ready",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Vaca Ramiro": {
             "short_name": "Vaca R.",
@@ -3035,7 +3630,9 @@
             "value": "€723k",
             "club": "Bolivar",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 1
         },
         "Villamil Gabriel": {
             "short_name": "Villamil G.",
@@ -3045,7 +3642,9 @@
             "value": "€804k",
             "club": "LDU Quito",
             "league": "Liga Pro (Ecuador)",
-            "league_country": "Ecuador"
+            "league_country": "Ecuador",
+            "goals": 0,
+            "assists": 0
         },
         "Villarroel Moises": {
             "short_name": "Villarroel M.",
@@ -3055,7 +3654,9 @@
             "value": "€369k",
             "club": "Guabira",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Algaranaz Carmelo": {
             "short_name": "Algaranaz C.",
@@ -3065,17 +3666,21 @@
             "value": "€635k",
             "club": "Bolivar",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
-        "Bruno Miranda": {
-            "short_name": "Bruno M.",
+        "Miranda Bruno": {
+            "short_name": "Miranda B.",
             "age": "26",
             "link": "/player/bruno-miranda/pbKKt9uq/",
             "role": "Forward",
             "value": "€461k",
             "club": "The Strongest",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 1,
+            "assists": 0
         },
         "Cespedes Boris": {
             "short_name": "Cespedes B.",
@@ -3085,7 +3690,9 @@
             "value": "€553k",
             "club": "Yverdon",
             "league": "Super League (Switzerland)",
-            "league_country": "Switzerland"
+            "league_country": "Switzerland",
+            "goals": 0,
+            "assists": 0
         },
         "Cuellar Jaume": {
             "short_name": "Cuellar J.",
@@ -3095,7 +3702,9 @@
             "value": "€352k",
             "club": "Barcelona B",
             "league": "Primera RFEF - Group 1 (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 0,
+            "assists": 0
         },
         "Ramallo Rodrigo": {
             "short_name": "Ramallo R.",
@@ -3105,7 +3714,9 @@
             "value": "€285k",
             "club": "The Strongest",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Reinoso Jair": {
             "short_name": "Reinoso J.",
@@ -3115,7 +3726,9 @@
             "value": "€71k",
             "club": "Aurora",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Rocha Yomar": {
             "short_name": "Rocha Y.",
@@ -3125,7 +3738,9 @@
             "value": "€421k",
             "club": "Bolivar",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Sagredo Jesus": {
             "short_name": "Sagredo J.",
@@ -3135,7 +3750,9 @@
             "value": "€499k",
             "club": "Bolivar",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Terrazas Adalid": {
             "short_name": "Terrazas A.",
@@ -3145,7 +3762,9 @@
             "value": "€817k",
             "club": "Always Ready",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Chavez Cruz Lucas Leonidas": {
             "short_name": "Chavez Cruz Lucas L.",
@@ -3155,7 +3774,9 @@
             "value": "€665k",
             "club": "Bolivar",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Menacho Cesar": {
             "short_name": "Menacho C.",
@@ -3165,7 +3786,9 @@
             "value": "",
             "club": "Blooming",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Akologo David": {
             "short_name": "Akologo D.",
@@ -3175,7 +3798,9 @@
             "value": "€248k",
             "club": "Aurora",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Almada Gustavo": {
             "short_name": "Almada G.",
@@ -3185,7 +3810,9 @@
             "value": "€252k",
             "club": "Universitario de Vinto",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Lampe Carlos": {
             "short_name": "Lampe C.",
@@ -3195,7 +3822,9 @@
             "value": "€294k",
             "club": "Bolivar",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Poveda Bruno": {
             "short_name": "Poveda B.",
@@ -3205,7 +3834,9 @@
             "value": "€211k",
             "club": "Wilstermann",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Alvarez Sebastian": {
             "short_name": "Alvarez S.",
@@ -3215,7 +3846,9 @@
             "value": "€454k",
             "club": "Oriente Petrolero",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Berdecio Jamir": {
             "short_name": "Berdecio J.",
@@ -3225,7 +3858,9 @@
             "value": "€254k",
             "club": "Philadelphia Union II",
             "league": "MLS Next Pro (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Magallanes Javier": {
             "short_name": "Magallanes J.",
@@ -3235,7 +3870,9 @@
             "value": "",
             "club": "Destroyers",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Rafinha": {
             "short_name": "Rafinha",
@@ -3245,7 +3882,9 @@
             "value": "€388k",
             "club": "Blooming",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Robson Matheus": {
             "short_name": "Robson M.",
@@ -3255,7 +3894,9 @@
             "value": "€101k",
             "club": "Always Ready",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Romero Cesar": {
             "short_name": "Romero C.",
@@ -3265,7 +3906,9 @@
             "value": "€440k",
             "club": "Blooming",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Saavedra Erwin": {
             "short_name": "Saavedra E.",
@@ -3275,7 +3918,9 @@
             "value": "€461k",
             "club": "Bolivar",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Sejas Carlos": {
             "short_name": "Sejas C.",
@@ -3285,7 +3930,9 @@
             "value": "€523k",
             "club": "Aurora",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Tome Robson": {
             "short_name": "Tome R.",
@@ -3295,7 +3942,9 @@
             "value": "",
             "club": "Palmeiras",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Mendoza Gustavo": {
             "short_name": "Mendoza G.",
@@ -3305,7 +3954,9 @@
             "value": "",
             "club": "San Antonio Bulo Bulo",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         },
         "Sotomayor Gabriel": {
             "short_name": "Sotomayor G.",
@@ -3315,7 +3966,9 @@
             "value": "€806k",
             "club": "The Strongest",
             "league": "Division Profesional (Bolivia)",
-            "league_country": "Bolivia"
+            "league_country": "Bolivia",
+            "goals": 0,
+            "assists": 0
         }
     },
     "Colombia": {
@@ -3327,7 +3980,9 @@
             "value": "€2.5m",
             "club": "Millonarios",
             "league": "Primera A (Colombia)",
-            "league_country": "Colombia"
+            "league_country": "Colombia",
+            "goals": 0,
+            "assists": 0
         },
         "Vargas Camilo": {
             "short_name": "Vargas C.",
@@ -3337,7 +3992,9 @@
             "value": "€1.4m",
             "club": "Atlas",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Arias Santiago": {
             "short_name": "Arias S.",
@@ -3347,7 +4004,9 @@
             "value": "€2.5m",
             "club": "Bahia",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Cuesta Carlos": {
             "short_name": "Cuesta C.",
@@ -3357,7 +4016,9 @@
             "value": "€5.9m",
             "club": "Genk",
             "league": "Jupiler Pro League (Belgium)",
-            "league_country": "Belgium"
+            "league_country": "Belgium",
+            "goals": 0,
+            "assists": 0
         },
         "Lucumi Jhon": {
             "short_name": "Lucumi J.",
@@ -3367,7 +4028,9 @@
             "value": "€10.8m",
             "club": "Bologna",
             "league": "Serie A (Italy)",
-            "league_country": "Italy"
+            "league_country": "Italy",
+            "goals": 0,
+            "assists": 0
         },
         "Machado Deiver": {
             "short_name": "Machado D.",
@@ -3377,7 +4040,9 @@
             "value": "€4.1m",
             "club": "Lens",
             "league": "Ligue 1 (France)",
-            "league_country": "France"
+            "league_country": "France",
+            "goals": 0,
+            "assists": 0
         },
         "Mina Yerry": {
             "short_name": "Mina Y.",
@@ -3387,7 +4052,9 @@
             "value": "€3.0m",
             "club": "Cagliari",
             "league": "Serie A (Italy)",
-            "league_country": "Italy"
+            "league_country": "Italy",
+            "goals": 0,
+            "assists": 0
         },
         "Munoz Daniel": {
             "short_name": "Munoz D.",
@@ -3397,7 +4064,9 @@
             "value": "€15.5m",
             "club": "Crystal Palace",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 2,
+            "assists": 0
         },
         "Sanchez Davinson": {
             "short_name": "Sanchez D.",
@@ -3407,7 +4076,9 @@
             "value": "€16.6m",
             "club": "Galatasaray",
             "league": "Super Lig (Turkey)",
-            "league_country": "Turkey"
+            "league_country": "Turkey",
+            "goals": 1,
+            "assists": 0
         },
         "Arias Jhon": {
             "short_name": "Arias J.",
@@ -3417,7 +4088,9 @@
             "value": "€12.6m",
             "club": "Fluminense",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 1
         },
         "Carrascal Jorge": {
             "short_name": "Carrascal J.",
@@ -3427,7 +4100,9 @@
             "value": "€7.1m",
             "club": "Dynamo Moscow",
             "league": "Premier League (Russia)",
-            "league_country": "Russia"
+            "league_country": "Russia",
+            "goals": 0,
+            "assists": 0
         },
         "Castano Kevin": {
             "short_name": "Castano K.",
@@ -3437,7 +4112,9 @@
             "value": "€4.8m",
             "club": "Krasnodar",
             "league": "Premier League (Russia)",
-            "league_country": "Russia"
+            "league_country": "Russia",
+            "goals": 0,
+            "assists": 0
         },
         "Lerma Jefferson": {
             "short_name": "Lerma J.",
@@ -3447,7 +4124,9 @@
             "value": "€19.6m",
             "club": "Crystal Palace",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 1,
+            "assists": 0
         },
         "Quintero Juan": {
             "short_name": "Quintero J.",
@@ -3457,7 +4136,9 @@
             "value": "€2.5m",
             "club": "Racing Club",
             "league": "Liga Profesional (Argentina)",
-            "league_country": "Argentina"
+            "league_country": "Argentina",
+            "goals": 0,
+            "assists": 0
         },
         "Rios Richard": {
             "short_name": "Rios R.",
@@ -3467,7 +4148,9 @@
             "value": "€2.9m",
             "club": "Palmeiras",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Rodriguez James": {
             "short_name": "Rodriguez J.",
@@ -3477,7 +4160,9 @@
             "value": "€4.7m",
             "club": "Sao Paulo",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 3
         },
         "Uribe Mateus": {
             "short_name": "Uribe M.",
@@ -3487,7 +4172,9 @@
             "value": "€4.8m",
             "club": "Al-Sadd",
             "league": "QSL (Qatar)",
-            "league_country": "Qatar"
+            "league_country": "Qatar",
+            "goals": 0,
+            "assists": 0
         },
         "Borre Rafael": {
             "short_name": "Borre R.",
@@ -3497,7 +4184,9 @@
             "value": "€7.7m",
             "club": "Internacional",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Cordoba Jhon": {
             "short_name": "Cordoba J.",
@@ -3507,7 +4196,9 @@
             "value": "€11.9m",
             "club": "Krasnodar",
             "league": "Premier League (Russia)",
-            "league_country": "Russia"
+            "league_country": "Russia",
+            "goals": 0,
+            "assists": 0
         },
         "Diaz Luis": {
             "short_name": "Diaz L.",
@@ -3517,7 +4208,9 @@
             "value": "€77.7m",
             "club": "Liverpool",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 1,
+            "assists": 0
         },
         "Duran Jhon": {
             "short_name": "Duran J.",
@@ -3527,7 +4220,9 @@
             "value": "€15.7m",
             "club": "Aston Villa",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Sinisterra Luis": {
             "short_name": "Sinisterra L.",
@@ -3537,7 +4232,9 @@
             "value": "€18.1m",
             "club": "Bournemouth",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Mojica Johan": {
             "short_name": "Mojica J.",
@@ -3547,7 +4244,9 @@
             "value": "€2.4m",
             "club": "Osasuna",
             "league": "LaLiga (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 0,
+            "assists": 0
         },
         "Asprilla Yaser": {
             "short_name": "Asprilla Y.",
@@ -3557,7 +4256,9 @@
             "value": "€7.9m",
             "club": "Watford",
             "league": "Championship (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Ospina David": {
             "short_name": "Ospina D.",
@@ -3567,7 +4268,9 @@
             "value": "€2.4m",
             "club": "Al Nassr",
             "league": "Saudi Professional League (Saudi Arabia)",
-            "league_country": "Saudi Arabia"
+            "league_country": "Saudi Arabia",
+            "goals": 0,
+            "assists": 0
         },
         "Miguel Borja": {
             "short_name": "Miguel B.",
@@ -3577,7 +4280,9 @@
             "value": "€3.9m",
             "club": "River Plate",
             "league": "Liga Profesional (Argentina)",
-            "league_country": "Argentina"
+            "league_country": "Argentina",
+            "goals": 0,
+            "assists": 0
         }
     },
     "Brazil": {
@@ -3589,7 +4294,9 @@
             "value": "€31.8m",
             "club": "Liverpool",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Couto Yan": {
             "short_name": "Couto Y.",
@@ -3599,7 +4306,9 @@
             "value": "€14.7m",
             "club": "Girona",
             "league": "LaLiga (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 0,
+            "assists": 0
         },
         "Danilo": {
             "short_name": "Danilo",
@@ -3609,7 +4318,9 @@
             "value": "€11.9m",
             "club": "Juventus",
             "league": "Serie A (Italy)",
-            "league_country": "Italy"
+            "league_country": "Italy",
+            "goals": 0,
+            "assists": 0
         },
         "Gabriel": {
             "short_name": "Gabriel",
@@ -3619,7 +4330,9 @@
             "value": "€64.5m",
             "club": "Arsenal",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Guilherme Arana": {
             "short_name": "Guilherme A.",
@@ -3629,7 +4342,9 @@
             "value": "€9.9m",
             "club": "Atletico-MG",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Marquinhos": {
             "short_name": "Marquinhos",
@@ -3639,7 +4354,9 @@
             "value": "€53.8m",
             "club": "PSG",
             "league": "Ligue 1 (France)",
-            "league_country": "France"
+            "league_country": "France",
+            "goals": 0,
+            "assists": 0
         },
         "Douglas Luiz": {
             "short_name": "Douglas L.",
@@ -3649,7 +4366,9 @@
             "value": "€67.5m",
             "club": "Aston Villa",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Guimaraes Bruno": {
             "short_name": "Guimaraes B.",
@@ -3659,7 +4378,9 @@
             "value": "€85.6m",
             "club": "Newcastle Utd",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Endrick": {
             "short_name": "Endrick",
@@ -3669,7 +4390,9 @@
             "value": "€53.0m",
             "club": "Palmeiras",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Martinelli Gabriel": {
             "short_name": "Martinelli G.",
@@ -3679,7 +4402,9 @@
             "value": "€80.6m",
             "club": "Arsenal",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Pepê": {
             "short_name": "Pepê",
@@ -3689,7 +4414,9 @@
             "value": "€24.5m",
             "club": "FC Porto",
             "league": "Liga Portugal (Portugal)",
-            "league_country": "Portugal"
+            "league_country": "Portugal",
+            "goals": 0,
+            "assists": 0
         },
         "Raphinha": {
             "short_name": "Raphinha",
@@ -3699,7 +4426,9 @@
             "value": "€50.3m",
             "club": "Barcelona",
             "league": "LaLiga (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 1,
+            "assists": 0
         },
         "Rodrygo": {
             "short_name": "Rodrygo",
@@ -3709,7 +4438,9 @@
             "value": "€103.5m",
             "club": "Real Madrid",
             "league": "LaLiga (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 0,
+            "assists": 0
         },
         "Vinicius Junior": {
             "short_name": "Vinicius J.",
@@ -3719,7 +4450,9 @@
             "value": "€194.0m",
             "club": "Real Madrid",
             "league": "LaLiga (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 2,
+            "assists": 0
         },
         "Militao Eder": {
             "short_name": "Militao E.",
@@ -3729,7 +4462,9 @@
             "value": "€68.5m",
             "club": "Real Madrid",
             "league": "LaLiga (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 0,
+            "assists": 0
         },
         "Wendell": {
             "short_name": "Wendell",
@@ -3739,7 +4474,9 @@
             "value": "€5.0m",
             "club": "FC Porto",
             "league": "Liga Portugal (Portugal)",
-            "league_country": "Portugal"
+            "league_country": "Portugal",
+            "goals": 0,
+            "assists": 0
         },
         "Gomes Joao": {
             "short_name": "Gomes J.",
@@ -3749,7 +4486,9 @@
             "value": "€27.0m",
             "club": "Wolves",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Paqueta Lucas": {
             "short_name": "Paqueta L.",
@@ -3759,7 +4498,9 @@
             "value": "€68.2m",
             "club": "West Ham",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 1,
+            "assists": 1
         },
         "Pereira Andreas": {
             "short_name": "Pereira A.",
@@ -3769,7 +4510,9 @@
             "value": "€19.6m",
             "club": "Fulham",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Savio": {
             "short_name": "Savio",
@@ -3779,7 +4522,9 @@
             "value": "€42.0m",
             "club": "Girona",
             "league": "LaLiga (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 1,
+            "assists": 0
         },
         "Bento": {
             "short_name": "Bento",
@@ -3789,7 +4534,9 @@
             "value": "€12.7m",
             "club": "Athletico-PR",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Rafael": {
             "short_name": "Rafael",
@@ -3799,7 +4546,9 @@
             "value": "€579k",
             "club": "Sao Paulo",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Beraldo Lucas": {
             "short_name": "Beraldo L.",
@@ -3809,7 +4558,9 @@
             "value": "€18.7m",
             "club": "PSG",
             "league": "Ligue 1 (France)",
-            "league_country": "France"
+            "league_country": "France",
+            "goals": 0,
+            "assists": 0
         },
         "Bremer": {
             "short_name": "Bremer",
@@ -3819,7 +4570,9 @@
             "value": "€58.7m",
             "club": "Juventus",
             "league": "Serie A (Italy)",
-            "league_country": "Italy"
+            "league_country": "Italy",
+            "goals": 0,
+            "assists": 0
         },
         "Ederson": {
             "short_name": "Ederson",
@@ -3829,7 +4582,9 @@
             "value": "€29.8m",
             "club": "Atalanta",
             "league": "Serie A (Italy)",
-            "league_country": "Italy"
+            "league_country": "Italy",
+            "goals": 0,
+            "assists": 0
         },
         "Evanilson": {
             "short_name": "Evanilson",
@@ -3839,7 +4594,9 @@
             "value": "€30.2m",
             "club": "FC Porto",
             "league": "Liga Portugal (Portugal)",
-            "league_country": "Portugal"
+            "league_country": "Portugal",
+            "goals": 0,
+            "assists": 0
         }
     },
     "Costa Rica": {
@@ -3851,7 +4608,9 @@
             "value": "€294k",
             "club": "UD Ibiza",
             "league": "Primera RFEF - Group 2 (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 0,
+            "assists": 0
         },
         "Calvo Francisco": {
             "short_name": "Calvo F.",
@@ -3861,7 +4620,9 @@
             "value": "€1.5m",
             "club": "Juarez",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 1,
+            "assists": 0
         },
         "Cascante Julio": {
             "short_name": "Cascante J.",
@@ -3871,7 +4632,9 @@
             "value": "€1.9m",
             "club": "Austin FC",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Galo Orlando": {
             "short_name": "Galo O.",
@@ -3881,7 +4644,9 @@
             "value": "€323k",
             "club": "Herediano",
             "league": "Primera Division (Costa Rica)",
-            "league_country": "Costa Rica"
+            "league_country": "Costa Rica",
+            "goals": 0,
+            "assists": 0
         },
         "Mitchell Jeyland": {
             "short_name": "Mitchell J.",
@@ -3891,7 +4656,9 @@
             "value": "€126k",
             "club": "Alajuelense",
             "league": "Primera Division (Costa Rica)",
-            "league_country": "Costa Rica"
+            "league_country": "Costa Rica",
+            "goals": 0,
+            "assists": 0
         },
         "Taylor Dosman Gerald Gisjiel": {
             "short_name": "Taylor Dosman Gerald G.",
@@ -3901,7 +4668,9 @@
             "value": "€223k",
             "club": "Saprissa",
             "league": "Primera Division (Costa Rica)",
-            "league_country": "Costa Rica"
+            "league_country": "Costa Rica",
+            "goals": 0,
+            "assists": 0
         },
         "Vargas Juan Pablo": {
             "short_name": "Vargas Juan P.",
@@ -3911,7 +4680,9 @@
             "value": "€2.0m",
             "club": "Millonarios",
             "league": "Primera A (Colombia)",
-            "league_country": "Colombia"
+            "league_country": "Colombia",
+            "goals": 0,
+            "assists": 0
         },
         "Aguilera Zamora Brandon": {
             "short_name": "Aguilera Zamora B.",
@@ -3921,7 +4692,9 @@
             "value": "€285k",
             "club": "Bristol Rovers",
             "league": "League One (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Alcocer Josimar": {
             "short_name": "Alcocer J.",
@@ -3931,7 +4704,9 @@
             "value": "€386k",
             "club": "Westerlo",
             "league": "Jupiler Pro League (Belgium)",
-            "league_country": "Belgium"
+            "league_country": "Belgium",
+            "goals": 1,
+            "assists": 0
         },
         "Brenes Jefferson": {
             "short_name": "Brenes J.",
@@ -3941,7 +4716,9 @@
             "value": "€273k",
             "club": "Saprissa",
             "league": "Primera Division (Costa Rica)",
-            "league_country": "Costa Rica"
+            "league_country": "Costa Rica",
+            "goals": 0,
+            "assists": 1
         },
         "Quiros Haxzel": {
             "short_name": "Quiros H.",
@@ -3951,7 +4728,9 @@
             "value": "€230k",
             "club": "Herediano",
             "league": "Primera Division (Costa Rica)",
-            "league_country": "Costa Rica"
+            "league_country": "Costa Rica",
+            "goals": 0,
+            "assists": 0
         },
         "Zamora Alvaro": {
             "short_name": "Zamora A.",
@@ -3961,7 +4740,9 @@
             "value": "€553k",
             "club": "Aris",
             "league": "Super League (Greece)",
-            "league_country": "Greece"
+            "league_country": "Greece",
+            "goals": 0,
+            "assists": 0
         },
         "Campbell Joel": {
             "short_name": "Campbell J.",
@@ -3971,7 +4752,9 @@
             "value": "€745k",
             "club": "Alajuelense",
             "league": "Primera Division (Costa Rica)",
-            "league_country": "Costa Rica"
+            "league_country": "Costa Rica",
+            "goals": 0,
+            "assists": 0
         },
         "Lassiter Ariel": {
             "short_name": "Lassiter A.",
@@ -3981,7 +4764,9 @@
             "value": "€562k",
             "club": "CF Montreal",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Madrigal Warren": {
             "short_name": "Madrigal W.",
@@ -3991,7 +4776,9 @@
             "value": "€309k",
             "club": "Saprissa",
             "league": "Primera Division (Costa Rica)",
-            "league_country": "Costa Rica"
+            "league_country": "Costa Rica",
+            "goals": 0,
+            "assists": 0
         },
         "Rojas Andy": {
             "short_name": "Rojas A.",
@@ -4001,7 +4788,9 @@
             "value": "€403k",
             "club": "Herediano",
             "league": "Primera Division (Costa Rica)",
-            "league_country": "Costa Rica"
+            "league_country": "Costa Rica",
+            "goals": 0,
+            "assists": 0
         },
         "Ugalde Manfred": {
             "short_name": "Ugalde M.",
@@ -4011,7 +4800,9 @@
             "value": "€7.8m",
             "club": "Spartak Moscow",
             "league": "Premier League (Russia)",
-            "league_country": "Russia"
+            "league_country": "Russia",
+            "goals": 0,
+            "assists": 0
         },
         "Vargas Kenneth": {
             "short_name": "Vargas K.",
@@ -4021,7 +4812,9 @@
             "value": "€475k",
             "club": "Hearts",
             "league": "Premiership (Scotland)",
-            "league_country": "Scotland"
+            "league_country": "Scotland",
+            "goals": 0,
+            "assists": 0
         },
         "Mora Joseph": {
             "short_name": "Mora J.",
@@ -4031,7 +4824,9 @@
             "value": "€468k",
             "club": "Saprissa",
             "league": "Primera Division (Costa Rica)",
-            "league_country": "Costa Rica"
+            "league_country": "Costa Rica",
+            "goals": 0,
+            "assists": 1
         },
         "Bran Flores Alejandro Jesus": {
             "short_name": "Bran Flores Alejandro J.",
@@ -4041,7 +4836,9 @@
             "value": "€238k",
             "club": "Minnesota United",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Chamorro Kevin": {
             "short_name": "Chamorro K.",
@@ -4051,7 +4848,9 @@
             "value": "€323k",
             "club": "Saprissa",
             "league": "Primera Division (Costa Rica)",
-            "league_country": "Costa Rica"
+            "league_country": "Costa Rica",
+            "goals": 0,
+            "assists": 0
         },
         "Cruz Aaron": {
             "short_name": "Cruz A.",
@@ -4061,7 +4860,9 @@
             "value": "€207k",
             "club": "Herediano",
             "league": "Primera Division (Costa Rica)",
-            "league_country": "Costa Rica"
+            "league_country": "Costa Rica",
+            "goals": 0,
+            "assists": 0
         },
         "Jose Faerron Tristan Fernan": {
             "short_name": "Jose Faerron Tristan F.",
@@ -4071,7 +4872,9 @@
             "value": "€318k",
             "club": "Herediano",
             "league": "Primera Division (Costa Rica)",
-            "league_country": "Costa Rica"
+            "league_country": "Costa Rica",
+            "goals": 0,
+            "assists": 0
         },
         "Molina Yeison": {
             "short_name": "Molina Y.",
@@ -4081,7 +4884,9 @@
             "value": "€126k",
             "club": "Guanacasteca",
             "league": "Primera Division (Costa Rica)",
-            "league_country": "Costa Rica"
+            "league_country": "Costa Rica",
+            "goals": 0,
+            "assists": 0
         },
         "Sequeira Douglas": {
             "short_name": "Sequeira D.",
@@ -4091,7 +4896,9 @@
             "value": "",
             "club": "Saprissa",
             "league": "Primera Division (Costa Rica)",
-            "league_country": "Costa Rica"
+            "league_country": "Costa Rica",
+            "goals": 0,
+            "assists": 0
         },
         "Contreras Anthony": {
             "short_name": "Contreras A.",
@@ -4101,7 +4908,9 @@
             "value": "€579k",
             "club": "Paphos",
             "league": "Cyta Championship (Cyprus)",
-            "league_country": "Cyprus"
+            "league_country": "Cyprus",
+            "goals": 0,
+            "assists": 0
         }
     },
     "Paraguay": {
@@ -4113,7 +4922,9 @@
             "value": "€738k",
             "club": "New York Red Bulls",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Alderete Omar": {
             "short_name": "Alderete O.",
@@ -4123,7 +4934,9 @@
             "value": "€2.9m",
             "club": "Getafe",
             "league": "LaLiga (Spain)",
-            "league_country": "Spain"
+            "league_country": "Spain",
+            "goals": 1,
+            "assists": 0
         },
         "Alonso Junior": {
             "short_name": "Alonso J.",
@@ -4133,7 +4946,9 @@
             "value": "€7.6m",
             "club": "Krasnodar",
             "league": "Premier League (Russia)",
-            "league_country": "Russia"
+            "league_country": "Russia",
+            "goals": 0,
+            "assists": 0
         },
         "Fabian Balbuena": {
             "short_name": "Fabian B.",
@@ -4143,7 +4958,9 @@
             "value": "€2.9m",
             "club": "Dynamo Moscow",
             "league": "Premier League (Russia)",
-            "league_country": "Russia"
+            "league_country": "Russia",
+            "goals": 0,
+            "assists": 0
         },
         "Gustavo Gomez": {
             "short_name": "Gustavo G.",
@@ -4153,7 +4970,9 @@
             "value": "€8.2m",
             "club": "Palmeiras",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Ramirez Ivan": {
             "short_name": "Ramirez I.",
@@ -4163,7 +4982,9 @@
             "value": "€1.0m",
             "club": "Libertad Asuncion",
             "league": "Primera Division (Paraguay)",
-            "league_country": "Paraguay"
+            "league_country": "Paraguay",
+            "goals": 0,
+            "assists": 0
         },
         "Caballero Benitez Hernesto": {
             "short_name": "Caballero Benitez H.",
@@ -4173,7 +4994,9 @@
             "value": "€461k",
             "club": "Libertad Asuncion",
             "league": "Primera Division (Paraguay)",
-            "league_country": "Paraguay"
+            "league_country": "Paraguay",
+            "goals": 0,
+            "assists": 0
         },
         "Cubas Andres": {
             "short_name": "Cubas A.",
@@ -4183,7 +5006,9 @@
             "value": "€4.3m",
             "club": "Vancouver Whitecaps",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Espinoza Acosta Mathias David": {
             "short_name": "Espinoza Acosta Mathias D.",
@@ -4193,7 +5018,9 @@
             "value": "€1.3m",
             "club": "Libertad Asuncion",
             "league": "Primera Division (Paraguay)",
-            "league_country": "Paraguay"
+            "league_country": "Paraguay",
+            "goals": 0,
+            "assists": 0
         },
         "Kaku": {
             "short_name": "Kaku",
@@ -4203,7 +5030,9 @@
             "value": "€5.1m",
             "club": "Al Ain",
             "league": "UAE League (United Arab Emirates)",
-            "league_country": "United Arab Emirates"
+            "league_country": "United Arab Emirates",
+            "goals": 0,
+            "assists": 0
         },
         "Rojas Matias": {
             "short_name": "Rojas M.",
@@ -4213,7 +5042,9 @@
             "value": "€4.0m",
             "club": "Inter Miami",
             "league": "MLS (USA)",
-            "league_country": "USA"
+            "league_country": "USA",
+            "goals": 0,
+            "assists": 0
         },
         "Sanchez Richard": {
             "short_name": "Sanchez R.",
@@ -4223,7 +5054,9 @@
             "value": "€6.8m",
             "club": "Club America",
             "league": "Liga MX (Mexico)",
-            "league_country": "Mexico"
+            "league_country": "Mexico",
+            "goals": 0,
+            "assists": 0
         },
         "Sosa Ramon": {
             "short_name": "Sosa R.",
@@ -4233,7 +5066,9 @@
             "value": "€8.1m",
             "club": "Talleres Cordoba",
             "league": "Liga Profesional (Argentina)",
-            "league_country": "Argentina"
+            "league_country": "Argentina",
+            "goals": 1,
+            "assists": 1
         },
         "Villasanti Mathias": {
             "short_name": "Villasanti M.",
@@ -4243,7 +5078,9 @@
             "value": "€9.6m",
             "club": "Gremio",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 1
         },
         "Almiron Miguel": {
             "short_name": "Almiron M.",
@@ -4253,7 +5090,9 @@
             "value": "€19.6m",
             "club": "Newcastle Utd",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 0,
+            "assists": 0
         },
         "Bareiro Adam": {
             "short_name": "Bareiro A.",
@@ -4263,7 +5102,9 @@
             "value": "€5.8m",
             "club": "San Lorenzo",
             "league": "Liga Profesional (Argentina)",
-            "league_country": "Argentina"
+            "league_country": "Argentina",
+            "goals": 0,
+            "assists": 0
         },
         "Morinigo Acosta Rodrigo Mario": {
             "short_name": "Morinigo Acosta Rodrigo M.",
@@ -4273,7 +5114,9 @@
             "value": "€91k",
             "club": "Libertad Asuncion",
             "league": "Primera Division (Paraguay)",
-            "league_country": "Paraguay"
+            "league_country": "Paraguay",
+            "goals": 0,
+            "assists": 0
         },
         "Gimenez Florentin Nestor Rafael": {
             "short_name": "Gimenez Florentin Nestor R.",
@@ -4283,7 +5126,9 @@
             "value": "€1.1m",
             "club": "Libertad Asuncion",
             "league": "Primera Division (Paraguay)",
-            "league_country": "Paraguay"
+            "league_country": "Paraguay",
+            "goals": 0,
+            "assists": 0
         },
         "Velazquez Gustavo": {
             "short_name": "Velazquez G.",
@@ -4293,7 +5138,9 @@
             "value": "€1.7m",
             "club": "Newells Old Boys",
             "league": "Liga Profesional (Argentina)",
-            "league_country": "Argentina"
+            "league_country": "Argentina",
+            "goals": 0,
+            "assists": 0
         },
         "Bobadilla Damian": {
             "short_name": "Bobadilla D.",
@@ -4303,7 +5150,9 @@
             "value": "€2.4m",
             "club": "Sao Paulo",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Angel Romero": {
             "short_name": "Angel R.",
@@ -4313,7 +5162,9 @@
             "value": "€1.5m",
             "club": "Corinthians",
             "league": "Serie A (Brazil)",
-            "league_country": "Brazil"
+            "league_country": "Brazil",
+            "goals": 0,
+            "assists": 0
         },
         "Arce Barrios Alex Adrian": {
             "short_name": "Arce Barrios Alex A.",
@@ -4323,7 +5174,9 @@
             "value": "€3.0m",
             "club": "LDU Quito",
             "league": "Liga Pro (Ecuador)",
-            "league_country": "Ecuador"
+            "league_country": "Ecuador",
+            "goals": 0,
+            "assists": 0
         },
         "Enciso Julio": {
             "short_name": "Enciso J.",
@@ -4333,7 +5186,9 @@
             "value": "€21.8m",
             "club": "Brighton",
             "league": "Premier League (England)",
-            "league_country": "England"
+            "league_country": "England",
+            "goals": 1,
+            "assists": 0
         },
         "Aguilar Alfredo": {
             "short_name": "Aguilar A.",
@@ -4343,7 +5198,9 @@
             "value": "€145k",
             "club": "Sp. Luqueno",
             "league": "Primera Division (Paraguay)",
-            "league_country": "Paraguay"
+            "league_country": "Paraguay",
+            "goals": 0,
+            "assists": 0
         },
         "Peralta Fabrizio": {
             "short_name": "Peralta F.",
@@ -4353,7 +5210,9 @@
             "value": "€950k",
             "club": "Cerro Porteno",
             "league": "Primera Division (Paraguay)",
-            "league_country": "Paraguay"
+            "league_country": "Paraguay",
+            "goals": 0,
+            "assists": 0
         },
         "Gonzalez Derlis": {
             "short_name": "Gonzalez D.",
@@ -4363,7 +5222,9 @@
             "value": "€2.4m",
             "club": "Olimpia Asuncion",
             "league": "Primera Division (Paraguay)",
-            "league_country": "Paraguay"
+            "league_country": "Paraguay",
+            "goals": 0,
+            "assists": 0
         }
     }
 }
