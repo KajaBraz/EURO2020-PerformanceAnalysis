@@ -1,6 +1,9 @@
 function start(dataToDraw, score) {
+    chats_type = score;
     const score_type = score.toLowerCase().includes("goal") ? "goal" : "assist";
-    
+
+    shuffle_array(dataToDraw);
+
     // TODO - get rid of the fixed key "goals" (it requires having two data files; "assists" have to be renamed to "goals" in js data file to make the charts work)
     dataToDraw = dataToDraw.filter(({ goals }) => goals > 0);
     current_data = dataToDraw.filter(({ goals }) => goals > 1);
@@ -114,6 +117,8 @@ function start(dataToDraw, score) {
     // );
 }
 
+let chats_type;
+
 let all_goals;
 let all_charts = {};
 let labels = {};
@@ -134,5 +139,11 @@ let height_grouped = new Object();
 window.onload = function () {
     document.getElementById("bar_radio").checked = true;
     document.getElementById("pie_radio").checked = false;
-    document.getElementById("one_goal").checked = false;
+
+    if (no_one_goal_datas.length < 5) {
+        document.getElementById("one_goal").checked = true;
+        modify_one_goal(document.getElementById("one_goal"), chats_type);
+    } else {
+        document.getElementById("one_goal").checked = false;
+    }
 }
