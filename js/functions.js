@@ -12,6 +12,9 @@ function switch_to(type) {
 
 // TODO - create new chart instead of modifying the existing one; this will prevent duplicating colours 
 function modify_one_goal(checkbox, title) {
+    console.log('  *',checkbox)
+    console.log(' **',title)
+    console.log('***', all_charts)
     all_charts[title].data.labels = checkbox.checked ?
         one_goal_labels : no_one_goal_labels;
     all_charts[title].data.datasets[0].data = checkbox.checked ?
@@ -69,7 +72,7 @@ function createChart(title, labels, datas, full_data, type) {
     let colorsHue = datas.map((_elem, _index) => `hsla(${Math.floor(Math.random() * 361)}, 100%, 50%, 0.3`);
 
     // TODO - temp solution not to display the chart's title for the 2024 page (the titles there are separate html elements)
-    if (document.getElementsByTagName("title")[0].innerHTML == "Clubs and Leagues") {
+    if (document.getElementsByTagName("title")[0].innerHTML.includes("2024")) {
         title = "";
     }
 

@@ -15,7 +15,7 @@ function start(dataToDraw, score) {
     all_goals = dataToDraw.reduce((acc, { goals }) => acc + goals, 0);
     document.getElementById("all_goals").innerHTML += all_goals;
 
-    fill_init(score, no_one_goal_labels, no_one_goal_datas);
+    fill_init(score, no_one_goal_labels, no_one_goal_datas, "players_container");
 
 
     current_data = dataToDraw.reduce(
@@ -34,7 +34,7 @@ function start(dataToDraw, score) {
         }
     }
 
-    fill_init(score + " by country", Object.keys(current_data), Object.values(current_data), undefined, countries_grouped);
+    fill_init(score + "by country", Object.keys(current_data), Object.values(current_data), "national_teams_container", countries_grouped);
 
 
     current_data = dataToDraw.reduce(
@@ -52,7 +52,7 @@ function start(dataToDraw, score) {
             clubs_grouped[key].push(info);
         }
     }
-    fill_init(score + " by club", Object.keys(current_data), Object.values(current_data), undefined, clubs_grouped);
+    fill_init(score + "by club", Object.keys(current_data), Object.values(current_data), "clubs_container", clubs_grouped);
 
 
     current_data = dataToDraw.reduce(
@@ -71,7 +71,7 @@ function start(dataToDraw, score) {
         }
     }
 
-    fill_init(score + " by league", Object.keys(current_data), Object.values(current_data), undefined, leagues_grouped);
+    fill_init(score + " by league", Object.keys(current_data), Object.values(current_data), "leagues_container", leagues_grouped);
 
 
     current_data = players.reduce(
@@ -102,7 +102,7 @@ function start(dataToDraw, score) {
     }
 
     current_data = Object.entries(current_data).sort();
-    fill_init(score + " by age", current_data.map(([k, v]) => k), current_data.map(([k, v]) => v), undefined, age_grouped);
+    fill_init(score + " by age", current_data.map(([k, v]) => k), current_data.map(([k, v]) => v), "age_container", age_grouped);
 
     // current_data = players.filter(({ height }) => height != 0);
     // current_data = current_data.reduce(
