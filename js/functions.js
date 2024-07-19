@@ -12,9 +12,6 @@ function switch_to(type) {
 
 // TODO - create new chart instead of modifying the existing one; this will prevent duplicating colours 
 function modify_one_goal(checkbox, title) {
-    console.log('  *',checkbox)
-    console.log(' **',title)
-    console.log('***', all_charts)
     all_charts[title].data.labels = checkbox.checked ?
         one_goal_labels : no_one_goal_labels;
     all_charts[title].data.datasets[0].data = checkbox.checked ?
@@ -72,11 +69,9 @@ function createChart(title, labels, datas, full_data, type) {
     let colorsHue = datas.map((_elem, _index) => `hsla(${Math.floor(Math.random() * 361)}, 100%, 50%, 0.3`);
 
     // TODO - temp solution not to display the chart's title for the 2024 page (the titles there are separate html elements)
-    if (document.getElementsByTagName("title")[0].innerHTML.includes("2024")) {
-        title = "";
-    }
+    let is_2024 = document.getElementsByTagName("title")[0].innerHTML.includes("2024");
 
-    return {
+    let new_chart = {
         type: type,
         data: {
             labels: labels,
@@ -93,33 +88,52 @@ function createChart(title, labels, datas, full_data, type) {
                     maxHeight: 200
                 },
                 title: {
-                    display: true,
+                    display: is_2024 ? false : true,
                     text: title,
-                    font: {
-                        size: 20
-                    }
+                    font: { size: 20 }
                 },
                 tooltip: {
                     titleMarginBottom: 10,
                     titleFont: { size: 14, weight: "bolder" },
+                    footerFont: { size: 12, weight: "lighter" },
                     callbacks: {
-                        afterLabel: function (context) {
-                            if (full_data) {
-                                let rows = 20;
-                                let all_names = full_data[context.label];
-                                let players_in_row_num = Math.ceil(all_names.length / rows)
-                                let display_names = [];
-                                for (let i = 0; i < rows + 1; i++) {
-                                    var new_row = all_names.slice(i * players_in_row_num, i * players_in_row_num + players_in_row_num);
-                                    display_names.push(new_row.join("  -  "));
-                                }
-                                return display_names.join("\n");
-                            }
+                        afterLabel: (context) => {
+                            return parseTooltipText(full_data, context.label)
                         }
+                        // footer: (context)=> {
+                        //     return parseTooltipText(full_data, context[0].label)
+                        // }
                     }
                 }
             }
         }
+    }
+
+    if (type == "bar") {
+        new_chart.options.scales = {
+            y: {
+                ticks: { precision: 0 }
+            }
+        }
+    }
+
+    return new_chart;
+}
+
+function parseTooltipText(full_data, label) {
+    if (full_data) {
+        let rows = 20;
+        let all_names = full_data[label];
+        let players_in_row_num = Math.ceil(all_names.length / rows)
+        let display_names = [];
+        for (let i = 0; i < rows + 1; i++) {
+            var new_row = all_names.slice(i * players_in_row_num, i * players_in_row_num + players_in_row_num);
+            // if (new_row.length > 0){
+            //     new_row[0] = `    ${new_row[0]}`
+            // }
+            display_names.push(new_row.join("  -  "));
+        }
+        return display_names.join("\n");
     }
 }
 
