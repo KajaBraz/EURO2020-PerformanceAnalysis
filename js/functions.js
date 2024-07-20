@@ -5,7 +5,7 @@ function switch_to(type) {
         all_charts[id].destroy();
         all_charts[id] = new Chart(
             document.getElementById(id).getContext("2d"),
-            createChart(id, labels[id], datas[id]["values"], datas[id]["full"], type)
+            create_chart(id, labels[id], datas[id]["values"], datas[id]["full"], type)
         );
     });
 }
@@ -61,12 +61,12 @@ function filter_object_by_cnt(obj, cnt) {
     return [new_chart_labels, new_chart_values]
 }
 
-function createChart(title, labels, datas, full_data, type) {
+function create_chart(title, labels, datas, full_data, type) {
     // TODO - the previous method creates a bug when only a few items are displayed in the chart (colours difficult to distinguish)
     // Apply the fix to create a new chart instead of modifying it each time when its size changes (e.g., from 50 to 5) to prevent a narrow colour range
-    // let step = 360 / datas.length;
-    // let colorsHue = datas.map((elem, index) => `hsla(${index * step}, 100%, 50%, 0.25`);
-    let colorsHue = datas.map((_elem, _index) => `hsla(${Math.floor(Math.random() * 361)}, 100%, 50%, 0.3`);
+    // let step = 360 / full_data.length;
+    // let coloursHues = datas.map((elem, index) => `hsla(${index * step}, 100%, 50%, 0.25`);
+    let coloursHues = generate_colours(datas.length, 300);
 
     // TODO - temp solution not to display the chart's title for the 2024 page (the titles there are separate html elements)
     let is_2024 = document.getElementsByTagName("title")[0].innerHTML.includes("2024");
@@ -77,7 +77,7 @@ function createChart(title, labels, datas, full_data, type) {
             labels: labels,
             datasets: [{
                 data: datas,
-                backgroundColor: colorsHue
+                backgroundColor: coloursHues
             }]
         },
         options: {
@@ -98,10 +98,10 @@ function createChart(title, labels, datas, full_data, type) {
                     footerFont: { size: 12, weight: "lighter" },
                     callbacks: {
                         afterLabel: (context) => {
-                            return parseTooltipText(full_data, context.label)
+                            return parse_tooltip_text(full_data, context.label)
                         }
                         // footer: (context)=> {
-                        //     return parseTooltipText(full_data, context[0].label)
+                        //     return parse_tooltip_text(full_data, context[0].label)
                         // }
                     }
                 }
@@ -120,7 +120,40 @@ function createChart(title, labels, datas, full_data, type) {
     return new_chart;
 }
 
-function parseTooltipText(full_data, label) {
+function generate_colours(n, max_hue = 360, saturation = 100, lightness = 50, alpha = 0.25) {
+    var hues = [...Array(n)].map(_ => get_random_int(max_hue));
+    var hue_check = [false, null, null]
+    var i, j;
+
+    while (!hue_check[0]) {
+        hue_check = verify_colour_hues(hues, 45)
+        i = hue_check[1];
+        j = hue_check[2];
+        update_hues(hues, i, j, max_hue);
+    }
+
+    return hues.map((hue) => `hsla(${hue}, ${saturation}%, ${lightness}%, ${alpha}`);
+}
+
+function verify_colour_hues(hues, min_diff) {
+    for (i = 0; i < hues.length - 1; i++) {
+        if (Math.abs(hues[i] - hues[i + 1]) < min_diff) {
+            return [false, i, i + 1]
+        }
+    }
+    return [true, null, null]
+}
+
+function update_hues(hues_array, i, j, max_hue) {
+    hues_array[i] = get_random_int(max_hue);
+    hues_array[j] = get_random_int(max_hue);
+}
+
+function get_random_int(max_int) {
+    return Math.floor(Math.random() * (max_int + 1))
+}
+
+function parse_tooltip_text(full_data, label) {
     if (full_data) {
         let rows = 20;
         let all_names = full_data[label];
@@ -137,20 +170,20 @@ function parseTooltipText(full_data, label) {
     }
 }
 
-function appendCanvas(title, labels, datas, full_data, parent_id = "container", type = "bar") {
-    let canvas = document.createElement('canvas');
+function append_canvas(title, labels, datas, full_data, parent_id = "container", type = "bar") {
+    let canvas = document.createElement("canvas");
     canvas.width = "1500";
     canvas.height = "600";
     canvas.id = title;
     document.getElementById(parent_id).appendChild(canvas);
-    let chart = new Chart(canvas, createChart(title, labels, datas, full_data, type));
+    let chart = new Chart(canvas, create_chart(title, labels, datas, full_data, type));
     all_charts[title] = chart;
 }
 
 function fill_init(title, label_fill, data_fill, append_to_elem_id = "container", full_data = NaN) {
     labels[title] = label_fill;
     datas[title] = { "values": data_fill, "full": full_data };
-    appendCanvas(title, labels[title], data_fill, full_data, append_to_elem_id);
+    append_canvas(title, labels[title], data_fill, full_data, append_to_elem_id);
 }
 
 function shuffle_array(array) {
