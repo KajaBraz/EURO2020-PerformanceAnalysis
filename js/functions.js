@@ -2,23 +2,22 @@
 
 function switch_to(type) {
     Object.keys(all_charts).forEach(id => {
-        all_charts[id].destroy();
-        all_charts[id] = new Chart(
-            document.getElementById(id).getContext("2d"),
-            create_chart(id, labels[id], datas[id]["values"], datas[id]["full"], type)
-        );
+        recreate_chart(all_charts, id, labels[id], datas[id]["values"], datas[id]["full"], type);
     });
 }
 
-// TODO - create new chart instead of modifying the existing one; this will prevent duplicating colours 
 function modify_one_goal(checkbox, title) {
-    all_charts[title].data.labels = checkbox.checked ?
+    let new_labels = checkbox.checked ?
         one_goal_labels : no_one_goal_labels;
-    all_charts[title].data.datasets[0].data = checkbox.checked ?
+    let new_data = checkbox.checked ?
         one_goal_datas : no_one_goal_datas;
-    labels[title] = all_charts[title].data.labels;
-    datas[title]["values"] = all_charts[title].data.datasets[0].data;
-    all_charts[title].update();
+    let full_data = datas[title].full;
+    let type = all_charts[title].config._config.type;
+
+    recreate_chart(all_charts, title, new_labels, new_data, full_data, type);
+
+    labels[title] = new_labels;
+    datas[title]["values"] = new_data;
 }
 
 function modify_chart_by_cnt(input_elem, title, data_obj) {
@@ -29,16 +28,16 @@ function modify_chart_by_cnt(input_elem, title, data_obj) {
     }
 
     let new_data = filter_object_by_cnt(data_obj, cnt);
-    let new_chart_labels = new_data[0];
-    let new_chart_values = new_data[1];
+    let new_labels = new_data[0];
+    let new_values = new_data[1];
 
-    all_charts[title].data.labels = new_chart_labels;
-    all_charts[title].data.datasets[0].data = new_chart_values;
+    let full_data = datas[title].full;
+    let type = all_charts[title].config._config.type;
 
-    labels[title] = all_charts[title].data.labels;
-    datas[title]["values"] = all_charts[title].data.datasets[0].data;
+    recreate_chart(all_charts, title, new_labels, new_values, full_data, type);
 
-    all_charts[title].update();
+    labels[title] = new_labels;
+    datas[title]["values"] = new_values;
 }
 
 function filter_object_by_cnt(obj, cnt) {
@@ -58,14 +57,12 @@ function filter_object_by_cnt(obj, cnt) {
             }
         }
     }
-    return [new_chart_labels, new_chart_values]
+    return [new_chart_labels, new_chart_values];
 }
 
 function create_chart(title, labels, datas, full_data, type) {
-    // TODO - the previous method creates a bug when only a few items are displayed in the chart (colours difficult to distinguish)
-    // Apply the fix to create a new chart instead of modifying it each time when its size changes (e.g., from 50 to 5) to prevent a narrow colour range
-    // let step = 360 / full_data.length;
-    // let coloursHues = datas.map((elem, index) => `hsla(${index * step}, 100%, 50%, 0.25`);
+    // let step = 360 / datas.length;
+    // let coloursHues = datas.map((_, index) => `hsla(${index * step}, 100%, 50%, 0.25`);
     let coloursHues = generate_colours(datas.length, 300);
 
     // TODO - temp solution not to display the chart's title for the 2024 page (the titles there are separate html elements)
@@ -95,14 +92,10 @@ function create_chart(title, labels, datas, full_data, type) {
                 tooltip: {
                     titleMarginBottom: 10,
                     titleFont: { size: 14, weight: "bolder" },
-                    footerFont: { size: 12, weight: "lighter" },
                     callbacks: {
                         afterLabel: (context) => {
                             return parse_tooltip_text(full_data, context.label)
                         }
-                        // footer: (context)=> {
-                        //     return parse_tooltip_text(full_data, context[0].label)
-                        // }
                     }
                 }
             }
@@ -116,6 +109,20 @@ function create_chart(title, labels, datas, full_data, type) {
             }
         }
     }
+
+    return new_chart;
+}
+
+function recreate_chart(charts_obj, title, new_labels, new_data, new_full_data, new_type) {
+    let prev_chart = charts_obj[title];
+    prev_chart.destroy();
+
+    let new_chart = new Chart(
+        document.getElementById(title).getContext("2d"),
+        create_chart(title, new_labels, new_data, new_full_data, new_type)
+    );
+
+    charts_obj[title] = new_chart;
 
     return new_chart;
 }
@@ -141,7 +148,7 @@ function verify_colour_hues(hues, min_diff) {
             return [false, i, i + 1]
         }
     }
-    return [true, null, null]
+    return [true, null, null];
 }
 
 function update_hues(hues_array, i, j, max_hue) {
@@ -150,7 +157,7 @@ function update_hues(hues_array, i, j, max_hue) {
 }
 
 function get_random_int(max_int) {
-    return Math.floor(Math.random() * (max_int + 1))
+    return Math.floor(Math.random() * (max_int + 1));
 }
 
 function parse_tooltip_text(full_data, label) {
@@ -161,9 +168,6 @@ function parse_tooltip_text(full_data, label) {
         let display_names = [];
         for (let i = 0; i < rows + 1; i++) {
             var new_row = all_names.slice(i * players_in_row_num, i * players_in_row_num + players_in_row_num);
-            // if (new_row.length > 0){
-            //     new_row[0] = `    ${new_row[0]}`
-            // }
             display_names.push(new_row.join("  -  "));
         }
         return display_names.join("\n");
