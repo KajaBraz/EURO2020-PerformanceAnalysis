@@ -61,9 +61,8 @@ function filter_object_by_cnt(obj, cnt) {
 }
 
 function create_chart(title, labels, datas, full_data, type) {
-    // let step = 360 / datas.length;
-    // let coloursHues = datas.map((_, index) => `hsla(${index * step}, 100%, 50%, 0.25`);
-    let coloursHues = generate_colours(datas.length, 300);
+    let step = 360 / datas.length;
+    let coloursHues = datas.map((_, index) => `hsla(${index * step}, 100%, 50%, 0.3`);
 
     // TODO - temp solution not to display the chart's title for the 2024 page (the titles there are separate html elements)
     let is_2024 = document.getElementsByTagName("title")[0].innerHTML.includes("2024");
@@ -94,7 +93,7 @@ function create_chart(title, labels, datas, full_data, type) {
                     titleFont: { size: 14, weight: "bolder" },
                     callbacks: {
                         afterLabel: (context) => {
-                            return parse_tooltip_text(full_data, context.label)
+                            return parse_tooltip_text(full_data, context.label);
                         }
                     }
                 }
@@ -125,39 +124,6 @@ function recreate_chart(charts_obj, title, new_labels, new_data, new_full_data, 
     charts_obj[title] = new_chart;
 
     return new_chart;
-}
-
-function generate_colours(n, max_hue = 360, saturation = 100, lightness = 50, alpha = 0.25) {
-    var hues = [...Array(n)].map(_ => get_random_int(max_hue));
-    var hue_check = [false, null, null]
-    var i, j;
-
-    while (!hue_check[0]) {
-        hue_check = verify_colour_hues(hues, 45)
-        i = hue_check[1];
-        j = hue_check[2];
-        update_hues(hues, i, j, max_hue);
-    }
-
-    return hues.map((hue) => `hsla(${hue}, ${saturation}%, ${lightness}%, ${alpha}`);
-}
-
-function verify_colour_hues(hues, min_diff) {
-    for (i = 0; i < hues.length - 1; i++) {
-        if (Math.abs(hues[i] - hues[i + 1]) < min_diff) {
-            return [false, i, i + 1]
-        }
-    }
-    return [true, null, null];
-}
-
-function update_hues(hues_array, i, j, max_hue) {
-    hues_array[i] = get_random_int(max_hue);
-    hues_array[j] = get_random_int(max_hue);
-}
-
-function get_random_int(max_int) {
-    return Math.floor(Math.random() * (max_int + 1));
 }
 
 function parse_tooltip_text(full_data, label) {
@@ -242,5 +208,5 @@ function assign_label(label_type, labels, value) {
             return range;
         }
     }
-    return ""
+    return "";
 }
