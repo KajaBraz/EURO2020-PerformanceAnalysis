@@ -47,26 +47,11 @@
         </p>
     </div>
     <div id='container'>
-        <div class="chart_container" id="players_container">
-            <h2 class="chart_title">Top Scorers</h2>
-            <h4>The number of goals scored by individual players.</h4>
-        </div>
-        <div class="chart_container" id="national_teams_container">
-            <h2 class="chart_title">Goals by National Team</h2>
-            <h4>The number of goals grouped by national team.</h4>
-        </div>
-        <div class="chart_container" id="clubs_container">
-            <h2 class="chart_title">Goals by Club</h2>
-            <h4>The number of goals grouped by the clubs the scorers played for in the 2023/24 season.</h4>
-        </div>
-        <div class="chart_container" id="leagues_container">
-            <h2 class="chart_title">Goals by League</h2>
-            <h4>The number of goals grouped by the leagues in which the scorers played in the 2023/24 season.</h4>
-        </div>
-        <div class="chart_container" id="age_container">
-            <h2 class="chart_title">Goals by Age</h2>
-            <h4>The number of goals grouped by scorers' age.</h4>
-        </div>
+        <div class="chart_container" id="players_container"></div>
+        <div class="chart_container" id="national_teams_container"></div>
+        <div class="chart_container" id="clubs_container"></div>
+        <div class="chart_container" id="leagues_container"></div>
+        <div class="chart_container" id="age_container"></div>
     </div>
     <footer>
         <p>Data source: <a href="https://www.flashscore.com/">FlashScore</a></p>
@@ -78,6 +63,7 @@
     <script src="js/2024/players_copa.js"></script>
     <script src="js/functions.js"></script>
     <script src="js/2024/charts_2024_scorers.js"></script>
+    <script src="js/strings.js"></script>
     <script>
         start(players, "Goals");
     </script>

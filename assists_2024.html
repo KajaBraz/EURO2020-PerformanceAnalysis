@@ -47,26 +47,11 @@
         </p>
     </div>
     <div id='container'>
-        <div class="chart_container" id="players_container">
-            <h2 class="chart_title">Most Assists</h2>
-            <h4>The number of assists made by individual players.</h4>
-        </div>
-        <div class="chart_container" id="national_teams_container">
-            <h2 class="chart_title">Assists by National Team</h2>
-            <h4>The number of assists grouped by national teams.</h4>
-        </div>
-        <div class="chart_container" id="clubs_container">
-            <h2 class="chart_title">Assists by Club</h2>
-            <h4>The number of assists grouped by clubs for which the players play during the season.</h4>
-        </div>
-        <div class="chart_container" id="leagues_container">
-            <h2 class="chart_title">Assists by League</h2>
-            <h4>The number of assists grouped by leagues in which the players play during the season.</h4>
-        </div>
-        <div class="chart_container" id="age_container">
-            <h2 class="chart_title">Assists by Age</h2>
-            <h4>The number of assists grouped by players' age.</h4>
-        </div>
+        <div class="chart_container" id="players_container"></div>
+        <div class="chart_container" id="national_teams_container"></div>
+        <div class="chart_container" id="clubs_container"></div>
+        <div class="chart_container" id="leagues_container"></div>
+        <div class="chart_container" id="age_container"></div>
     </div>
     <footer>
         <p>Data source: <a href="https://www.flashscore.com/">FlashScore</a></p>
@@ -78,6 +63,7 @@
     <script src="js/2024/data_players_assists.js"></script>
     <script src="js/functions.js"></script>
     <script src="js/2024/charts_2024_scorers.js"></script>
+    <script src="js/strings.js"></script>
     <script>
         start(players, "Assists");
     </script>

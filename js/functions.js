@@ -64,8 +64,8 @@ function create_chart(title, labels, datas, full_data, type) {
     let step = 360 / datas.length;
     let coloursHues = datas.map((_, index) => `hsla(${index * step}, 100%, 50%, 0.3`);
 
-    // TODO - temp solution not to display the chart's title for the 2024 page (the titles there are separate html elements)
-    let is_2024 = document.getElementsByTagName("title")[0].innerHTML.includes("2024");
+    // TODO - temp solution not to display the chart's title for the 2024 leagues page (the titles there are separate html elements)
+    let is_clubs_leagues = document.getElementsByTagName("title")[0].innerHTML.includes("Clubs and Leagues");
 
     let new_chart = {
         type: type,
@@ -80,21 +80,44 @@ function create_chart(title, labels, datas, full_data, type) {
             plugins: {
                 legend: {
                     display: type == "bar" ? false : true,
-                    position: "bottom",
-                    maxHeight: 200
+                    maxHeight: 200,
+                    position: "bottom"
                 },
                 title: {
-                    display: is_2024 ? false : true,
-                    text: title,
-                    font: { size: 20 }
+                    color: "#000000",
+                    display: is_clubs_leagues ? false : true,
+                    font: { size: 20 },
+                    text: () => {
+                        var chart_str_id = title.toLowerCase();
+                        chart_str_id = chart_str_id.replaceAll(" ", "_");
+                        return strings["title"][chart_str_id]
+                    }
                 },
                 tooltip: {
-                    titleMarginBottom: 10,
-                    titleFont: { size: 14, weight: "bolder" },
                     callbacks: {
                         afterLabel: (context) => {
                             return parse_tooltip_text(full_data, context.label);
                         }
+                    },
+                    titleFont: {
+                        size: 14,
+                        weight: "bolder"
+                    },
+                    titleMarginBottom: 10
+                },
+                subtitle: {
+                    color: "#000000",
+                    display: is_clubs_leagues ? false : true,
+                    font: {
+                        family: "'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif'",
+                        size: 16,
+                        weight: "bold"
+                    },
+                    padding: { bottom: 15 },
+                    text: () => {
+                        var chart_str_id = title.toLowerCase();
+                        chart_str_id = chart_str_id.replaceAll(" ", "_");
+                        return strings["subtitle"][chart_str_id]
                     }
                 }
             }

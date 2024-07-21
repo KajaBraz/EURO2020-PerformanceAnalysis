@@ -1,4 +1,5 @@
 function start(dataToDraw, score) {
+    shuffle_array(dataToDraw);
     const score_type = score.toLowerCase().includes("goal") ? "goal" : "assist";
 
     current_data = dataToDraw.filter(({ goals }) => goals > 1);
@@ -131,6 +132,8 @@ function start(dataToDraw, score) {
     current_data = Object.entries(current_data).sort();
     fill_init(score + " by height (in cm)", current_data.map(([k, v]) => k), current_data.map(([k, v]) => v), undefined, height_grouped);
 }
+
+let season_years = "2020/21";
 
 let all_goals;
 let all_charts = {};

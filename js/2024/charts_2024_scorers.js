@@ -34,7 +34,7 @@ function start(dataToDraw, score) {
         }
     }
 
-    fill_init(score + "by country", Object.keys(current_data), Object.values(current_data), "national_teams_container", countries_grouped);
+    fill_init(score + " by country", Object.keys(current_data), Object.values(current_data), "national_teams_container", countries_grouped);
 
 
     current_data = dataToDraw.reduce(
@@ -52,7 +52,7 @@ function start(dataToDraw, score) {
             clubs_grouped[key].push(info);
         }
     }
-    fill_init(score + "by club", Object.keys(current_data), Object.values(current_data), "clubs_container", clubs_grouped);
+    fill_init(score + " by club", Object.keys(current_data), Object.values(current_data), "clubs_container", clubs_grouped);
 
 
     current_data = dataToDraw.reduce(
@@ -117,6 +117,7 @@ function start(dataToDraw, score) {
     // );
 }
 
+let season_years = "2023/24";
 let chats_type;
 
 let all_goals;
