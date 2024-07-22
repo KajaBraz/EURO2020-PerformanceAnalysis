@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <title>Players Statistics</title>
+    <title>Players Goals - 2020</title>
 </head>
 
 <body>
-    <h1>2020/2021 Football Competitions</h1>
-    <h1>Players Statistics - Goals - EURO 2020/2021</h1>
+    <h2>Football Stats</h2>
+    <h1>Goals - EURO 2020/2021</h1>
     <h3 class="subtitle">The graphs present the number of goals scored during the EURO 2020/2021 tournament. The data
         has been grouped by several categories: scorer, country, club and league for which the footballers play, as well
         as the as the players' age and height.</h3>
@@ -20,7 +20,14 @@
             <li><a href="index.html">Clubs and Leagues EURO 2024</a></li>
             <li><a href="leagues_2024_copa.html">Clubs and Leagues COPA 2024</a></li>
         </ul>
-        <h4 class="competitions_list_header">Other Graphs</h4>
+        <br>
+        <ul>
+            <li><a href="goals_2024.html">Goals EURO 2024</a></li>
+            <li><a href="assists_2024.html">Assists EURO 2024</a></li>
+            <li><a href="goals_2024_copa.html">Goals COPA 2024</a></li>
+            <li><a href="assists_2024_copa.html">Assists COPA 2024</a></li>
+        </ul>
+        <h4 class="competitions_list_header">2020/21 Graphs</h4>
         <ul>
             <li><a href="goals_2021.html">Goals EURO 2020</a></li>
             <li><a href="assists_2021.html">Assists EURO 2020</a></li>
@@ -30,7 +37,7 @@
     </div>
     <h3 id="all_goals">All goals scored (excluded own goals): </h3>
     <div class="select_chart">
-        <input type="radio" id="bar_radio" name="chart_type" value="bar" onchange="switch_to('bar')" checked>
+        <input type="radio" id="bar_radio" name="chart_type" value="bar" onchange="switch_to('bar')">
         <label for="bar_radio">Bar chart</label>
         <input type="radio" id="pie_radio" name="chart_type" value="pie" onchange="switch_to('pie')">
         <label for="pie_radio">Pie chart</label>
@@ -42,7 +49,7 @@
     <div id='container'></div>
     <footer>
         <p>Data source: <a href="https://en.wikipedia.org/wiki/UEFA_Euro_2020">Wikipedia</a></p>
-        <p>Source code and contact: <a href="https://github.com/KajaBraz/FootballScorersAnalysis">Github</a></p>
+        <p>Source code and contact: <a href="https://github.com/KajaBraz/FootballScorersAnalysis">GitHub</a></p>
     </footer>
     <!-- it fixes drawing issue on safari version <14 on iphone -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=ResizeObserver"></script>
@@ -50,6 +57,7 @@
     <script src="js/2020/data_2021.js"></script>
     <script src="js/functions.js"></script>
     <script src="js/2020/charts_2021.js"></script>
+    <script src="js/strings.js"></script>
     <script>
         start(playerData, "Goals");
     </script>

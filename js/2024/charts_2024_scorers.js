@@ -1,7 +1,11 @@
 function start(dataToDraw, score) {
-    shuffle_array(dataToDraw);
+    chats_type = score;
     const score_type = score.toLowerCase().includes("goal") ? "goal" : "assist";
 
+    shuffle_array(dataToDraw);
+
+    // TODO - get rid of the fixed key "goals" (it requires having two data files; "assists" have to be renamed to "goals" in js data file to make the charts work)
+    dataToDraw = dataToDraw.filter(({ goals }) => goals > 0);
     current_data = dataToDraw.filter(({ goals }) => goals > 1);
     no_one_goal_labels = current_data.map(({ name }) => name);
     no_one_goal_datas = current_data.map(({ goals }) => goals);
@@ -11,17 +15,17 @@ function start(dataToDraw, score) {
     all_goals = dataToDraw.reduce((acc, { goals }) => acc + goals, 0);
     document.getElementById("all_goals").innerHTML += all_goals;
 
-    fill_init(score, no_one_goal_labels, no_one_goal_datas);
+    fill_init(score, no_one_goal_labels, no_one_goal_datas, "players_container");
 
 
     current_data = dataToDraw.reduce(
-        (acc, { country, goals }) => {
-            acc[country] = (acc[country] || 0) + goals;
+        (acc, { national_team, goals }) => {
+            acc[national_team] = (acc[national_team] || 0) + goals;
             return acc;
         }, {}
     );
 
-    let countries_grouped_info = Object.groupBy(dataToDraw, ({ country }) => country);
+    let countries_grouped_info = Object.groupBy(dataToDraw, ({ national_team }) => national_team);
     for (const [key, value] of Object.entries(countries_grouped_info)) {
         countries_grouped[key] = [];
         for (let player of Object.entries(value)) {
@@ -30,7 +34,7 @@ function start(dataToDraw, score) {
         }
     }
 
-    fill_init(score + " by country", Object.keys(current_data), Object.values(current_data), undefined, countries_grouped);
+    fill_init(score + " by country", Object.keys(current_data), Object.values(current_data), "national_teams_container", countries_grouped);
 
 
     current_data = dataToDraw.reduce(
@@ -44,11 +48,11 @@ function start(dataToDraw, score) {
     for (const [key, value] of Object.entries(clubs_grouped_info)) {
         clubs_grouped[key] = [];
         for (let player of Object.entries(value)) {
-            let info = parse_player_info_goals(player[1], "name", "goals", "country", "", score_type);
+            let info = parse_player_info_goals(player[1], "name", "goals", "national_team", "", score_type);
             clubs_grouped[key].push(info);
         }
     }
-    fill_init(score + " by club", Object.keys(current_data), Object.values(current_data), undefined, clubs_grouped);
+    fill_init(score + " by club", Object.keys(current_data), Object.values(current_data), "clubs_container", clubs_grouped);
 
 
     current_data = dataToDraw.reduce(
@@ -62,15 +66,15 @@ function start(dataToDraw, score) {
     for (const [key, value] of Object.entries(leagues_grouped_info)) {
         leagues_grouped[key] = [];
         for (let player of Object.entries(value)) {
-            let info = parse_player_info_goals(player[1], "name", "goals", "country", "club", score_type);
+            let info = parse_player_info_goals(player[1], "name", "goals", "national_team", "club", score_type);
             leagues_grouped[key].push(info);
         }
     }
 
-    fill_init(score + " by league", Object.keys(current_data), Object.values(current_data), undefined, leagues_grouped);
+    fill_init(score + " by league", Object.keys(current_data), Object.values(current_data), "leagues_container", leagues_grouped);
 
 
-    current_data = playerData.reduce(
+    current_data = players.reduce(
         (acc, { age, goals }) => {
             let step = Math.floor(age / 5);
             let min = step * 5;
@@ -90,7 +94,7 @@ function start(dataToDraw, score) {
     for (const [key, value] of Object.entries(age_grouped_info)) {
         let age_label = assign_label("age", age_labels, key);
         for (let player of Object.entries(value)) {
-            let info = parse_player_info_attr(player[1], "name", "age", "goals", "country", score_type);
+            let info = parse_player_info_attr(player[1], "name", "age", "goals", "national_team", score_type);
             if (info) {
                 age_grouped[age_label].push(info);
             }
@@ -98,42 +102,23 @@ function start(dataToDraw, score) {
     }
 
     current_data = Object.entries(current_data).sort();
-    fill_init(score + " by age", current_data.map(([k, v]) => k), current_data.map(([k, v]) => v), undefined, age_grouped);
+    fill_init(score + " by age", current_data.map(([k, v]) => k), current_data.map(([k, v]) => v), "age_container", age_grouped);
 
-    current_data = playerData.filter(({ height }) => height != 0);
-    current_data = current_data.reduce(
-        (acc, { height, goals }) => {
-            let step = Math.floor(height * 100 / 5);
-            let min = step * 5;
-            let max = (step + 1) * 5 - 1;
-            let key = `${min} - ${max}`;
-            acc[key] = (acc[key] || 0) + goals;
-            return acc;
-        }, {}
-    );
-
-    let height_grouped_info = Object.groupBy(dataToDraw, ({ height }) => height);
-    let height_labels = Object.keys(current_data);
-    height_labels.forEach(height_label => {
-        height_grouped[height_label] = [];
-    });
-    for (const [key, value] of Object.entries(height_grouped_info)) {
-        if (key) {
-            let height_label = assign_label("height", height_labels, key * 100);
-            if (height_label) {
-                for (let player of Object.entries(value)) {
-                    let info = parse_player_info_attr(player[1], "name", "height", "goals", "country", score_type);
-                    height_grouped[height_label].push(info);
-                }
-            }
-        }
-    }
-
-    current_data = Object.entries(current_data).sort();
-    fill_init(score + " by height (in cm)", current_data.map(([k, v]) => k), current_data.map(([k, v]) => v), undefined, height_grouped);
+    // current_data = players.filter(({ height }) => height != 0);
+    // current_data = current_data.reduce(
+    //     (acc, { height, goals }) => {
+    //         let step = Math.floor(height * 100 / 5);
+    //         let min = step * 5;
+    //         let max = (step + 1) * 5 - 1;
+    //         let key = `${min} - ${max}`;
+    //         acc[key] = (acc[key] || 0) + goals;
+    //         return acc;
+    //     }, {}
+    // );
 }
 
-let season_years = "2020/21";
+let season_years = "2023/24";
+let chats_type;
 
 let all_goals;
 let all_charts = {};
@@ -155,5 +140,11 @@ let height_grouped = new Object();
 window.onload = function () {
     document.getElementById("bar_radio").checked = true;
     document.getElementById("pie_radio").checked = false;
-    document.getElementById("one_goal").checked = false;
+
+    if (no_one_goal_datas.length < 5) {
+        document.getElementById("one_goal").checked = true;
+        modify_one_goal(document.getElementById("one_goal"), chats_type);
+    } else {
+        document.getElementById("one_goal").checked = false;
+    }
 }

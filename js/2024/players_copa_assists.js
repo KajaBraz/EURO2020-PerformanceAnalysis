@@ -9,7 +9,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Argentina",
         "name": "Martinez Emiliano"
     },
@@ -23,7 +22,6 @@ const players = [
         "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "goals": 0,
-        "assists": 0,
         "national_team": "Argentina",
         "name": "Acuna Marcos"
     },
@@ -37,7 +35,6 @@ const players = [
         "league": "Serie A (Italy)",
         "league_country": "Italy",
         "goals": 0,
-        "assists": 0,
         "national_team": "Argentina",
         "name": "Martinez Quarta Lucas"
     },
@@ -51,7 +48,6 @@ const players = [
         "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "goals": 0,
-        "assists": 0,
         "national_team": "Argentina",
         "name": "Molina Nahuel"
     },
@@ -65,7 +61,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Argentina",
         "name": "Montiel Gonzalo"
     },
@@ -79,7 +74,6 @@ const players = [
         "league": "Liga Portugal (Portugal)",
         "league_country": "Portugal",
         "goals": 0,
-        "assists": 0,
         "national_team": "Argentina",
         "name": "Otamendi Nicolas"
     },
@@ -93,7 +87,6 @@ const players = [
         "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "goals": 0,
-        "assists": 0,
         "national_team": "Argentina",
         "name": "Pezzella German"
     },
@@ -107,7 +100,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Argentina",
         "name": "Romero Cristian Gabriel"
     },
@@ -121,7 +113,6 @@ const players = [
         "league": "Ligue 1 (France)",
         "league_country": "France",
         "goals": 0,
-        "assists": 0,
         "national_team": "Argentina",
         "name": "Tagliafico Nicolas"
     },
@@ -134,8 +125,7 @@ const players = [
         "club": "Chelsea",
         "league": "Premier League (England)",
         "league_country": "England",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
         "national_team": "Argentina",
         "name": "Fernandez Enzo"
     },
@@ -149,7 +139,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Argentina",
         "name": "Lo Celso Giovani"
     },
@@ -162,8 +151,7 @@ const players = [
         "club": "Liverpool",
         "league": "Premier League (England)",
         "league_country": "England",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
         "national_team": "Argentina",
         "name": "Mac Allister Alexis"
     },
@@ -177,7 +165,6 @@ const players = [
         "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "goals": 0,
-        "assists": 0,
         "national_team": "Argentina",
         "name": "Palacios Exequiel"
     },
@@ -191,7 +178,6 @@ const players = [
         "league": "Serie A (Italy)",
         "league_country": "Italy",
         "goals": 0,
-        "assists": 0,
         "national_team": "Argentina",
         "name": "Paredes Leandro"
     },
@@ -205,7 +191,6 @@ const players = [
         "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "goals": 0,
-        "assists": 0,
         "national_team": "Argentina",
         "name": "de Paul Rodrigo"
     },
@@ -218,8 +203,7 @@ const players = [
         "club": "Manchester City",
         "league": "Premier League (England)",
         "league_country": "England",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Argentina",
         "name": "Alvarez Julian"
     },
@@ -232,8 +216,7 @@ const players = [
         "club": "Benfica",
         "league": "Liga Portugal (Portugal)",
         "league_country": "Portugal",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
         "national_team": "Argentina",
         "name": "Di Maria Angel"
     },
@@ -247,7 +230,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Argentina",
         "name": "Garnacho Alejandro"
     },
@@ -261,7 +243,6 @@ const players = [
         "league": "Serie A (Italy)",
         "league_country": "Italy",
         "goals": 0,
-        "assists": 0,
         "national_team": "Argentina",
         "name": "Gonzalez Nicolas"
     },
@@ -274,8 +255,7 @@ const players = [
         "club": "Inter",
         "league": "Serie A (Italy)",
         "league_country": "Italy",
-        "goals": 4,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Argentina",
         "name": "Martinez Lautaro"
     },
@@ -288,8 +268,7 @@ const players = [
         "club": "Inter Miami",
         "league": "MLS (USA)",
         "league_country": "USA",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
         "national_team": "Argentina",
         "name": "Messi Lionel"
     },
@@ -303,7 +282,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Argentina",
         "name": "Martinez Lisandro"
     },
@@ -317,7 +295,6 @@ const players = [
         "league": "Serie A (Italy)",
         "league_country": "Italy",
         "goals": 0,
-        "assists": 0,
         "national_team": "Argentina",
         "name": "Carboni Valentin"
     },
@@ -331,7 +308,6 @@ const players = [
         "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "goals": 0,
-        "assists": 0,
         "national_team": "Argentina",
         "name": "Rodriguez Guido"
     },
@@ -345,7 +321,6 @@ const players = [
         "league": "Liga Profesional (Argentina)",
         "league_country": "Argentina",
         "goals": 0,
-        "assists": 0,
         "national_team": "Argentina",
         "name": "Armani Franco"
     },
@@ -359,7 +334,6 @@ const players = [
         "league": "Eredivisie (Netherlands)",
         "league_country": "Netherlands",
         "goals": 0,
-        "assists": 0,
         "national_team": "Argentina",
         "name": "Rulli Geronimo"
     },
@@ -373,7 +347,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Canada",
         "name": "Crepeau Maxime"
     },
@@ -387,7 +360,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Canada",
         "name": "Bombito Moise"
     },
@@ -401,7 +373,6 @@ const players = [
         "league": "Allsvenskan (Sweden)",
         "league_country": "Sweden",
         "goals": 0,
-        "assists": 0,
         "national_team": "Canada",
         "name": "Cornelius Derek"
     },
@@ -415,7 +386,6 @@ const players = [
         "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "goals": 0,
-        "assists": 0,
         "national_team": "Canada",
         "name": "Davies Alphonso"
     },
@@ -429,7 +399,6 @@ const players = [
         "league": "Premiership (Scotland)",
         "league_country": "Scotland",
         "goals": 0,
-        "assists": 0,
         "national_team": "Canada",
         "name": "Johnston Alistair"
     },
@@ -443,7 +412,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Canada",
         "name": "Laryea Richie"
     },
@@ -457,7 +425,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Canada",
         "name": "Miller Kamal"
     },
@@ -471,7 +438,6 @@ const players = [
         "league": "Liga Portugal (Portugal)",
         "league_country": "Portugal",
         "goals": 0,
-        "assists": 0,
         "national_team": "Canada",
         "name": "Eustaquio Stephen"
     },
@@ -485,7 +451,6 @@ const players = [
         "league": "Championship (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Canada",
         "name": "Kone Ismael"
     },
@@ -499,7 +464,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Canada",
         "name": "Osorio Jonathan"
     },
@@ -513,7 +477,6 @@ const players = [
         "league": "Serie A (Italy)",
         "league_country": "Italy",
         "goals": 0,
-        "assists": 0,
         "national_team": "Canada",
         "name": "Buchanan Tajon"
     },
@@ -526,8 +489,7 @@ const players = [
         "club": "Lille",
         "league": "Ligue 1 (France)",
         "league_country": "France",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Canada",
         "name": "David Jonathan"
     },
@@ -541,7 +503,6 @@ const players = [
         "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "goals": 0,
-        "assists": 0,
         "national_team": "Canada",
         "name": "Larin Cyle"
     },
@@ -555,7 +516,6 @@ const players = [
         "league": "Championship (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Canada",
         "name": "Millar Liam"
     },
@@ -569,7 +529,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Canada",
         "name": "Oluwaseyi Tanitoluwa"
     },
@@ -583,7 +542,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Canada",
         "name": "Russell-Rowe Jacen"
     },
@@ -596,8 +554,7 @@ const players = [
         "club": "Nashville SC",
         "league": "MLS (USA)",
         "league_country": "USA",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
         "national_team": "Canada",
         "name": "Shaffelburg Jacob"
     },
@@ -611,7 +568,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Canada",
         "name": "McGill Tom"
     },
@@ -625,7 +581,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Canada",
         "name": "St.Clair Dayne"
     },
@@ -639,7 +594,6 @@ const players = [
         "league": "Premier League 2 (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Canada",
         "name": "De Fougerolles Luc"
     },
@@ -653,7 +607,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Canada",
         "name": "Hiebert Kyle"
     },
@@ -667,7 +620,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Canada",
         "name": "Waterman Joel"
     },
@@ -681,7 +633,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Canada",
         "name": "Ahmed Ali"
     },
@@ -695,7 +646,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Canada",
         "name": "Choiniere Mathieu"
     },
@@ -709,7 +659,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Canada",
         "name": "Piette Samuel"
     },
@@ -723,7 +672,6 @@ const players = [
         "league": "Premiership (Scotland)",
         "league_country": "Scotland",
         "goals": 0,
-        "assists": 0,
         "national_team": "Canada",
         "name": "Bair Theo"
     },
@@ -737,7 +685,6 @@ const players = [
         "league": "Premiership (Scotland)",
         "league_country": "Scotland",
         "goals": 0,
-        "assists": 0,
         "national_team": "Canada",
         "name": "Hoilett Junior"
     },
@@ -751,7 +698,6 @@ const players = [
         "league": "Primera Division (Chile)",
         "league_country": "Chile",
         "goals": 0,
-        "assists": 0,
         "national_team": "Chile",
         "name": "Cortes Brayan"
     },
@@ -765,7 +711,6 @@ const players = [
         "league": "Liga Profesional (Argentina)",
         "league_country": "Argentina",
         "goals": 0,
-        "assists": 0,
         "national_team": "Chile",
         "name": "Catalan Matias"
     },
@@ -779,7 +724,6 @@ const players = [
         "league": "Liga Profesional (Argentina)",
         "league_country": "Argentina",
         "goals": 0,
-        "assists": 0,
         "national_team": "Chile",
         "name": "Diaz Paulo"
     },
@@ -793,7 +737,6 @@ const players = [
         "league": "Ligue 1 (France)",
         "league_country": "France",
         "goals": 0,
-        "assists": 0,
         "national_team": "Chile",
         "name": "Maripan Guillermo"
     },
@@ -807,7 +750,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Chile",
         "name": "Pulgar Erick"
     },
@@ -821,7 +763,6 @@ const players = [
         "league": "Ligue 1 (France)",
         "league_country": "France",
         "goals": 0,
-        "assists": 0,
         "national_team": "Chile",
         "name": "Suazo Gabriel"
     },
@@ -835,7 +776,6 @@ const players = [
         "league": " Primera División (Chile)",
         "league_country": "Argentina",
         "goals": 0,
-        "assists": 0,
         "national_team": "Chile",
         "name": "Echeverria Rodrigo"
     },
@@ -849,7 +789,6 @@ const players = [
         "league": "Primera Division (Chile)",
         "league_country": "Chile",
         "goals": 0,
-        "assists": 0,
         "national_team": "Chile",
         "name": "Guerrero Pena Maximiliano Gabriel"
     },
@@ -863,7 +802,6 @@ const players = [
         "league": "Championship (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Chile",
         "name": "Nunez Marcelino"
     },
@@ -877,7 +815,6 @@ const players = [
         "league": "Primera Division (Chile)",
         "league_country": "Chile",
         "goals": 0,
-        "assists": 0,
         "national_team": "Chile",
         "name": "Perez Cesar"
     },
@@ -891,7 +828,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Chile",
         "name": "Valdes Contreras Diego Alfonso"
     },
@@ -905,7 +841,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Chile",
         "name": "Brereton Diaz Ben"
     },
@@ -919,7 +854,6 @@ const players = [
         "league": "Premier League (Russia)",
         "league_country": "Russia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Chile",
         "name": "Davila Victor"
     },
@@ -933,7 +867,6 @@ const players = [
         "league": "Superliga (Denmark)",
         "league_country": "Denmark",
         "goals": 0,
-        "assists": 0,
         "national_team": "Chile",
         "name": "Osorio Dario"
     },
@@ -947,7 +880,6 @@ const players = [
         "league": "Serie A (Italy)",
         "league_country": "Italy",
         "goals": 0,
-        "assists": 0,
         "national_team": "Chile",
         "name": "Sanchez Alexis"
     },
@@ -961,7 +893,6 @@ const players = [
         "league": "Liga Profesional (Argentina)",
         "league_country": "Argentina",
         "goals": 0,
-        "assists": 0,
         "national_team": "Chile",
         "name": "Arias Gabriel"
     },
@@ -975,7 +906,6 @@ const players = [
         "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "goals": 0,
-        "assists": 0,
         "national_team": "Chile",
         "name": "Bravo Claudio"
     },
@@ -989,7 +919,6 @@ const players = [
         "league": "Primera Division (Chile)",
         "league_country": "Chile",
         "goals": 0,
-        "assists": 0,
         "national_team": "Chile",
         "name": "Fernandez Nicolas"
     },
@@ -1003,7 +932,6 @@ const players = [
         "league": "Liga Profesional (Argentina)",
         "league_country": "Argentina",
         "goals": 0,
-        "assists": 0,
         "national_team": "Chile",
         "name": "Galdames Thomas"
     },
@@ -1017,7 +945,6 @@ const players = [
         "league": "Liga Profesional (Argentina)",
         "league_country": "Argentina",
         "goals": 0,
-        "assists": 0,
         "national_team": "Chile",
         "name": "Isla Mauricio"
     },
@@ -1031,7 +958,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Chile",
         "name": "Lichnovsky Igor"
     },
@@ -1045,7 +971,6 @@ const players = [
         "league": "Primera Division (Chile)",
         "league_country": "Chile",
         "goals": 0,
-        "assists": 0,
         "national_team": "Chile",
         "name": "Bolados Marcos"
     },
@@ -1059,7 +984,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Chile",
         "name": "Eduardo Vargas"
     },
@@ -1073,7 +997,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Chile",
         "name": "Kuscevic Benjamin"
     },
@@ -1087,7 +1010,6 @@ const players = [
         "league": "Primera Division (Chile)",
         "league_country": "Chile",
         "goals": 0,
-        "assists": 0,
         "national_team": "Chile",
         "name": "Zavala Cristian"
     },
@@ -1101,7 +1023,6 @@ const players = [
         "league": "Primera Division (Chile)",
         "league_country": "Chile",
         "goals": 0,
-        "assists": 0,
         "national_team": "Chile",
         "name": "Pavez Esteban"
     },
@@ -1115,7 +1036,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Peru",
         "name": "Gallese Pedro"
     },
@@ -1129,7 +1049,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Peru",
         "name": "Abram Luis"
     },
@@ -1143,7 +1062,6 @@ const players = [
         "league": "Liga Profesional (Argentina)",
         "league_country": "Argentina",
         "goals": 0,
-        "assists": 0,
         "national_team": "Peru",
         "name": "Advincula Luis"
     },
@@ -1156,8 +1074,7 @@ const players = [
         "club": "Portland Timbers",
         "league": "MLS (USA)",
         "league_country": "USA",
-        "goals": 2,
-        "assists": 1,
+        "goals": 1,
         "national_team": "Peru",
         "name": "Araujo Miguel"
     },
@@ -1171,7 +1088,6 @@ const players = [
         "league": "Super League (Greece)",
         "league_country": "Greece",
         "goals": 0,
-        "assists": 0,
         "national_team": "Peru",
         "name": "Callens Alexander"
     },
@@ -1185,7 +1101,6 @@ const players = [
         "league": "Liga 1 (Peru)",
         "league_country": "Peru",
         "goals": 0,
-        "assists": 0,
         "national_team": "Peru",
         "name": "Corzo Aldo"
     },
@@ -1199,7 +1114,6 @@ const players = [
         "league": "Eredivisie (Netherlands)",
         "league_country": "Netherlands",
         "goals": 0,
-        "assists": 0,
         "national_team": "Peru",
         "name": "Lopez Marcos"
     },
@@ -1213,7 +1127,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Peru",
         "name": "Santamaria Anderson"
     },
@@ -1227,7 +1140,6 @@ const players = [
         "league": "Liga 1 (Peru)",
         "league_country": "Peru",
         "goals": 0,
-        "assists": 0,
         "national_team": "Peru",
         "name": "Zambrano Carlos"
     },
@@ -1241,7 +1153,6 @@ const players = [
         "league": "Division 1 (Saudi Arabia)",
         "league_country": "Saudi Arabia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Peru",
         "name": "Carrillo Andre"
     },
@@ -1255,7 +1166,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Peru",
         "name": "Cartagena Wilder"
     },
@@ -1269,7 +1179,6 @@ const players = [
         "league": "Liga Portugal (Portugal)",
         "league_country": "Portugal",
         "goals": 0,
-        "assists": 0,
         "national_team": "Peru",
         "name": "Castillo Jesus"
     },
@@ -1283,7 +1192,6 @@ const players = [
         "league": "Allsvenskan (Sweden)",
         "league_country": "Sweden",
         "goals": 0,
-        "assists": 0,
         "national_team": "Peru",
         "name": "Pena Sergio"
     },
@@ -1297,7 +1205,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Peru",
         "name": "Quispe Cordova Piero Aldair"
     },
@@ -1311,7 +1218,6 @@ const players = [
         "league": "Liga 1 (Peru)",
         "league_country": "Peru",
         "goals": 0,
-        "assists": 0,
         "national_team": "Peru",
         "name": "Zanelatto Franco"
     },
@@ -1325,7 +1231,6 @@ const players = [
         "league": "Liga 1 (Peru)",
         "league_country": "Peru",
         "goals": 0,
-        "assists": 0,
         "national_team": "Peru",
         "name": "Flores Edison"
     },
@@ -1339,7 +1244,6 @@ const players = [
         "league": "Liga 1 (Peru)",
         "league_country": "Peru",
         "goals": 0,
-        "assists": 0,
         "national_team": "Peru",
         "name": "Grimaldo Joao"
     },
@@ -1353,7 +1257,6 @@ const players = [
         "league": "Serie A (Italy)",
         "league_country": "Italy",
         "goals": 0,
-        "assists": 0,
         "national_team": "Peru",
         "name": "Lapadula Gianluca"
     },
@@ -1367,7 +1270,6 @@ const players = [
         "league": "Liga 1 (Peru)",
         "league_country": "Peru",
         "goals": 0,
-        "assists": 0,
         "national_team": "Peru",
         "name": "Paolo Guerrero"
     },
@@ -1381,7 +1283,6 @@ const players = [
         "league": "Liga 1 (Peru)",
         "league_country": "Peru",
         "goals": 0,
-        "assists": 0,
         "national_team": "Peru",
         "name": "Polo Andy"
     },
@@ -1395,7 +1296,6 @@ const players = [
         "league": "Liga Profesional (Argentina)",
         "league_country": "Argentina",
         "goals": 0,
-        "assists": 0,
         "national_team": "Peru",
         "name": "Reyna Bryan"
     },
@@ -1409,7 +1309,6 @@ const players = [
         "league": "Superliga (Denmark)",
         "league_country": "Denmark",
         "goals": 0,
-        "assists": 0,
         "national_team": "Peru",
         "name": "Sonne Oliver"
     },
@@ -1423,7 +1322,6 @@ const players = [
         "league": "Saudi Professional League (Saudi Arabia)",
         "league_country": "Peru",
         "goals": 0,
-        "assists": 0,
         "national_team": "Peru",
         "name": "Cueva Christian"
     },
@@ -1437,7 +1335,6 @@ const players = [
         "league": "Liga 1 (Peru)",
         "league_country": "Peru",
         "goals": 0,
-        "assists": 0,
         "national_team": "Peru",
         "name": "Rivera Jose"
     },
@@ -1451,7 +1348,6 @@ const players = [
         "league": "Liga 1 (Peru)",
         "league_country": "Peru",
         "goals": 0,
-        "assists": 0,
         "national_team": "Peru",
         "name": "Caceda Carlos"
     },
@@ -1465,7 +1361,6 @@ const players = [
         "league": "Liga 1 (Peru)",
         "league_country": "Peru",
         "goals": 0,
-        "assists": 0,
         "national_team": "Peru",
         "name": "Romero Diego"
     },
@@ -1479,7 +1374,6 @@ const players = [
         "league": "Liga Pro (Ecuador)",
         "league_country": "Ecuador",
         "goals": 0,
-        "assists": 0,
         "national_team": "Venezuela",
         "name": "Romo Rafael"
     },
@@ -1493,7 +1387,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Venezuela",
         "name": "Angel Wilker"
     },
@@ -1507,7 +1400,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Venezuela",
         "name": "Ferraresi Nahuel"
     },
@@ -1521,7 +1413,6 @@ const players = [
         "league": "Liga FUTVE (Venezuela)",
         "league_country": "Venezuela",
         "goals": 0,
-        "assists": 0,
         "national_team": "Venezuela",
         "name": "Jhon Chancellor"
     },
@@ -1535,7 +1426,6 @@ const players = [
         "league": "Cyta Championship (Cyprus)",
         "league_country": "Cyprus",
         "goals": 0,
-        "assists": 0,
         "national_team": "Venezuela",
         "name": "Makoun Christian"
     },
@@ -1549,7 +1439,6 @@ const players = [
         "league": "Liga Profesional (Argentina)",
         "league_country": "Argentina",
         "goals": 0,
-        "assists": 0,
         "national_team": "Venezuela",
         "name": "Navarro Miguel"
     },
@@ -1563,7 +1452,6 @@ const players = [
         "league": "Serie B (Italy)",
         "league_country": "Italy",
         "goals": 0,
-        "assists": 0,
         "national_team": "Venezuela",
         "name": "Osorio Yordan"
     },
@@ -1577,7 +1465,6 @@ const players = [
         "league": "Ligue 1 (France)",
         "league_country": "France",
         "goals": 0,
-        "assists": 0,
         "national_team": "Venezuela",
         "name": "Casseres Cristian"
     },
@@ -1591,7 +1478,6 @@ const players = [
         "league": "Liga Pro (Ecuador)",
         "league_country": "Ecuador",
         "goals": 0,
-        "assists": 0,
         "national_team": "Venezuela",
         "name": "Gonzalez Alexander"
     },
@@ -1604,8 +1490,7 @@ const players = [
         "club": "Girona",
         "league": "LaLiga (Spain)",
         "league_country": "Spain",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
         "national_team": "Venezuela",
         "name": "Herrera Yangel"
     },
@@ -1619,7 +1504,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Venezuela",
         "name": "Martinez Jose"
     },
@@ -1633,7 +1517,6 @@ const players = [
         "league": "Serie B (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Venezuela",
         "name": "Rincon Tomas"
     },
@@ -1646,8 +1529,7 @@ const players = [
         "club": "Mazatlan FC",
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
-        "goals": 2,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Venezuela",
         "name": "Bello Eduard"
     },
@@ -1661,7 +1543,6 @@ const players = [
         "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "goals": 0,
-        "assists": 0,
         "national_team": "Venezuela",
         "name": "Machis Darwin"
     },
@@ -1674,8 +1555,7 @@ const players = [
         "club": "Atl. Nacional",
         "league": "Primera A (Colombia)",
         "league_country": "Colombia",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Venezuela",
         "name": "Ramirez Eric"
     },
@@ -1688,8 +1568,7 @@ const players = [
         "club": "Pachuca",
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
-        "goals": 2,
-        "assists": 1,
+        "goals": 1,
         "national_team": "Venezuela",
         "name": "Rondon Salomon"
     },
@@ -1703,7 +1582,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Venezuela",
         "name": "Savarino Jefferson"
     },
@@ -1717,7 +1595,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Venezuela",
         "name": "Soteldo Yeferson"
     },
@@ -1730,8 +1607,7 @@ const players = [
         "club": "Real Sociedad",
         "league": "LaLiga (Spain)",
         "league_country": "Spain",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
         "national_team": "Venezuela",
         "name": "Aramburu Jon"
     },
@@ -1744,8 +1620,7 @@ const players = [
         "club": "Famalicao",
         "league": "Liga Portugal (Portugal)",
         "league_country": "Portugal",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Venezuela",
         "name": "Cadiz Jhonder"
     },
@@ -1759,7 +1634,6 @@ const players = [
         "league": "Primera A (Colombia)",
         "league_country": "Colombia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Venezuela",
         "name": "Contreras Jose"
     },
@@ -1773,7 +1647,6 @@ const players = [
         "league": "Primera A (Colombia)",
         "league_country": "Colombia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Venezuela",
         "name": "Graterol Joel"
     },
@@ -1786,8 +1659,7 @@ const players = [
         "club": "Fortaleza",
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
         "national_team": "Venezuela",
         "name": "Andrade Kervin"
     },
@@ -1801,7 +1673,6 @@ const players = [
         "league": "Liga Portugal (Portugal)",
         "league_country": "Portugal",
         "goals": 0,
-        "assists": 0,
         "national_team": "Venezuela",
         "name": "Lacava Matias"
     },
@@ -1815,7 +1686,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Venezuela",
         "name": "Pereira Daniel"
     },
@@ -1829,7 +1699,6 @@ const players = [
         "league": "Liga Portugal (Portugal)",
         "league_country": "Portugal",
         "goals": 0,
-        "assists": 0,
         "national_team": "Venezuela",
         "name": "Segovia Telasco"
     },
@@ -1843,7 +1712,6 @@ const players = [
         "league": "Liga Pro (Ecuador)",
         "league_country": "Ecuador",
         "goals": 0,
-        "assists": 0,
         "national_team": "Ecuador",
         "name": "Dominguez Alexander"
     },
@@ -1857,7 +1725,6 @@ const players = [
         "league": "Liga Profesional (Argentina)",
         "league_country": "Argentina",
         "goals": 0,
-        "assists": 0,
         "national_team": "Ecuador",
         "name": "Galindez Hernan"
     },
@@ -1871,7 +1738,6 @@ const players = [
         "league": "Liga Pro (Ecuador)",
         "league_country": "Ecuador",
         "goals": 0,
-        "assists": 0,
         "national_team": "Ecuador",
         "name": "Ramirez Moises"
     },
@@ -1884,8 +1750,7 @@ const players = [
         "club": "Bayer Leverkusen",
         "league": "Bundesliga (Germany)",
         "league_country": "Germany",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Ecuador",
         "name": "Hincapie Piero"
     },
@@ -1899,7 +1764,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Ecuador",
         "name": "Hurtado Andres"
     },
@@ -1913,7 +1777,6 @@ const players = [
         "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "goals": 0,
-        "assists": 0,
         "national_team": "Ecuador",
         "name": "Pacho Willian"
     },
@@ -1927,7 +1790,6 @@ const players = [
         "league": "FORTUNA:LIGA (Czech Republic)",
         "league_country": "Czech Republic",
         "goals": 0,
-        "assists": 0,
         "national_team": "Ecuador",
         "name": "Preciado Angelo"
     },
@@ -1941,7 +1803,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Ecuador",
         "name": "Torres Felix"
     },
@@ -1954,8 +1815,7 @@ const players = [
         "club": "Chelsea",
         "league": "Premier League (England)",
         "league_country": "England",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
         "national_team": "Ecuador",
         "name": "Caicedo Moises"
     },
@@ -1969,7 +1829,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Ecuador",
         "name": "Cifuentes Jose"
     },
@@ -1983,7 +1842,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Ecuador",
         "name": "Franco Alan"
     },
@@ -1996,8 +1854,7 @@ const players = [
         "club": "San Jose Earthquakes",
         "league": "MLS (USA)",
         "league_country": "USA",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
         "national_team": "Ecuador",
         "name": "Gruezo Carlos"
     },
@@ -2011,7 +1868,6 @@ const players = [
         "league": "Liga Pro (Ecuador)",
         "league_country": "Ecuador",
         "goals": 0,
-        "assists": 0,
         "national_team": "Ecuador",
         "name": "Ortiz Joao"
     },
@@ -2024,8 +1880,7 @@ const players = [
         "club": "Independiente del Valle",
         "league": "Liga Pro (Ecuador)",
         "league_country": "Ecuador",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Ecuador",
         "name": "Paez Kendry"
     },
@@ -2039,7 +1894,6 @@ const players = [
         "league": "Jupiler Pro League (Belgium)",
         "league_country": "Belgium",
         "goals": 0,
-        "assists": 0,
         "national_team": "Ecuador",
         "name": "Rodriguez Kevin"
     },
@@ -2053,7 +1907,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Ecuador",
         "name": "Caicedo Jordy"
     },
@@ -2067,7 +1920,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Ecuador",
         "name": "Mena Angel"
     },
@@ -2081,7 +1933,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Ecuador",
         "name": "Valencia Enner"
     },
@@ -2095,7 +1946,6 @@ const players = [
         "league": "Liga Pro (Ecuador)",
         "league_country": "Ecuador",
         "goals": 0,
-        "assists": 0,
         "national_team": "Ecuador",
         "name": "Corozo Alman Janner Hitcler"
     },
@@ -2109,7 +1959,6 @@ const players = [
         "league": "Ekstraklasa (Poland)",
         "league_country": "Poland",
         "goals": 0,
-        "assists": 0,
         "national_team": "Ecuador",
         "name": "Yeboah John"
     },
@@ -2122,8 +1971,7 @@ const players = [
         "club": "Cercle Brugge KSV",
         "league": "Jupiler Pro League (Belgium)",
         "league_country": "Belgium",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Ecuador",
         "name": "Minda Alan"
     },
@@ -2136,8 +1984,7 @@ const players = [
         "club": "Ipswich",
         "league": "Championship (England)",
         "league_country": "England",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Ecuador",
         "name": "Sarmiento Jeremy"
     },
@@ -2151,7 +1998,6 @@ const players = [
         "league": "Liga Pro (Ecuador)",
         "league_country": "Ecuador",
         "goals": 0,
-        "assists": 0,
         "national_team": "Ecuador",
         "name": "Loor Layan"
     },
@@ -2165,7 +2011,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Ecuador",
         "name": "Micolta Andres"
     },
@@ -2179,7 +2024,6 @@ const players = [
         "league": "Jupiler Pro League (Belgium)",
         "league_country": "Belgium",
         "goals": 0,
-        "assists": 0,
         "national_team": "Ecuador",
         "name": "Ordonez Joel"
     },
@@ -2193,7 +2037,6 @@ const players = [
         "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "goals": 0,
-        "assists": 0,
         "national_team": "Ecuador",
         "name": "Porozo Vernaza Jackson Gabriel"
     },
@@ -2207,7 +2050,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Mexico",
         "name": "Gonzalez Julio"
     },
@@ -2220,8 +2062,7 @@ const players = [
         "club": "Monterrey",
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Mexico",
         "name": "Arteaga Gerardo"
     },
@@ -2235,7 +2076,6 @@ const players = [
         "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "goals": 0,
-        "assists": 0,
         "national_team": "Mexico",
         "name": "Montes Cesar"
     },
@@ -2249,7 +2089,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Mexico",
         "name": "Reyes Israel"
     },
@@ -2263,7 +2102,6 @@ const players = [
         "league": "Liga Portugal (Portugal)",
         "league_country": "Portugal",
         "goals": 0,
-        "assists": 0,
         "national_team": "Mexico",
         "name": "Sanchez Jorge"
     },
@@ -2277,7 +2115,6 @@ const players = [
         "league": "Serie A (Italy)",
         "league_country": "Italy",
         "goals": 0,
-        "assists": 0,
         "national_team": "Mexico",
         "name": "Vasquez Johan"
     },
@@ -2291,7 +2128,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Mexico",
         "name": "Alvarado Roberto"
     },
@@ -2305,7 +2141,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Mexico",
         "name": "Alvarez Edson"
     },
@@ -2319,7 +2154,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Mexico",
         "name": "Antuna Uriel"
     },
@@ -2333,7 +2167,6 @@ const players = [
         "league": "Premier League (Russia)",
         "league_country": "Russia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Mexico",
         "name": "Chavez Luis"
     },
@@ -2347,7 +2180,6 @@ const players = [
         "league": "Super League (Greece)",
         "league_country": "Greece",
         "goals": 0,
-        "assists": 0,
         "national_team": "Mexico",
         "name": "Pineda Orbelin"
     },
@@ -2361,7 +2193,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Mexico",
         "name": "Rodriguez Carlos"
     },
@@ -2374,8 +2205,7 @@ const players = [
         "club": "Monterrey",
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
         "national_team": "Mexico",
         "name": "Romo Luis"
     },
@@ -2389,7 +2219,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Mexico",
         "name": "Sanchez Erick"
     },
@@ -2403,7 +2232,6 @@ const players = [
         "league": "Eredivisie (Netherlands)",
         "league_country": "Netherlands",
         "goals": 0,
-        "assists": 0,
         "national_team": "Mexico",
         "name": "Gimenez Santiago Tomas"
     },
@@ -2417,7 +2245,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Mexico",
         "name": "Huerta Valera Cesar Saul"
     },
@@ -2431,7 +2258,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Mexico",
         "name": "Martinez Ayala Guillermo"
     },
@@ -2445,7 +2271,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Mexico",
         "name": "Quinones Julian"
     },
@@ -2459,7 +2284,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Mexico",
         "name": "Vega Alexis"
     },
@@ -2473,7 +2297,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Mexico",
         "name": "Acevedo Carlos"
     },
@@ -2487,7 +2310,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Mexico",
         "name": "Rangel Aguilar Jose Raul"
     },
@@ -2501,7 +2323,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Mexico",
         "name": "Garcia Caprizo Brian Alberto"
     },
@@ -2515,7 +2336,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Mexico",
         "name": "Orozco Jesus"
     },
@@ -2529,7 +2349,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Mexico",
         "name": "Flores Marcelo"
     },
@@ -2543,7 +2362,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Mexico",
         "name": "Gonzalez Bryan"
     },
@@ -2557,7 +2375,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Mexico",
         "name": "Cortizo Jordi"
     },
@@ -2571,7 +2388,6 @@ const players = [
         "league": "USL Championship (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Jamaica",
         "name": "Waite Jahmali"
     },
@@ -2585,7 +2401,6 @@ const players = [
         "league": "Championship (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Jamaica",
         "name": "Bernard Di'Shon"
     },
@@ -2599,7 +2414,6 @@ const players = [
         "league": "League One (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Jamaica",
         "name": "Hector Michael"
     },
@@ -2613,7 +2427,6 @@ const players = [
         "league": "Premier League (Jamaica)",
         "league_country": "Jamaica",
         "goals": 0,
-        "assists": 0,
         "national_team": "Jamaica",
         "name": "King Richard"
     },
@@ -2627,7 +2440,6 @@ const players = [
         "league": "League One (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Jamaica",
         "name": "Leigh Greg"
     },
@@ -2641,7 +2453,6 @@ const players = [
         "league": "Premiership (Scotland)",
         "league_country": "Scotland",
         "goals": 0,
-        "assists": 0,
         "national_team": "Jamaica",
         "name": "Lembikisa Dexter"
     },
@@ -2655,7 +2466,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Jamaica",
         "name": "Lowe Damion"
     },
@@ -2669,7 +2479,6 @@ const players = [
         "league": "League One (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Jamaica",
         "name": "Anderson Karoy"
     },
@@ -2683,7 +2492,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Jamaica",
         "name": "De Cordova-Reid Bobby"
     },
@@ -2697,7 +2505,6 @@ const players = [
         "league": "USL Championship (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Jamaica",
         "name": "Lambert Kevon"
     },
@@ -2711,7 +2518,6 @@ const players = [
         "league": "Championship (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Jamaica",
         "name": "Palmer Kasey"
     },
@@ -2724,8 +2530,7 @@ const players = [
         "club": "West Ham",
         "league": "Premier League (England)",
         "league_country": "England",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Jamaica",
         "name": "Antonio Michail"
     },
@@ -2739,7 +2544,6 @@ const players = [
         "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
         "goals": 0,
-        "assists": 0,
         "national_team": "Jamaica",
         "name": "Cephas Renaldo"
     },
@@ -2753,7 +2557,6 @@ const players = [
         "league": "Premier League (Jamaica)",
         "league_country": "Jamaica",
         "goals": 0,
-        "assists": 0,
         "national_team": "Jamaica",
         "name": "Dixon Kaheim"
     },
@@ -2767,7 +2570,6 @@ const players = [
         "league": "Premier League (Jamaica)",
         "league_country": "Jamaica",
         "goals": 0,
-        "assists": 0,
         "national_team": "Jamaica",
         "name": "Marshall Alex"
     },
@@ -2781,7 +2583,6 @@ const players = [
         "league": "Ligue 1 (France)",
         "league_country": "France",
         "goals": 0,
-        "assists": 0,
         "national_team": "Jamaica",
         "name": "Nicholson Shamar"
     },
@@ -2795,7 +2596,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Jamaica",
         "name": "Pinnock Ethan"
     },
@@ -2809,7 +2609,6 @@ const players = [
         "league": "Championship (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Jamaica",
         "name": "Latibeaudiere Joel"
     },
@@ -2823,7 +2622,6 @@ const players = [
         "league": "Saudi Professional League (Saudi Arabia)",
         "league_country": "Saudi Arabia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Jamaica",
         "name": "Gray Demarai"
     },
@@ -2837,7 +2635,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Jamaica",
         "name": "Blake Andre"
     },
@@ -2851,7 +2648,6 @@ const players = [
         "league": "Premier League 2 (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Jamaica",
         "name": "Boyce-Clarke Coniah"
     },
@@ -2865,7 +2661,6 @@ const players = [
         "league": "Premier League (Jamaica)",
         "league_country": "Jamaica",
         "goals": 0,
-        "assists": 0,
         "national_team": "Jamaica",
         "name": "Davis Shaquan"
     },
@@ -2879,7 +2674,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Jamaica",
         "name": "Bell Amari'i"
     },
@@ -2893,7 +2687,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Jamaica",
         "name": "Bell Jon"
     },
@@ -2907,7 +2700,6 @@ const players = [
         "league": "Championship (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Jamaica",
         "name": "Harding Wes"
     },
@@ -2921,7 +2713,6 @@ const players = [
         "league": "Primera A (Colombia)",
         "league_country": "Colombia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Uruguay",
         "name": "Mele Santiago"
     },
@@ -2935,7 +2726,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Uruguay",
         "name": "Rochet Sergio"
     },
@@ -2948,8 +2738,7 @@ const players = [
         "club": "Barcelona",
         "league": "LaLiga (Spain)",
         "league_country": "Spain",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
         "national_team": "Uruguay",
         "name": "Araujo Ronald"
     },
@@ -2963,7 +2752,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Uruguay",
         "name": "Caceres Sebastian"
     },
@@ -2977,7 +2765,6 @@ const players = [
         "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "goals": 0,
-        "assists": 0,
         "national_team": "Uruguay",
         "name": "Gimenez Jose Maria"
     },
@@ -2990,8 +2777,7 @@ const players = [
         "club": "Napoli",
         "league": "Serie A (Italy)",
         "league_country": "Italy",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Uruguay",
         "name": "Olivera Mathias"
     },
@@ -3005,7 +2791,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 1,
-        "assists": 1,
         "national_team": "Uruguay",
         "name": "Vina Matias"
     },
@@ -3018,8 +2803,7 @@ const players = [
         "club": "Tottenham",
         "league": "Premier League (England)",
         "league_country": "England",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Uruguay",
         "name": "Bentancur Rodrigo"
     },
@@ -3033,7 +2817,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Uruguay",
         "name": "Canobbio Agustin"
     },
@@ -3047,7 +2830,6 @@ const players = [
         "league": "Serie A (Italy)",
         "league_country": "Italy",
         "goals": 0,
-        "assists": 0,
         "national_team": "Uruguay",
         "name": "Nandez Nahitan"
     },
@@ -3061,7 +2843,6 @@ const players = [
         "league": "Ligue 1 (France)",
         "league_country": "France",
         "goals": 0,
-        "assists": 0,
         "national_team": "Uruguay",
         "name": "Ugarte Manuel"
     },
@@ -3074,8 +2855,7 @@ const players = [
         "club": "Real Madrid",
         "league": "LaLiga (Spain)",
         "league_country": "Spain",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Uruguay",
         "name": "Valverde Federico"
     },
@@ -3088,8 +2868,7 @@ const players = [
         "club": "Flamengo RJ",
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
         "national_team": "Uruguay",
         "name": "de Arrascaeta Giorgian"
     },
@@ -3102,8 +2881,7 @@ const players = [
         "club": "Flamengo RJ",
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
-        "goals": 0,
-        "assists": 2,
+        "goals": 2,
         "national_team": "Uruguay",
         "name": "de la Cruz Nicolas"
     },
@@ -3117,7 +2895,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Uruguay",
         "name": "Araujo Maximiliano"
     },
@@ -3130,8 +2907,7 @@ const players = [
         "club": "Liverpool",
         "league": "Premier League (England)",
         "league_country": "England",
-        "goals": 2,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Uruguay",
         "name": "Nunez Darwin"
     },
@@ -3145,7 +2921,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Uruguay",
         "name": "Olivera Cristian"
     },
@@ -3159,7 +2934,6 @@ const players = [
         "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "goals": 1,
-        "assists": 1,
         "national_team": "Uruguay",
         "name": "Pellistri Facundo"
     },
@@ -3173,7 +2947,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Uruguay",
         "name": "Rodriguez Brian"
     },
@@ -3187,7 +2960,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Uruguay",
         "name": "Suarez Luis"
     },
@@ -3201,7 +2973,6 @@ const players = [
         "league": "Premier League (Russia)",
         "league_country": "Russia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Uruguay",
         "name": "Olaza Lucas"
     },
@@ -3215,7 +2986,6 @@ const players = [
         "league": "Liga Portugal (Portugal)",
         "league_country": "Portugal",
         "goals": 0,
-        "assists": 0,
         "national_team": "Uruguay",
         "name": "Israel Franco"
     },
@@ -3229,7 +2999,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Uruguay",
         "name": "Varela Guillermo"
     },
@@ -3243,7 +3012,6 @@ const players = [
         "league": "Premier League (Russia)",
         "league_country": "Russia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Uruguay",
         "name": "Marichal Nicolas"
     },
@@ -3257,7 +3025,6 @@ const players = [
         "league": "Superliga (Denmark)",
         "league_country": "Denmark",
         "goals": 0,
-        "assists": 0,
         "national_team": "Uruguay",
         "name": "Martinez Emiliano"
     },
@@ -3271,7 +3038,6 @@ const players = [
         "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "goals": 0,
-        "assists": 0,
         "national_team": "Uruguay",
         "name": "Ocampo Brian"
     },
@@ -3285,7 +3051,6 @@ const players = [
         "league": "Championship (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "USA",
         "name": "Horvath Ethan"
     },
@@ -3299,7 +3064,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "USA",
         "name": "Turner Matt"
     },
@@ -3313,7 +3077,6 @@ const players = [
         "league": "Premiership (Scotland)",
         "league_country": "Scotland",
         "goals": 0,
-        "assists": 0,
         "national_team": "USA",
         "name": "Carter-Vickers Cameron"
     },
@@ -3327,7 +3090,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "USA",
         "name": "Ream Tim"
     },
@@ -3341,7 +3103,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "USA",
         "name": "Richards Chris"
     },
@@ -3354,8 +3115,7 @@ const players = [
         "club": "Fulham",
         "league": "Premier League (England)",
         "league_country": "England",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
         "national_team": "USA",
         "name": "Robinson Antonee"
     },
@@ -3369,7 +3129,6 @@ const players = [
         "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "goals": 0,
-        "assists": 0,
         "national_team": "USA",
         "name": "Scally Joe"
     },
@@ -3383,7 +3142,6 @@ const players = [
         "league": "Bundesliga (Germany)",
         "league_country": "Germany",
         "goals": 0,
-        "assists": 0,
         "national_team": "USA",
         "name": "Aaronson Brenden"
     },
@@ -3397,7 +3155,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "USA",
         "name": "Adams Tyler"
     },
@@ -3411,7 +3168,6 @@ const players = [
         "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "goals": 0,
-        "assists": 0,
         "national_team": "USA",
         "name": "Johnny Cardoso"
     },
@@ -3425,7 +3181,6 @@ const players = [
         "league": "Serie A (Italy)",
         "league_country": "Italy",
         "goals": 0,
-        "assists": 0,
         "national_team": "USA",
         "name": "McKennie Weston"
     },
@@ -3439,7 +3194,6 @@ const players = [
         "league": "Serie A (Italy)",
         "league_country": "Italy",
         "goals": 0,
-        "assists": 0,
         "national_team": "USA",
         "name": "Musah Yunus"
     },
@@ -3453,7 +3207,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "USA",
         "name": "Reyna Giovanni"
     },
@@ -3466,8 +3219,7 @@ const players = [
         "club": "Juventus",
         "league": "Serie A (Italy)",
         "league_country": "Italy",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
         "national_team": "USA",
         "name": "Weah Timothy"
     },
@@ -3481,7 +3233,6 @@ const players = [
         "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "goals": 0,
-        "assists": 0,
         "national_team": "USA",
         "name": "de la Torre Luca"
     },
@@ -3494,8 +3245,7 @@ const players = [
         "club": "Monaco",
         "league": "Ligue 1 (France)",
         "league_country": "France",
-        "goals": 2,
-        "assists": 0,
+        "goals": 0,
         "national_team": "USA",
         "name": "Balogun Folarin"
     },
@@ -3509,7 +3259,6 @@ const players = [
         "league": "Eredivisie (Netherlands)",
         "league_country": "Netherlands",
         "goals": 0,
-        "assists": 0,
         "national_team": "USA",
         "name": "Pepi Ricardo"
     },
@@ -3523,7 +3272,6 @@ const players = [
         "league": "Serie A (Italy)",
         "league_country": "Italy",
         "goals": 1,
-        "assists": 1,
         "national_team": "USA",
         "name": "Pulisic Christian"
     },
@@ -3537,7 +3285,6 @@ const players = [
         "league": "Championship (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "USA",
         "name": "Sargent Joshua"
     },
@@ -3551,7 +3298,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "USA",
         "name": "Johnson Sean"
     },
@@ -3565,7 +3311,6 @@ const players = [
         "league": "Eredivisie (Netherlands)",
         "league_country": "Netherlands",
         "goals": 0,
-        "assists": 0,
         "national_team": "USA",
         "name": "Dest Sergino"
     },
@@ -3579,7 +3324,6 @@ const players = [
         "league": "Serie B (Italy)",
         "league_country": "Italy",
         "goals": 0,
-        "assists": 0,
         "national_team": "USA",
         "name": "Lund Kristoffer"
     },
@@ -3593,7 +3337,6 @@ const players = [
         "league": "Jupiler Pro League (Belgium)",
         "league_country": "Belgium",
         "goals": 0,
-        "assists": 0,
         "national_team": "USA",
         "name": "McKenzie Mark"
     },
@@ -3607,7 +3350,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "USA",
         "name": "Moore Shaquell"
     },
@@ -3621,7 +3363,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "USA",
         "name": "Robinson Miles"
     },
@@ -3635,7 +3376,6 @@ const players = [
         "league": "Eredivisie (Netherlands)",
         "league_country": "Netherlands",
         "goals": 0,
-        "assists": 0,
         "national_team": "USA",
         "name": "Tillman Malik"
     },
@@ -3649,7 +3389,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "USA",
         "name": "Tillman Timothy"
     },
@@ -3663,7 +3402,6 @@ const players = [
         "league": "Championship (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "USA",
         "name": "Wright Haji"
     },
@@ -3677,7 +3415,6 @@ const players = [
         "league": "Primera Division (Uruguay)",
         "league_country": "Uruguay",
         "goals": 0,
-        "assists": 0,
         "national_team": "Panama",
         "name": "Mejia Luis"
     },
@@ -3691,7 +3428,6 @@ const players = [
         "league": "Primera Division (Costa Rica)",
         "league_country": "Panama",
         "goals": 0,
-        "assists": 0,
         "national_team": "Panama",
         "name": "Anderson Eduardo"
     },
@@ -3704,8 +3440,7 @@ const players = [
         "club": "Slovan Bratislava",
         "league": "Nike liga (Slovakia)",
         "league_country": "Slovakia",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Panama",
         "name": "Blackman Cesar"
     },
@@ -3719,7 +3454,6 @@ const players = [
         "league": "Parva liga (Bulgaria)",
         "league_country": "Bulgaria",
         "goals": 0,
-        "assists": 0,
         "national_team": "Panama",
         "name": "Cordoba Jose"
     },
@@ -3732,8 +3466,7 @@ const players = [
         "club": "Kosice",
         "league": "Nike liga (Slovakia)",
         "league_country": "Slovakia",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
         "national_team": "Panama",
         "name": "Davis Eric"
     },
@@ -3747,7 +3480,6 @@ const players = [
         "league": "Liga Nacional (Guatemala)",
         "league_country": "Guatemala",
         "goals": 0,
-        "assists": 0,
         "national_team": "Panama",
         "name": "Farina Edgardo"
     },
@@ -3761,7 +3493,6 @@ const players = [
         "league": "Premier League (Azerbaijan)",
         "league_country": "Azerbaijan",
         "goals": 0,
-        "assists": 0,
         "national_team": "Panama",
         "name": "Miller Roderick"
     },
@@ -3774,8 +3505,7 @@ const players = [
         "club": "Marseille",
         "league": "Ligue 1 (France)",
         "league_country": "France",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Panama",
         "name": "Murillo Michael"
     },
@@ -3788,8 +3518,7 @@ const players = [
         "club": "Cienciano",
         "league": "Liga 1 (Peru)",
         "league_country": "Peru",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
         "national_team": "Panama",
         "name": "Ayarza Abdiel"
     },
@@ -3803,7 +3532,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Panama",
         "name": "Barcenas Yoel"
     },
@@ -3817,7 +3545,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Panama",
         "name": "Carrasquilla Alcazar Adalberto Eliecer"
     },
@@ -3831,7 +3558,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Panama",
         "name": "Godoy Anibal"
     },
@@ -3844,8 +3570,7 @@ const players = [
         "club": "Maccabi Bnei Raina",
         "league": "Ligat ha'Al (Israel)",
         "league_country": "Israel",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
         "national_team": "Panama",
         "name": "Gondola Freddy"
     },
@@ -3858,8 +3583,7 @@ const players = [
         "club": "FK Zorya Luhansk",
         "league": "Premier League (Ukraine)",
         "league_country": "Ukraine",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Panama",
         "name": "Guerrero Eduardo"
     },
@@ -3872,8 +3596,7 @@ const players = [
         "club": "Plaza Amador",
         "league": "LPF (Panama)",
         "league_country": "Panama",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
         "national_team": "Panama",
         "name": "Martinez Christian"
     },
@@ -3887,7 +3610,6 @@ const players = [
         "league": "Liga Portugal (Portugal)",
         "league_country": "Portugal",
         "goals": 0,
-        "assists": 0,
         "national_team": "Panama",
         "name": "Puma"
     },
@@ -3901,7 +3623,6 @@ const players = [
         "league": "Liga Portugal 2 (Portugal)",
         "league_country": "Portugal",
         "goals": 0,
-        "assists": 0,
         "national_team": "Panama",
         "name": "Welch Jovani"
     },
@@ -3915,7 +3636,6 @@ const players = [
         "league": "Liga Pro (Ecuador)",
         "league_country": "Ecuador",
         "goals": 0,
-        "assists": 0,
         "national_team": "Panama",
         "name": "Diaz Ismael"
     },
@@ -3928,8 +3648,7 @@ const players = [
         "club": "U. Catolica",
         "league": "Liga Pro (Ecuador)",
         "league_country": "Ecuador",
-        "goals": 2,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Panama",
         "name": "Fajardo Nelson Jose"
     },
@@ -3942,8 +3661,7 @@ const players = [
         "club": "San Carlos",
         "league": "Primera Division (Costa Rica)",
         "league_country": "Costa Rica",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Panama",
         "name": "Yanis Cesar"
     },
@@ -3957,7 +3675,6 @@ const players = [
         "league": "Ligat ha'Al (Israel)",
         "league_country": "Israel",
         "goals": 0,
-        "assists": 0,
         "national_team": "Panama",
         "name": "Mosquera Orlando"
     },
@@ -3971,7 +3688,6 @@ const players = [
         "league": "Primera A (Colombia)",
         "league_country": "Colombia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Panama",
         "name": "Lenis Kahiser"
     },
@@ -3985,7 +3701,6 @@ const players = [
         "league": "Liga Nacional (Honduras)",
         "league_country": "Honduras",
         "goals": 0,
-        "assists": 0,
         "national_team": "Panama",
         "name": "Samudio Cesar"
     },
@@ -3999,7 +3714,6 @@ const players = [
         "league": "Primera A (Colombia)",
         "league_country": "Colombia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Panama",
         "name": "Anderson Ivan"
     },
@@ -4013,7 +3727,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Panama",
         "name": "Valencia Omar"
     },
@@ -4027,7 +3740,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Panama",
         "name": "Harvey Carlos"
     },
@@ -4041,7 +3753,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Viscarra Guillermo"
     },
@@ -4055,7 +3766,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Cuellar Hector"
     },
@@ -4069,7 +3779,6 @@ const players = [
         "league": "Serie B (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Haquin Luis"
     },
@@ -4083,7 +3792,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Medina Roman Diego Daniel"
     },
@@ -4097,7 +3805,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Sagredo Jose"
     },
@@ -4111,7 +3818,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Arrascaita Jaime"
     },
@@ -4125,7 +3831,6 @@ const players = [
         "league": "Premier League (Russia)",
         "league_country": "Russia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Fernandez Roberto"
     },
@@ -4139,7 +3844,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Jusino Adrian"
     },
@@ -4153,7 +3857,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Justiniano Leonel"
     },
@@ -4167,7 +3870,6 @@ const players = [
         "league": "Serie B (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Miguelito"
     },
@@ -4181,7 +3883,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Saucedo Fernando"
     },
@@ -4195,7 +3896,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Suarez Marcelo"
     },
@@ -4208,8 +3908,7 @@ const players = [
         "club": "Bolivar",
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
         "national_team": "Bolivia",
         "name": "Vaca Ramiro"
     },
@@ -4223,7 +3922,6 @@ const players = [
         "league": "Liga Pro (Ecuador)",
         "league_country": "Ecuador",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Villamil Gabriel"
     },
@@ -4237,7 +3935,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Villarroel Moises"
     },
@@ -4251,7 +3948,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Algaranaz Carmelo"
     },
@@ -4264,8 +3960,7 @@ const players = [
         "club": "The Strongest",
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Bolivia",
         "name": "Miranda Bruno"
     },
@@ -4279,7 +3974,6 @@ const players = [
         "league": "Super League (Switzerland)",
         "league_country": "Switzerland",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Cespedes Boris"
     },
@@ -4293,7 +3987,6 @@ const players = [
         "league": "Primera RFEF - Group 1 (Spain)",
         "league_country": "Spain",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Cuellar Jaume"
     },
@@ -4307,7 +4000,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Ramallo Rodrigo"
     },
@@ -4321,7 +4013,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Reinoso Jair"
     },
@@ -4335,7 +4026,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Rocha Yomar"
     },
@@ -4349,7 +4039,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Sagredo Jesus"
     },
@@ -4363,7 +4052,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Terrazas Adalid"
     },
@@ -4377,7 +4065,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Chavez Cruz Lucas Leonidas"
     },
@@ -4391,7 +4078,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Menacho Cesar"
     },
@@ -4405,7 +4091,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Akologo David"
     },
@@ -4419,7 +4104,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Almada Gustavo"
     },
@@ -4433,7 +4117,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Lampe Carlos"
     },
@@ -4447,7 +4130,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Poveda Bruno"
     },
@@ -4461,7 +4143,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Alvarez Sebastian"
     },
@@ -4475,7 +4156,6 @@ const players = [
         "league": "MLS Next Pro (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Berdecio Jamir"
     },
@@ -4489,7 +4169,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Magallanes Javier"
     },
@@ -4503,7 +4182,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Rafinha"
     },
@@ -4517,7 +4195,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Robson Matheus"
     },
@@ -4531,7 +4208,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Romero Cesar"
     },
@@ -4545,7 +4221,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Saavedra Erwin"
     },
@@ -4559,7 +4234,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Sejas Carlos"
     },
@@ -4573,7 +4247,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Tome Robson"
     },
@@ -4587,7 +4260,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Mendoza Gustavo"
     },
@@ -4601,7 +4273,6 @@ const players = [
         "league": "Division Profesional (Bolivia)",
         "league_country": "Bolivia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Bolivia",
         "name": "Sotomayor Gabriel"
     },
@@ -4615,7 +4286,6 @@ const players = [
         "league": "Primera A (Colombia)",
         "league_country": "Colombia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Colombia",
         "name": "Montero Alvaro"
     },
@@ -4629,7 +4299,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Colombia",
         "name": "Vargas Camilo"
     },
@@ -4643,7 +4312,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Colombia",
         "name": "Arias Santiago"
     },
@@ -4657,7 +4325,6 @@ const players = [
         "league": "Jupiler Pro League (Belgium)",
         "league_country": "Belgium",
         "goals": 0,
-        "assists": 0,
         "national_team": "Colombia",
         "name": "Cuesta Carlos"
     },
@@ -4671,7 +4338,6 @@ const players = [
         "league": "Serie A (Italy)",
         "league_country": "Italy",
         "goals": 0,
-        "assists": 0,
         "national_team": "Colombia",
         "name": "Lucumi Jhon"
     },
@@ -4685,7 +4351,6 @@ const players = [
         "league": "Ligue 1 (France)",
         "league_country": "France",
         "goals": 0,
-        "assists": 0,
         "national_team": "Colombia",
         "name": "Machado Deiver"
     },
@@ -4699,7 +4364,6 @@ const players = [
         "league": "Serie A (Italy)",
         "league_country": "Italy",
         "goals": 0,
-        "assists": 0,
         "national_team": "Colombia",
         "name": "Mina Yerry"
     },
@@ -4712,8 +4376,7 @@ const players = [
         "club": "Crystal Palace",
         "league": "Premier League (England)",
         "league_country": "England",
-        "goals": 2,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Colombia",
         "name": "Munoz Daniel"
     },
@@ -4726,8 +4389,7 @@ const players = [
         "club": "Galatasaray",
         "league": "Super Lig (Turkey)",
         "league_country": "Turkey",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Colombia",
         "name": "Sanchez Davinson"
     },
@@ -4740,8 +4402,7 @@ const players = [
         "club": "Fluminense",
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
         "national_team": "Colombia",
         "name": "Arias Jhon"
     },
@@ -4755,7 +4416,6 @@ const players = [
         "league": "Premier League (Russia)",
         "league_country": "Russia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Colombia",
         "name": "Carrascal Jorge"
     },
@@ -4769,7 +4429,6 @@ const players = [
         "league": "Premier League (Russia)",
         "league_country": "Russia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Colombia",
         "name": "Castano Kevin"
     },
@@ -4782,8 +4441,7 @@ const players = [
         "club": "Crystal Palace",
         "league": "Premier League (England)",
         "league_country": "England",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Colombia",
         "name": "Lerma Jefferson"
     },
@@ -4797,7 +4455,6 @@ const players = [
         "league": "Liga Profesional (Argentina)",
         "league_country": "Argentina",
         "goals": 0,
-        "assists": 0,
         "national_team": "Colombia",
         "name": "Quintero Juan"
     },
@@ -4811,7 +4468,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Colombia",
         "name": "Rios Richard"
     },
@@ -4824,8 +4480,7 @@ const players = [
         "club": "Sao Paulo",
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
-        "goals": 0,
-        "assists": 3,
+        "goals": 3,
         "national_team": "Colombia",
         "name": "Rodriguez James"
     },
@@ -4839,7 +4494,6 @@ const players = [
         "league": "QSL (Qatar)",
         "league_country": "Qatar",
         "goals": 0,
-        "assists": 0,
         "national_team": "Colombia",
         "name": "Uribe Mateus"
     },
@@ -4853,7 +4507,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Colombia",
         "name": "Borre Rafael"
     },
@@ -4867,7 +4520,6 @@ const players = [
         "league": "Premier League (Russia)",
         "league_country": "Russia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Colombia",
         "name": "Cordoba Jhon"
     },
@@ -4880,8 +4532,7 @@ const players = [
         "club": "Liverpool",
         "league": "Premier League (England)",
         "league_country": "England",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Colombia",
         "name": "Diaz Luis"
     },
@@ -4895,7 +4546,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Colombia",
         "name": "Duran Jhon"
     },
@@ -4909,7 +4559,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Colombia",
         "name": "Sinisterra Luis"
     },
@@ -4923,7 +4572,6 @@ const players = [
         "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "goals": 0,
-        "assists": 0,
         "national_team": "Colombia",
         "name": "Mojica Johan"
     },
@@ -4937,7 +4585,6 @@ const players = [
         "league": "Championship (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Colombia",
         "name": "Asprilla Yaser"
     },
@@ -4951,7 +4598,6 @@ const players = [
         "league": "Saudi Professional League (Saudi Arabia)",
         "league_country": "Saudi Arabia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Colombia",
         "name": "Ospina David"
     },
@@ -4965,7 +4611,6 @@ const players = [
         "league": "Liga Profesional (Argentina)",
         "league_country": "Argentina",
         "goals": 0,
-        "assists": 0,
         "national_team": "Colombia",
         "name": "Miguel Borja"
     },
@@ -4979,7 +4624,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Brazil",
         "name": "Alisson"
     },
@@ -4993,7 +4637,6 @@ const players = [
         "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "goals": 0,
-        "assists": 0,
         "national_team": "Brazil",
         "name": "Couto Yan"
     },
@@ -5007,7 +4650,6 @@ const players = [
         "league": "Serie A (Italy)",
         "league_country": "Italy",
         "goals": 0,
-        "assists": 0,
         "national_team": "Brazil",
         "name": "Danilo"
     },
@@ -5021,7 +4663,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Brazil",
         "name": "Gabriel"
     },
@@ -5035,7 +4676,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Brazil",
         "name": "Guilherme Arana"
     },
@@ -5049,7 +4689,6 @@ const players = [
         "league": "Ligue 1 (France)",
         "league_country": "France",
         "goals": 0,
-        "assists": 0,
         "national_team": "Brazil",
         "name": "Marquinhos"
     },
@@ -5063,7 +4702,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Brazil",
         "name": "Douglas Luiz"
     },
@@ -5077,7 +4715,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Brazil",
         "name": "Guimaraes Bruno"
     },
@@ -5091,7 +4728,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Brazil",
         "name": "Endrick"
     },
@@ -5105,7 +4741,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Brazil",
         "name": "Martinelli Gabriel"
     },
@@ -5119,7 +4754,6 @@ const players = [
         "league": "Liga Portugal (Portugal)",
         "league_country": "Portugal",
         "goals": 0,
-        "assists": 0,
         "national_team": "Brazil",
         "name": "Pepê"
     },
@@ -5132,8 +4766,7 @@ const players = [
         "club": "Barcelona",
         "league": "LaLiga (Spain)",
         "league_country": "Spain",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Brazil",
         "name": "Raphinha"
     },
@@ -5147,7 +4780,6 @@ const players = [
         "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "goals": 0,
-        "assists": 0,
         "national_team": "Brazil",
         "name": "Rodrygo"
     },
@@ -5160,8 +4792,7 @@ const players = [
         "club": "Real Madrid",
         "league": "LaLiga (Spain)",
         "league_country": "Spain",
-        "goals": 2,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Brazil",
         "name": "Vinicius Junior"
     },
@@ -5175,7 +4806,6 @@ const players = [
         "league": "LaLiga (Spain)",
         "league_country": "Spain",
         "goals": 0,
-        "assists": 0,
         "national_team": "Brazil",
         "name": "Militao Eder"
     },
@@ -5189,7 +4819,6 @@ const players = [
         "league": "Liga Portugal (Portugal)",
         "league_country": "Portugal",
         "goals": 0,
-        "assists": 0,
         "national_team": "Brazil",
         "name": "Wendell"
     },
@@ -5203,7 +4832,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Brazil",
         "name": "Gomes Joao"
     },
@@ -5217,7 +4845,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 1,
-        "assists": 1,
         "national_team": "Brazil",
         "name": "Paqueta Lucas"
     },
@@ -5231,7 +4858,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Brazil",
         "name": "Pereira Andreas"
     },
@@ -5244,8 +4870,7 @@ const players = [
         "club": "Girona",
         "league": "LaLiga (Spain)",
         "league_country": "Spain",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Brazil",
         "name": "Savio"
     },
@@ -5259,7 +4884,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Brazil",
         "name": "Bento"
     },
@@ -5273,7 +4897,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Brazil",
         "name": "Rafael"
     },
@@ -5287,7 +4910,6 @@ const players = [
         "league": "Ligue 1 (France)",
         "league_country": "France",
         "goals": 0,
-        "assists": 0,
         "national_team": "Brazil",
         "name": "Beraldo Lucas"
     },
@@ -5301,7 +4923,6 @@ const players = [
         "league": "Serie A (Italy)",
         "league_country": "Italy",
         "goals": 0,
-        "assists": 0,
         "national_team": "Brazil",
         "name": "Bremer"
     },
@@ -5315,7 +4936,6 @@ const players = [
         "league": "Serie A (Italy)",
         "league_country": "Italy",
         "goals": 0,
-        "assists": 0,
         "national_team": "Brazil",
         "name": "Ederson"
     },
@@ -5329,7 +4949,6 @@ const players = [
         "league": "Liga Portugal (Portugal)",
         "league_country": "Portugal",
         "goals": 0,
-        "assists": 0,
         "national_team": "Brazil",
         "name": "Evanilson"
     },
@@ -5343,7 +4962,6 @@ const players = [
         "league": "Primera RFEF - Group 2 (Spain)",
         "league_country": "Spain",
         "goals": 0,
-        "assists": 0,
         "national_team": "Costa Rica",
         "name": "Sequeira Patrick"
     },
@@ -5356,8 +4974,7 @@ const players = [
         "club": "Juarez",
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Costa Rica",
         "name": "Calvo Francisco"
     },
@@ -5371,7 +4988,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Costa Rica",
         "name": "Cascante Julio"
     },
@@ -5385,7 +5001,6 @@ const players = [
         "league": "Primera Division (Costa Rica)",
         "league_country": "Costa Rica",
         "goals": 0,
-        "assists": 0,
         "national_team": "Costa Rica",
         "name": "Galo Orlando"
     },
@@ -5399,7 +5014,6 @@ const players = [
         "league": "Primera Division (Costa Rica)",
         "league_country": "Costa Rica",
         "goals": 0,
-        "assists": 0,
         "national_team": "Costa Rica",
         "name": "Mitchell Jeyland"
     },
@@ -5413,7 +5027,6 @@ const players = [
         "league": "Primera Division (Costa Rica)",
         "league_country": "Costa Rica",
         "goals": 0,
-        "assists": 0,
         "national_team": "Costa Rica",
         "name": "Taylor Dosman Gerald Gisjiel"
     },
@@ -5427,7 +5040,6 @@ const players = [
         "league": "Primera A (Colombia)",
         "league_country": "Colombia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Costa Rica",
         "name": "Vargas Juan Pablo"
     },
@@ -5441,7 +5053,6 @@ const players = [
         "league": "League One (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Costa Rica",
         "name": "Aguilera Zamora Brandon"
     },
@@ -5454,8 +5065,7 @@ const players = [
         "club": "Westerlo",
         "league": "Jupiler Pro League (Belgium)",
         "league_country": "Belgium",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Costa Rica",
         "name": "Alcocer Josimar"
     },
@@ -5468,8 +5078,7 @@ const players = [
         "club": "Saprissa",
         "league": "Primera Division (Costa Rica)",
         "league_country": "Costa Rica",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
         "national_team": "Costa Rica",
         "name": "Brenes Jefferson"
     },
@@ -5483,7 +5092,6 @@ const players = [
         "league": "Primera Division (Costa Rica)",
         "league_country": "Costa Rica",
         "goals": 0,
-        "assists": 0,
         "national_team": "Costa Rica",
         "name": "Quiros Haxzel"
     },
@@ -5497,7 +5105,6 @@ const players = [
         "league": "Super League (Greece)",
         "league_country": "Greece",
         "goals": 0,
-        "assists": 0,
         "national_team": "Costa Rica",
         "name": "Zamora Alvaro"
     },
@@ -5511,7 +5118,6 @@ const players = [
         "league": "Primera Division (Costa Rica)",
         "league_country": "Costa Rica",
         "goals": 0,
-        "assists": 0,
         "national_team": "Costa Rica",
         "name": "Campbell Joel"
     },
@@ -5525,7 +5131,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Costa Rica",
         "name": "Lassiter Ariel"
     },
@@ -5539,7 +5144,6 @@ const players = [
         "league": "Primera Division (Costa Rica)",
         "league_country": "Costa Rica",
         "goals": 0,
-        "assists": 0,
         "national_team": "Costa Rica",
         "name": "Madrigal Warren"
     },
@@ -5553,7 +5157,6 @@ const players = [
         "league": "Primera Division (Costa Rica)",
         "league_country": "Costa Rica",
         "goals": 0,
-        "assists": 0,
         "national_team": "Costa Rica",
         "name": "Rojas Andy"
     },
@@ -5567,7 +5170,6 @@ const players = [
         "league": "Premier League (Russia)",
         "league_country": "Russia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Costa Rica",
         "name": "Ugalde Manfred"
     },
@@ -5581,7 +5183,6 @@ const players = [
         "league": "Premiership (Scotland)",
         "league_country": "Scotland",
         "goals": 0,
-        "assists": 0,
         "national_team": "Costa Rica",
         "name": "Vargas Kenneth"
     },
@@ -5594,8 +5195,7 @@ const players = [
         "club": "Saprissa",
         "league": "Primera Division (Costa Rica)",
         "league_country": "Costa Rica",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
         "national_team": "Costa Rica",
         "name": "Mora Joseph"
     },
@@ -5609,7 +5209,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Costa Rica",
         "name": "Bran Flores Alejandro Jesus"
     },
@@ -5623,7 +5222,6 @@ const players = [
         "league": "Primera Division (Costa Rica)",
         "league_country": "Costa Rica",
         "goals": 0,
-        "assists": 0,
         "national_team": "Costa Rica",
         "name": "Chamorro Kevin"
     },
@@ -5637,7 +5235,6 @@ const players = [
         "league": "Primera Division (Costa Rica)",
         "league_country": "Costa Rica",
         "goals": 0,
-        "assists": 0,
         "national_team": "Costa Rica",
         "name": "Cruz Aaron"
     },
@@ -5651,7 +5248,6 @@ const players = [
         "league": "Primera Division (Costa Rica)",
         "league_country": "Costa Rica",
         "goals": 0,
-        "assists": 0,
         "national_team": "Costa Rica",
         "name": "Jose Faerron Tristan Fernan"
     },
@@ -5665,7 +5261,6 @@ const players = [
         "league": "Primera Division (Costa Rica)",
         "league_country": "Costa Rica",
         "goals": 0,
-        "assists": 0,
         "national_team": "Costa Rica",
         "name": "Molina Yeison"
     },
@@ -5679,7 +5274,6 @@ const players = [
         "league": "Primera Division (Costa Rica)",
         "league_country": "Costa Rica",
         "goals": 0,
-        "assists": 0,
         "national_team": "Costa Rica",
         "name": "Sequeira Douglas"
     },
@@ -5693,7 +5287,6 @@ const players = [
         "league": "Cyta Championship (Cyprus)",
         "league_country": "Cyprus",
         "goals": 0,
-        "assists": 0,
         "national_team": "Costa Rica",
         "name": "Contreras Anthony"
     },
@@ -5707,7 +5300,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Paraguay",
         "name": "Carlos Coronel"
     },
@@ -5720,8 +5312,7 @@ const players = [
         "club": "Getafe",
         "league": "LaLiga (Spain)",
         "league_country": "Spain",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Paraguay",
         "name": "Alderete Omar"
     },
@@ -5735,7 +5326,6 @@ const players = [
         "league": "Premier League (Russia)",
         "league_country": "Russia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Paraguay",
         "name": "Alonso Junior"
     },
@@ -5749,7 +5339,6 @@ const players = [
         "league": "Premier League (Russia)",
         "league_country": "Russia",
         "goals": 0,
-        "assists": 0,
         "national_team": "Paraguay",
         "name": "Fabian Balbuena"
     },
@@ -5763,7 +5352,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Paraguay",
         "name": "Gustavo Gomez"
     },
@@ -5777,7 +5365,6 @@ const players = [
         "league": "Primera Division (Paraguay)",
         "league_country": "Paraguay",
         "goals": 0,
-        "assists": 0,
         "national_team": "Paraguay",
         "name": "Ramirez Ivan"
     },
@@ -5791,7 +5378,6 @@ const players = [
         "league": "Primera Division (Paraguay)",
         "league_country": "Paraguay",
         "goals": 0,
-        "assists": 0,
         "national_team": "Paraguay",
         "name": "Caballero Benitez Hernesto"
     },
@@ -5805,7 +5391,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Paraguay",
         "name": "Cubas Andres"
     },
@@ -5819,7 +5404,6 @@ const players = [
         "league": "Primera Division (Paraguay)",
         "league_country": "Paraguay",
         "goals": 0,
-        "assists": 0,
         "national_team": "Paraguay",
         "name": "Espinoza Acosta Mathias David"
     },
@@ -5833,7 +5417,6 @@ const players = [
         "league": "UAE League (United Arab Emirates)",
         "league_country": "United Arab Emirates",
         "goals": 0,
-        "assists": 0,
         "national_team": "Paraguay",
         "name": "Kaku"
     },
@@ -5847,7 +5430,6 @@ const players = [
         "league": "MLS (USA)",
         "league_country": "USA",
         "goals": 0,
-        "assists": 0,
         "national_team": "Paraguay",
         "name": "Rojas Matias"
     },
@@ -5861,7 +5443,6 @@ const players = [
         "league": "Liga MX (Mexico)",
         "league_country": "Mexico",
         "goals": 0,
-        "assists": 0,
         "national_team": "Paraguay",
         "name": "Sanchez Richard"
     },
@@ -5875,7 +5456,6 @@ const players = [
         "league": "Liga Profesional (Argentina)",
         "league_country": "Argentina",
         "goals": 1,
-        "assists": 1,
         "national_team": "Paraguay",
         "name": "Sosa Ramon"
     },
@@ -5888,8 +5468,7 @@ const players = [
         "club": "Gremio",
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
         "national_team": "Paraguay",
         "name": "Villasanti Mathias"
     },
@@ -5903,7 +5482,6 @@ const players = [
         "league": "Premier League (England)",
         "league_country": "England",
         "goals": 0,
-        "assists": 0,
         "national_team": "Paraguay",
         "name": "Almiron Miguel"
     },
@@ -5917,7 +5495,6 @@ const players = [
         "league": "Liga Profesional (Argentina)",
         "league_country": "Argentina",
         "goals": 0,
-        "assists": 0,
         "national_team": "Paraguay",
         "name": "Bareiro Adam"
     },
@@ -5931,7 +5508,6 @@ const players = [
         "league": "Primera Division (Paraguay)",
         "league_country": "Paraguay",
         "goals": 0,
-        "assists": 0,
         "national_team": "Paraguay",
         "name": "Morinigo Acosta Rodrigo Mario"
     },
@@ -5945,7 +5521,6 @@ const players = [
         "league": "Primera Division (Paraguay)",
         "league_country": "Paraguay",
         "goals": 0,
-        "assists": 0,
         "national_team": "Paraguay",
         "name": "Gimenez Florentin Nestor Rafael"
     },
@@ -5959,7 +5534,6 @@ const players = [
         "league": "Liga Profesional (Argentina)",
         "league_country": "Argentina",
         "goals": 0,
-        "assists": 0,
         "national_team": "Paraguay",
         "name": "Velazquez Gustavo"
     },
@@ -5973,7 +5547,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Paraguay",
         "name": "Bobadilla Damian"
     },
@@ -5987,7 +5560,6 @@ const players = [
         "league": "Serie A (Brazil)",
         "league_country": "Brazil",
         "goals": 0,
-        "assists": 0,
         "national_team": "Paraguay",
         "name": "Angel Romero"
     },
@@ -6001,7 +5573,6 @@ const players = [
         "league": "Liga Pro (Ecuador)",
         "league_country": "Ecuador",
         "goals": 0,
-        "assists": 0,
         "national_team": "Paraguay",
         "name": "Arce Barrios Alex Adrian"
     },
@@ -6014,8 +5585,7 @@ const players = [
         "club": "Brighton",
         "league": "Premier League (England)",
         "league_country": "England",
-        "goals": 1,
-        "assists": 0,
+        "goals": 0,
         "national_team": "Paraguay",
         "name": "Enciso Julio"
     },
@@ -6029,7 +5599,6 @@ const players = [
         "league": "Primera Division (Paraguay)",
         "league_country": "Paraguay",
         "goals": 0,
-        "assists": 0,
         "national_team": "Paraguay",
         "name": "Aguilar Alfredo"
     },
@@ -6043,7 +5612,6 @@ const players = [
         "league": "Primera Division (Paraguay)",
         "league_country": "Paraguay",
         "goals": 0,
-        "assists": 0,
         "national_team": "Paraguay",
         "name": "Peralta Fabrizio"
     },
@@ -6057,7 +5625,6 @@ const players = [
         "league": "Primera Division (Paraguay)",
         "league_country": "Paraguay",
         "goals": 0,
-        "assists": 0,
         "national_team": "Paraguay",
         "name": "Gonzalez Derlis"
     }

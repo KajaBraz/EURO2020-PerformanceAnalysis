@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <title>Clubs and Leagues</title>
+    <title>Clubs and Leagues - 2024</title>
 </head>
 
 <body>
-    <h1>2024 Football Competitions</h1>
+    <h2>Football Stats</h2>
     <h1>Clubs and Leagues - EURO 2024</h1>
     <h3 class="subtitle">The graphs present the clubs, leagues, and leagues' countries, along with the number of
         footballers who play for them and participate in the EURO 2024 tournament.</h3>
@@ -18,6 +18,13 @@
         <ul>
             <li><a href="index.html">Clubs and Leagues EURO 2024</a></li>
             <li><a href="leagues_2024_copa.html">Clubs and Leagues COPA 2024</a></li>
+        </ul>
+        <br>
+        <ul>
+            <li><a href="goals_2024.html">Goals EURO 2024</a></li>
+            <li><a href="assists_2024.html">Assists EURO 2024</a></li>
+            <li><a href="goals_2024_copa.html">Goals COPA 2024</a></li>
+            <li><a href="assists_2024_copa.html">Assists COPA 2024</a></li>
         </ul>
         <h4 class="competitions_list_header">2020/21 Graphs</h4>
         <ul>
@@ -28,7 +35,7 @@
         </ul>
     </div>
     <div class="select_chart">
-        <input type="radio" id="bar_radio" name="chart_type" value="bar" onchange="switch_to('bar')" checked>
+        <input type="radio" id="bar_radio" name="chart_type" value="bar" onchange="switch_to('bar')">
         <label for="bar_radio">Bar chart</label>
         <input type="radio" id="pie_radio" name="chart_type" value="pie" onchange="switch_to('pie')">
         <label for="pie_radio">Pie chart</label>
@@ -65,7 +72,7 @@
     </div>
     <footer>
         <p>Data source: <a href="https://www.flashscore.com/">FlashScore</a></p>
-        <p>Source code and contact: <a href="https://github.com/KajaBraz/FootballScorersAnalysis">Github</a></p>
+        <p>Source code and contact: <a href="https://github.com/KajaBraz/FootballScorersAnalysis">GitHub</a></p>
     </footer>
     <!-- it fixes drawing issue on safari version <14 on iphone -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=ResizeObserver"></script>
