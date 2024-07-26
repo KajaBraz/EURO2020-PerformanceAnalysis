@@ -7,9 +7,9 @@ function start(dataToDraw, score) {
     // TODO - get rid of the fixed key "goals" (it requires having two data files; "assists" have to be renamed to "goals" in js data file to make the charts work)
     dataToDraw = dataToDraw.filter(({ goals }) => goals > 0);
     current_data = dataToDraw.filter(({ goals }) => goals > 1);
-    no_one_goal_labels = current_data.map(({ name }) => name);
+    no_one_goal_labels = current_data.map(({ short_name }) => short_name);
     no_one_goal_datas = current_data.map(({ goals }) => goals);
-    one_goal_labels = dataToDraw.map(({ name }) => name);
+    one_goal_labels = dataToDraw.map(({ short_name }) => short_name);
     one_goal_datas = dataToDraw.map(({ goals }) => goals);
 
     all_goals = dataToDraw.reduce((acc, { goals }) => acc + goals, 0);
@@ -29,7 +29,7 @@ function start(dataToDraw, score) {
     for (const [key, value] of Object.entries(countries_grouped_info)) {
         countries_grouped[key] = [];
         for (let player of Object.entries(value)) {
-            let info = parse_player_info_goals(player[1], "name", "goals", "", "", score_type);
+            let info = parse_player_info_goals(player[1], "short_name", "goals", "", "", score_type);
             countries_grouped[key].push(info);
         }
     }
@@ -48,7 +48,7 @@ function start(dataToDraw, score) {
     for (const [key, value] of Object.entries(clubs_grouped_info)) {
         clubs_grouped[key] = [];
         for (let player of Object.entries(value)) {
-            let info = parse_player_info_goals(player[1], "name", "goals", "national_team", "", score_type);
+            let info = parse_player_info_goals(player[1], "short_name", "goals", "national_team", "", score_type);
             clubs_grouped[key].push(info);
         }
     }
@@ -66,7 +66,7 @@ function start(dataToDraw, score) {
     for (const [key, value] of Object.entries(leagues_grouped_info)) {
         leagues_grouped[key] = [];
         for (let player of Object.entries(value)) {
-            let info = parse_player_info_goals(player[1], "name", "goals", "national_team", "club", score_type);
+            let info = parse_player_info_goals(player[1], "short_name", "goals", "national_team", "club", score_type);
             leagues_grouped[key].push(info);
         }
     }
@@ -94,7 +94,7 @@ function start(dataToDraw, score) {
     for (const [key, value] of Object.entries(age_grouped_info)) {
         let age_label = assign_label("age", age_labels, key);
         for (let player of Object.entries(value)) {
-            let info = parse_player_info_attr(player[1], "name", "age", "goals", "national_team", score_type);
+            let info = parse_player_info_attr(player[1], "short_name", "age", "goals", "national_team", score_type);
             if (info) {
                 age_grouped[age_label].push(info);
             }
